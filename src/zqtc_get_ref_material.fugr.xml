@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Get the Reference Material</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_GET_REF_MATERIALF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_GET_REF_MATERIALTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_GET_REF_MATERIAL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_CLR_POPUP_MATERIAL</FUNCNAME>
+     <SHORT_TEXT>Clear material from popup in inbound Idoc</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_BDCDATA</PARAMETER>
+       <DBSTRUCT>BDCDATA</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_BDCDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch input: New table field structure</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_GET_REF_MATERIAL</FUNCNAME>
+     <SHORT_TEXT>Get the Reference Material</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_T_MATERIAL</PARAMETER>
+       <TYP>DMF_T_MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_IN_DATE</PARAMETER>
+       <TYP>SYST_DATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_NEXT_MONTHS</PARAMETER>
+       <DEFAULT>02</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>DLYMO</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_BACK_MONTHS</PARAMETER>
+       <DEFAULT>03</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>DLYMO</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_T_REF_MAT</PARAMETER>
+       <TYP>ZTQTC_REF_MATERIAL</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INVALID_MATERIAL</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_MEDIA_PRODUCT</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_MEDIA_PRODUCT_FOUND</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_DATA_FOUND</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_T_MATERIAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_IN_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_NEXT_MONTHS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Next Months</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_BACK_MONTHS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Back Months</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_T_REF_MAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for reference Material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_MATERIAL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_MEDIA_PRODUCT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Media Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_MEDIA_PRODUCT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Media Product not found</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_DATA_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No data found</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_GET_REF_MATERIAL>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_GET_REF_MATERIAL</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00011</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_GET_REF_MATERIAL</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Get the Reference Material</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* a. System will pick the exact media issue refering publication date</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>*    based on month and period.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* b. If system could not find then it  will check the nearest publicatio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>*    within next  +60 days.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>* c. If system could not find above two condition then it will check the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>*    nearest publication within previous  -90 days.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_GET_REF_MATERIAL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZFGRDAT</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>DATUM</DOMNAME>
+    <HEADLEN>13</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>13</SCRLEN2>
+    <SCRLEN3>13</SCRLEN3>
+    <DDTEXT>First GR date</DDTEXT>
+    <REPTEXT>First GR date</REPTEXT>
+    <SCRTEXT_S>1st GR dat</SCRTEXT_S>
+    <SCRTEXT_M>First GR date</SCRTEXT_M>
+    <SCRTEXT_L>First GR date</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>ZFGRDAT</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00004</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFGRDAT</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>First GR date is the date that will be populated when the goods receipt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is posted for the first time. For BIOS, Goods Issue date will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>recorded. The first date will be updated in the subsequent transaction</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>from the custom table itself.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

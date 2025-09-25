@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1QTC_E1BPAD_REM</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>BAPI structure for address comments</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ADDR_VERS</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000002</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000001</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>LANGU</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000002</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000001</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>LANGU_ISO</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000004</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000002</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADR_NOTES</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000100</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000050</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ERRORFLAG</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000002</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000001</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>BAPI structure for address comments</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+   <SEGMENT_DEFINITION>
+    <item>
+     <SEGMENTHEADER>
+      <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+      <DESCRP>BAPI structure for address comments</DESCRP>
+     </SEGMENTHEADER>
+     <SEGMENTDEFINITION>
+      <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+      <SEGDEF>Z2QTC_E1BPAD_REM000</SEGDEF>
+      <RELEASED>740</RELEASED>
+      <CLOSED>X</CLOSED>
+      <FIELDNUM>0005</FIELDNUM>
+      <EXPLENG>0055</EXPLENG>
+     </SEGMENTDEFINITION>
+     <SEGMENTSTRUCTURES>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+       <POS>0001</POS>
+       <FIELDNAME>ADDR_VERS</FIELDNAME>
+       <ROLLNAME>AD_NATION</ROLLNAME>
+       <EXPLENG>0001</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+       <POS>0002</POS>
+       <FIELDNAME>LANGU</FIELDNAME>
+       <ROLLNAME>SPRAS</ROLLNAME>
+       <EXPLENG>0001</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+       <POS>0003</POS>
+       <FIELDNAME>LANGU_ISO</FIELDNAME>
+       <ROLLNAME>LAISO</ROLLNAME>
+       <EXPLENG>0002</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+       <POS>0004</POS>
+       <FIELDNAME>ADR_NOTES</FIELDNAME>
+       <ROLLNAME>AD_REMARK1</ROLLNAME>
+       <EXPLENG>0050</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPAD_REM</SEGTYP>
+       <POS>0005</POS>
+       <FIELDNAME>ERRORFLAG</FIELDNAME>
+       <ROLLNAME>AD_ERRBAPI</ROLLNAME>
+       <EXPLENG>0001</EXPLENG>
+      </EDISEGSTRU>
+     </SEGMENTSTRUCTURES>
+    </item>
+   </SEGMENT_DEFINITION>
+  </asx:values>
+ </asx:abap>
+</abapGit>

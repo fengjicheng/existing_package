@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZUNPAID_OR</OBJCT>
+    <FIEL1>ZUNPAID_OR</FIEL1>
+    <OCLSS>ZQTC</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZUNPAID_OR</OBJECT>
+    <TTEXT>Authorization object for Unapid Order Tab and App</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZUNPAID_OR</OBJCT>
+   </TOBJVORFLG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

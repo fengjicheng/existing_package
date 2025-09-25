@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.8.0.0.20140107.1.905771_SAP" APIVersion="3.4.11306.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-11-16T13:20:21Z" uuid="2fdaf888-7937-46ce-92fa-1a73d7654ba4">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="240mm" id="contentArea_ID" w="190mm" x="17.542mm" y="29mm"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <field h="8mm" name="text_acc_statmnt" w="92.075mm" x="66.675mm" y="14mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="16pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TM_PROF_REM"/>
+               <assist>
+                  <speak disable="1"/>
+               </assist>
+            </field>
+            <field h="15mm" name="Wiley_logo" w="50mm" x="14mm" y="9mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <bind match="dataRef" ref="$.WILEY_LOGO"/>
+               <desc>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField006334" name="CurrentPage" presence="hidden" w="55mm" x="127mm" y="20mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B976277D-F4B3-4A6C-8530-754196D86617">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField026500" name="PageCount" presence="hidden" w="55mm" x="127mm" y="20mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="CCE74BDF-0E94-431E-AE60-0C66B0624EDB">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw h="3.528mm" minW="32.007mm" name="Pages" x="160.531mm" y="15.5mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="22673A23-95E3-4919-85CD-B50826B12778">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para hAlign="right" vAlign="bottom"/>
+            </draw>
+            <subform name="SUB_ACC_NO" w="89.873mm" x="102.665mm" y="19.958mm">
+               <bind match="none"/>
+               <field h="4mm" minW="50mm" name="text_acc_no" y="3.534mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_ACC_NO"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field h="4mm" name="val_acc_no" w="40mm" x="49.873mm" y="3.534mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_ACC_W"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Customer or Vendor Account Number</text>
+                  </desc>
+                  <traversal>
+                     <traverse ref="Wiley_logo[0]"/>
+                  </traversal>
+               </field>
+               <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="invisible" w="55mm" x="5.527mm" y="0.034mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="FEB9DFE6-8C3E-44E3-9610-CB3CB9EFCD0E">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder #?>
+                  <bind match="none"/>
+               </field>
+               <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="invisible" w="55mm" x="5.527mm" y="0.034mm">
+                  <ui>
+                     <numericEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="20mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="023D0058-DF08-415A-A770-AB8CA1211B35">Text Field</text>
+                     </value>
+                  </caption>
+                  <calculate override="error"/>
+                  <event activity="ready" name="event__layout_ready" ref="$layout">
+                     <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+                  </event>
+                  <?templateDesigner floatingFieldPlaceholder ##?>
+                  <bind match="none"/>
+               </field>
+               <draw name="Pages" presence="invisible" x="5.527mm" y="0.034mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" maxLength="0" xliff:rid="B0C74D50-4B9A-4325-929B-F1C54C7D45F3">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <traversal>
+                     <traverse ref="text_acc_no[0]"/>
+                  </traversal>
+               </draw>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">
+if ( this.CurrentPage.rawValue == "1" ){
+    this.presence = "hidden" ;
+    }
+</script>
+               </event>
+               <traversal>
+                  <traverse operation="first" ref="Pages[0]"/>
+                  <traverse ref="Wiley_logo[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <proto/>
+      <subform layout="tb" w="175mm">
+         <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+         <subform h="69mm" name="SUB_HEADER" w="189.708mm">
+            <bind match="none"/>
+            <field minH="5.525mm" name="txt_duns" w="60mm" y="0.001mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT.ST_CORPDUNS"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <subform h="50mm" name="sub_collec_assoc_details" w="123.767mm" x="65.066mm" y="0.001mm">
+               <bind match="none"/>
+               <field h="4mm" minW="40mm" name="text_notif_date" x="22.733mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_NOTIF_DAT"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field h="4mm" minW="40mm" name="text_acc_no" x="22.733mm" y="4.022mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_ACC_NO"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field h="4mm" minW="40mm" name="text_collec_associate" x="22.733mm" y="8.022mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLLEC_ASSC"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field anchorType="topRight" h="4mm" name="val_date" w="56mm" x="119.442mm" y="0.022mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </dateTimeEdit>
+                     <picture>date{DD-MMM-YYYY}</picture>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <bind match="dataRef" ref="$.IM_DATUM">
+                     <picture>date{DD-MMM-YYYY}</picture>
+                  </bind>
+                  <validate>
+                     <picture>date{DD-MMM-YYYY}|date{DD-MMM-YYYY}</picture>
+                  </validate>
+                  <format>
+                     <picture>date{DD-MMM-YYYY}</picture>
+                  </format>
+               </field>
+               <field h="4mm" name="val_acc_no" w="56mm" x="63.442mm" y="4.022mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_ACC_W"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Customer or Vendor Account Number</text>
+                  </desc>
+               </field>
+               <field h="4mm" name="val_collec_assc" w="56mm" x="63.442mm" y="8.022mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_SNAME"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <caption>
+                     <value>
+                        <text xliff:rid="6C5DE2BB-56C2-44C7-9F6F-607A7E51025C"/>
+                     </value>
+                  </caption>
+                  <desc>
+                     <text name="Schema Annotation">Name of Accounting Clerk</text>
+                  </desc>
+               </field>
+               <field h="4mm" name="val_collec_phno" w="56mm" x="63.442mm" y="12.274mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_PH_NO"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field h="4mm" name="val_collec_email" w="56mm" x="63.442mm" y="16.024mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_EMAIL"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+               </field>
+               <field h="4mm" minW="40mm" name="text_collec_phon" x="22.733mm" y="12.274mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLLEC_ASSC_PHNO"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <caption>
+                     <value>
+                        <text xliff:rid="4C6A6267-0B25-40FA-9145-134E3018B8B0"/>
+                     </value>
+                  </caption>
+                  <desc>
+                     <exData name="Schema Annotation">Collections associate phone number
+Smart Forms Text Module 
+ NAME = ZRTR_COLLEC_ASSOC_PH_NO</exData>
+                  </desc>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <field h="4mm" minW="40mm" name="text_collec_email" x="22.733mm" y="16.274mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLLEC_ASSC_EMAIL_ADDR"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <desc>
+                     <exData name="Schema Annotation">Collections associate email address
+Smart Forms Text Module 
+ NAME = ZRTR_COLLEC_ASSOC_EMAL_ADDR</exData>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <field minH="30mm" minW="75mm" name="text_ADDRESS_VALUE" x="0.001mm" y="24.575mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <bind match="dataRef" ref="$.IM_ADDRESS"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field minH="15.475mm" name="st_Remit_bank_details" w="90.25mm" x="87.799mm" y="24.975mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT.ST_REMIT_BANK_DETAILS"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform h="3.175mm" name="Sub_Blank_1" w="174.999mm">
+            <bind match="none"/>
+         </subform>
+         <field minH="3.517mm" name="Txt_rem_form_body" w="175mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.STANDARD_TEXT.ST_FORM_BODY"/>
+            <assist>
+               <speak disable="1"/>
+            </assist>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+         </field>
+         <subform h="3.175mm" name="Sub_Blank_2" w="174.999mm">
+            <bind match="none"/>
+            <?templateDesigner expand 1?></subform>
+         <subformSet name="Item_Details_w_Footer">
+            <subform layout="tb" minH="17.818mm" name="Item_Sub" y="80.878mm">
+               <bind match="none"/>
+               <assist role="Table"/>
+               <subform columnWidths="39.926mm 44.948mm 53.57mm 35.916mm" layout="table" name="Table">
+                  <subform id="overflowLeader_ID" layout="row" name="Header" y="0mm">
+                     <field h="9.354mm" name="text_doc_date" y="0mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="192,192,192"/>
+                           </fill>
+                        </border>
+                        <bind match="dataRef" ref="$record.TEXT_MODULES.TM_DOC_DATE"/>
+                     </field>
+                     <field h="9.354mm" name="Text_doc_invoiceno" y="0mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="192,192,192"/>
+                           </fill>
+                        </border>
+                        <bind match="dataRef" ref="$record.TEXT_MODULES.TM_DOC_INVOCE_NO"/>
+                     </field>
+                     <field h="9.354mm" name="Text_refernce_po_no" y="0mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="192,192,192"/>
+                           </fill>
+                        </border>
+                        <bind match="dataRef" ref="$record.TEXT_MODULES.TM_REFRNCE_PURCH_ODR_NO"/>
+                     </field>
+                     <field h="9.354mm" name="Text_amount" w="1.414014in" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <fill>
+                              <color value="192,192,192"/>
+                           </fill>
+                        </border>
+                        <bind match="dataRef" ref="$record.TEXT_MODULES.TM_AMT"/>
+                     </field>
+                     <assist role="TH"/>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <keep intact="none"/>
+                     <traversal>
+                        <traverse operation="first" ref="#draw[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="DATA" y="0mm">
+                     <field h="9mm" name="FKDAT" w="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.FKDAT">
+                           <picture>date{YYYY-MM-DD}</picture>
+                        </bind>
+                        <desc>
+                           <text name="Schema Annotation">Billing date for billing index and printout</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                     </field>
+                     <field h="9mm" name="VBELN" w="62mm" x="62mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text maxChars="10"/>
+                        </value>
+                        <bind match="dataRef" ref="$.VBELN"/>
+                        <desc>
+                           <text name="Schema Annotation">Billing Document</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                           <fill/>
+                        </border>
+                     </field>
+                     <field h="9mm" name="BSTNK_VF" w="62mm" x="124mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <text maxChars="35"/>
+                        </value>
+                        <bind match="dataRef" ref="$.BSTNK_VF"/>
+                        <desc>
+                           <text name="Schema Annotation">Customer purchase order number</text>
+                        </desc>
+                        <border>
+                           <edge/>
+                        </border>
+                     </field>
+                     <field minH="9mm" name="NETWR" w="62mm" y="9mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                        </border>
+                        <bind match="dataRef" ref="$.NETWR"/>
+                        <desc>
+                           <text name="Schema Annotation">Net Value in Document Currency</text>
+                        </desc>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="dataRef" ref="$.IT_ITEM"/>
+                  <overflow leader="Header" target="Page1"/>
+                  <traversal>
+                     <traverse operation="first" ref="overflowLeader[0]"/>
+                  </traversal>
+                  <?templateDesigner expand 1?></subform>
+               <traversal>
+                  <traverse operation="first" ref="Table[0]"/>
+               </traversal>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="lr-tb" name="Table_footer" w="175mm">
+               <bind match="none"/>
+               <field access="readOnly" h="9mm" name="Blank_space1" w="96mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+                  <calculate override="error"/>
+               </field>
+               <field access="readOnly" h="9mm" hAlign="right" name="Total_text" w="42mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_TOTL"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <calculate override="error"/>
+                  <desc>
+                     <exData name="Schema Annotation">Total
+Smart Forms Text Module 
+ NAME = ZRTR_TOTL</exData>
+                  </desc>
+               </field>
+               <field access="readOnly" hAlign="right" minH="9mm" name="Total_value" w="36mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.V_TOTAL"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">30 Characters</text>
+                  </desc>
+                  <calculate override="error"/>
+               </field>
+               <field minH="8.818mm" name="Form_Footer" w="122.158mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT.ST_FOOTER"/>
+                  <assist>
+                     <speak disable="1"/>
+                  </assist>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Footer of Invoice
+SAPScript Include Text 
+ NAME-FIELD = V_FOOTER 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <keep previous="contentArea"/>
+               <overflow target="Page1"/>
+               <traversal>
+                  <traverse operation="first" ref="Blank_space1[0]"/>
+               </traversal>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subformSet>
+         <keep previous="contentArea"/>
+         <overflow target="Page1.#contentArea"/>
+         <?templateDesigner expand 1?></subform>
+      <desc>
+         <text name="version">9.0.1.0.20130522.1.895968.583615</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 000300060029003300370044004700480049004A004C004F00520057005B #FPTadefgilotx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:1, guidesnap:0, pagecentersnap:995069821?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 172?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_PROF_REMINDER_F045">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <TEXT_MODULES>
+            <TM_PROF_REM/>
+            <TM_WILEY_TAXID/>
+            <TM_NOTIF_DAT/>
+            <TM_ACC_NO/>
+            <TM_COLLEC_ASSC/>
+            <TM_COLLEC_ASSC_PHNO/>
+            <TM_COLLEC_ASSC_EMAIL_ADDR/>
+            <TM_DOC_DATE/>
+            <TM_DOC_INVOCE_NO/>
+            <TM_REFRNCE_PURCH_ODR_NO/>
+            <TM_AMT/>
+            <TM_TOTL/>
+         </TEXT_MODULES>
+         <STANDARD_TEXT>
+            <ST_FORM_BODY/>
+            <ST_REMIT_BANK_DETAILS/>
+            <ST_FOOTER/>
+            <ST_CORPDUNS/>
+         </STANDARD_TEXT>
+         <WILEY_LOGO/>
+         <IT_ITEM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <FKDAT/>
+               <VBELN/>
+               <BSTNK_VF/>
+               <NETWR/>
+            </DATA>
+         </IT_ITEM>
+         <IM_ACC_W/>
+         <IM_DATUM/>
+         <IM_TOT/>
+         <IM_ADDRESS/>
+         <IM_EMAIL/>
+         <IM_PH_NO/>
+         <IM_SNAME/>
+         <V_DATUM/>
+         <V_TOTAL/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.454262, 2011/01/31-17:27:06        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2018-11-16T13:20:21Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.8</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.8</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:2fdaf888-7937-46ce-92fa-1a73d7654ba4</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.1.0.20130522.1.895968.583615</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

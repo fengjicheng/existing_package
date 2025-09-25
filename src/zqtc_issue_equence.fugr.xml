@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>C039: Issue Sequence for Journals</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ISSUE_EQUENCEF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_ISSUE_EQUENCETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ISSUE_EQUENCE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_EDIT_ISSUE_EQUENCE</FUNCNAME>
+     <SHORT_TEXT>C039: Issue Sequence for Journals</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MED_PROD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISMMATNR_PRODUCT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_X_PLANT_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSD_MSTAE_RANGE_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ISSUE_VAR_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_VAVARTYP_RANGE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SHP_PLN_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSE_NIPSTATUS_RANGE_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_NO_ISSUE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_LOCK_ISSUE_SEQ</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_ERROR_IN_ISS_SEQ</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_MISCELLANEOUS</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MED_PROD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_X_PLANT_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Range Type for Cross-Plant Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ISSUE_VAR_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range: Issue Variant Type - Standard (Planned)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SHP_PLN_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range: IS-M: Status of Shipping Planning</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_NO_ISSUE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Media Product doesn&apos;t have any Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_LOCK_ISSUE_SEQ</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Exclusive Lock for Issue Sequence</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_ERROR_IN_ISS_SEQ</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error while creating Issue Sequence</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_MISCELLANEOUS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Other Errors</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_ISSUE_EQUENCE_UPDATE</FUNCNAME>
+     <SHORT_TEXT>C039: Issue Sequence for Journals</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MED_PROD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISMMATNR_PRODUCT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_X_PLANT_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSD_MSTAE_RANGE_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ISSUE_VAR_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_VAVARTYP_RANGE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SHP_PLN_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSE_NIPSTATUS_RANGE_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_NO_ISSUE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_LOCK_ISSUE_SEQ</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_ERROR_IN_ISS_SEQ</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MED_PROD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_X_PLANT_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Range Type for Cross-Plant Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ISSUE_VAR_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range: Issue Variant Type - Standard (Planned)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SHP_PLN_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range: IS-M: Status of Shipping Planning</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_NO_ISSUE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Media Product doesn&apos;t have any Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_LOCK_ISSUE_SEQ</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Exclusive Lock for Issue Sequence</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_ERROR_IN_ISS_SEQ</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error while creating Issue Sequence</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_ISSUE_SEQUENCE_GET_FLAG</FUNCNAME>
+     <SHORT_TEXT>C039: Get Flag that indicates C039 processing</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_V_C039_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_V_C039_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZQTC_BILLEXCEL</TCODE>
+    <PGMNA>ZQTCR_DWNLD_INV_DETAILS_E071</PGMNA>
+    <DYPNO>1000</DYPNO>
+    <CINFO>gA==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZQTC_BILLEXCEL</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZQTC_BILLEXCEL</TCODE>
+    <TTEXT>Transaction code for bill Excel</TTEXT>
+   </TSTCT>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>3</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>K</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>M</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Transaction code for bill Excel</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

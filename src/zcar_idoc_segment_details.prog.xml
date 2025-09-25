@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZCAR_IDOC_SEGMENT_DETAILS</NAME>
+    <SUBC>1</SUBC>
+    <APPL>*</APPL>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Select-options</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>Message Type</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C02</KEY>
+     <ENTRY>Basic type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C03</KEY>
+     <ENTRY>Message Variant</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C04</KEY>
+     <ENTRY>Message function</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C05</KEY>
+     <ENTRY>Total Idocs</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C06</KEY>
+     <ENTRY>Average Time in Sec.</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>No Idocs found for run time calculation</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>IDOCs Segements Counter</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_LIMIT</KEY>
+     <ENTRY>No of Segments to be Selected</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_CREDAT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>18</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DOCNUM</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>19</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_IDOCTP</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>18</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MESCOD</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>23</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_STATUS</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>19</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

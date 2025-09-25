@@ -1,0 +1,3 @@
+FUNCTION-POOL ZQTC_INVENT_RECON_IDOC.       "MESSAGE-ID ..
+
+* INCLUDE LZQTC_INVENT_RECON_IDOCD...        " Local class definition

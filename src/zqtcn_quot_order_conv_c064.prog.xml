@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCN_QUOT_ORDER_CONV_C064</NAME>
+    <SUBC>I</SUBC>
+    <APPL>S</APPL>
+    <RSTAT>T</RSTAT>
+    <RLOAD>E</RLOAD>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Include ZQTCN_QUOT_ORDER_CONV_C064</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCN_QUOT_ORDER_CONV_C064</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00009</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCN_QUOT_ORDER_CONV_C064</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>As part of C064, we will be creating ZQT and ZSQT. We will be assigning</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>external number range in order to capture the proforma/quote number and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>renewal quote numbers from JCORE and ECORE. We need to assign the legacy</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>numbers to the document generated in SAP. This is required because if a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>subscription or renewal is created, it will have the reference numbers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>from ECORE and JCORE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

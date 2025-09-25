@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Charm testing FG</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LYTEST_CHARM7TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLYTEST_CHARM7</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>YTEST_CHARM_TEST_FM</FUNCNAME>
+     <SHORT_TEXT>YTEST_CHARM_TEST_FM</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DEV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZDEVID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ZCACONS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCAT_CONSTANTS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DEV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Development ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZCACONS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Wiley Application Constant Table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

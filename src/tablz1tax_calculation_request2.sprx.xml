@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME_M>
+     <HASH_ID>4037B63BB0E853BE21D6224C4036ADD6512E40EE</HASH_ID>
+     <ID>&lt;message&gt; taxCalculationRequest http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>taxCalculationRequest</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</X-ML_NSPCE>
+     <X-ML_NAME>taxCalculationRequest</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>PARAMETERS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>PARAMETERS</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1TAX_CALCULATION_REQUEST3</OBJ_NAME_R>
+     <ID>&lt;part&gt; parameters &lt;message&gt; taxCalculationRequest http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>parameters</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>PARAMETERS</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME2>
+     <ID>&lt;message&gt; taxCalculationRequest http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>taxCalculationRequest</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1TAX_CALCULATION_REQUEST2</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

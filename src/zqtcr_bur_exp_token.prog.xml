@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_BUR_EXP_TOKEN</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <SECU>ZEXP_TKN</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Further Parameters</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>ORDERS</ENTRY>
+     <LENGTH>6</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S04</KEY>
+     <ENTRY>Z13</ENTRY>
+     <LENGTH>3</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S05</KEY>
+     <ENTRY>TOK</ENTRY>
+     <LENGTH>3</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S06</KEY>
+     <ENTRY>ZTRO</ENTRY>
+     <LENGTH>4</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S07</KEY>
+     <ENTRY>ZTRL</ENTRY>
+     <LENGTH>4</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S08</KEY>
+     <ENTRY>Ord.No</ENTRY>
+     <LENGTH>6</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S09</KEY>
+     <ENTRY>Order No</ENTRY>
+     <LENGTH>8</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S10</KEY>
+     <ENTRY>Ord./Contract Number</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S11</KEY>
+     <ENTRY>Item.No</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S12</KEY>
+     <ENTRY>Order Item No</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S13</KEY>
+     <ENTRY>Ord./Con. Item No</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S14</KEY>
+     <ENTRY>Diff.Qty</ENTRY>
+     <LENGTH>8</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S15</KEY>
+     <ENTRY>Diff. Quantity</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S16</KEY>
+     <ENTRY>Diff./Open Qty.</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S17</KEY>
+     <ENTRY>Uom</ENTRY>
+     <LENGTH>3</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S18</KEY>
+     <ENTRY>Unit of Measure</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S19</KEY>
+     <ENTRY>IDOC No</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S20</KEY>
+     <ENTRY>IDOC Number</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S21</KEY>
+     <ENTRY>Posted IDOC List</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S22</KEY>
+     <ENTRY>UNUSED TOKENS</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>IDOC : Burning Expired Tokens</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AUART</KEY>
+     <ENTRY>Order Type</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_BSTKD</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>17</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_KSCHL</KEY>
+     <ENTRY>Condition Type</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MESCOD</KEY>
+     <ENTRY>IDOC Message Variant</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MESFCT</KEY>
+     <ENTRY>IDOC Message function</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MESTYP</KEY>
+     <ENTRY>IDOC Message Type</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUART</KEY>
+     <ENTRY>Contract Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ENDDT</KEY>
+     <ENTRY>Contract End Date</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_PSTYV</KEY>
+     <ENTRY>Item Category</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCR_BUR_EXP_TOKEN</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00045</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCR_BUR_EXP_TOKEN</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Provides solution for burning the unused tokens:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>When the token validity period has expired, these tokens needs to be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>burnt against the original IP ownership. In order to achive this, a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>batch job will be created in SAP. This batch job will look at all the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>materials for which the item category is given in Selection screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>S_PSTYV ( Item Category ) and the contract end date is S_ENDDT (</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Contract End Date ) in range at the line item level. It will create</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>IDOCs that will create a token release orders base on Order Type from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Selection Screen P_AUART ( Order Type ) against those subscriptions for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>all the remainder of the token products those needs to be burnt. When</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>creating the token release order, the product and the plant will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>copied over from the original subscription. The job will be schedule</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>everyday.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>AUART,,CHAR,,04,,Sales Doc. Type,,From Selection Screen  P_AUART ,,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>E1EDK01,,BSART,,CHAR,,04</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>IHREZ,,CHAR,,12,,Your Reference,,,,,,,,,,,,,,E1EDK02,,BELNR,,CHAR,,35</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>POSNR,,NUMC,,06,,Sales Doc. Item,,,,,,,,,,,,E1EDP01,,POSEX,,CHAR,,06</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>MENGE,,CHAR,,15,,Quantity,,Target Qty – sum(VBFA-RFMNG),,,,E1EDP01,,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>MENGE,,CHAR,,15</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>DATUM,,DATS,,08,,Date,,Always Current Date,,,,,,,,,,E1EDK03,,DATUM,,CHAR</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>,,08</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>KSCHL,,CHAR,,04,,Condition Type,,From Selection Screeen P_KSCHL,,E1EDK05</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>,,KSCHL,,CHAR,,04</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>MATNR,,CHAR,,18,,Material No,,,,,,,,,,,,,,,,E1EDK19,,IDTNR,,CHAR,,35</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>N/A</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>T1</TDFORMAT>
+       <TDLINE>S_AUART             Contract Type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>S_PSTYV              Item Category</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>S_ENDDT             Contract End Date</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_MESTYP           IDOC Message Type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_MESCOD          IDOC Message Variant</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_MESFCT           IDOC Message function</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_AUART             Order Type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_KSCHL             Condition Type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>P_BSTKD             PO number</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>N/A</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>VBELN,,Order No</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>POSNR,,Item. No</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>MENGE,,Diff. Quantity</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>ZIEME,,Unit of Measure</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>IDOCN,,IDOC No</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>N/A</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>N/A</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

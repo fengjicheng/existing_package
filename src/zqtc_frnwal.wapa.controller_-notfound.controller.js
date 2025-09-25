@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(e){"use strict";return e.extend("ren.ZQTC_FUTURE_REN.controller.NotFound",{onLinkPressed:function(){this.getRouter().navTo("worklist")}})});                                                                       

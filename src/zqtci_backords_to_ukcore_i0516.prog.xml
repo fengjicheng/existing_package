@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCI_BACKORDS_TO_UKCORE_I0516</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>000</KEY>
+     <ENTRY>General Selection</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Stock Transfer Documents Selection</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Sales Documents Selection</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>File Path (Tab Delimited Text FilSe)</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Material</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Please enter valid Company Code</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Please enter valid Plant</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Please enter valid Purchasing Group</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Please enter valid Purchasing Organization</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Please enter valid Material Type</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Please enter valid Material</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Please enter valid Stock Transport Orders Type</ENTRY>
+     <LENGTH>92</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Please enter valid Distribution Channel</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Please enter valid Division</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Creation Date range should not be more than 60 days</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>Company Code is mandatory to enter.</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Purchasing Org. is mandatory to enter.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>Purchasing Group is mandatory to enter.</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>Stock Transport Orders Type is mandatory to enter.</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>Sales Document Type is mandatory to enter.</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>025</KEY>
+     <ENTRY>Sales Org. is mandatory to enter.</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>026</KEY>
+     <ENTRY>VCHBOQty,</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>027</KEY>
+     <ENTRY>&quot;EAN&quot;,</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>028</KEY>
+     <ENTRY>&quot;ShortTitle&quot;,</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>029</KEY>
+     <ENTRY>&quot;Date&quot;</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>030</KEY>
+     <ENTRY>ERROR : File cannot be opened.</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>031</KEY>
+     <ENTRY>Please select Sales Documents or Stock Transfer Docs</ENTRY>
+     <LENGTH>104</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Back Orders from SAP to UK Core</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CH_POS</KEY>
+     <ENTRY>Stock Transfer Documents</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CH_SOS</KEY>
+     <ENTRY>Sales Documents</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUART</KEY>
+     <ENTRY>Sales Orders Type</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BSART</KEY>
+     <ENTRY>Stock Transport Orders Type</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BUKRS</KEY>
+     <ENTRY>Company Code</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_EKGRP</KEY>
+     <ENTRY>Purchasing Group</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_EKORG</KEY>
+     <ENTRY>Purchasing Organization</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ERDAT</KEY>
+     <ENTRY>Order Creation Date</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MATNR</KEY>
+     <ENTRY>Material Number</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MTART</KEY>
+     <ENTRY>Material Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SPART</KEY>
+     <ENTRY>Division</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VKORG</KEY>
+     <ENTRY>Sales Organization</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VTWEG</KEY>
+     <ENTRY>Distribution Channel</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_WERKS</KEY>
+     <ENTRY>Plant</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

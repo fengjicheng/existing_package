@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_AGU_FILE_UPLOAD_I0368</NAME>
+    <SUBC>1</SUBC>
+    <SECU>ZAGUFILE</SECU>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Incorrect path</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>File uploaded successfully</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Error when uploading the file</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Error when transfering the data</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>File alredy exits</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B01</KEY>
+     <ENTRY>File Inputs.....</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>AGU File Upload to Application Server</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AS_FN</KEY>
+     <ENTRY>Application server path</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_AS_NM</KEY>
+     <ENTRY>Application sever file name</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_CL_FN</KEY>
+     <ENTRY>Select file to upload</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_OVER</KEY>
+     <ENTRY>Over write file</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

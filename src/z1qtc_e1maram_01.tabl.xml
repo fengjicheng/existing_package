@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1QTC_E1MARAM_01</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Master Material General Data Extension</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>EBELN</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000020</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZUUID</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000072</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000036</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+   <SEGMENT_DEFINITION>
+    <item>
+     <SEGMENTHEADER>
+      <SEGTYP>Z1QTC_E1MARAM_01</SEGTYP>
+      <DESCRP>Master Material General Data Extension</DESCRP>
+     </SEGMENTHEADER>
+     <SEGMENTDEFINITION>
+      <SEGTYP>Z1QTC_E1MARAM_01</SEGTYP>
+      <SEGDEF>Z2QTC_E1MARAM_01000</SEGDEF>
+      <RELEASED>740</RELEASED>
+      <CLOSED>X</CLOSED>
+      <FIELDNUM>0002</FIELDNUM>
+      <EXPLENG>0046</EXPLENG>
+     </SEGMENTDEFINITION>
+     <SEGMENTSTRUCTURES>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1MARAM_01</SEGTYP>
+       <POS>0001</POS>
+       <FIELDNAME>EBELN</FIELDNAME>
+       <ROLLNAME>EBELN</ROLLNAME>
+       <EXPLENG>0010</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1MARAM_01</SEGTYP>
+       <POS>0002</POS>
+       <FIELDNAME>ZUUID</FIELDNAME>
+       <ROLLNAME>ZZUUID</ROLLNAME>
+       <EXPLENG>0036</EXPLENG>
+      </EDISEGSTRU>
+     </SEGMENTSTRUCTURES>
+    </item>
+   </SEGMENT_DEFINITION>
+  </asx:values>
+ </asx:abap>
+</abapGit>

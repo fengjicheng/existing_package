@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>E139: Shipping Schedule Status - Update Validation</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>JKSENIP</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>JKSENIP</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLJKSENIP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLJKSENIP</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\FU:ISM_SE_CHECK_NEW_STATUS_NIP\SE:BEGIN\EI</FULL_NAME>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <FILES>
+    <item>
+     <NAME>\FU:ISM_SE_CHECK_NEW_STATUS_NIP\SE:BEGIN\EI</NAME>
+     <FILE>cf1616cc</FILE>
+    </item>
+   </FILES>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>00505689066D1EECADE48061525E2116</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>00505689066D1EECADE48061525E2116</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>075</LENGTH>
+       <TEXT>E139: Shipping Schedule Status - Update Validation</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZQTCEI_JKSE01_SHIPPING_STATUS</OBJ_NAME>
+     <CONCEPT>00505689066D1EECADE48061525E2116</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

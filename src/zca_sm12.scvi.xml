@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SCVI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SCVI>
+    <SHDSVCI>
+     <SCVARIANT>ZCA_SM12</SCVARIANT>
+     <PROGNAME>RSENQRR2</PROGNAME>
+     <DYNPRO>1100</DYNPRO>
+     <VERSION>1</VERSION>
+    </SHDSVCI>
+    <SHDSVTXCI>
+     <SHDSVTXCI>
+      <LANGU>E</LANGU>
+      <SCVARIANT>ZCA_SM12</SCVARIANT>
+      <SCVTEXT>ZCA_SM12</SCVTEXT>
+     </SHDSVTXCI>
+    </SHDSVTXCI>
+   </SCVI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

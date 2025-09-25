@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZQTC_INV1</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZQTC_INV1</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZQTC_INV1</TCODE>
+    <TTEXT>QTC_INV_SUBS_REPORT</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZQTC_INV1</TCODE>
+    <PARAM>/*START_REPORT D_SREPOVARI-REPORTTYPE=AQ;D_SREPOVARI-REPORT=ZQTC_GRP2   G;D_SREPOVARI-EXTDREPORT=ZQTC_INV_QRY;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>

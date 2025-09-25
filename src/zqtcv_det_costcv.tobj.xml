@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZQTCV_DET_COSTC</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZQTCV_DET_COSTC</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>Determine cost center on the basis of profit center n Plant</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZQTCV_DET_COSTC</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>ZQTC_DETRM_COSTC</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZQTCV_DET_COSTC</TABNAME>
+     <CCLASS>ZCOC</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZQTCV_DET_COSTC</TABNAME>
+     <AREA>ZQTC_DETRM_COSTC</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0001</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZQTCV_DET_COSTC</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>F_POPULATE_FIELDS_SAVE</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

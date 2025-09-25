@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT> Transport Logs RFC Fm</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTCR_TR_LOG_RFCF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTCR_TR_LOG_RFCF02</SOBJ_NAME>
+    <SOBJ_NAME>LZQTCR_TR_LOG_RFCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTCR_TR_LOG_RFC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTCR_TR_LOG_RFC_V1</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>RFC FM to read the TR log Details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_ED1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ED2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ3</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EP1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ES1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EDS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EDS2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS3</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EPS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ESS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>S_TRKORR</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_DES</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_USER</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_DATE</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_FINAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZQTCR_TR_LOG_OPT_STR_TT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_OBSEL</PARAMETER>
+       <DBSTRUCT>E071</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_OBJECT_TEXTS</PARAMETER>
+       <DBSTRUCT>KO100</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_INC</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_ILOG</PARAMETER>
+       <DBSTRUCT>ZCA_TR_LOG</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_ED1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ED2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ES1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EDS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EDS2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EPS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ESS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_TRKORR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_DES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_FINAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Transport Log global Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_OBSEL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Change &amp; Transport System: Object Entries of Requests/Tasks</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_OBJECT_TEXTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CTS: Object Types with Description</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_INC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_ILOG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for task Released Log</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTCR_TR_LOG_RFC_V2</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>RFC FM to read the TR log Details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_ED1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ED2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQ3</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EP1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ES1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EDS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EDS2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS2</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EQS3</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EPS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_ESS1</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_RFIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>OAX</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>S_TRKORR</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_DES</PARAMETER>
+       <DBSTRUCT>ZQTCR_TR_LOG_DES</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_USER</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_DATE</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_FINAL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZQTCR_TR_LOG_OPT_STR_TT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_OBSEL</PARAMETER>
+       <DBSTRUCT>E071</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_OBJECT_TEXTS</PARAMETER>
+       <DBSTRUCT>KO100</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>S_INC</PARAMETER>
+       <DBSTRUCT>RSDSSELOPT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_ILOG</PARAMETER>
+       <DBSTRUCT>ZCA_TR_LOG</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>GT_RDES</PARAMETER>
+       <DBSTRUCT>ZQTCR_TR_LOG_DES</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>RFC_ERROR</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_ED1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ED2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQ3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EP1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ES1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EDS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EDS2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EQS3</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EPS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_ESS1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_RFIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yes/No (X/ )</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_TRKORR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_DES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_FINAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Transport Log global Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_OBSEL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Change &amp; Transport System: Object Entries of Requests/Tasks</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_OBJECT_TEXTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CTS: Object Types with Description</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>S_INC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure of generic SELECT-OPTION for (dynamic selections)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_ILOG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for task Released Log</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_RDES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure for Transport Description Select Options</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RFC_ERROR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>RFC_ERROR</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ISM_WL_SEL_FILTER_R096</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Media Issue Worklist: Filters for Selection</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Class CL_ISM_WORKLIST_SEL_FILTER provides interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>IF_ISM_WORKLIST_SEL_FILTER with method WORKLIST_FILTER_SELECTION.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>If you implement this method, you can apply an additional, freely</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>definable filter to the selected media issues in the media issue</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>worklist.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>Filters are only available for transaction variants of the media issue</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>worklist.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Klasse CL_ISM_WORKLIST_SEL_FILTER stellt das Interface</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>IF_ISM_WORKLIST_SEL_FILTER mit der Methode WORKLIST_FILTER_SELECTION</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>bereit.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Rahmen einer Implementierung dieser Methode kann im Arbeitsvorrat</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE> Medienausgaben eine zusätzliche, frei definierbare Filterung der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selektierten Medienausgaben erfolgen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Filter sind nur für Transaktionsvarianten des Arbeitsvorrat</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Medienausgaben möglich.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </I18N_LINES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

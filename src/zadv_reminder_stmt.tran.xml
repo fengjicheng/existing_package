@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZADV_REMINDER_STMT</TCODE>
+    <PGMNA>ZQTCR_REMINDER_FORM_F045</PGMNA>
+    <DYPNO>1000</DYPNO>
+    <CINFO>gA==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZADV_REMINDER_STMT</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZADV_REMINDER_STMT</TCODE>
+    <TTEXT>Advanced Billing Periodic Account St</TTEXT>
+   </TSTCT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

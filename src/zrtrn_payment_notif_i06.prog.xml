@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZRTRN_PAYMENT_NOTIF_I06</NAME>
+    <SUBC>I</SUBC>
+    <APPL>F</APPL>
+    <RSTAT>T</RSTAT>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Form Printout Include Module: General Subroutines for Printing</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>格式打印输出包括模块: 用于打印的普通子例程</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>3</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>서식 인쇄출력 Include 모듈: 인쇄에 대한 일반 서브루틴</ENTRY>
+       <LENGTH>53</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Includebaustein Formulardruck: allgemeine Unterroutinen für Druck</ENTRY>
+       <LENGTH>65</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Module include impression form. : sous-routines générales pr impress.</ENTRY>
+       <LENGTH>69</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Includemodul til formularprint: Generelle printunderrutiner</ENTRY>
+       <LENGTH>59</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>M</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>表格列印輸出含括模組﹕用於列印的一般副程式</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Include impresión formularios: Subrutinas generales de impresión</ENTRY>
+       <LENGTH>64</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

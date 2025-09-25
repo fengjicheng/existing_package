@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <CLAS>ZQTC_BP_SALESD</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>255</MAXL>
+     <TEXT>BP Sales Data Report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00005</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>BP Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00006</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>BP Category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00007</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>BP Grouping</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Organization</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00009</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00010</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created On</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00011</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created At</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00012</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Language Key</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00013</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Language Key</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00014</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Language Key</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00023</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>PayTerm Desc.</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00024</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Cust Grp Desc.</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_SALESD</QNUM>
+     <TINDX>00025</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Cust Grp1 Desc.</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

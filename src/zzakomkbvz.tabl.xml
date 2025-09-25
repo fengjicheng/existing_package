@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZAKOMKBVZ</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>KOMBZ</SQLTAB>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>PO type for I0245</DDTEXT>
+    <EXCLASS>2</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZSTQTC_OP_DET_HDR_V3</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Output determination header appl.V3: Customer modification</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZSTQTC_OP_DET_HDR_V1</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Output determination header appl.V3: Customer modification</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TB</ID>
+      <OBJECT>ZZAKOMKBVZ</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00003</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZAKOMKBVZ</TDNAME>
+      <TDID>TB</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Structure ZZAKOMKBVZ is used in KOMBZ as append structure .This is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>basically used to determine output type for I0245 object ( Outbound</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Invoice ).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MAINTENANCE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

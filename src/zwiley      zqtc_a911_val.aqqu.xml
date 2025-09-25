@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <CLAS>Z_A911_VALIDATE</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>ZLPR/A911: Membership Pricing Validation Report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00003</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00004</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Material Group 5</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Price list type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00008</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Relationship Category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00009</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Society Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00012</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Journal Group Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00019</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Price Valid To</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00020</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Price Valid From</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00024</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Text:Media Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00041</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00042</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00068</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Publication Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00069</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Volume rebate group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00074</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Default SO</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00081</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Journal Title</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00082</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Price List</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_A911_VAL</QNUM>
+     <TINDX>00083</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Society No</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

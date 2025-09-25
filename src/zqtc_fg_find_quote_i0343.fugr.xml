@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group to find Quote I0343</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_FIND_QUOTE_I0343TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_FIND_QUOTE_I0343</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_FIND_QUOTE_I0343</FUNCNAME>
+     <SHORT_TEXT>FM to find Quote number for ZREW order Idoc</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EDI3413LA</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_QUOTE</PARAMETER>
+       <TYP>IHREZ</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Your reference (Partner)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_QUOTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Your Reference</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

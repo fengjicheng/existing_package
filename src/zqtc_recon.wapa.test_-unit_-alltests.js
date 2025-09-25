@@ -1,0 +1,1 @@
+sap.ui.define(["recon/ZRECON_DASHBOARD/test/unit/controller/Analytical.controller"],function(){"use strict"});                                                                                                                                                 

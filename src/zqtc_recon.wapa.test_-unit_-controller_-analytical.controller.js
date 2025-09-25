@@ -1,0 +1,1 @@
+sap.ui.define(["recon/ZRECON_DASHBOARD/controller/Analytical.controller"],function(t){"use strict";QUnit.module("Analytical Controller");QUnit.test("I should test the Analytical controller",function(n){var l=new t;l.onInit();n.ok(l)})});                  

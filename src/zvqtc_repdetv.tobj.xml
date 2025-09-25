@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZVQTC_REPDET</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZVQTC_REPDET</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>E129: Sales Rep PIGS Table</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZVQTC_REPDET</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>ZQTC_REPDET</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZVQTC_REPDET</TABNAME>
+     <CCLASS>ZSRD</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZVQTC_REPDET</TABNAME>
+     <AREA>ZQTC_REPDET</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0001</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZVQTC_REPDET</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>F_POPULATE_FIELDS_SAVE</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZVQTC_REPDET</TABNAME>
+      <EVENT>05</EVENT>
+      <FORMNAME>F_VALIDATE_NEW_ENTRY</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZVQTC_REPDET</TABNAME>
+      <EVENT>19</EVENT>
+      <FORMNAME>F_SUPPRESS_COLUMNS</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZVQTC_REPDET</TABNAME>
+      <EVENT>21</EVENT>
+      <FORMNAME>F_VALIDATE_FIELDS</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

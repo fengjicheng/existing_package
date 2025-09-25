@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_WOL_ORD_CONF_FORM_F059</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <RSTAT>P</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Test Document for print reference</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Email sent successfully</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>BP partner function is not maintained</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Email ID is not maintained for Sold-to Customer</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Wiley Edu Invoice Form - OPM</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>AS Price Simulation</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_PRICE_ASF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_PRICE_ASTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_PRICE_AS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_AS_PRICE_SIMULATION_I0419</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Author Service Price simulation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TPM_SOURCE_NAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_HDRDET</PARAMETER>
+       <TYP>ZQTC_ST_PRICE_HDR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ITMDET</PARAMETER>
+       <TYP>ZQTC_TT_PRICE_ITM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <TYP>IDOCCARKEY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_PRICE_OUT</PARAMETER>
+       <TYP>ZQTC_TT_PRICE_OUT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <TYP>CHAR10</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Origin</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_HDRDET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>AS Header details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ITMDET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>AS Item details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>EDI archive key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_PRICE_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>AS Output details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status &apos;Success&apos; OR &apos;Failure&apos;</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

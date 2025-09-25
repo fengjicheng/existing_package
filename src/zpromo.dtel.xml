@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZPROMO</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>KNUMA</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>10</SCRLEN2>
+    <SCRLEN3>10</SCRLEN3>
+    <DDTEXT>Promo code</DDTEXT>
+    <REPTEXT>Promo code</REPTEXT>
+    <SCRTEXT_S>Promo code</SCRTEXT_S>
+    <SCRTEXT_M>Promo code</SCRTEXT_M>
+    <SCRTEXT_L>Promo code</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <SHLPNAME>VMBO</SHLPNAME>
+    <SHLPFIELD>KNUMA</SHLPFIELD>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>ZPROMO</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00005</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZPROMO</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&apos;ZZPROMO&apos; is one of the custom fields in the append structure &apos;ZZAVBAK&apos;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and &apos;ZZAVBAP&apos; to be added to the table &apos;VBAK&apos; and &apos;VBAP&apos; respectively.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>It is used for storing Promo Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Append structure ZZAVBAK and ZZAVBAP for table VBAK and VBAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>respectively.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

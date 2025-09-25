@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("ir.ZE144_IncompletionReport.test.integration.pages.Common",{createAWaitForAnEntitySet:function(t){return{success:function(){var e;var n=this.getMockServer().then(function(n){e=n+
+.getEntitySetData(t.entitySet)});this.iWaitForPromise(n);return this.waitFor({success:function(){t.success.call(this,e)}})}}},getMockServer:function(){return new Promise(function(e){t.getWindow().sap.ui.require(["ir/ZE144_IncompletionReport/localService/+
+mockserver"],function(t){e(t.getMockServer())})})}})});                                                                                                                                                                                                        

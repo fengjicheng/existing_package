@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_LAUNCH_UI5</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CLASS for Launch FIORI Apps</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>sap-client</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>cannot start browser</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>sap-ui-language</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>sap-ui-appcache</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>false</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>https://sap-</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>.wiley.com</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>/sap/bc/ui5_ui5/sap/zqtc_claims/index.html</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>sap-data-bp</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>/sap/bc/ui5_ui5/sap/zqtc_frnwal/index.html</ENTRY>
+     <LENGTH>84</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>/sap/bc/ui5_ui5/sap/zpdf_poc/index.html</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>/sap/bc/ui5_ui5/sap/ZBLOCK_ORDERS/index.html</ENTRY>
+     <LENGTH>88</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>BLOCKEDDORDERS_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Blocked Orders Project - FIORI App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BLOCK_ORDERS_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>E266: Block Orders Application Launch - FIORI App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLAIM_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>E252: Claim Project - FIORI APP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREDIT_BLOCK_APP_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Credit Blocked Sales Orders App New</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREDIT_BLOCK_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Credit Blocked Sales Orders App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DELIVERY_BLOCK_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery Block Fiori App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FUTURE_RENEWAL_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>E256 : Future Renewal Project - FIORI APP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INCOMPLETION_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Incompletion Orders App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>JIRA_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>JIRA project - FIORI APP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PDF_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>PDF POC - FIORI APP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RECKON_DASHBOARD_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reckon Dashboard App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RECON_DASHBOARD_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Recon Dashboard Fiori App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ZIRM_CHANGE_LOG_APP_LAUNCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Vistex Changes Log Report -FIORI App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ZIRM_PRICE_REPORTS_APP_LANUCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Vistex Price Reports -FIORI App</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ZQTC_ORD_MGMT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Order Management - Demo</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>FUTURE_RENEWAL_APP_LAUNCH</CMPNAME>
+     <SCONAME>IM_KUNNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Customer Number</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

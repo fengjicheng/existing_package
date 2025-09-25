@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCA_UTILITIES</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Global Utilities</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Constants</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Integration Constants</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ITY_ZCACONSTANT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for constants</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <SCONAME>ET_CONSTANTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Wiley Application Constant Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <SCONAME>IM_ACTIVATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Activation indicator for constant</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <SCONAME>IM_DEVID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <SCONAME>IM_PARAM1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_CONSTANTS</CMPNAME>
+     <SCONAME>IM_PARAM2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <SCONAME>ET_CONSTANTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for ZCAINTEG_MAPPING</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <SCONAME>IM_ACTIVATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Activation indicator for constant</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <SCONAME>IM_DEVID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <SCONAME>IM_PARAM1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INTEG_CONSTANTS</CMPNAME>
+     <SCONAME>IM_PARAM2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

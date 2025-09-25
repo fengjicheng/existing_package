@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/test/opaQunit","./pages/Worklist","./pages/Browser","./pages/Object","./pages/App"],function(e){"use strict";QUnit.module("Object");e("Should remember the first item",function(e,t,i){e.iStartMyApp();t.onTheWorklistPage.iRememberTab+
+leItemAtPosition(1);i.onTheWorklistPage.theTitleShouldDisplayTheTotalAmountOfItems();i.iTeardownMyApp()});e("Should start the app with remembered item",function(e,t,i){e.iRestartTheAppWithTheRememberedItem({delay:1e3});i.onTheObjectPage.iShouldSeeTheReme+
+mberedObject().and.theObjectViewShouldContainOnlyFormattedUnitNumbers();i.iTeardownMyApp()})});                                                                                                                                                                

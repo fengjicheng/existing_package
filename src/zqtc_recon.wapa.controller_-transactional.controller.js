@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/core/routing/History"],function(t,e){"use strict";return t.extend("recon.ZRECON_DASHBOARD.controller.transactional",{onInit:function(){var t=this.getOwnerComponent().getRouter();t.getRoute("transactiona+
+l").attachMatched(this._onRouteMatched,this)},onPageBack:function(){this.getOwnerComponent().getRouter().navTo("TargetAnalytical",true)},_onRouteMatched:function(t){debugger;var e=decodeURIComponent(t.getParameter("arguments").wricef);var n=this.getView(+
+);n.bindElement({path:e})}})});                                                                                                                                                                                                                                

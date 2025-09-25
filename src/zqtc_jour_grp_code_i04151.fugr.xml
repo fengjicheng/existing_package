@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>I0415.1 : Journal Group Code Items</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_JOUR_GRP_CODE_I04151F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_JOUR_GRP_CODE_I04151TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_JOUR_GRP_CODE_I04151</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_IDOC_INPUT_JOURN_I0415</FUNCNAME>
+     <GLOBAL_FLAG>X</GLOBAL_FLAG>
+     <SHORT_TEXT>erweiterte Tabellenpflege untere Ebene</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-INPUTMETHD</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-MASS_PROC</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <DBFIELD>BDWF_PARAM-RESULT</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <DBFIELD>BDWF_PARAM-APPL_VAR</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-UPDATETASK</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-CALLTRANS</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <DBSTRUCT>BDWFRETVAR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <DBSTRUCT>BDI_SER</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NO_VALUE_FOR_SUBSET_IDENT</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>MISSING_CORR_NUMBER</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>SAVING_CORRECTION_FAILED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inbound method for the IDoc inbound function module</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Mass processing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Final value of method</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Variable to be used by application as required</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has triggered update task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has actually performed call transaction</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ALE IDoc status (subset of all IDoc status fields)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Assignment of IDoc or document no. to method parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Serialization objects for one/several IDocs</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_VALUE_FOR_SUBSET_IDENT</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MISSING_CORR_NUMBER</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SAVING_CORRECTION_FAILED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

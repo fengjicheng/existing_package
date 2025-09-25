@@ -1,0 +1,2007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V10.4.0.20160610.1.923074_SAP" APIVersion="3.6.16064.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-10-21T14:41:29Z" uuid="2eae8778-5d8c-4c51-ad2d-ef18c5175844">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="220.7mm" id="contentArea_ID" w="8in" x="6.35mm" y="27.35mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <subform minH="9mm" name="Picking_Ticket" presence="hidden" x="146.05mm" y="16.875mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <subform minH="9mm" name="Picking_Ticking_Text">
+                  <bind match="none"/>
+                  <field h="9mm" name="Picking_Ticket_Text" w="31.75mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.PICKING_TICKET"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform minH="9mm" name="Delivery_Number" x="31.75mm">
+                  <bind match="none"/>
+                  <keep intact="none"/>
+                  <field h="9mm" name="Delivery_Number" w="31.75mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.DELIVERYHEADER.VBELN"/>
+                     <event activity="initialize" name="event__initialize">
+                        <script>//var document.getElementById() 
+//this.presence = "hidden";
+//if($record.PAGES.DATA.FIELD == "1" )
+//then
+//this.presence = "hidden"
+//else
+//this.presence = "visible"
+//endif
+
+var curp  = $layout.page ( ref ( $ ) )
+var totalp = $layout.pageCount()
+if ( curp ne 1 ) then
+INV_NO.presence = "visible"
+else
+INV_NO.presence = "hidden"
+endif  
+</script>
+                     </event>
+                     <value>
+                        <text maxChars="100"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Invoice Text - Invoice Number/Cancelled Invoice</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="18mm" name="Logo_Barcode_Form" y="6.35mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="18mm" name="Wileylogo" w="43mm" x="6.35mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <bind match="dataRef" ref="$.WIILEY_LOGO"/>
+                  <desc>
+                     <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = IM_XSTRING</exData>
+                  </desc>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}
+
+</script>
+                  </event>
+               </field>
+               <field h="10.164mm" name="Code3of9BarCode1" w="64.711mm" x="6.35mm">
+                  <ui>
+                     <barcode dataLength="10" textLocation="belowEmbedded" type="code3Of9" wideNarrowRatio="3.0"/>
+                  </ui>
+                  <font typeface="Courier New"/>
+                  <value>
+                     <text xliff:rid="9ED3E87E-63CD-41E6-9648-D6302FB0102D">1234567890</text>
+                  </value>
+                  <bind match="dataRef" ref="$.V_BAR_CODE"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}
+
+</script>
+                  </event>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform name="E-Mail_Addresses_Form" w="120mm" x="6.35mm" y="250mm">
+               <bind match="none"/>
+               <subform columnWidths="120mm" layout="table" name="Email_Addresses">
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <subform layout="row" name="Row1">
+                     <assist role="TR"/>
+                     <field h="4mm" name="Cell1">
+                        <ui>
+                           <textEdit multiLine="1"/>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.EMAIL_ADDR"/>
+                        <value>
+                           <exData contentType="text/html"/>
+                        </value>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <occur max="-1"/>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="dataRef" ref="$.I_EMAIL_ADDRESSES"/>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <draw anchorType="topRight" h="4mm" hAlign="center" minW="11.769mm" name="Pages" x="201mm" y="263.525mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="29C7C057-99D2-4957-8441-AD8CC1881485">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField016827" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para hAlign="right" vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField023281" name="CurrentPage" presence="hidden" w="55mm" x="280.363mm" y="548.424mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="C67B8755-0E26-4B1D-9EFD-2FABE55C0376">Text Field</text>
+                  </value>
+               </caption>
+               <calculate>
+                  <script contentType="application/x-javascript">
+//var curpage  = $layout.page ( ref ( $ ) )
+//if ( curpage ne 1 ) then
+//$.presence = "hidden"
+//endif	
+</script>
+               </calculate>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+if( this.rawValue == '1')
+{
+ this.presence = "hidden";
+}
+else
+{
+this.presence = "visible";
+}
+this.presence = "hidden"
+</script>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript">//this.rawValue = xfa.layout.pageCount();
+//if( this.rawValue == '1'){
+//this.presence = "hidden";
+//}
+//else
+//{
+//this.presence = "visible";
+//}
+
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField016827" name="PageCount" presence="hidden" w="55mm" x="280.363mm" y="548.424mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="26E658EA-BA32-4B09-83F0-BCFDB3EF5000">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <draw h="4mm" hAlign="right" name="Text2" w="29.2864mm" x="163.5mm" y="263.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="17347BE9-2709-4D5B-AB81-AE4AA5C3D750">Page</text>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para hAlign="right"/>
+               <?renderCache.bounds 80183 8505 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 4 Page 0 62916 7733 0 0 0 "Arial" 0 0 8000 ISO-8859-1?></draw>
+            <field h="9mm" name="Plant_Address" w="150mm" x="35mm" y="254mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Calibri" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.S_PLANT_ADDRESS"/>
+            </field>
+            <field h="9mm" name="Pick_Pack_no" w="62mm" x="146.05mm" y="12.7mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.254mm">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="$.V_PICK_PACK_NO"/>
+               <event activity="initialize" name="event__initialize">
+                  <script>var curp  = $layout.page ( ref ( $ ) )
+var totalp = $layout.pageCount()
+if ( curp ne 1 ) then
+Pick_Pack_no.presence = "visible"
+else
+Pick_Pack_no.presence = "hidden"
+endif 
+
+</script>
+               </event>
+            </field>
+            <field h="4mm" name="Test_ref_doc" w="61.746mm" x="6.35mm" y="263.525mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.TEST_REF_DOC"/>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" name="Design_View" w="203.2mm">
+         <subform minH="126.607mm" name="Header_Form" w="203.2mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <traversal>
+               <traverse operation="first" ref="Remit_To_From[0]"/>
+               <traverse ref="Items_Form[0]"/>
+            </traversal>
+            <field minH="13.925mm" minW="101.6mm" name="Sales_Org_Address_val">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$record.S_SALES_ORG.SALES_ORG"/>
+               <desc>
+                  <exData name="Schema Annotation">Address of Billto 
+ ADDRESS-NUMBER-FIELD = IM_HEADER-BILL_ADDR_NUMBER</exData>
+               </desc>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+               <traversal>
+                  <traverse ref="Header1[0].Subform1[0].Client_Number_Form[0].client_number_txt[0]"/>
+               </traversal>
+            </field>
+            <subform h="32.011mm" name="Billto" w="92.249mm" x="0.06mm" y="45.179mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.2mm"/>
+                  <corner thickness="0.2mm"/>
+               </border>
+               <draw h="5.269mm" name="billtotext" w="92.075mm" x="0.14mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="057EBC49-140D-4C69-9262-39D7D34D1BD5">Bill To: </text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="1mm" rightInset="0.5mm" topInset="0.8mm"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <?renderCache.bounds 256748 11251 0 0 2835 2268 0 0?>
+                  <?renderCache.textRun 9 Bill To:  0 2835 9374 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <subform layout="tb" name="BILL_TO_ADDR" w="91.978mm" y="5.793mm">
+                  <bind match="none"/>
+                  <field h="26mm" name="Bill_to_address" w="92.015mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.S_BILL_TO_ADDRESS.BILL_TO"/>
+                     <traversal>
+                        <traverse ref="Remit_To_From[0].RemitToText[0]"/>
+                     </traversal>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <traversal>
+                  <traverse operation="first" ref="billtotext[0]"/>
+                  <traverse ref="Remit_To_From[0].RemitToText[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform h="31.75mm" name="Shipto" w="92.015mm" y="82.157mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.2mm"/>
+                  <corner thickness="0.2mm"/>
+               </border>
+               <traversal>
+                  <traverse ref="Bank_Details_Form[0]"/>
+                  <traverse operation="first" ref="shiptotext[0]"/>
+               </traversal>
+               <draw h="5.269mm" name="shiptotext" w="92.075mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="44411918-E95B-46B5-8CC8-CCF46F12E134">Ship To: </text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="1mm" rightInset="0.5mm" topInset="0.8mm"/>
+                  <para vAlign="bottom"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                     <edge thickness="0.2mm"/>
+                     <edge thickness="0.1mm"/>
+                     <edge thickness="0.1mm"/>
+                     <corner thickness="0.2mm"/>
+                     <corner thickness="0.1mm"/>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <traversal>
+                     <traverse ref="#draw[0]"/>
+                  </traversal>
+                  <?renderCache.bounds 256748 11251 0 0 2835 2268 0 0?>
+                  <?renderCache.textRun 9 Ship To:  0 2835 9374 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <field h="26mm" name="ship_to_address" w="92.015mm" x="0.06mm" y="5.269mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.S_SHIP_TO_ADDRESS.SHIP_TO"/>
+                  <traversal>
+                     <traverse ref="Bank_Details_Form[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Invoicenote" w="203.2mm" y="117.082mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.1mm"/>
+                  <corner thickness="0.1mm"/>
+               </border>
+               <draw h="4.875mm" name="shiptotext" w="203.2mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="906AEE42-3868-41FE-A096-A8E2FD512838">Notes:</text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.8mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <?renderCache.bounds 572315 10985 0 0 2268 1417 0 0?>
+                  <?renderCache.textRun 6 Notes: 0 2268 8523 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <field minH="4.65mm" name="Note" w="203.2mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="1.5mm"/>
+                  <bind match="dataRef" ref="$record.S_VBBK_0008.S_VBBK_0008_TEXT"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden" thickness="0.2mm"/>
+                     <corner presence="hidden" thickness="0.2mm"/>
+                  </border>
+                  <traversal>
+                     <traverse ref="Items_Form[0]"/>
+                  </traversal>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="shiptotext[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" minH="8mm" name="Taxid_Custserv_Form" y="20.275mm">
+               <bind match="none"/>
+               <subform layout="lr-tb" name="texid" presence="invisible">
+                  <bind match="none"/>
+                  <field h="4mm" name="client_number_txt" w="17mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$record.TEXT.PONUMBER"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <caption reserve="0mm">
+                        <value>
+                           <text xliff:rid="842E180B-9D1F-41A8-BF0A-1F3635341666">Tax ID No:</text>
+                        </value>
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <field anchorType="bottomLeft" minH="4mm" minW="30mm" name="TAX_ID">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$record.V_TAX_ID"/>
+                     <desc>
+                        <text name="Schema Annotation">Parameter value</text>
+                     </desc>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="48"/>
+                     </value>
+                     <caption>
+                        <value>
+                           <text xliff:rid="2694AE13-1DD4-4F8E-A10A-608E48CDD167"/>
+                        </value>
+                     </caption>
+                  </field>
+                  <traversal>
+                     <traverse operation="first" ref="client_number_txt[0]"/>
+                  </traversal>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="lr-tb" name="cust_serv_id">
+                  <bind match="none"/>
+                  <field h="4mm" name="cust_number_txt" w="30mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <caption reserve="0mm">
+                        <value>
+                           <text xliff:rid="784CFC5E-16C7-46DB-ACFF-4A98E459256C">Customer Service:</text>
+                        </value>
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <field minH="4mm" minW="50mm" name="cust_serv_id">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$record.V_CUSTOMER_SERVICE"/>
+                     <desc>
+                        <text name="Schema Annotation">Customer purchase order number</text>
+                     </desc>
+                     <para vAlign="middle"/>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <traversal>
+                  <traverse ref="terms[0]"/>
+                  <traverse operation="first" ref="texid[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Header_Data" w="84.668mm" x="116.367mm" y="1.225mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.2mm"/>
+                  <corner thickness="0.2mm"/>
+               </border>
+               <traversal>
+                  <traverse ref="#draw[2]"/>
+                  <traverse operation="first" ref="Subform1[0]"/>
+               </traversal>
+               <subform layout="tb" name="Header_Data" w="84.55mm">
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse operation="first" ref="Pick_Pack_No_Form[0]"/>
+                  </traversal>
+                  <subform layout="lr-tb" minH="12.7mm" name="Pick_Pack_No_Form">
+                     <bind match="none"/>
+                     <field h="6.35mm" name="Delivery_Number" w="84.55mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="12pt" typeface="Calibri" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.V_PICK_PACK_NO"/>
+                        <traversal>
+                           <traverse ref="Subform5[0].PO_NO[0].PO_Value[0]"/>
+                        </traversal>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="219,219,219"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <event activity="initialize" name="event__initialize">
+                           <script contentType="application/x-javascript">if( V_OUTPUT_TYPE.rawValue == 'ZWPP' )
+{
+ Packing_Slip_Text.presence = "hidden";
+ }
+else if( V_OUTPUT_TYPE.rawValue == 'ZWPA' )
+{
+ Picking_Ticket_Text.presence = "hidden";
+ }
+
+</script>
+                        </event>
+                     </field>
+                     <traversal>
+                        <traverse ref="Subform5[0].PO_NO[0].PO_Value[0]"/>
+                        <traverse operation="first" ref="Delivery_Number[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="lr-tb" name="Client_Number_Form">
+                     <bind match="none"/>
+                     <field h="4mm" minW="24mm" name="client_number_txt">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$record.TEXT.PONUMBER"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption reserve="0mm">
+                           <value>
+                              <text xliff:rid="DE430DAF-10D9-4823-B589-A0BBB9B39F58">Client Number:</text>
+                           </value>
+                           <para vAlign="middle"/>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="43.9mm" name="ClientNumber">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$record.V_CLIENT"/>
+                        <desc>
+                           <text name="Schema Annotation">Customer purchase order number</text>
+                        </desc>
+                        <para vAlign="middle"/>
+                        <traversal>
+                           <traverse ref="Req_Shping_Date_Form[0]"/>
+                        </traversal>
+                     </field>
+                     <traversal>
+                        <traverse operation="first" ref="client_number_txt[0]"/>
+                        <traverse ref="Req_Shping_Date_Form[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="lr-tb" name="Req_Shping_Date_Form">
+                     <bind match="none"/>
+                     <field h="4mm" minW="27mm" name="Date_number_txt">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="none"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption>
+                           <value>
+                              <text xliff:rid="7E932878-9786-4156-9CAC-D9041E8FD75C">Requested Shipping Date:</text>
+                           </value>
+                           <para vAlign="middle"/>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="43.9mm" name="date">
+                        <ui>
+                           <dateTimeEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </dateTimeEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <date/>
+                        </value>
+                        <bind match="dataRef" ref="$record.DELIVERYHEADER.WADAT"/>
+                        <desc>
+                           <text name="Schema Annotation">Customer purchase order number</text>
+                        </desc>
+                        <format>
+                           <picture>zero{}|date{MM/DD/YYYY}</picture>
+                        </format>
+                        <traversal>
+                           <traverse ref="terms[0]"/>
+                        </traversal>
+                     </field>
+                     <traversal>
+                        <traverse operation="first" ref="Date_number_txt[0]"/>
+                        <traverse ref="terms[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="tb" name="PO_No_Form" presence="hidden" w="82.55mm">
+                     <bind match="none"/>
+                     <subform layout="lr-tb" name="PO_NO">
+                        <bind match="none"/>
+                        <field h="4mm" minW="27mm" name="PO_text">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html" maxLength="255"/>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption>
+                              <value>
+                                 <text xliff:rid="D7D7BC38-4575-4C84-BFEA-2E8B6C14A580"> PO Number</text>
+                              </value>
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <field h="4mm" minW="1mm" name="Extra_txt">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="0.5419mm">
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text xliff:rid="BA90192B-A191-4CAE-872A-99A05ADA2717">:</text>
+                              </value>
+                           </caption>
+                           <traversal>
+                              <traverse ref="CustomerVAT[0]"/>
+                           </traversal>
+                        </field>
+                        <field h="4mm" name="PO_Value" w="56mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$record.DELIVERYHEADER.BSTKD"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <para vAlign="middle"/>
+                           <traversal>
+                              <traverse ref="Billto[0]"/>
+                           </traversal>
+                        </field>
+                        <traversal>
+                           <traverse operation="first" ref="PO_text[0]"/>
+                        </traversal>
+                        <?templateDesigner expand 1?></subform>
+                     <traversal>
+                        <traverse operation="first" ref="PO_NO[0]"/>
+                        <traverse ref="CustomerVAT[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="lr-tb" name="ShipMethod" w="84.55mm">
+                     <bind match="none"/>
+                     <field h="4mm" minW="28mm" name="ShippingMethod">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0mm">
+                           <para vAlign="middle"/>
+                           <value>
+                              <text xliff:rid="F82B2E99-7F6F-4A96-A29F-85D6B892D0B8">Shipping Method:</text>
+                           </value>
+                        </caption>
+                        <bind match="none"/>
+                        <value>
+                           <exData contentType="text/html"/>
+                        </value>
+                     </field>
+                     <field h="4mm" minW="43.9mm" name="SHIP_METHOD">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.DELIVERYHEADER.VSBED_BEZ"/>
+                        <desc>
+                           <text name="Schema Annotation">Description of the shipping conditions</text>
+                        </desc>
+                        <traversal>
+                           <traverse ref="Picking_Ticket[0].Delivery_Number[0]"/>
+                        </traversal>
+                     </field>
+                     <traversal>
+                        <traverse ref="Picking_Ticket[0].Delivery_Number[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <extras>
+                  <text name="insertionPoint"/>
+               </extras>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="7.351mm" name="Remit_To_From" presence="invisible" w="53.975mm" x="118.485mm" y="45.724mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <traversal>
+                  <traverse operation="first" ref="Remit_to[0]"/>
+                  <traverse ref="PaymentPortal[0]"/>
+               </traversal>
+               <draw name="RemitToText" presence="invisible" w="2.125in" y="0mm">
+                  <value>
+                     <text xliff:rid="E6D6C4A4-7BAE-4553-98DD-2C8E3ECD5039">Remit Payment To:</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <font size="9pt" typeface="Arial" underline="1" weight="bold"/>
+                  <traversal>
+                     <traverse ref="PaymentPortal[0]"/>
+                  </traversal>
+               </draw>
+               <field minH="4mm" minW="50.8mm" name="Remit_to" presence="invisible" y="3.175mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0.5002mm" leftInset="0.5002mm" rightInset="0.5002mm" topInset="0.5002mm"/>
+                  <bind match="dataRef" ref="$record.REMIT_TO"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <traversal>
+                     <traverse ref="Shipto[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" minH="12.7mm" name="PaymentPortal" presence="invisible" w="66.675mm" x="118.485mm" y="64.774mm">
+               <bind match="none"/>
+               <draw minH="1mm" name="Wiley_Portal_text" w="53.975mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="1417E8CB-2527-464B-B58C-8A5E874B85A8">Wiley Payment Portal:</text>
+                  </value>
+                  <font size="9pt" typeface="Arial" underline="1" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <traversal>
+                     <traverse ref="WILEY_PORTAL[0]"/>
+                  </traversal>
+               </draw>
+               <field minH="5.175mm" minW="66.675mm" name="WILEY_PORTAL">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.PAYMENT_PORTAL_TEXT"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZQTC_WILEY_PORTAL_F049 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="Wiley_Portal_text[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="7.351mm" name="Bank_Details_Form" presence="invisible" w="53.975mm" x="118.485mm" y="91.349mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <draw minH="1mm" name="BankDetailsText" w="51.81mm" x="0.005mm">
+                  <value>
+                     <text xliff:rid="0E4FE5F6-B9A5-44C1-8849-C06CFD47A48D">Bank Details:</text>
+                  </value>
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <font size="9pt" typeface="Arial" underline="1" weight="bold"/>
+                  <traversal>
+                     <traverse ref="BankDetails[0]"/>
+                  </traversal>
+                  <para vAlign="middle"/>
+               </draw>
+               <traversal>
+                  <traverse ref="Invoicenote[0]"/>
+                  <traverse operation="first" ref="BankDetailsText[0]"/>
+               </traversal>
+               <field minH="4.176mm" minW="53.975mm" name="BankDetails" y="4.182mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0.5002mm" leftInset="0.5002mm" rightInset="0.5002mm" topInset="0.5002mm"/>
+                  <bind match="dataRef" ref="$record.BANK_INFO"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <traversal>
+                     <traverse ref="Invoicenote[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 1?></subform>
+         <subform layout="tb" minH="47.62mm" name="Items_Form" w="202.946mm">
+            <bind match="none"/>
+            <traversal>
+               <traverse ref="subtotal[0]"/>
+               <traverse operation="first" ref="Items_Form[0]"/>
+            </traversal>
+            <subform layout="tb" name="Items_Form" w="202.946mm">
+               <bind match="none"/>
+               <field h="9mm" hAlign="right" name="blankline" w="202.946mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse ref="I_final[0]"/>
+                  </traversal>
+               </field>
+               <subform columnWidths="53.2mm 68.833mm 25mm 25mm 29.886mm" hAlign="center" id="ITM_GEN_ID" layout="table" name="I_final">
+                  <subform id="overflowLeader_ID_copy1" layout="row" name="overflowLeader" y="0mm">
+                     <draw minH="6.493mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="F62C8288-827D-4398-9B02-10CA10E18D7C">Material Number</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                           <edge thickness="0.1mm"/>
+                           <edge thickness="0.1mm"/>
+                           <edge thickness="0.2mm"/>
+                           <corner thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                           <corner thickness="0.2mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.493mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="FE484769-E649-4D88-8EDA-192A4581C20A">Description</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.493mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="E021145C-3943-4EB4-A17B-06A735FF974F">Ordered</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.493mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="B062ACCC-430B-4692-B07C-7CEBEDABF1AF">UoM</text>
+                        </value>
+                        <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                        <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.493mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="7D2ED07E-D6A9-4D10-833F-C0B02A832994">Shipped</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <assist role="TH"/>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <traversal>
+                        <traverse operation="first" ref="#draw[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="DATA" y="0mm">
+                     <field minH="5mm" name="Material_Number" w="62mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="70"/>
+                        </value>
+                        <bind match="dataRef" ref="$.OLD_MAT"/>
+                        <desc>
+                           <text name="Schema Annotation">Item</text>
+                        </desc>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </field>
+                     <field minH="5mm" name="Description" w="62mm" x="2.440944in">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="150"/>
+                        </value>
+                        <bind match="dataRef" ref="$.MAT_DES"/>
+                        <desc>
+                           <text name="Schema Annotation">Description</text>
+                        </desc>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </field>
+                     <field minH="5mm" name="Ordered" w="62mm" x="4.881889in">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="0mm" rightInset="0mm" topInset="1.0008mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.ORDERED">
+                           <picture>text{99999-9999}|text{99999}</picture>
+                        </bind>
+                        <desc>
+                           <text name="Schema Annotation">Students</text>
+                        </desc>
+                        <validate>
+                           <picture>text{99-9999999}</picture>
+                        </validate>
+                        <format>
+                           <picture>zero{}|num{z,zzz,zzz,zz9}</picture>
+                        </format>
+                     </field>
+                     <field minH="5mm" w="62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.VRKME"/>
+                     </field>
+                     <field minH="5mm" name="Shipped" w="62mm" y="0.354333in">
+                        <ui>
+                           <numericEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.SHIPPED"/>
+                        <desc>
+                           <text name="Schema Annotation">Subtotal 1 from pricing procedure for condition</text>
+                        </desc>
+                        <format>
+                           <picture>zero{}|num{z,zzz,zzz,zz9}</picture>
+                        </format>
+                        <validate nullTest="error"/>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:ffffff, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 1?></subform>
+                  <occur max="10"/>
+                  <bind match="dataRef" ref="$record.I_FINAL"/>
+                  <desc>
+                     <text name="Schema Annotation">Table type for LH/OPM Invoice Item Data</text>
+                  </desc>
+                  <overflow leader="overflowLeader" target="Page1"/>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:ffffff, nextcolor:ffffff, apply:0?>
+                  <border>
+                     <edge thickness="0.2mm"/>
+                     <corner thickness="0.2mm"/>
+                  </border>
+                  <keep previous="contentArea"/>
+                  <breakAfter/>
+                  <?templateDesigner expand 0?></subform>
+               <traversal>
+                  <traverse operation="first" ref="blankline[0]"/>
+               </traversal>
+               <breakBefore target="Page1" targetType="pageArea"/>
+               <breakAfter/>
+               <overflow target="Page1"/>
+               <?templateDesigner expand 1?></subform>
+            <overflow target="Page1"/>
+            <?templateDesigner expand 0?></subform>
+         <traversal>
+            <traverse ref="LOCAL_VAL[0]"/>
+            <traverse operation="first" ref="Header_Form[0]"/>
+         </traversal>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 000300060029003300370044004700480049004A004C004F00520057005B #FPTadefgilotx?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 148 37 0003001D002500260027002C00300031003200330035003600370038003A00440045004600470048004A004B004C004E004F0050005100520053005400550056005700580059005B005C :BCDIMNOPRSTUWabcdeghiklmnopqrstuvxy?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 40 10 0013001400150016001700180019001A001B001C0123456789?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 76?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri-Bold" typeface="Calibri" weight="bold"/>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_WLS_PIK_PAK">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <V_OUTPUT_TYPE/>
+         <V_STRING/>
+         <WIILEY_LOGO/>
+         <S_SALES_ORG>
+            <NAME/>
+            <ADRNR/>
+            <HOUSE1/>
+            <STREET/>
+            <CITY1/>
+            <REG/>
+            <POST1/>
+            <CTRY/>
+            <SALES_ORG/>
+         </S_SALES_ORG>
+         <V_PICK_PACK_NO/>
+         <V_TAX_ID/>
+         <V_CUSTOMER_SERVICE/>
+         <S_BILL_TO_ADDRESS>
+            <NAME/>
+            <ADRNR/>
+            <HOUSE1/>
+            <STREET/>
+            <CITY1/>
+            <REG/>
+            <POST1/>
+            <CTRY/>
+            <BILL_TO/>
+         </S_BILL_TO_ADDRESS>
+         <S_SHIP_TO_ADDRESS>
+            <NAME/>
+            <ADRNR/>
+            <HOUSE1/>
+            <STREET/>
+            <CITY1/>
+            <REG/>
+            <POST1/>
+            <CTRY/>
+            <SHIP_TO/>
+         </S_SHIP_TO_ADDRESS>
+         <REMIT_PAYMENT_TO/>
+         <REMIT_TO/>
+         <PAYMENT_PORTAL/>
+         <PAYMENT_PORTAL_TEXT/>
+         <BANK/>
+         <BANK_INFO/>
+         <S_VBBK_0008>
+            <TEXT_NAME/>
+            <TEXT_OBJECT/>
+            <TEXT_ID/>
+            <LANG/>
+            <S_VBBK_0008_TEXT dd:minOccur="0" dd:nullType="exclude"/>
+         </S_VBBK_0008>
+         <DELIVERYHEADER>
+            <ADRDA/>
+            <ANRED/>
+            <NAME1/>
+            <NAME2/>
+            <NAME3/>
+            <NAME4/>
+            <STRAS/>
+            <PFACH/>
+            <PFORT/>
+            <PSTL2/>
+            <LAND1/>
+            <SPRAS/>
+            <PSTLZ/>
+            <ORT01/>
+            <ORT02/>
+            <REGIO/>
+            <LZONE/>
+            <SPRAS_VST/>
+            <VSTEL_BEZ/>
+            <ADRNR_VST/>
+            <ADRDA_VST/>
+            <TELF1_VST/>
+            <ROUTE_BEZ/>
+            <BSTNK/>
+            <BSTDK/>
+            <BSTZD/>
+            <IHREZ/>
+            <VBELN_VAUF/>
+            <AUDAT_VAUF/>
+            <VGBEL/>
+            <VGTYP/>
+            <HERKL/>
+            <LLAND/>
+            <ALAND/>
+            <SLAND/>
+            <ANRED_WE/>
+            <NAME1_WE/>
+            <NAME2_WE/>
+            <NAME3_WE/>
+            <NAME4_WE/>
+            <STRAS_WE/>
+            <PFACH_WE/>
+            <PFORT_WE/>
+            <PSTL2_WE/>
+            <LAND1_WE/>
+            <SPRAS_WE/>
+            <PSTLZ_WE/>
+            <ORT01_WE/>
+            <ORT02_WE/>
+            <REGIO_WE/>
+            <KNREF_WE/>
+            <VSBED_BEZ/>
+            <INCO1_BEZ/>
+            <BRGEW/>
+            <TDNAME/>
+            <ANRED_AG/>
+            <NAME1_AG/>
+            <NAME2_AG/>
+            <NAME3_AG/>
+            <NAME4_AG/>
+            <STRAS_AG/>
+            <PFACH_AG/>
+            <PFORT_AG/>
+            <PSTL2_AG/>
+            <LAND1_AG/>
+            <SPRAS_AG/>
+            <PSTLZ_AG/>
+            <ORT01_AG/>
+            <ORT02_AG/>
+            <REGIO_AG/>
+            <KNREF_AG/>
+            <ADRNR_AG/>
+            <ADRNP_AG/>
+            <ADDRESS_TYPE_AG/>
+            <ADRNR_WE/>
+            <ADRNP_WE/>
+            <ADDRESS_TYPE_WE/>
+            <ADRNR_SP/>
+            <ADRNP_SP/>
+            <ADDRESS_TYPE_SP/>
+            <ADRNR/>
+            <ADRNP/>
+            <ADDRESS_TYPE/>
+            <ANRED_SP/>
+            <NAME1_SP/>
+            <NAME2_SP/>
+            <NAME3_SP/>
+            <NAME4_SP/>
+            <STRAS_SP/>
+            <PFACH_SP/>
+            <PFORT_SP/>
+            <PSTL2_SP/>
+            <LAND1_SP/>
+            <SPRAS_SP/>
+            <PSTLZ_SP/>
+            <ORT01_SP/>
+            <ORT02_SP/>
+            <REGIO_SP/>
+            <KNREF_SP/>
+            <ADRDA_LF/>
+            <KUNWE/>
+            <SPDNR/>
+            <KUNRE/>
+            <AEZET/>
+            <EXPVZ_BEZ/>
+            <EXPVZ/>
+            <ZOLLA/>
+            <ZOLLB/>
+            <ZOLL1/>
+            <ZOLL2/>
+            <ZOLL3/>
+            <ZOLL4/>
+            <ZOLL5/>
+            <ZOLL6/>
+            <KZGBE/>
+            <KZABE/>
+            <STGBE/>
+            <STABE/>
+            <GRWCU/>
+            <VSART_BEZ/>
+            <EIKTO/>
+            <ADRDA_AG/>
+            <ADRDA_WE/>
+            <ADRDA_SP/>
+            <VBRST/>
+            <USR01_VBLB/>
+            <USR02_VBLB/>
+            <USR03_VBLB/>
+            <USR04_VBLB/>
+            <USR05_VBLB/>
+            <LABNK/>
+            <ABRDT/>
+            <SPRAS_VKO/>
+            <VKORG_BEZ/>
+            <ADRNR_VKO/>
+            <ADRDA_VKO/>
+            <TELF1_VKO/>
+            <IRN1/>
+            <BSTKD/>
+            <BSARK/>
+            <BSTKD_E/>
+            <BSTDK_E/>
+            <BSARK_E/>
+            <IHREZ_E/>
+            <STCD1_WE/>
+            <STCD2_WE/>
+            <STCD3_WE/>
+            <STCD4_WE/>
+            <STCD5_WE/>
+            <STKZN_WE/>
+            <STCDT_WE/>
+            <FITYP_WE/>
+            <J_1KFREPRE/>
+            <J_1KFTBUS/>
+            <J_1KFTIND/>
+            <STCD1_SP/>
+            <STCD2_SP/>
+            <STCD3_SP/>
+            <STCD4_SP/>
+            <STCD5_SP/>
+            <STKZN_SP/>
+            <STCDT_SP/>
+            <FITYP_SP/>
+            <BUKRS/>
+            <VBKLT/>
+            <QMNUM/>
+            <QMDAT/>
+            <FITYP_BU/>
+            <FITPT_BU/>
+            <STCD1_BU/>
+            <STCD2_BU/>
+            <STC2T_BU/>
+            <STCDT_BU/>
+            <PRACD_BU/>
+            <VDPCD_BU/>
+            <FOUDT_BU/>
+            <FORID_WE/>
+            <STC2T_WE/>
+            <FORID_SP/>
+            <STC2T_SP/>
+            <VBELN_VF/>
+            <XBLNR_VF/>
+            <MANDT/>
+            <VBELN/>
+            <ERNAM/>
+            <ERZET/>
+            <ERDAT/>
+            <BZIRK/>
+            <VSTEL/>
+            <VKORG/>
+            <LFART/>
+            <AUTLF/>
+            <KZAZU/>
+            <WADAT/>
+            <LDDAT/>
+            <TDDAT/>
+            <LFDAT/>
+            <KODAT/>
+            <ABLAD/>
+            <INCO1/>
+            <INCO2/>
+            <EXPKZ/>
+            <ROUTE/>
+            <FAKSK/>
+            <LIFSK/>
+            <VBTYP/>
+            <KNFAK/>
+            <TPQUA/>
+            <TPGRP/>
+            <LPRIO/>
+            <VSBED/>
+            <KUNNR/>
+            <KUNAG/>
+            <KDGRP/>
+            <STZKL/>
+            <STZZU/>
+            <BTGEW/>
+            <NTGEW/>
+            <GEWEI/>
+            <VOLUM/>
+            <VOLEH/>
+            <ANZPK/>
+            <BEROT/>
+            <LFUHR/>
+            <GRULG/>
+            <LSTEL/>
+            <TRAGR/>
+            <FKARV/>
+            <FKDAT/>
+            <PERFK/>
+            <ROUTA/>
+            <STAFO/>
+            <KALSM/>
+            <KNUMV/>
+            <WAERK/>
+            <VKBUR/>
+            <VBEAK/>
+            <ZUKRL/>
+            <VERUR/>
+            <COMMN/>
+            <STWAE/>
+            <STCUR/>
+            <EXNUM/>
+            <AENAM/>
+            <AEDAT/>
+            <LGNUM/>
+            <LISPL/>
+            <VKOIV/>
+            <VTWIV/>
+            <SPAIV/>
+            <FKAIV/>
+            <PIOIV/>
+            <FKDIV/>
+            <KUNIV/>
+            <KKBER/>
+            <KNKLI/>
+            <GRUPP/>
+            <SBGRP/>
+            <CTLPC/>
+            <CMWAE/>
+            <AMTBL/>
+            <BOLNR/>
+            <LIFNR/>
+            <TRATY/>
+            <TRAID/>
+            <CMFRE/>
+            <CMNGV/>
+            <XABLN/>
+            <BLDAT/>
+            <WADAT_IST/>
+            <TRSPG/>
+            <TPSID/>
+            <LIFEX/>
+            <TERNR/>
+            <KALSM_CH/>
+            <KLIEF/>
+            <KALSP/>
+            <KNUMP/>
+            <NETWR/>
+            <AULWE/>
+            <WERKS/>
+            <LCNUM/>
+            <ABSSC/>
+            <KOUHR/>
+            <TDUHR/>
+            <LDUHR/>
+            <WAUHR/>
+            <LGTOR/>
+            <LGBZO/>
+            <AKWAE/>
+            <AKKUR/>
+            <AKPRZ/>
+            <PROLI/>
+            <XBLNR/>
+            <HANDLE/>
+            <TSEGFL/>
+            <TSEGTP/>
+            <TZONIS/>
+            <TZONRC/>
+            <CONT_DG/>
+            <VERURSYS/>
+            <KZWAB/>
+            <VLSTK/>
+            <TCODE/>
+            <VSART/>
+            <TRMTYP/>
+            <SDABW/>
+            <VBUND/>
+            <XWOFF/>
+            <DIRTA/>
+            <PRVBE/>
+            <FOLAR/>
+            <PODAT/>
+            <POTIM/>
+            <VGANZ/>
+            <IMWRK/>
+            <SPE_LOEKZ/>
+            <SPE_LOC_SEQ/>
+            <SPE_ACC_APP_STS/>
+            <SPE_SHP_INF_STS/>
+            <SPE_RET_CANC/>
+            <SPE_WAUHR_IST/>
+            <SPE_WAZONE_IST/>
+            <SPE_REV_VLSTK/>
+            <SPE_LE_SCENARIO/>
+            <SPE_ORIG_SYS/>
+            <SPE_CHNG_SYS/>
+            <SPE_GEOROUTE/>
+            <SPE_GEOROUTEIND/>
+            <SPE_CARRIER_IND/>
+            <SPE_GTS_REL/>
+            <SPE_GTS_RT_CDE/>
+            <SPE_REL_TMSTMP/>
+            <SPE_UNIT_SYSTEM/>
+            <SPE_INV_BFR_GI/>
+            <SPE_QI_STATUS/>
+            <SPE_RED_IND/>
+            <SAKES/>
+            <SPE_LIFEX_TYPE/>
+            <SPE_TTYPE/>
+            <SPE_PRO_NUMBER/>
+            <LOC_GUID/>
+            <SPE_BILLING_IND/>
+            <PRINTER_PROFILE/>
+            <MSR_ACTIVE/>
+            <PRTNR/>
+            <STGE_LOC_CHANGE/>
+            <TM_CTRL_KEY/>
+            <DLV_SPLIT_INITIA/>
+            <DLV_VERSION/>
+            <HANDOVERLOC/>
+            <HANDOVERDATE/>
+            <HANDOVERTIME/>
+            <HANDOVERTZONE/>
+            <INCOV/>
+            <INCO2_L/>
+            <INCO3_L/>
+            <XBEV1XLULEINH/>
+            <XBEV1XRPFAESS/>
+            <XBEV1XRPKIST/>
+            <XBEV1XRPCONT/>
+            <XBEV1XRPSONST/>
+            <XBEV1XRPFLGNR/>
+            <BORGR_GRP/>
+            <ZZWHS/>
+            <MSR_ID/>
+            <DUMMY/>
+            <INCO2_L_LBL/>
+            <INCO3_L_LBL/>
+            <BSTOB/>
+            <XBEV1XRPORDTYP/>
+            <XBEV1XRPMNGLI/>
+            <XBEV1XRPAUSLA/>
+            <XBEV1XRPKAPUNIT/>
+            <XBEV1XRPGEWNL/>
+            <XBEV1XRPWESTR/>
+         </DELIVERYHEADER>
+         <I_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <OLD_MAT/>
+               <MAT_DES/>
+               <ORDERED/>
+               <SHIPPED/>
+               <VRKME/>
+            </DATA>
+         </I_FINAL>
+         <I_EMAIL_ADDRESSES dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EMAIL_ADDR/>
+            </DATA>
+         </I_EMAIL_ADDRESSES>
+         <S_PLANT_ADDRESS/>
+         <TEST_REF_DOC/>
+         <V_BAR_CODE/>
+         <V_CLIENT/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2020-10-21T14:41:29Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 10.4</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 10.4</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:2eae8778-5d8c-4c51-ad2d-ef18c5175844</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCE_INVOICE_OUTPUT_PQ_E170</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Year:</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Wiley Invoice</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Wiley#</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>Enhancement E170 is not active</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Wiley</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Execution Type</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>User Inputs</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S04</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Invoice list output for large orders from PQ</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_BATCH</KEY>
+     <ENTRY>Batch Run</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_ONLI</KEY>
+     <ENTRY>Manual Run</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>27</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BSTNK</KEY>
+     <ENTRY>Purchase Order number</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ERDAT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>18</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ERZET</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>12</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_FKART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>20</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VBELN</KEY>
+     <ENTRY>Invoice Documents</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

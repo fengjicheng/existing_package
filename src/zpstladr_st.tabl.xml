@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZPSTLADR_ST</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>PstlAdr</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>STRTNM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000100</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000050</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>StrtNm</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>PSTCD</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000060</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000030</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>PstCd</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>TWNNM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000060</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000030</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>TwnNm</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>CTRY</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000040</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000020</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>Ctry</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADRLINE1</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000080</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>AdrLine</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADRLINE2</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000080</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000040</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>AdrLine</DDTEXT>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

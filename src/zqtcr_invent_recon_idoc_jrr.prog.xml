@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_INVENT_RECON_IDOC_JRR</NAME>
+    <SUBC>1</SUBC>
+    <APPL>*</APPL>
+    <SECU>ZINVJRR</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>General Information</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Purchasing</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Goods Movement</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Interface Relevant</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M01</KEY>
+     <ENTRY>MSG NO</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M02</KEY>
+     <ENTRY>MSG ID</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M03</KEY>
+     <ENTRY>IDOC NO</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M04</KEY>
+     <ENTRY>ADJ Typ</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M05</KEY>
+     <ENTRY>Material No</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M06</KEY>
+     <ENTRY>Plant</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M07</KEY>
+     <ENTRY>PO NO</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M08</KEY>
+     <ENTRY>Item No</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M09</KEY>
+     <ENTRY>Material Do No(GR/GI)</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M10</KEY>
+     <ENTRY>Source File</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M11</KEY>
+     <ENTRY>Message</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M12</KEY>
+     <ENTRY>Table is locked.No entry will be processed.</ENTRY>
+     <LENGTH>86</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M13</KEY>
+     <ENTRY>No PO Available for this Material Plant Combination</ENTRY>
+     <LENGTH>102</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M14</KEY>
+     <ENTRY>Open PO quantity is less than total RCPT quantity</ENTRY>
+     <LENGTH>98</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M15</KEY>
+     <ENTRY>Date is not in current posting period</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M16</KEY>
+     <ENTRY>There is failed idoc for this material plant combination</ENTRY>
+     <LENGTH>112</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M17</KEY>
+     <ENTRY>Multiple Vendor exists for this material plant combination</ENTRY>
+     <LENGTH>116</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Inventory Reconcilliation JRR Idoc</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ACC</KEY>
+     <ENTRY>Account Assignment Category</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ADJ</KEY>
+     <ENTRY>Adjustment Type</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DOC</KEY>
+     <ENTRY>Document Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_GM_C</KEY>
+     <ENTRY>GM Code</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MOV</KEY>
+     <ENTRY>Movement Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MOV_I</KEY>
+     <ENTRY>Movement Indicator</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PO_H</KEY>
+     <ENTRY>PO history</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SLOC</KEY>
+     <ENTRY>Storage Location</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_UOM</KEY>
+     <ENTRY>Unit of Measurement</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCR_INVENT_RECON_IDOC_JRR</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCR_INVENT_RECON_IDOC_JRR</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To generate an GR idoc for adjustment type &apos;JRR&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Selection from ZQTC_INVEN_RECON, EKPO &amp; EKBE</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>IDOC is generated and the IDOC number is updated in table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZQTC_INVEN_RECON</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>NA</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

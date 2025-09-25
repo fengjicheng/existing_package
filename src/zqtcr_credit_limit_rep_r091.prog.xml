@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_CREDIT_LIMIT_REP_R091</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <SECU>ZCRDEXPO</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Invalid Product/Material number</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Invalid Plant</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Material ID</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Material Description (Product Level)</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Title (Product Level)</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Material Type</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Plant</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>No data found!</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>File processed at</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>successfully</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Customer</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Name</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>Postal Code and City</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>Country key</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Company Code</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Payment Terms(BP)</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>Payment Method(BP)</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Credit Limit</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>Available Credit Limit</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>Credit Exposure</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Credit Segment</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>Blocked in credit management</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>Subscription/Contract ID</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>Order/Contract Type</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>025</KEY>
+     <ENTRY>Terms of Payment(order)</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>026</KEY>
+     <ENTRY>Payment method(Order)</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>027</KEY>
+     <ENTRY>Document Currency</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>028</KEY>
+     <ENTRY>Reason for cancellation</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>029</KEY>
+     <ENTRY>Date of cancellation</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>030</KEY>
+     <ENTRY>Rejection status</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>031</KEY>
+     <ENTRY>No data found for given inputs!</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>032</KEY>
+     <ENTRY>Yes</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>033</KEY>
+     <ENTRY>No</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>034</KEY>
+     <ENTRY>Payment Method Desc(BP)</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>035</KEY>
+     <ENTRY>Payment Terms Desc(BP)</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>036</KEY>
+     <ENTRY>Rejection status Desc</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>037</KEY>
+     <ENTRY>Reason for Cancl. Desc</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>038</KEY>
+     <ENTRY>Terms of Payment(order) Desc</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>039</KEY>
+     <ENTRY>Payment method(Order) Desc</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>040</KEY>
+     <ENTRY>Invalid Company code!</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>041</KEY>
+     <ENTRY>Invalid Business Partner!</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>042</KEY>
+     <ENTRY>Cr Limit Curr</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>043</KEY>
+     <ENTRY>Customer Credit Limit/Exposure Report</ENTRY>
+     <LENGTH>74</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>044</KEY>
+     <ENTRY>Date &amp; Time :</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>045</KEY>
+     <ENTRY>Nothing Rejected</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>046</KEY>
+     <ENTRY>Partially Rejected</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>047</KEY>
+     <ENTRY>Completely Rejected</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B01</KEY>
+     <ENTRY>Selection Creteria....</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>,</ENTRY>
+     <LENGTH>2</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>Q01</KEY>
+     <ENTRY>&apos;</ENTRY>
+     <LENGTH>2</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Customer Credit Limit / Exposure Report</ENTRY>
+     <LENGTH>39</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_BLOCK</KEY>
+     <ENTRY>Blocked in Credit Management</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BUKRS</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_CANCEL</KEY>
+     <ENTRY>Reason for cancellation</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_CLDATE</KEY>
+     <ENTRY>Date of  Doc cancellation</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KUNNR</KEY>
+     <ENTRY>Business Partner</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_LAND1</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_REJECT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SEGMNT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>9</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCR_CREDIT_LIMIT_REP_R091</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0009</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00116</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCR_CREDIT_LIMIT_REP_R091</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00009</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>This program updates credit and collection management data using custom</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table maintenance</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>It updates default Risk Class, Check Rule, Credit limit, Collection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>group, Collection specialist and Accounting clerk for Customers based on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Credit Customer Group automatically.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>If the customer Credit and Collection roles are not created, then Use</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>defaults for custom table to Create the Credit and Collection Roles.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Company code on selection screen &amp; Credit group for LH scenario.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Maintain the custom config tables entries.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>a) ZRTR_DEF_CREDIT- Default Credit Master Fields.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>b) ZRTR_COLL_ASSIGN- Default Collection Segment details.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Updating the credit and collection management data for customers using</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>custom table maintenance defaults</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Company code is mandatory.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Credit group is needed for LH scenario for creating the credit and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>collection management data for the customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Creation date can be determined in case of batch job scenario - it get</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the date based on last batch job run date</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>using variant name. This variant name should be configured for each</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>company code in ZCACONSTANT for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>DEV ID E191 and parameter PARAM1 equal to VARIANT and low should be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>variant name.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Creating credit and collection management data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Updating collection management data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Program Name: ZRTRR_BP_CRDT_COLL_DFLTS_E191</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Transaction code: ZRTR_CRDT_COLL_DEF</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>1),,Added the validations for each selection parameter and select option</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>on the selection screen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>2),,Having a separate perform f_get_cutsomers_data to get the required</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data for customers in order to get the defaults data from custom tables</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>3),,Retrieve the Country and region for all customers from KNA1 based on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selection parameters customer range, company code &amp; creation data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>4),,In the above step, creation data can be determined in case of batch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>job as there is code in place to get the last batch job run date for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>getting the list of customers to be processed. (</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>f_fetch_last_batch_job_run)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>5),,In addition, get the customers company code data from KNB1 to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determine company code extension data and get the customers BP roles</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data from BUT100 to know the BP roles extension data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>6),,Get the default collection profile data of the customer using table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>udmbpprofile</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>7),,Each company code is assigned to one Credit segment as per current</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>config for Wiley. So, get the credit segment as below (Routine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>f_fetch_credit_segment)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>a),,First, get credit control area using Company code in the table T001</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>b),,And, then get the credit segment using Credit control area in the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table ukm_kkber2sgm</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>8),,Each company code also assigned to one collection Segment– (Routine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fetch_coll_sgement). So, retrieve the collection segment using BUKRS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>from table udm_sgmt_comp</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>9),,Get to the customer master sales data from KNVV to know the sales</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>org, distribution channel &amp; division to determine the default data from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>custom tables</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>10),, Credit Group – for first time BP creation it should be passed from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>section screen, but for existing BP which is already extended to credit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>and collection segments data then we could find from table ukmbp_cms</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>11),,And, get the credit and collection management data from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ukmbp_cms_sgm &amp; udmbpsegments to decide whether the selected customers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have already created with that data or not. So that we can decide to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>create or update credit and collection data for customers</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>12),,Once got all required data then looping KNVV entries and then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>collect the each customer credit &amp; collection segment, credit group,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>VKORG, VTWEG, SPART, LAND1 &amp; REGIO information into a separate internal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table to make the for all entries to fetch the credit and collection</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>management segment data from custom tables where the default values are</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>maintained.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>13),, We will have two internal tables</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>a),,i_crdt_sgm   - use it for getting the data from custom table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zrtr_def_credit</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>b),,i_coll_sgm – use it for getting the defaults data from custom table</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zrtr_coll_assign</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>14),, Using routine f_determine_bp_deflt_values retrieve the defaults</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data from custom config tables by making for all entries against above</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>internal tables (Step-13).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>And, collecting the defaults data for each customer in separate internal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tables</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>a) i_zrtr_def_credit - Default Credit Master Fields</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>b)i_zrtr_coll_assign - Default Collection Segment details</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>15),,Once data fetch is over, loop each customer and get the required</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>details using read statements and pass that data to FM</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZQTC_BP_CREDIT_COLLECTION_LH to create and update the credit and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>collection management segment data for customer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>16),, By looping KNA1, process each record as below.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>a),,Check BP is locked by user. If it is locked then skip that customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>update and log the message ( routine f_read_bp_lock), otherwise proceed</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>further with next BP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>b),,Append credit management data - f_append_credit_data&lt;(&gt;,&lt;)&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>i),,Check whether BP is extended to BP role UKM000 and if not, then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>extend it to Credit management BP role - routine f_add_bp_role</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>ii),,Validate credit segment is already existed for this customer – in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>routine f_check_credit_management.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>iii),, If it is existing, then skip BP update and continue with next</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customer, otherwise, create the credit segment data for the customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>using defaults data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>c),,Append collection management data - f_append_credit_data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>i),,Check whether BP is extended to BP role UDM000 and if not, then</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>extend it to Credit management BP role – routine f_add_bp_role</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>ii),,Validate collection segment is already existed for this customer –</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in routine f_check_coll_management.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>iii),, If it is not existing, and it has assigned single company code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>then create the collection management data for the customer using</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>defaults data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>iv),,Otherwise, if it is already have assigned more than one company</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>code and had collection management role extended &amp; collection profile</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>then update the BP with defaults data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>d),,Update the accounting clerk in routine f_upd_cust_com</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Pass the default clerk that has maintained for collection segment and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>update it for each customer on Company data &amp; Sales data using API</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>methods cmd_ei_api=&gt;maintain</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>e),,Call the FM ZQTC_BP_CREDIT_COLLECTION_LH to update the Credit and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>collection management data for the customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>f),,Based on check boxes of selection parameters we can pass credit and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>collection defaults data update to the FM</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

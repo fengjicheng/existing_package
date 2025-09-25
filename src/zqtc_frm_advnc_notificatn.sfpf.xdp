@@ -1,0 +1,1701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2021-05-31T13:41:39Z" uuid="24f55582-4e8c-48d2-9982-79d96ed27658">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="10.5in" w="8in" x="6.35mm"/>
+            <medium long="279.4mm" short="215.9mm" stock="letter"/>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="57.15mm" y="260.35mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="841A2AEE-BCE4-47BB-B9DC-84FFC338EC21">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="57.15mm" y="260.35mm">
+               <ui>
+                  <numericEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="D8249871-B56C-4421-9C02-028B8720D215">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw name="Pages" x="98.31mm" y="262.961mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="3CF49F53-8562-4AAD-926C-F08643303321">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <?templateDesigner expand 1?></pageArea>
+         <pageArea id="Page2_ID" name="Page2">
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <contentArea h="10.5in" w="8in" x="6.35mm"/>
+            <draw h="3.528mm" name="Pages" w="20.007mm" x="98.31mm" y="261.766mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="36D69040-E7A6-40BE-A539-0BF2AAFE647E">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField019169" name="CurrentPage" presence="hidden" w="55mm" x="184.15mm" y="514.35mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="B405F3FC-6CB3-4536-BF49-B5938A217523">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField015724" name="PageCount" presence="hidden" w="55mm" x="184.15mm" y="514.35mm">
+               <ui>
+                  <numericEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="FE6B41C7-D2AF-4CA1-A257-479A240EEBC6">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <field h="22.225mm" hAlign="center" name="Text_Footer_UK" w="79.375mm" x="60.325mm" y="31.75mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Calibri"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_FOOTER"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner presence="hidden"/>
+                  <corner/>
+               </border>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform h="266.7mm" name="sub_page1" w="203.139mm">
+         <bind match="none"/>
+         <subform h="23.05mm" name="Sub_Logo" w="193.634mm" x="0mm">
+            <bind match="none"/>
+            <field h="19.05mm" name="WILEY_LOGO" w="38.059mm" x="0.041mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="$.WILEY_LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = V_XSTRING</exData>
+               </desc>
+            </field>
+            <field h="17.05mm" minW="40.75mm" name="SOCIETY_LOGO" x="144.225mm" y="4.001mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="$.SOCIETY_LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Society Logo
+URL-FIELD = IM_SOCIETY_LOGO</exData>
+               </desc>
+            </field>
+            <traversal>
+               <traverse ref="SELLER_REG[0]"/>
+            </traversal>
+            <?templateDesigner expand 1?></subform>
+         <subform h="10.35mm" name="Subform_John" x="4.775mm" y="38.1mm">
+            <bind match="none"/>
+            <field minH="4mm" minW="31.75mm" name="TM_CSN" x="0.338mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TM_CSN"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Customer Service Number
+Smart Forms Text Module 
+ NAME = ZQTC_CSN</exData>
+               </desc>
+            </field>
+            <field minH="10.35mm" minW="34.925mm" name="VAL_CSN_SCC" x="0.338mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_CSN_SCC"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field minH="10.35mm" minW="34.925mm" name="VAL_CSN_SCM" x="0.338mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_CSN_SCM"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field minH="10.35mm" minW="34.925mm" name="VAL_CSN_TBT" x="0.338mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_CSN_TBT"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <traversal>
+               <traverse operation="first" ref="TM_CSN[0]"/>
+            </traversal>
+            <?templateDesigner expand 1?></subform>
+         <subform h="12mm" name="Subform_date" x="115.65mm" y="38.1mm">
+            <bind match="none"/>
+            <subform layout="lr-tb" name="Sub_Account" y="4mm">
+               <bind match="none"/>
+               <field minH="4mm" minW="31.75mm" name="TM_ACCOUNT">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_ACCOUNT"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Account Number
+Smart Forms Text Module 
+ NAME = ZQTC_CUSTOMER_F032</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="KUNNR[0]"/>
+                  </traversal>
+               </field>
+               <field minH="4mm" minW="38.1mm" name="KUNNR">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_ADDRESS.KUNNR"/>
+                  <value>
+                     <text maxChars="12"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Preceding sales and distribution document</text>
+                  </desc>
+                  <traversal>
+                     <traverse ref="Sub_Date[0]"/>
+                  </traversal>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="TM_ACCOUNT[0]"/>
+                  <traverse ref="Sub_Date[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="Sub_Reference">
+               <bind match="none"/>
+               <field h="4mm" minW="31.75mm" name="TM_REF">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_REF"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Reference
+Smart Forms Text Module 
+ NAME = ZQTC_REF</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="SUB_MAIL_BODY_1[0]"/>
+                  </traversal>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="REFERENCE[0]"/>
+                  <traverse ref="Sub_Account[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?>
+               <field minH="4mm" minW="38.1mm" name="REFERENCE">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_FINAL.REFERENCE"/>
+                  <desc>
+                     <text name="Schema Annotation">Your Reference</text>
+                  </desc>
+                  <value>
+                     <text maxChars="12"/>
+                  </value>
+               </field>
+            </subform>
+            <subform layout="lr-tb" name="Sub_Date" y="8mm">
+               <bind match="none"/>
+               <traversal>
+                  <traverse operation="first" ref="TM_DATE[0]"/>
+               </traversal>
+               <field minH="4mm" minW="31.75mm" name="TM_DATE">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_DATE"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Date
+Smart Forms Text Module 
+ NAME = ZQTC_DATE</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="ADVNCE_DATE[0]"/>
+                  </traversal>
+               </field>
+               <field minH="4mm" minW="38.1mm" name="ADVNCE_DATE">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_FINAL.ADVNCE_DATE"/>
+                  <value>
+                     <text maxChars="15"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Char 15</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <traversal>
+               <traverse ref="SUB_MAIL_BODY_1[0]"/>
+            </traversal>
+            <?templateDesigner expand 0?></subform>
+         <breakBefore target="Page1" targetType="pageArea"/>
+         <overflow target="Page2"/>
+         <subform h="10.51mm" name="Subform_Heading" w="107.95mm" x="47.625mm" y="21.84mm">
+            <bind match="none"/>
+            <field anchorType="middleCenter" hAlign="center" minH="6.35mm" minW="107.95mm" name="TM_DRCT_DBT" x="53.975mm" y="3.175mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="16pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_CUSTOMER.TM_DRCT_DBT"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Direct Debit Collection
+Smart Forms Text Module 
+ NAME = ZQTC_DRCT_DBT</exData>
+               </desc>
+            </field>
+            <traversal>
+               <traverse ref="Sub_remit_To[0].Subform_Body_mail[0].Subform_Subtotal[0].Sub_Net_Amt[0]"/>
+               <traverse operation="first" ref="TM_DRCT_DBT[0]"/>
+            </traversal>
+            <?templateDesigner expand 0?>
+            <field anchorType="middleCenter" hAlign="center" minH="6.35mm" minW="107.95mm" name="TM_DRCT_DBT_MEM" x="53.975mm" y="3.175mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="15pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_MEMBER.TM_DRCT_DBT_MEM"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Direct Debit Collection_Member
+Smart Forms Text Module 
+ NAME = ZQTC_DRCT_DBT</exData>
+               </desc>
+            </field>
+         </subform>
+         <field h="16.596mm" name="BILL_TO_ADDRESS" w="91.542mm" x="5.113mm" y="56.489mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <para vAlign="middle"/>
+            <bind match="dataRef" ref="$.BILL_TO_ADDRESS"/>
+            <desc>
+               <exData name="Schema Annotation">Bill To 
+ ADDRESS-NUMBER-FIELD = IM_ADDRESS-ADRNR</exData>
+            </desc>
+            <traversal>
+               <traverse ref="Subform_Heading[0]"/>
+            </traversal>
+         </field>
+         <subform minH="16.912mm" name="SUB_MAIL_BODY_1" w="190mm" x="5.113mm" y="84.74mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <traversal>
+               <traverse operation="first" ref="SUB_MAIL_BODY1[0]"/>
+               <traverse ref="Sub_Table_Subscriptopn_type[0].Sub_table[0]"/>
+            </traversal>
+            <subform minH="5mm" name="Sub_Salutation_Mem_Cust" w="161.966mm" x="0mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field minH="3mm" minW="161.925mm" name="TM_SALUTATION_CUST" x="0mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_CUSTOMER.TM_SALUTATION_CUST"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Salutation_Customer
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_CUST</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="TM_SALUTATION_MEM[0]"/>
+                  </traversal>
+               </field>
+               <field minH="3mm" minW="161.925mm" name="TM_SALUTATION_MEM" x="0mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="bottom"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_MEMBER.TM_SALUTATION_MEM"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Salutation_Member
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_MEM</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="Blank[0]"/>
+                  </traversal>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="TM_SALUTATION_CUST[0]"/>
+                  <traverse ref="Blank[0]"/>
+               </traversal>
+               <?templateDesigner expand 1?></subform>
+            <field h="2mm" name="Blank" w="51.2mm" x="0mm" y="3.5mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="none"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+               </desc>
+               <traversal>
+                  <traverse ref="Sub_Table_Subscriptopn_type[0].Sub_table[0]"/>
+               </traversal>
+            </field>
+            <field minH="3mm" minW="161.925mm" name="Text_Society_Name" x="0.431mm" y="15.451mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.CONDITION_SOCIETY.IM_SOCIETY"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Salutation_Member
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_MEM</exData>
+               </desc>
+               <traversal>
+                  <traverse ref="Sub_Table_Subscriptopn_type[0].Sub_table[0]"/>
+               </traversal>
+            </field>
+            <?templateDesigner expand 0?>
+            <subform layout="tb" minH="9.525mm" name="SUB_MAIL_BODY1" w="190mm" y="5.749mm">
+               <bind match="none"/>
+               <traversal>
+                  <traverse operation="first" ref="ST_BODY_MAIL1[0]"/>
+                  <traverse ref="Text_Society_Name[0]"/>
+               </traversal>
+               <field minH="9.525mm" name="ST_BODY_MAIL1" w="190mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXTS.IM_BODY"/>
+                  <desc>
+                     <exData name="Schema Annotation">First Part of the Mail Body
+SAPScript Include Text 
+ NAME = ZQTC_MAIL_BODY1_F032 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <traversal>
+                     <traverse ref="Text_Society_Name[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 1?></subform>
+         </subform>
+         <subform layout="tb" minH="24.832mm" name="Sub_Table_Subscriptopn_type" w="190.646mm" x="5.113mm" y="105.368mm">
+            <bind match="none"/>
+            <traversal>
+               <traverse operation="first" ref="SUB_AMOUNT[0]"/>
+               <traverse ref="Subform_John[0]"/>
+            </traversal>
+            <subform layout="tb" name="Sub_table" w="190mm">
+               <bind match="none"/>
+               <traversal>
+                  <traverse operation="first" ref="BLANK[0]"/>
+                  <traverse ref="Blank[0]"/>
+               </traversal>
+               <subform columnWidths="70mm 120mm" layout="table" name="IM_ARKTX_DESC">
+                  <subform layout="row" name="DATA" x="-1.914mm">
+                     <field minH="4.5mm" name="Text" w="20.107mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.JOURNAL_TEXT"/>
+                     </field>
+                     <field minH="4.5mm" name="Value" w="20.107mm" y="0mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$.JOURNAL_VALUE"/>
+                        <desc>
+                           <text name="Schema Annotation">Text Line</text>
+                        </desc>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <traversal>
+                        <traverse operation="first" ref="Value[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 1?></subform>
+                  <bind match="dataRef" ref="$.IM_ARKTX_DESC"/>
+                  <desc>
+                     <text name="Schema Annotation">Table Type for Amount and Tax Details for F032</text>
+                  </desc>
+                  <overflow leader="overflowLeader"/>
+                  <traversal>
+                     <traverse operation="first" ref="DATA[0]"/>
+                  </traversal>
+                  <occur max="-1"/>
+                  <border break="open">
+                     <edge presence="hidden" thickness="0.0006mm"/>
+                     <corner presence="hidden" thickness="0.001mm"/>
+                  </border>
+                  <?templateDesigner expand 1?></subform>
+               <field h="0.138889in" name="BLANK" w="161.925mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="bottom"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Salutation_Member
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_MEM</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="Blank[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <field h="2mm" name="Blank" w="51.2mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="none"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+               </desc>
+            </field>
+            <subform layout="tb" minH="8.5mm" name="SUB_AMOUNT" w="190.646mm">
+               <bind match="none"/>
+               <traversal>
+                  <traverse operation="first" ref="SUB_NET_AMT_BLANK[0]"/>
+               </traversal>
+               <subform layout="tb" minH="8.5mm" name="SUB_NET_AMT_BLANK" w="161.925mm">
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse ref="SUB_ORG_ID_VAL_ORG_ID[0]"/>
+                     <traverse operation="first" ref="Sub_Net_Amt[0]"/>
+                  </traversal>
+                  <subform layout="tb" minH="4.35mm" name="Sub_Net_Amt">
+                     <bind match="none"/>
+                     <subform columnWidths="40mm 45mm 10mm 30mm" layout="table" name="IM_FINAL_AMT_TAX">
+                        <subform layout="row" name="DATA" y="0mm">
+                           <field h="4.5mm" name="ZZDESC" w="20.107mm" y="0mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text maxChars="132"/>
+                              </value>
+                              <bind match="dataRef" ref="$.ZZDESC"/>
+                              <desc>
+                                 <text name="Schema Annotation">Text Line</text>
+                              </desc>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden"/>
+                              </border>
+                              <traversal>
+                                 <traverse ref="ZZTAX_DTLS[0]"/>
+                              </traversal>
+                           </field>
+                           <field h="4.5mm" name="ZZTAX_DTLS" w="62mm" y="0mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text maxChars="90"/>
+                              </value>
+                              <bind match="dataRef" ref="$.ZZTAX_DTLS"/>
+                              <desc>
+                                 <text name="Schema Annotation">SAPconnect/phone: Character 90</text>
+                              </desc>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden"/>
+                              </border>
+                           </field>
+                           <field h="4.5mm" name="WAERK" w="62mm" x="62mm" y="0mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text maxChars="5"/>
+                              </value>
+                              <bind match="dataRef" ref="$.WAERK"/>
+                              <desc>
+                                 <text name="Schema Annotation">SD Document Currency</text>
+                              </desc>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden"/>
+                              </border>
+                           </field>
+                           <field h="4.5mm" name="AMOUNT" w="62mm" y="9mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para hAlign="right" vAlign="middle"/>
+                              <value>
+                                 <text maxChars="25"/>
+                              </value>
+                              <bind match="dataRef" ref="$.AMOUNT"/>
+                              <desc>
+                                 <text name="Schema Annotation">User field for cluster PC (national)</text>
+                              </desc>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden"/>
+                              </border>
+                           </field>
+                           <assist role="TR"/>
+                           <occur max="-1"/>
+                           <bind match="dataRef" ref="$.DATA[*]"/>
+                           <traversal>
+                              <traverse operation="first" ref="ZZDESC[0]"/>
+                           </traversal>
+                           <?templateDesigner expand 1?></subform>
+                        <bind match="dataRef" ref="$.IM_FINAL_AMT_TAX"/>
+                        <desc>
+                           <text name="Schema Annotation">Table Type for Amount and Tax Details for F032</text>
+                        </desc>
+                        <overflow leader="overflowLeader"/>
+                        <traversal>
+                           <traverse operation="first" ref="DATA[0]"/>
+                        </traversal>
+                        <occur max="-1"/>
+                        <border break="open">
+                           <edge presence="hidden" thickness="0.0006mm"/>
+                           <corner presence="hidden" thickness="0.001mm"/>
+                        </border>
+                        <?templateDesigner expand 1?></subform>
+                     <traversal>
+                        <traverse operation="first" ref="IM_FINAL_AMT_TAX[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 1?></subform>
+                  <field h="2mm" name="BLANK" w="161.925mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="bottom"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Salutation_Member
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_MEM</exData>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb" minH="4.35mm" name="Sub_date_pay_due">
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse operation="first" ref="TM_DATE_CLCT[0]"/>
+                     <traverse ref="BLANK[0]"/>
+                  </traversal>
+                  <field minH="4mm" minW="45mm" name="TM_DATE_CLCT">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_DATE_CLCT"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Date to be collected
+Smart Forms Text Module 
+ NAME = ZQTC_DT_CLT</exData>
+                     </desc>
+                     <traversal>
+                        <traverse ref="PAY_DUE_BY[0]"/>
+                     </traversal>
+                  </field>
+                  <field h="4mm" minW="30mm" name="PAY_DUE_BY">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.PAY_DUE_BY"/>
+                     <desc>
+                        <text name="Schema Annotation">Char 15</text>
+                     </desc>
+                     <value>
+                        <text maxChars="15"/>
+                     </value>
+                     <traversal>
+                        <traverse ref="BLANK[0]"/>
+                     </traversal>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb" name="SUB_ORG_ID_VAL_ORG_ID">
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse operation="first" ref="TM_ORG_ID[0]"/>
+                     <traverse ref="Sub_date_pay_due[0]"/>
+                  </traversal>
+                  <field h="4mm" minW="45mm" name="TM_ORG_ID">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_ORG_ID"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Originator's ID
+Smart Forms Text Module 
+ NAME = ZQTC_ORG_ID</exData>
+                     </desc>
+                     <traversal>
+                        <traverse ref="TM_VAL_ORG_ID[0]"/>
+                     </traversal>
+                  </field>
+                  <field h="4mm" minW="60mm" name="TM_VAL_ORG_ID">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_VAL_ORG_ID"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Org ID_Value
+Smart Forms Text Module 
+ NAME = ZQTC_VAL_ORG_ID</exData>
+                     </desc>
+                     <traversal>
+                        <traverse ref="Sub_date_pay_due[0]"/>
+                     </traversal>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <field h="2mm" name="BLANK" w="161.925mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="bottom"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Salutation_Member
+Smart Forms Text Module 
+ NAME = ZQTC_SALUTATION_MEM</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="SUB_BPDY_2[0]"/>
+                  </traversal>
+               </field>
+               <subform layout="tb" minH="31.918mm" name="SUB_BPDY_2" w="190.646mm">
+                  <bind match="none"/>
+                  <traversal>
+                     <traverse operation="first" ref="SUB_UNDERSIGNED_CUST_MEM[0]"/>
+                  </traversal>
+                  <field minH="9.425mm" name="TM_BODY_MAIL2" w="190.377mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_BODY_MAIL2"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Second part of Mail Body
+Smart Forms Text Module 
+ NAME = ZQTC_VAL_MAIL_BODY</exData>
+                     </desc>
+                     <traversal>
+                        <traverse ref="Blank[0]"/>
+                     </traversal>
+                  </field>
+                  <field h="2mm" name="Blank" w="51.2mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+                     </desc>
+                  </field>
+                  <field minH="4.35mm" minW="190.5mm" name="TM_BODY_MAIL">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_BODY_MAIL"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Failure Text
+Smart Forms Text Module 
+ NAME = ZQTC_VAL_MAIL_BODY3_F032</exData>
+                     </desc>
+                     <traversal>
+                        <traverse ref="Blank[1]"/>
+                     </traversal>
+                  </field>
+                  <field h="2mm" name="Blank" w="51.2mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+                     </desc>
+                  </field>
+                  <field minH="4.35mm" minW="190.5mm" name="TM_BODY_MAIL3">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_EMAIL_BODY_3"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Third part of Mail Body
+Smart Forms Text Module 
+ NAME = ZQTC_VAL_MAIL_BODY2_F032</exData>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="Blank" w="51.2mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+                     </desc>
+                  </field>
+                  <field h="2mm" name="TM_UNDERSIGNED" w="51.2mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_UNDERSIGNED"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="Blank" w="51.2mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Sincerely
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_F032</exData>
+                     </desc>
+                  </field>
+                  <subform minH="4.2mm" name="SUB_UNDERSIGNED_CUST_MEM" w="110.001mm">
+                     <bind match="none"/>
+                     <keep intact="none"/>
+                     <traversal>
+                        <traverse operation="first" ref="TM_UNDERSIGNED_CUST[0]"/>
+                     </traversal>
+                     <field minH="2mm" name="TM_UNDERSIGNED_CUST" w="110mm" x="0mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_CUSTOMER.TM_UNDERSIGNED_CUST"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Undersigned_Customer_Services
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_CUST_F032</exData>
+                        </desc>
+                        <traversal>
+                           <traverse ref="TM_UNDERSIGNED_MEMBER[0]"/>
+                        </traversal>
+                     </field>
+                     <field minH="2mm" name="TM_UNDERSIGNED_MEMBER" w="110mm" x="0.001mm" y="0.186mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.TEXT_MODULES.TEXT_MODULES_MEMBER.TM_UNDERSIGNED_MEMBER"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Undersigned_Member
+Smart Forms Text Module 
+ NAME = ZQTC_UNDERSIGNED_MEM_F032</exData>
+                        </desc>
+                        <traversal>
+                           <traverse ref="Subform_John[0]"/>
+                        </traversal>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <traversal>
+            <traverse operation="first" ref="Sub_Table_Subscriptopn_type[0]"/>
+         </traversal>
+         <?templateDesigner expand 0?>
+         <field minH="2mm" name="ST_FOOTER_TBT" w="69.575mm" x="5.113mm" y="26mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_FOOTER_TBT"/>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml"/>
+               </exData>
+            </value>
+            <event activity="ready" name="event__form_ready" ref="$form">
+               <script contentType="application/x-javascript"/>
+            </event>
+            <event activity="ready" name="event__form_ready" ref="$form">
+               <script contentType="application/x-javascript"/>
+            </event>
+            <desc>
+               <exData name="Schema Annotation">Footer_TBT
+SAPScript Include Text 
+ NAME-FIELD = IM_FOOTER_TBT 
+ LANGUAGE-FIELD = V_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+            </desc>
+         </field>
+         <field h="4mm" name="Seller_vat_reg" w="50mm" x="147.4mm" y="50.1mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial"/>
+            <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+            <bind match="dataRef" ref="$.IM_V_SELLER_REG"/>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+         </field>
+         <field h="4mm" name="Seller_vat_reg_text" w="31.75mm" x="115.65mm" y="50.1mm">
+            <ui>
+               <textEdit>
+                  <border presence="hidden"/>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Arial" weight="bold"/>
+            <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+            <bind match="dataRef" ref="$.STANDARD_TEXTS.ST_TAX_TEXT"/>
+            <value>
+               <exData contentType="text/html"/>
+            </value>
+            <event activity="initialize" name="event__initialize">
+               <script contentType="application/x-javascript">
+if(Seller_vat_reg.rawValue == null)
+{
+  this.presence = "hidden";
+}  
+</script>
+            </event>
+            <event activity="ready" name="event__form_ready" ref="$form">
+               <script contentType="application/x-javascript">
+if(Seller_vat_reg.rawValue == null)
+{
+  this.presence = "hidden";
+}  
+</script>
+            </event>
+         </field>
+      </subform>
+      <subform layout="tb" name="sub_page2" w="8in">
+         <breakBefore target="Page2" targetType="pageArea"/>
+         <bind match="none"/>
+         <?templateDesigner expand 1?></subform>
+      <field minH="22.225mm" minW="155.575mm" name="DRCT_DBT_LOGO">
+         <ui>
+            <imageEdit/>
+         </ui>
+         <bind match="dataRef" ref="$.DRCT_DBT_LOGO"/>
+         <desc>
+            <exData name="Schema Annotation">Direct Debit Guarantee Logo
+URL-FIELD = IM_DRCT_DBT_LOGO</exData>
+         </desc>
+         <value>
+            <image aspect="none"/>
+         </value>
+      </field>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 000300060029003300370044004700480049004A004C004F00520057005B #FPTadefgilotx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 20?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner Grid show:1, snap:0, units:1, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:0, crosshairs:0?>
+   <?templateDesigner Zoom 104?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+      <font posture="normal" psName="OCRAStd" typeface="OCR A Std" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_ADVNC_NOTIFICATN">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <WILEY_LOGO/>
+         <IM_BILL_DATE/>
+         <TEXT_MODULES>
+            <TM_JHN_WILEY/>
+            <TM_CSN dd:minOccur="0" dd:nullType="exclude"/>
+            <TM_DATE/>
+            <TM_REF/>
+            <TM_BILL_TO/>
+            <TM_JOURNALS/>
+            <TM_NET_AMT/>
+            <TM_TAX_AMT/>
+            <TM_TOT_AMT/>
+            <TM_DATE_CLCT/>
+            <TM_ORG_ID/>
+            <TM_VAL_ORG_ID/>
+            <TM_BODY_MAIL2/>
+            <TM_BODY_MAIL/>
+            <TM_BODY_MAIL3/>
+            <TM_UNDERSIGNED/>
+            <TM_FOOTER/>
+            <TEXT_MODULES_CUSTOMER dd:minOccur="0">
+               <TM_UNDERSIGNED_CUST/>
+               <TM_SALUTATION_CUST/>
+               <TM_DRCT_DBT/>
+            </TEXT_MODULES_CUSTOMER>
+            <TEXT_MODULES_MEMBER dd:minOccur="0">
+               <TM_SALUTATION_MEM/>
+               <TM_UNDERSIGNED_MEMBER/>
+               <TM_DRCT_DBT_MEM/>
+            </TEXT_MODULES_MEMBER>
+            <TM_ACCOUNT/>
+            <TM_FOOTER2/>
+            <IM_COMPNAME/>
+            <TM_REMIT_TO/>
+         </TEXT_MODULES>
+         <STANDARD_TEXTS>
+            <ST_FOOTER/>
+            <ST_FOOTER1/>
+            <ST_CSN_TBT/>
+            <ST_CSN_SCM/>
+            <ST_CSN_SCC/>
+            <ST_EMAIL_BODY_3/>
+            <ST_REMIT_BANK_DETAILS_TBT/>
+            <ST_REMIT_BANK_DETAILS_SCC/>
+            <ST_REMIT_BANK_DETAILS_SCM/>
+            <ST_BANKING1_SCM/>
+            <ST_BANKING1_SCC/>
+            <ST_BANKING1_TBT/>
+            <ST_BANKING2_SCM/>
+            <ST_BANKING2_SCC/>
+            <ST_BANKING2_TBT/>
+            <ST_FOOTER_TBT/>
+            <ST_COMP_NAME/>
+            <ST_SUBS_TYPE/>
+            <IM_BODY/>
+            <ST_TAX_TEXT/>
+         </STANDARD_TEXTS>
+         <SOCIETY_LOGO/>
+         <V_ADD_BILL/>
+         <BILL_TO_ADDRESS/>
+         <IM_ADDRESS>
+            <VBELN/>
+            <POSNR/>
+            <PARVW/>
+            <KUNNR/>
+            <ADRNR/>
+            <LAND1/>
+         </IM_ADDRESS>
+         <DRCT_DBT_LOGO/>
+         <IM_FLAG_CUST/>
+         <CONDITION_SOCIETY dd:minOccur="0">
+            <IM_SOCIETY_NAME/>
+            <IM_SOCIETY/>
+         </CONDITION_SOCIETY>
+         <IM_BARCODE/>
+         <IM_V_SELLER_REG/>
+         <IM_ARKTX_DESC dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <JOURNAL_TEXT/>
+               <JOURNAL_VALUE/>
+            </DATA>
+         </IM_ARKTX_DESC>
+         <IM_FINAL>
+            <ADVNCE_DATE/>
+            <PAY_DUE_BY/>
+            <REFERENCE/>
+            <CURRENCY/>
+            <ARKTX/>
+            <NET_AMT/>
+            <TAX_AMT/>
+            <TOT_AMT/>
+            <DIGI_TAX_PRCNT/>
+            <DIGI_TAX_AMOUNT/>
+            <PRINT_TAX_PRCNT/>
+            <PRINT_TAX_AMOUNT/>
+         </IM_FINAL>
+         <IM_ARKTX/>
+         <IM_SUBS_TYPE/>
+         <IM_FINAL_AMT_TAX dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ZZDESC/>
+               <WAERK/>
+               <ZZTAX_DTLS/>
+               <AMOUNT/>
+            </DATA>
+         </IM_FINAL_AMT_TAX>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2021-05-31T13:41:39Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:24f55582-4e8c-48d2-9982-79d96ed27658</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

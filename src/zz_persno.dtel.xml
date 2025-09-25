@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZ_PERSNO</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>PERSNO</DOMNAME>
+    <MEMORYID>PER</MEMORYID>
+    <HEADLEN>06</HEADLEN>
+    <SCRLEN1>07</SCRLEN1>
+    <SCRLEN2>13</SCRLEN2>
+    <SCRLEN3>16</SCRLEN3>
+    <DDTEXT>Personnel number</DDTEXT>
+    <REPTEXT>PersNo</REPTEXT>
+    <SCRTEXT_S>PersNo.</SCRTEXT_S>
+    <SCRTEXT_M>Personnel no.</SCRTEXT_M>
+    <SCRTEXT_L>Personnel number</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <SHLPNAME>ZQTCE_PERNR</SHLPNAME>
+    <SHLPFIELD>PERNR</SHLPFIELD>
+    <DEFFDNAME>PERSNO</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

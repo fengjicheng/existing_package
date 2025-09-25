@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/model/Model"],function(t){"use strict";return t.extend("cob.v2.ZQTC_CREDIT_BLOCKED_ORDERS_SRV.test.unit.helper.FakeI18nModel",{constructor:function(e){t.call(this);this.mTexts=e||{}},getResourceBundle:function(){return{getText:func+
+tion(t){return this.mTexts[t]}.bind(this)}}})});                                                                                                                                                                                                               

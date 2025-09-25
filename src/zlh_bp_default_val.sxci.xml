@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZLH_BP_DEFAULT_VAL</IMP_NAME>
+     <TEXT>LH: Deafaulting BP Data</TEXT>
+     <IMP_CLASS>ZCL_IM_LH_BP_DEFAULT_VAL</IMP_CLASS>
+     <EXIT_NAME>ISM_BP_DEFAULT_VALUE</EXIT_NAME>
+     <INTER_NAME>IF_EX_ISM_BP_DEFAULT_VALUE</INTER_NAME>
+     <ACTIVE>X</ACTIVE>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

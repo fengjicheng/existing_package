@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5","./arrangements/Startup","./WorklistJourney","./NavigationJourney","./NotFoundJourney","./ObjectJourney"],function(e,t){"use strict";e.extendConfig({arrangements:new t,viewNamespace:"cob.v2.ZQTC_CREDIT_BLOCKED_ORDERS_SRV+
+.view.",autoWait:true})});                                                                                                                                                                                                                                     

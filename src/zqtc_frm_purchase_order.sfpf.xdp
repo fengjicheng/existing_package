@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.8.0.0.20140107.1.905771_SAP" APIVersion="3.4.11306.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2017-05-09T18:18:02Z" uuid="654f339b-354e-45df-80e3-009b4a5560f5">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.0/">
+   <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="205mm" name="Content_Area1" w="175mm" x="15.875mm" y="65mm"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <field h="13mm" name="Wiley_logo" w="45mm" x="12mm" y="9mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="$.WILEY_LOGO"/>
+            </field>
+            <subform layout="tb" minH="20mm" name="Sub_wiley_add" w="50mm" x="15.875mm" y="29mm">
+               <bind match="none"/>
+               <field minH="20mm" minW="50mm" name="Willey_Address">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.WILEY_ADDRESS"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform minH="16mm" name="Sub_PO_Details" w="92mm" x="98.425mm" y="29mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="4mm" name="Val_Purchase_order" w="35mm" x="42mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.HEADER.EBELN"/>
+               </field>
+               <field h="4mm" name="Val_Purchase_ord_date" w="35mm" x="42mm" y="4mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.V_DATUM_BEDAT">
+                     <picture>date{DD-MMM-YY}</picture>
+                  </bind>
+                  <format>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </format>
+                  <validate>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </validate>
+               </field>
+               <field h="4mm" hAlign="right" name="Text_Purchase_order" w="38mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_PURCHASE_ORDER"/>
+               </field>
+               <field h="4mm" hAlign="right" name="Text_Purchase_ord_date" w="38mm" y="4mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_PUR_ORD_DATE"/>
+               </field>
+               <field h="4mm" hAlign="right" name="Text_Payment_term" w="38mm" y="8mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_PAY_TERMS"/>
+               </field>
+               <field h="4mm" name="Val_Payment_term" w="35mm" x="42mm" y="8mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.HEADER.ZTERM"/>
+               </field>
+               <field h="4mm" hAlign="right" name="Blank11" w="38mm" y="12mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+               </field>
+               <field h="4mm" name="Val_Pay_Term_Des" w="50mm" x="42mm" y="12mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.V_PAY_DES"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <field h="4mm" name="Text_colon1" w="2mm" x="38mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLON"/>
+               </field>
+               <field h="4mm" name="Text_colon2" w="2mm" x="38mm" y="4mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLON"/>
+               </field>
+               <field h="4mm" name="Text_colon3" w="2mm" x="38mm" y="12mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.TM_COLON"/>
+               </field>
+               <field h="4mm" name="Text_colon3" w="2mm" x="38mm" y="8mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_COLON"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform minH="4mm" name="Sub_Date" w="70mm" x="15.875mm" y="54mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="4mm" name="Text_Date" w="10mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_DATE"/>
+               </field>
+               <field h="4mm" name="Val_Date" w="40mm" x="10mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.V_DATUM">
+                     <picture>date{DD-MMM-YY}</picture>
+                  </bind>
+                  <format>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </format>
+                  <validate>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </validate>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <field access="readOnly" h="7.5mm" id="floatingField019169" name="CurrentPage" presence="hidden" w="55mm" x="150mm" y="280mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="013AEF06-1F3F-42F4-B176-9BD905B20EF7">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField015724" name="PageCount" presence="hidden" w="55mm" x="150mm" y="280mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="9B7CA2CB-DB5F-4CA0-89FB-E70E9535D316">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw name="Pages" x="171.45mm" y="280mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="D22C7C0C-BBB6-492E-AF08-8178542BFFFF">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <proto/>
+      <desc>
+         <text name="version">9.8.0.0.20140107.1.905771</text>
+      </desc>
+      <subform layout="tb" w="175mm">
+         <bind match="none"/>
+         <subform h="45mm" name="Sub_Vend_address" w="175mm">
+            <bind match="none"/>
+            <field h="4mm" name="Text_Vendor_address" w="30mm" y="0mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TM_VEND_ADD"/>
+            </field>
+            <subform layout="tb" name="Sub_Address" w="50mm" y="4mm">
+               <bind match="none"/>
+               <field minH="20mm" name="Val_Vendor_Address" w="50mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.VENDOR_ADDRESS"/>
+               </field>
+               <field h="8mm" name="Text_blank" w="30mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <subform h="4mm" name="BLANK_SUB" w="175mm">
+            <bind match="none"/>
+            <assist role="Table"/>
+         </subform>
+         <subform layout="tb" name="Table" w="175mm">
+            <bind match="dataRef" ref="$.I_FINAL"/>
+            <assist role="Table"/>
+            <subform h="8mm" id="Header_tab_ID" name="Header_tab" w="175mm">
+               <bind match="none"/>
+               <assist role="TH"/>
+               <field h="4mm" name="Line" w="11mm" y="0.001mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="5"/>
+                  </value>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_LINE"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <field minH="4mm" name="Journal_num" w="29.5mm" x="11mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_JOUNAL_NUM"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field minH="4mm" name="Issue_Num" w="27mm" x="40.5mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_ISSUE_NUM"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Issue_type" w="17.5mm" x="67.5mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_ISSUE_TYPE"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field minH="4mm" name="Print_Bind" w="26mm" x="85mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_PRINT_BIND"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="UOM" w="12mm" x="111mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_UOM"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Print_ISSN" w="17mm" x="158mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_PRINT_ISSN"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Journal_Issue" w="17.5mm" x="140.5mm" y="0.001mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_JO_ISSUE"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Journal_Vol" w="17.5mm" x="123mm" y="0mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_JOU_VOL"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Journal_des" w="29.5mm" x="11mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_JOUNAL_DES"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Issue_des" w="27mm" x="40.5mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_ISSUE_DES"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Delivery_date" w="26mm" x="85mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$record.TEXT_MODULES.TM_DELIVERY_DATE"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <border>
+                  <edge thickness="0.3mm"/>
+                  <corner thickness="0.3mm"/>
+               </border>
+               <keep intact="none"/>
+               <field h="4mm" name="Blank1" w="12mm" x="111mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Blank2" w="17.5mm" x="123mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Blank3" w="17.5mm" x="140.5mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="4mm" name="Blank4" w="17mm" x="158mm" y="4mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+                  <desc>
+                     <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="tb" w="175mm" y="20mm">
+               <bind match="none"/>
+               <subform name="Body_tab" w="175mm">
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <assist role="TR"/>
+                  <field minH="4mm" name="ITEM_Del_date" w="26mm" x="85mm" y="4mm">
+                     <ui>
+                        <dateTimeEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <date/>
+                     </value>
+                     <bind match="dataRef" ref="$.EINDT_CHAR">
+                        <picture>date{YYYY-MM-DD}</picture>
+                     </bind>
+                     <desc>
+                        <text name="Schema Annotation">Item Delivery Date</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Line" w="11mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.EBELP"/>
+                     <desc>
+                        <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="ITEM_Print_Bind" w="26mm" x="85mm" y="0mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal fracDigits="3" leadDigits="10"/>
+                     </value>
+                     <bind match="dataRef" ref="$.MENGE"/>
+                     <desc>
+                        <text name="Schema Annotation">Purchase Order Quantity</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Issue_Num" w="27mm" x="40.5mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.MATNR"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Jou_Num" w="29.5mm" x="11mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ISMREFMDPROD">
+                        <picture>date{YYYY-MM-DD}</picture>
+                     </bind>
+                     <desc>
+                        <text name="Schema Annotation">Item Delivery Date</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Issue_Type" w="17.5mm" x="67.5mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ISMISSUETYPEST"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="ITEM_UOM" w="12mm" x="111mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.MEINS"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="ITEM_Print_ISSN" w="17mm" x="158mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IDENTCODE"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="ITEM_Journal_Issue" w="17.5mm" x="140.5mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ISMNRINYEAR"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="ITEM_Journal_Vol" w="17.5mm" x="123mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ISMCOPYNR"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Jou_des" w="29.5mm" x="11mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.MAKTX_JOURNAL"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="ITEM_Issue_des" w="27mm" x="40.5mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.MAKTX_ISSUE"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <occur max="-1"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge/>
+                     <edge/>
+                     <corner/>
+                  </border>
+                  <field h="4mm" name="Blank5" w="11mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field minH="4mm" name="Blank6" w="17.5mm" x="67.5mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Blank7" w="12mm" x="111mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Blank8" w="17.5mm" x="123mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Blank9" w="17.5mm" x="140.5mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Blank10" w="17mm" x="158mm" y="4mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <desc>
+                        <text name="Schema Annotation">Material Number</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <overflow leader="Header_tab"/>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 000300060029003300370044004700480049004A004C004F00520057005B #FPTadefgilotx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner FormTargetVersion 30?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 145?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>5</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_PURCHASE_ORDER">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <HEADER>
+            <MANDT/>
+            <EBELN/>
+            <BUKRS/>
+            <BSTYP/>
+            <BSART/>
+            <BSAKZ/>
+            <LOEKZ/>
+            <STATU/>
+            <AEDAT/>
+            <ERNAM/>
+            <PINCR/>
+            <LPONR/>
+            <LIFNR/>
+            <SPRAS/>
+            <ZTERM/>
+            <ZBD1T/>
+            <ZBD2T/>
+            <ZBD3T/>
+            <ZBD1P/>
+            <ZBD2P/>
+            <EKORG/>
+            <EKGRP/>
+            <WAERS/>
+            <WKURS/>
+            <KUFIX/>
+            <BEDAT/>
+            <KDATB/>
+            <KDATE/>
+            <BWBDT/>
+            <ANGDT/>
+            <BNDDT/>
+            <GWLDT/>
+            <AUSNR/>
+            <ANGNR/>
+            <IHRAN/>
+            <IHREZ/>
+            <VERKF/>
+            <TELF1/>
+            <LLIEF/>
+            <KUNNR/>
+            <KONNR/>
+            <ABGRU/>
+            <AUTLF/>
+            <WEAKT/>
+            <RESWK/>
+            <LBLIF/>
+            <INCO1/>
+            <INCO2/>
+            <KTWRT/>
+            <SUBMI/>
+            <KNUMV/>
+            <KALSM/>
+            <STAFO/>
+            <LIFRE/>
+            <EXNUM/>
+            <UNSEZ/>
+            <LOGSY/>
+            <UPINC/>
+            <STAKO/>
+            <FRGGR/>
+            <FRGSX/>
+            <FRGKE/>
+            <FRGZU/>
+            <FRGRL/>
+            <LANDS/>
+            <LPHIS/>
+            <ADRNR/>
+            <STCEG_L/>
+            <STCEG/>
+            <ABSGR/>
+            <ADDNR/>
+            <KORNR/>
+            <MEMORY/>
+            <PROCSTAT/>
+            <RLWRT/>
+            <REVNO/>
+            <SCMPROC/>
+            <REASON_CODE/>
+            <MEMORYTYPE/>
+            <RETTP/>
+            <RETPC/>
+            <DPTYP/>
+            <DPPCT/>
+            <DPAMT/>
+            <DPDAT/>
+            <MSR_ID/>
+            <HIERARCHY_EXISTS/>
+            <THRESHOLD_EXISTS/>
+            <LEGAL_CONTRACT/>
+            <DESCRIPTION/>
+            <RELEASE_DATE/>
+            <VSART/>
+            <HANDOVERLOC/>
+            <SHIPCOND/>
+            <INCOV/>
+            <INCO2_L/>
+            <INCO3_L/>
+            <FORCE_ID/>
+            <FORCE_CNT/>
+            <RELOC_ID/>
+            <RELOC_SEQ_ID/>
+            <POHF_TYPE/>
+            <EQ_EINDT/>
+            <EQ_WERKS/>
+            <FIXPO/>
+            <EKGRP_ALLOW/>
+            <WERKS_ALLOW/>
+            <CONTRACT_ALLOW/>
+            <PSTYP_ALLOW/>
+            <FIXPO_ALLOW/>
+            <KEY_ID_ALLOW/>
+            <AUREL_ALLOW/>
+            <DELPER_ALLOW/>
+            <EINDT_ALLOW/>
+            <OTB_LEVEL/>
+            <OTB_COND_TYPE/>
+            <KEY_ID/>
+            <SPR_RSN_PROFILE/>
+            <BUDG_TYPE/>
+            <OTB_STATUS/>
+            <OTB_REASON/>
+            <CHECK_TYPE/>
+            <CON_OTB_REQ/>
+            <CON_PREBOOK_LEV/>
+            <CON_DISTR_LEV/>
+            <PRCPR/>
+            <HEADERCOND/>
+            <LAND_FROM/>
+            <LAND_VEND/>
+            <USEWERKS/>
+            <USEADRNO/>
+            <LAND_DELADR/>
+            <USEEINDT/>
+            <UZEIT/>
+            <USEINCO/>
+            <USEWEMPF/>
+            <USEABLAD/>
+            <USEAUFB/>
+            <EMLIF/>
+            <LPEIN/>
+            <EINDT/>
+            <WERKS/>
+            <LFDAT/>
+            <LABNR/>
+            <PRITX/>
+            <ZBTXT/>
+            <NETWR/>
+            <KZABS/>
+            <ADRN2/>
+            <DRUNR/>
+            <DRDAT/>
+            <DRUHR/>
+            <HSAMM/>
+            <PRSDR/>
+            <WEMPF/>
+            <ABLAD/>
+            <ADRNO/>
+            <BEDATTXT/>
+         </HEADER>
+         <WILEY_LOGO/>
+         <TEXT_MODULES>
+            <TM_PURCHASE_ORDER/>
+            <TM_PUR_ORD_DATE/>
+            <TM_PAY_TERMS/>
+            <TM_DATE/>
+            <TM_VEND_ADD/>
+            <TM_LINE/>
+            <TM_JOUNAL_NUM/>
+            <TM_ISSUE_NUM/>
+            <TM_PRINT_BIND/>
+            <TM_UOM/>
+            <TM_JOU_VOL/>
+            <TM_JO_ISSUE/>
+            <TM_PRINT_ISSN/>
+            <TM_ITEM_TEXT/>
+            <TM_ISSUE_TYPE/>
+            <TM_ISSUE_DES/>
+            <TM_JOUNAL_DES/>
+            <TM_DELIVERY_DATE/>
+            <TM_COLON/>
+         </TEXT_MODULES>
+         <V_LANGU/>
+         <I_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EINDT/>
+               <EBELP/>
+               <MATNR/>
+               <MENGE/>
+               <MEINS/>
+               <ISMREFMDPROD/>
+               <ISMNRINYEAR/>
+               <ISMCOPYNR/>
+               <MAKTX_ISSUE/>
+               <MAKTX_JOURNAL/>
+               <IDENTCODE/>
+               <ATINN/>
+               <EINDT_CHAR/>
+               <ISMISSUETYPEST/>
+            </DATA>
+         </I_FINAL>
+         <ST_T001>
+            <BUKRS/>
+            <LAND1/>
+            <ADRNR/>
+         </ST_T001>
+         <V_ADD_COMP/>
+         <WILEY_ADDRESS/>
+         <V_LAND1_LFA1/>
+         <ST_LFA1>
+            <LIFNR/>
+            <LAND1/>
+            <ADRNR/>
+         </ST_LFA1>
+         <VENDOR_ADDRESS/>
+         <V_TOT_ADD_LINES/>
+         <V_DATUM/>
+         <V_DATUM_BEDAT/>
+         <V_PAY_DES/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/10/12-08:45:30        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2017-05-09T18:18:02Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.8</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.8</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:654f339b-354e-45df-80e3-009b4a5560f5</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.8.0.0.20140107.1.905771</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

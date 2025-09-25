@@ -1,0 +1,1151 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ROOT" type="ddic:ZSTQTC_IDOC_ORDERS05"/>
+  <tt:template>
+    <ROOT>
+      <E1EDK01>
+        <ACTION tt:value-ref=".ROOT.E1EDK01.ACTION"/>
+        <KZABS tt:value-ref=".ROOT.E1EDK01.KZABS"/>
+        <CURCY tt:value-ref=".ROOT.E1EDK01.CURCY"/>
+        <HWAER tt:value-ref=".ROOT.E1EDK01.HWAER"/>
+        <WKURS tt:value-ref=".ROOT.E1EDK01.WKURS"/>
+        <ZTERM tt:value-ref=".ROOT.E1EDK01.ZTERM"/>
+        <KUNDEUINR tt:value-ref=".ROOT.E1EDK01.KUNDEUINR"/>
+        <EIGENUINR tt:value-ref=".ROOT.E1EDK01.EIGENUINR"/>
+        <BSART tt:value-ref=".ROOT.E1EDK01.BSART"/>
+        <BELNR tt:value-ref=".ROOT.E1EDK01.BELNR"/>
+        <NTGEW tt:value-ref=".ROOT.E1EDK01.NTGEW"/>
+        <BRGEW tt:value-ref=".ROOT.E1EDK01.BRGEW"/>
+        <GEWEI tt:value-ref=".ROOT.E1EDK01.GEWEI"/>
+        <FKART_RL tt:value-ref=".ROOT.E1EDK01.FKART_RL"/>
+        <ABLAD tt:value-ref=".ROOT.E1EDK01.ABLAD"/>
+        <BSTZD tt:value-ref=".ROOT.E1EDK01.BSTZD"/>
+        <VSART tt:value-ref=".ROOT.E1EDK01.VSART"/>
+        <VSART_BEZ tt:value-ref=".ROOT.E1EDK01.VSART_BEZ"/>
+        <RECIPNT_NO tt:value-ref=".ROOT.E1EDK01.RECIPNT_NO"/>
+        <KZAZU tt:value-ref=".ROOT.E1EDK01.KZAZU"/>
+        <AUTLF tt:value-ref=".ROOT.E1EDK01.AUTLF"/>
+        <AUGRU tt:value-ref=".ROOT.E1EDK01.AUGRU"/>
+        <AUGRU_BEZ tt:value-ref=".ROOT.E1EDK01.AUGRU_BEZ"/>
+        <ABRVW tt:value-ref=".ROOT.E1EDK01.ABRVW"/>
+        <ABRVW_BEZ tt:value-ref=".ROOT.E1EDK01.ABRVW_BEZ"/>
+        <FKTYP tt:value-ref=".ROOT.E1EDK01.FKTYP"/>
+        <LIFSK tt:value-ref=".ROOT.E1EDK01.LIFSK"/>
+        <LIFSK_BEZ tt:value-ref=".ROOT.E1EDK01.LIFSK_BEZ"/>
+        <EMPST tt:value-ref=".ROOT.E1EDK01.EMPST"/>
+        <ABTNR tt:value-ref=".ROOT.E1EDK01.ABTNR"/>
+        <DELCO tt:value-ref=".ROOT.E1EDK01.DELCO"/>
+        <WKURS_M tt:value-ref=".ROOT.E1EDK01.WKURS_M"/>
+      </E1EDK01>
+      <Z1QTC_E1EDK01_01>
+        <RFSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.RFSTK"/>
+        <RFGSK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.RFGSK"/>
+        <BESTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.BESTK"/>
+        <LFSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.LFSTK"/>
+        <LFGSK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.LFGSK"/>
+        <WBSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.WBSTK"/>
+        <FKSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.FKSTK"/>
+        <FKSAK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.FKSAK"/>
+        <BUCHK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.BUCHK"/>
+        <ABSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ABSTK"/>
+        <GBSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.GBSTK"/>
+        <KOSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KOSTK"/>
+        <LVSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.LVSTK"/>
+        <UVALS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVALS"/>
+        <UVVLS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVVLS"/>
+        <UVFAS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVFAS"/>
+        <UVALL tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVALL"/>
+        <UVVLK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVVLK"/>
+        <UVFAK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVFAK"/>
+        <UVPRS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVPRS"/>
+        <VBTYP tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VBTYP"/>
+        <VBOBJ tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VBOBJ"/>
+        <AEDAT tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.AEDAT"/>
+        <FKIVK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.FKIVK"/>
+        <RELIK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.RELIK"/>
+        <UVK01 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVK01"/>
+        <UVK02 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVK02"/>
+        <UVK03 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVK03"/>
+        <UVK04 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVK04"/>
+        <UVK05 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVK05"/>
+        <UVS01 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVS01"/>
+        <UVS02 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVS02"/>
+        <UVS03 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVS03"/>
+        <UVS04 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVS04"/>
+        <UVS05 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVS05"/>
+        <PKSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.PKSTK"/>
+        <CMPSA tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSA"/>
+        <CMPSB tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSB"/>
+        <CMPSC tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSC"/>
+        <CMPSD tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSD"/>
+        <CMPSE tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSE"/>
+        <CMPSF tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSF"/>
+        <CMPSG tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSG"/>
+        <CMPSH tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSH"/>
+        <CMPSI tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSI"/>
+        <CMPSJ tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSJ"/>
+        <CMPSK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSK"/>
+        <CMPSL tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSL"/>
+        <CMPS0 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPS0"/>
+        <CMPS1 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPS1"/>
+        <CMPS2 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPS2"/>
+        <CMGST tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMGST"/>
+        <TRSTA tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.TRSTA"/>
+        <KOQUK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KOQUK"/>
+        <COSTA tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.COSTA"/>
+        <UVPAS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVPAS"/>
+        <UVPIS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVPIS"/>
+        <UVWAS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVWAS"/>
+        <UVPAK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVPAK"/>
+        <UVPIK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVPIK"/>
+        <UVWAK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVWAK"/>
+        <UVGEK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.UVGEK"/>
+        <CMPSM tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPSM"/>
+        <DCSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.DCSTK"/>
+        <VESTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VESTK"/>
+        <VLSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VLSTK"/>
+        <RRSTA tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.RRSTA"/>
+        <BLOCK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.BLOCK"/>
+        <FSSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.FSSTK"/>
+        <LSSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.LSSTK"/>
+        <SPSTG tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.SPSTG"/>
+        <PDSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.PDSTK"/>
+        <FMSTK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.FMSTK"/>
+        <MANEK tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.MANEK"/>
+        <SPE_TMPID tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.SPE_TMPID"/>
+        <HDALL tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.HDALL"/>
+        <HDALS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.HDALS"/>
+        <CMPS_CM tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPS_CM"/>
+        <CMPS_TE tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.CMPS_TE"/>
+        <AUNUM tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.AUNUM"/>
+        <ZLSCH tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZLSCH"/>
+        <KVGR1 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KVGR1"/>
+        <KVGR2 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KVGR2"/>
+        <KVGR3 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KVGR3"/>
+        <KVGR4 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KVGR4"/>
+        <KVGR5 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KVGR5"/>
+        <KDKG1 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDKG1"/>
+        <KDKG2 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDKG2"/>
+        <KDKG3 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDKG3"/>
+        <KDKG4 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDKG4"/>
+        <KDKG5 tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDKG5"/>
+        <VKUESCH tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VKUESCH"/>
+        <KONDA tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KONDA"/>
+        <SUBMI tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.SUBMI"/>
+        <ZZSFDCCASE tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZSFDCCASE"/>
+        <ZZFICE tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZFICE"/>
+        <ZZNORETURN tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZNORETURN"/>
+        <ZZHOLDFROM tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZHOLDFROM"/>
+        <ZZHOLDTO tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZHOLDTO"/>
+        <ZZPROMO tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZPROMO"/>
+        <ZZWHS tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZWHS"/>
+        <TRATY tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.TRATY"/>
+        <ZUONR tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZUONR"/>
+        <ZZLICGRP tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZLICGRP"/>
+        <GJAHR tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.GJAHR"/>
+        <ZZFTE tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZFTE"/>
+        <KDGRP tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.KDGRP"/>
+        <VSNMR_V tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VSNMR_V"/>
+        <VAKTSCH tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VAKTSCH"/>
+        <VASDR tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.VASDR"/>
+        <ZZLICYR tt:value-ref=".ROOT.Z1QTC_E1EDK01_01.ZZLICYR"/>
+      </Z1QTC_E1EDK01_01>
+      <E1EDK14>
+        <tt:loop ref=".ROOT.E1EDK14">
+          <E1EDK14>
+            <QUALF tt:value-ref="QUALF"/>
+            <ORGID tt:value-ref="ORGID"/>
+          </E1EDK14>
+        </tt:loop>
+      </E1EDK14>
+      <E1EDK03>
+        <tt:loop ref=".ROOT.E1EDK03">
+          <E1EDK03>
+            <IDDAT tt:value-ref="IDDAT"/>
+            <DATUM tt:value-ref="DATUM"/>
+            <UZEIT tt:value-ref="UZEIT"/>
+          </E1EDK03>
+        </tt:loop>
+      </E1EDK03>
+      <E1EDK04>
+        <tt:loop ref=".ROOT.E1EDK04">
+          <E1EDK04>
+            <MWSKZ tt:value-ref="MWSKZ"/>
+            <MSATZ tt:value-ref="MSATZ"/>
+            <MWSBT tt:value-ref="MWSBT"/>
+            <TXJCD tt:value-ref="TXJCD"/>
+            <KTEXT tt:value-ref="KTEXT"/>
+          </E1EDK04>
+        </tt:loop>
+      </E1EDK04>
+      <E1EDK05>
+        <tt:loop ref=".ROOT.E1EDK05">
+          <E1EDK05>
+            <ALCKZ tt:value-ref="ALCKZ"/>
+            <KSCHL tt:value-ref="KSCHL"/>
+            <KOTXT tt:value-ref="KOTXT"/>
+            <BETRG tt:value-ref="BETRG"/>
+            <KPERC tt:value-ref="KPERC"/>
+            <KRATE tt:value-ref="KRATE"/>
+            <UPRBS tt:value-ref="UPRBS"/>
+            <MEAUN tt:value-ref="MEAUN"/>
+            <KOBTR tt:value-ref="KOBTR"/>
+            <MWSKZ tt:value-ref="MWSKZ"/>
+            <MSATZ tt:value-ref="MSATZ"/>
+            <KOEIN tt:value-ref="KOEIN"/>
+          </E1EDK05>
+        </tt:loop>
+      </E1EDK05>
+      <E1EDKA1>
+        <tt:loop ref=".ROOT.E1EDKA1">
+          <ZSTQTC_E1EDKA1>
+            <E1EDKA1>
+              <PARVW tt:value-ref="E1EDKA1.PARVW"/>
+              <PARTN tt:value-ref="E1EDKA1.PARTN"/>
+              <LIFNR tt:value-ref="E1EDKA1.LIFNR"/>
+              <NAME1 tt:value-ref="E1EDKA1.NAME1"/>
+              <NAME2 tt:value-ref="E1EDKA1.NAME2"/>
+              <NAME3 tt:value-ref="E1EDKA1.NAME3"/>
+              <NAME4 tt:value-ref="E1EDKA1.NAME4"/>
+              <STRAS tt:value-ref="E1EDKA1.STRAS"/>
+              <STRS2 tt:value-ref="E1EDKA1.STRS2"/>
+              <PFACH tt:value-ref="E1EDKA1.PFACH"/>
+              <ORT01 tt:value-ref="E1EDKA1.ORT01"/>
+              <COUNC tt:value-ref="E1EDKA1.COUNC"/>
+              <PSTLZ tt:value-ref="E1EDKA1.PSTLZ"/>
+              <PSTL2 tt:value-ref="E1EDKA1.PSTL2"/>
+              <LAND1 tt:value-ref="E1EDKA1.LAND1"/>
+              <ABLAD tt:value-ref="E1EDKA1.ABLAD"/>
+              <PERNR tt:value-ref="E1EDKA1.PERNR"/>
+              <PARNR tt:value-ref="E1EDKA1.PARNR"/>
+              <TELF1 tt:value-ref="E1EDKA1.TELF1"/>
+              <TELF2 tt:value-ref="E1EDKA1.TELF2"/>
+              <TELBX tt:value-ref="E1EDKA1.TELBX"/>
+              <TELFX tt:value-ref="E1EDKA1.TELFX"/>
+              <TELTX tt:value-ref="E1EDKA1.TELTX"/>
+              <TELX1 tt:value-ref="E1EDKA1.TELX1"/>
+              <SPRAS tt:value-ref="E1EDKA1.SPRAS"/>
+              <ANRED tt:value-ref="E1EDKA1.ANRED"/>
+              <ORT02 tt:value-ref="E1EDKA1.ORT02"/>
+              <HAUSN tt:value-ref="E1EDKA1.HAUSN"/>
+              <STOCK tt:value-ref="E1EDKA1.STOCK"/>
+              <REGIO tt:value-ref="E1EDKA1.REGIO"/>
+              <PARGE tt:value-ref="E1EDKA1.PARGE"/>
+              <ISOAL tt:value-ref="E1EDKA1.ISOAL"/>
+              <ISONU tt:value-ref="E1EDKA1.ISONU"/>
+              <FCODE tt:value-ref="E1EDKA1.FCODE"/>
+              <IHREZ tt:value-ref="E1EDKA1.IHREZ"/>
+              <BNAME tt:value-ref="E1EDKA1.BNAME"/>
+              <PAORG tt:value-ref="E1EDKA1.PAORG"/>
+              <ORGTX tt:value-ref="E1EDKA1.ORGTX"/>
+              <PAGRU tt:value-ref="E1EDKA1.PAGRU"/>
+              <KNREF tt:value-ref="E1EDKA1.KNREF"/>
+              <ILNNR tt:value-ref="E1EDKA1.ILNNR"/>
+              <PFORT tt:value-ref="E1EDKA1.PFORT"/>
+              <SPRAS_ISO tt:value-ref="E1EDKA1.SPRAS_ISO"/>
+              <TITLE tt:value-ref="E1EDKA1.TITLE"/>
+            </E1EDKA1>
+            <Z1QTC_E1EDKA1_01>
+              <PARTNER tt:value-ref="Z1QTC_E1EDKA1_01.PARTNER"/>
+              <TYPE tt:value-ref="Z1QTC_E1EDKA1_01.TYPE"/>
+            </Z1QTC_E1EDKA1_01>
+            <E1EDKA3>
+              <tt:loop ref="E1EDKA3">
+                <E1EDKA3>
+                  <QUALP tt:value-ref="QUALP"/>
+                  <STDPN tt:value-ref="STDPN"/>
+                </E1EDKA3>
+              </tt:loop>
+            </E1EDKA3>
+          </ZSTQTC_E1EDKA1>
+        </tt:loop>
+      </E1EDKA1>
+      <E1EDK02>
+        <tt:loop ref=".ROOT.E1EDK02">
+          <E1EDK02>
+            <QUALF tt:value-ref="QUALF"/>
+            <BELNR tt:value-ref="BELNR"/>
+            <POSNR tt:value-ref="POSNR"/>
+            <DATUM tt:value-ref="DATUM"/>
+            <UZEIT tt:value-ref="UZEIT"/>
+          </E1EDK02>
+        </tt:loop>
+      </E1EDK02>
+      <E1EDK17>
+        <tt:loop ref=".ROOT.E1EDK17">
+          <E1EDK17>
+            <QUALF tt:value-ref="QUALF"/>
+            <LKOND tt:value-ref="LKOND"/>
+            <LKTEXT tt:value-ref="LKTEXT"/>
+          </E1EDK17>
+        </tt:loop>
+      </E1EDK17>
+      <E1EDK18>
+        <tt:loop ref=".ROOT.E1EDK18">
+          <E1EDK18>
+            <QUALF tt:value-ref="QUALF"/>
+            <TAGE tt:value-ref="TAGE"/>
+            <PRZNT tt:value-ref="PRZNT"/>
+            <ZTERM_TXT tt:value-ref="ZTERM_TXT"/>
+          </E1EDK18>
+        </tt:loop>
+      </E1EDK18>
+      <E1EDK35>
+        <tt:loop ref=".ROOT.E1EDK35">
+          <E1EDK35>
+            <QUALZ tt:value-ref="QUALZ"/>
+            <CUSADD tt:value-ref="CUSADD"/>
+            <CUSADD_BEZ tt:value-ref="CUSADD_BEZ"/>
+          </E1EDK35>
+        </tt:loop>
+      </E1EDK35>
+      <E1EDK36>
+        <tt:loop ref=".ROOT.E1EDK36">
+          <E1EDK36>
+            <CCINS tt:value-ref="CCINS"/>
+            <CCINS_BEZEI tt:value-ref="CCINS_BEZEI"/>
+            <CCNUM tt:value-ref="CCNUM"/>
+            <EXDATBI tt:value-ref="EXDATBI"/>
+            <CCNAME tt:value-ref="CCNAME"/>
+            <FAKWR tt:value-ref="FAKWR"/>
+            <CCGUID tt:value-ref="CCGUID"/>
+          </E1EDK36>
+        </tt:loop>
+      </E1EDK36>
+      <E1EDKT1>
+        <tt:loop ref=".ROOT.E1EDKT1">
+          <ZSTQTC_E1EDKT1>
+            <E1EDKT1>
+              <TDID tt:value-ref="E1EDKT1.TDID"/>
+              <TSSPRAS tt:value-ref="E1EDKT1.TSSPRAS"/>
+              <TSSPRAS_ISO tt:value-ref="E1EDKT1.TSSPRAS_ISO"/>
+              <TDOBJECT tt:value-ref="E1EDKT1.TDOBJECT"/>
+              <TDOBNAME tt:value-ref="E1EDKT1.TDOBNAME"/>
+            </E1EDKT1>
+            <E1EDKT2>
+              <tt:loop ref="E1EDKT2">
+                <E1EDKT2>
+                  <TDLINE tt:value-ref="TDLINE"/>
+                  <TDFORMAT tt:value-ref="TDFORMAT"/>
+                </E1EDKT2>
+              </tt:loop>
+            </E1EDKT2>
+          </ZSTQTC_E1EDKT1>
+        </tt:loop>
+      </E1EDKT1>
+      <E1EDP01>
+        <tt:loop ref=".ROOT.E1EDP01">
+          <ZSTQTC_E1EDP01>
+            <E1EDP01>
+              <POSEX tt:value-ref="E1EDP01.POSEX"/>
+              <ACTION tt:value-ref="E1EDP01.ACTION"/>
+              <PSTYP tt:value-ref="E1EDP01.PSTYP"/>
+              <KZABS tt:value-ref="E1EDP01.KZABS"/>
+              <MENGE tt:value-ref="E1EDP01.MENGE"/>
+              <MENEE tt:value-ref="E1EDP01.MENEE"/>
+              <BMNG2 tt:value-ref="E1EDP01.BMNG2"/>
+              <PMENE tt:value-ref="E1EDP01.PMENE"/>
+              <ABFTZ tt:value-ref="E1EDP01.ABFTZ"/>
+              <VPREI tt:value-ref="E1EDP01.VPREI"/>
+              <PEINH tt:value-ref="E1EDP01.PEINH"/>
+              <NETWR tt:value-ref="E1EDP01.NETWR"/>
+              <ANETW tt:value-ref="E1EDP01.ANETW"/>
+              <SKFBP tt:value-ref="E1EDP01.SKFBP"/>
+              <NTGEW tt:value-ref="E1EDP01.NTGEW"/>
+              <GEWEI tt:value-ref="E1EDP01.GEWEI"/>
+              <EINKZ tt:value-ref="E1EDP01.EINKZ"/>
+              <CURCY tt:value-ref="E1EDP01.CURCY"/>
+              <PREIS tt:value-ref="E1EDP01.PREIS"/>
+              <MATKL tt:value-ref="E1EDP01.MATKL"/>
+              <UEPOS tt:value-ref="E1EDP01.UEPOS"/>
+              <GRKOR tt:value-ref="E1EDP01.GRKOR"/>
+              <EVERS tt:value-ref="E1EDP01.EVERS"/>
+              <BPUMN tt:value-ref="E1EDP01.BPUMN"/>
+              <BPUMZ tt:value-ref="E1EDP01.BPUMZ"/>
+              <ABGRU tt:value-ref="E1EDP01.ABGRU"/>
+              <ABGRT tt:value-ref="E1EDP01.ABGRT"/>
+              <ANTLF tt:value-ref="E1EDP01.ANTLF"/>
+              <FIXMG tt:value-ref="E1EDP01.FIXMG"/>
+              <KZAZU tt:value-ref="E1EDP01.KZAZU"/>
+              <BRGEW tt:value-ref="E1EDP01.BRGEW"/>
+              <PSTYV tt:value-ref="E1EDP01.PSTYV"/>
+              <EMPST tt:value-ref="E1EDP01.EMPST"/>
+              <ABTNR tt:value-ref="E1EDP01.ABTNR"/>
+              <ABRVW tt:value-ref="E1EDP01.ABRVW"/>
+              <WERKS tt:value-ref="E1EDP01.WERKS"/>
+              <LPRIO tt:value-ref="E1EDP01.LPRIO"/>
+              <LPRIO_BEZ tt:value-ref="E1EDP01.LPRIO_BEZ"/>
+              <ROUTE tt:value-ref="E1EDP01.ROUTE"/>
+              <ROUTE_BEZ tt:value-ref="E1EDP01.ROUTE_BEZ"/>
+              <LGORT tt:value-ref="E1EDP01.LGORT"/>
+              <VSTEL tt:value-ref="E1EDP01.VSTEL"/>
+              <DELCO tt:value-ref="E1EDP01.DELCO"/>
+              <MATNR tt:value-ref="E1EDP01.MATNR"/>
+              <VALTG tt:value-ref="E1EDP01.VALTG"/>
+              <HIPOS tt:value-ref="E1EDP01.HIPOS"/>
+              <HIEVW tt:value-ref="E1EDP01.HIEVW"/>
+              <POSGUID tt:value-ref="E1EDP01.POSGUID"/>
+              <MATNR_EXTERNAL tt:value-ref="E1EDP01.MATNR_EXTERNAL"/>
+              <MATNR_VERSION tt:value-ref="E1EDP01.MATNR_VERSION"/>
+              <MATNR_GUID tt:value-ref="E1EDP01.MATNR_GUID"/>
+              <IUID_RELEVANT tt:value-ref="E1EDP01.IUID_RELEVANT"/>
+              <SGT_RCAT tt:value-ref="E1EDP01.SGT_RCAT"/>
+              <SGT_SCAT tt:value-ref="E1EDP01.SGT_SCAT"/>
+              <HANDOVERLOC tt:value-ref="E1EDP01.HANDOVERLOC"/>
+            </E1EDP01>
+            <Z1QTC_E1EDP01_01>
+              <VPOSN tt:value-ref="Z1QTC_E1EDP01_01.VPOSN"/>
+              <IHREZ_E tt:value-ref="Z1QTC_E1EDP01_01.IHREZ_E"/>
+              <VBELKUE tt:value-ref="Z1QTC_E1EDP01_01.VBELKUE"/>
+              <BEZEI tt:value-ref="Z1QTC_E1EDP01_01.BEZEI"/>
+              <RFSTA tt:value-ref="Z1QTC_E1EDP01_01.RFSTA"/>
+              <RFGSA tt:value-ref="Z1QTC_E1EDP01_01.RFGSA"/>
+              <BESTA tt:value-ref="Z1QTC_E1EDP01_01.BESTA"/>
+              <LFSTA tt:value-ref="Z1QTC_E1EDP01_01.LFSTA"/>
+              <LFGSA tt:value-ref="Z1QTC_E1EDP01_01.LFGSA"/>
+              <WBSTA tt:value-ref="Z1QTC_E1EDP01_01.WBSTA"/>
+              <FKSTA tt:value-ref="Z1QTC_E1EDP01_01.FKSTA"/>
+              <FKSAA tt:value-ref="Z1QTC_E1EDP01_01.FKSAA"/>
+              <ABSTA tt:value-ref="Z1QTC_E1EDP01_01.ABSTA"/>
+              <GBSTA tt:value-ref="Z1QTC_E1EDP01_01.GBSTA"/>
+              <KOSTA tt:value-ref="Z1QTC_E1EDP01_01.KOSTA"/>
+              <LVSTA tt:value-ref="Z1QTC_E1EDP01_01.LVSTA"/>
+              <UVALL tt:value-ref="Z1QTC_E1EDP01_01.UVALL"/>
+              <UVVLK tt:value-ref="Z1QTC_E1EDP01_01.UVVLK"/>
+              <UVFAK tt:value-ref="Z1QTC_E1EDP01_01.UVFAK"/>
+              <UVPRS tt:value-ref="Z1QTC_E1EDP01_01.UVPRS"/>
+              <FKIVP tt:value-ref="Z1QTC_E1EDP01_01.FKIVP"/>
+              <UVP01 tt:value-ref="Z1QTC_E1EDP01_01.UVP01"/>
+              <UVP02 tt:value-ref="Z1QTC_E1EDP01_01.UVP02"/>
+              <UVP03 tt:value-ref="Z1QTC_E1EDP01_01.UVP03"/>
+              <UVP04 tt:value-ref="Z1QTC_E1EDP01_01.UVP04"/>
+              <UVP05 tt:value-ref="Z1QTC_E1EDP01_01.UVP05"/>
+              <PKSTA tt:value-ref="Z1QTC_E1EDP01_01.PKSTA"/>
+              <KOQUA tt:value-ref="Z1QTC_E1EDP01_01.KOQUA"/>
+              <COSTA tt:value-ref="Z1QTC_E1EDP01_01.COSTA"/>
+              <CMPPI tt:value-ref="Z1QTC_E1EDP01_01.CMPPI"/>
+              <CMPPJ tt:value-ref="Z1QTC_E1EDP01_01.CMPPJ"/>
+              <UVPIK tt:value-ref="Z1QTC_E1EDP01_01.UVPIK"/>
+              <UVPAK tt:value-ref="Z1QTC_E1EDP01_01.UVPAK"/>
+              <UVWAK tt:value-ref="Z1QTC_E1EDP01_01.UVWAK"/>
+              <DCSTA tt:value-ref="Z1QTC_E1EDP01_01.DCSTA"/>
+              <RRSTA tt:value-ref="Z1QTC_E1EDP01_01.RRSTA"/>
+              <VLSTP tt:value-ref="Z1QTC_E1EDP01_01.VLSTP"/>
+              <FSSTA tt:value-ref="Z1QTC_E1EDP01_01.FSSTA"/>
+              <LSSTA tt:value-ref="Z1QTC_E1EDP01_01.LSSTA"/>
+              <PDSTA tt:value-ref="Z1QTC_E1EDP01_01.PDSTA"/>
+              <MANEK tt:value-ref="Z1QTC_E1EDP01_01.MANEK"/>
+              <HDALL tt:value-ref="Z1QTC_E1EDP01_01.HDALL"/>
+              <FAKSP tt:value-ref="Z1QTC_E1EDP01_01.FAKSP"/>
+              <MVGR1 tt:value-ref="Z1QTC_E1EDP01_01.MVGR1"/>
+              <MVGR2 tt:value-ref="Z1QTC_E1EDP01_01.MVGR2"/>
+              <MVGR3 tt:value-ref="Z1QTC_E1EDP01_01.MVGR3"/>
+              <MVGR4 tt:value-ref="Z1QTC_E1EDP01_01.MVGR4"/>
+              <MVGR5 tt:value-ref="Z1QTC_E1EDP01_01.MVGR5"/>
+              <KDKG1 tt:value-ref="Z1QTC_E1EDP01_01.KDKG1"/>
+              <KDKG2 tt:value-ref="Z1QTC_E1EDP01_01.KDKG2"/>
+              <KDKG3 tt:value-ref="Z1QTC_E1EDP01_01.KDKG3"/>
+              <KDKG4 tt:value-ref="Z1QTC_E1EDP01_01.KDKG4"/>
+              <KDKG5 tt:value-ref="Z1QTC_E1EDP01_01.KDKG5"/>
+              <ZZPROMO tt:value-ref="Z1QTC_E1EDP01_01.ZZPROMO"/>
+              <ZZRGCODE tt:value-ref="Z1QTC_E1EDP01_01.ZZRGCODE"/>
+              <ZZCANCDATE tt:value-ref="Z1QTC_E1EDP01_01.ZZCANCDATE"/>
+              <ZZARTNO tt:value-ref="Z1QTC_E1EDP01_01.ZZARTNO"/>
+              <ZZISBNLAN tt:value-ref="Z1QTC_E1EDP01_01.ZZISBNLAN"/>
+              <ZZSHPOCANC tt:value-ref="Z1QTC_E1EDP01_01.ZZSHPOCANC"/>
+              <ZZSUBTYP tt:value-ref="Z1QTC_E1EDP01_01.ZZSUBTYP"/>
+              <ZZVYP tt:value-ref="Z1QTC_E1EDP01_01.ZZVYP"/>
+              <VBEGDAT tt:value-ref="Z1QTC_E1EDP01_01.VBEGDAT"/>
+              <VENDDAT tt:value-ref="Z1QTC_E1EDP01_01.VENDDAT"/>
+              <ZZACCESS_MECH tt:value-ref="Z1QTC_E1EDP01_01.ZZACCESS_MECH"/>
+              <ZZCONTENT_START_D tt:value-ref="Z1QTC_E1EDP01_01.ZZCONTENT_START_D"/>
+              <ZZCONTENT_END_D tt:value-ref="Z1QTC_E1EDP01_01.ZZCONTENT_END_D"/>
+              <ZZLICENSE_START_D tt:value-ref="Z1QTC_E1EDP01_01.ZZLICENSE_START_D"/>
+              <ZZLICENSE_END_D tt:value-ref="Z1QTC_E1EDP01_01.ZZLICENSE_END_D"/>
+              <TRATY tt:value-ref="Z1QTC_E1EDP01_01.TRATY"/>
+              <VKUESCH tt:value-ref="Z1QTC_E1EDP01_01.VKUESCH"/>
+              <VKUEGRU tt:value-ref="Z1QTC_E1EDP01_01.VKUEGRU"/>
+              <VKUEGRU_TEXT tt:value-ref="Z1QTC_E1EDP01_01.VKUEGRU_TEXT"/>
+              <ACRNYM tt:value-ref="Z1QTC_E1EDP01_01.ACRNYM"/>
+              <KONDA tt:value-ref="Z1QTC_E1EDP01_01.KONDA"/>
+              <VBEDKUE tt:value-ref="Z1QTC_E1EDP01_01.VBEDKUE"/>
+              <ISMCOPYNR tt:value-ref="Z1QTC_E1EDP01_01.ISMCOPYNR"/>
+              <ISMMEDIATYPE tt:value-ref="Z1QTC_E1EDP01_01.ISMMEDIATYPE"/>
+              <ISMPUBLTYPE tt:value-ref="Z1QTC_E1EDP01_01.ISMPUBLTYPE"/>
+              <ISMCONTTYPE tt:value-ref="Z1QTC_E1EDP01_01.ISMCONTTYPE"/>
+              <UEPOSMATNR tt:value-ref="Z1QTC_E1EDP01_01.UEPOSMATNR"/>
+              <KZWI1 tt:value-ref="Z1QTC_E1EDP01_01.KZWI1"/>
+              <KZWI5 tt:value-ref="Z1QTC_E1EDP01_01.KZWI5"/>
+              <ZZDEALTYP tt:value-ref="Z1QTC_E1EDP01_01.ZZDEALTYP"/>
+              <ZZCLUSTYP tt:value-ref="Z1QTC_E1EDP01_01.ZZCLUSTYP"/>
+            </Z1QTC_E1EDP01_01>
+            <E1EDP02>
+              <tt:loop ref="E1EDP02">
+                <E1EDP02>
+                  <QUALF tt:value-ref="QUALF"/>
+                  <BELNR tt:value-ref="BELNR"/>
+                  <ZEILE tt:value-ref="ZEILE"/>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <UZEIT tt:value-ref="UZEIT"/>
+                  <BSARK tt:value-ref="BSARK"/>
+                  <IHREZ tt:value-ref="IHREZ"/>
+                  <RMA tt:value-ref="RMA"/>
+                  <REASON tt:value-ref="REASON"/>
+                  <RSNTXT tt:value-ref="RSNTXT"/>
+                </E1EDP02>
+              </tt:loop>
+            </E1EDP02>
+            <E1CUREF>
+              <POSEX tt:value-ref="E1CUREF.POSEX"/>
+              <CONFIG_ID tt:value-ref="E1CUREF.CONFIG_ID"/>
+              <INST_ID tt:value-ref="E1CUREF.INST_ID"/>
+            </E1CUREF>
+            <E1ADDI1>
+              <tt:loop ref="E1ADDI1">
+                <E1ADDI1>
+                  <ADDIMATNR tt:value-ref="ADDIMATNR"/>
+                  <ADDINUMBER tt:value-ref="ADDINUMBER"/>
+                  <ADDIVKME tt:value-ref="ADDIVKME"/>
+                  <ADDIFM tt:value-ref="ADDIFM"/>
+                  <ADDIFM_TXT tt:value-ref="ADDIFM_TXT"/>
+                  <ADDIKLART tt:value-ref="ADDIKLART"/>
+                  <ADDIKLART_TXT tt:value-ref="ADDIKLART_TXT"/>
+                  <ADDICLASS tt:value-ref="ADDICLASS"/>
+                  <ADDICLASS_TXT tt:value-ref="ADDICLASS_TXT"/>
+                  <ADDIIDOC tt:value-ref="ADDIIDOC"/>
+                  <ADDIMATNR_EXTERNAL tt:value-ref="ADDIMATNR_EXTERNAL"/>
+                  <ADDIMATNR_VERSION tt:value-ref="ADDIMATNR_VERSION"/>
+                  <ADDIMATNR_GUID tt:value-ref="ADDIMATNR_GUID"/>
+                </E1ADDI1>
+              </tt:loop>
+            </E1ADDI1>
+            <E1EDP03>
+              <tt:loop ref="E1EDP03">
+                <E1EDP03>
+                  <IDDAT tt:value-ref="IDDAT"/>
+                  <DATUM tt:value-ref="DATUM"/>
+                  <UZEIT tt:value-ref="UZEIT"/>
+                </E1EDP03>
+              </tt:loop>
+            </E1EDP03>
+            <E1EDP04>
+              <tt:loop ref="E1EDP04">
+                <E1EDP04>
+                  <MWSKZ tt:value-ref="MWSKZ"/>
+                  <MSATZ tt:value-ref="MSATZ"/>
+                  <MWSBT tt:value-ref="MWSBT"/>
+                  <TXJCD tt:value-ref="TXJCD"/>
+                  <KTEXT tt:value-ref="KTEXT"/>
+                </E1EDP04>
+              </tt:loop>
+            </E1EDP04>
+            <E1EDP05>
+              <tt:loop ref="E1EDP05">
+                <ZSTQTC_E1EDP05>
+                  <E1EDP05>
+                    <ALCKZ tt:value-ref="E1EDP05.ALCKZ"/>
+                    <KSCHL tt:value-ref="E1EDP05.KSCHL"/>
+                    <KOTXT tt:value-ref="E1EDP05.KOTXT"/>
+                    <BETRG tt:value-ref="E1EDP05.BETRG"/>
+                    <KPERC tt:value-ref="E1EDP05.KPERC"/>
+                    <KRATE tt:value-ref="E1EDP05.KRATE"/>
+                    <UPRBS tt:value-ref="E1EDP05.UPRBS"/>
+                    <MEAUN tt:value-ref="E1EDP05.MEAUN"/>
+                    <KOBTR tt:value-ref="E1EDP05.KOBTR"/>
+                    <MENGE tt:value-ref="E1EDP05.MENGE"/>
+                    <PREIS tt:value-ref="E1EDP05.PREIS"/>
+                    <MWSKZ tt:value-ref="E1EDP05.MWSKZ"/>
+                    <MSATZ tt:value-ref="E1EDP05.MSATZ"/>
+                    <KOEIN tt:value-ref="E1EDP05.KOEIN"/>
+                    <CURTP tt:value-ref="E1EDP05.CURTP"/>
+                    <KOBAS tt:value-ref="E1EDP05.KOBAS"/>
+                  </E1EDP05>
+                  <E1EDPS5>
+                    <tt:loop ref="E1EDPS5">
+                      <E1EDPS5>
+                        <KSTBM tt:value-ref="KSTBM"/>
+                        <KBETR tt:value-ref="KBETR"/>
+                      </E1EDPS5>
+                    </tt:loop>
+                  </E1EDPS5>
+                </ZSTQTC_E1EDP05>
+              </tt:loop>
+            </E1EDP05>
+            <E1EDP20>
+              <tt:loop ref="E1EDP20">
+                <E1EDP20>
+                  <WMENG tt:value-ref="WMENG"/>
+                  <AMENG tt:value-ref="AMENG"/>
+                  <EDATU tt:value-ref="EDATU"/>
+                  <EZEIT tt:value-ref="EZEIT"/>
+                  <EDATU_OLD tt:value-ref="EDATU_OLD"/>
+                  <EZEIT_OLD tt:value-ref="EZEIT_OLD"/>
+                  <ACTION tt:value-ref="ACTION"/>
+                  <HANDOVERDATE tt:value-ref="HANDOVERDATE"/>
+                  <HANDOVERTIME tt:value-ref="HANDOVERTIME"/>
+                </E1EDP20>
+              </tt:loop>
+            </E1EDP20>
+            <E1EDPA1>
+              <tt:loop ref="E1EDPA1">
+                <ZSTQTC_E1EDPA1>
+                  <E1EDPA1>
+                    <PARVW tt:value-ref="E1EDPA1.PARVW"/>
+                    <PARTN tt:value-ref="E1EDPA1.PARTN"/>
+                    <LIFNR tt:value-ref="E1EDPA1.LIFNR"/>
+                    <NAME1 tt:value-ref="E1EDPA1.NAME1"/>
+                    <NAME2 tt:value-ref="E1EDPA1.NAME2"/>
+                    <NAME3 tt:value-ref="E1EDPA1.NAME3"/>
+                    <NAME4 tt:value-ref="E1EDPA1.NAME4"/>
+                    <STRAS tt:value-ref="E1EDPA1.STRAS"/>
+                    <STRS2 tt:value-ref="E1EDPA1.STRS2"/>
+                    <PFACH tt:value-ref="E1EDPA1.PFACH"/>
+                    <ORT01 tt:value-ref="E1EDPA1.ORT01"/>
+                    <COUNC tt:value-ref="E1EDPA1.COUNC"/>
+                    <PSTLZ tt:value-ref="E1EDPA1.PSTLZ"/>
+                    <PSTL2 tt:value-ref="E1EDPA1.PSTL2"/>
+                    <LAND1 tt:value-ref="E1EDPA1.LAND1"/>
+                    <ABLAD tt:value-ref="E1EDPA1.ABLAD"/>
+                    <PERNR tt:value-ref="E1EDPA1.PERNR"/>
+                    <PARNR tt:value-ref="E1EDPA1.PARNR"/>
+                    <TELF1 tt:value-ref="E1EDPA1.TELF1"/>
+                    <TELF2 tt:value-ref="E1EDPA1.TELF2"/>
+                    <TELBX tt:value-ref="E1EDPA1.TELBX"/>
+                    <TELFX tt:value-ref="E1EDPA1.TELFX"/>
+                    <TELTX tt:value-ref="E1EDPA1.TELTX"/>
+                    <TELX1 tt:value-ref="E1EDPA1.TELX1"/>
+                    <SPRAS tt:value-ref="E1EDPA1.SPRAS"/>
+                    <ANRED tt:value-ref="E1EDPA1.ANRED"/>
+                    <ORT02 tt:value-ref="E1EDPA1.ORT02"/>
+                    <HAUSN tt:value-ref="E1EDPA1.HAUSN"/>
+                    <STOCK tt:value-ref="E1EDPA1.STOCK"/>
+                    <REGIO tt:value-ref="E1EDPA1.REGIO"/>
+                    <PARGE tt:value-ref="E1EDPA1.PARGE"/>
+                    <ISOAL tt:value-ref="E1EDPA1.ISOAL"/>
+                    <ISONU tt:value-ref="E1EDPA1.ISONU"/>
+                    <FCODE tt:value-ref="E1EDPA1.FCODE"/>
+                    <IHREZ tt:value-ref="E1EDPA1.IHREZ"/>
+                    <BNAME tt:value-ref="E1EDPA1.BNAME"/>
+                    <PAORG tt:value-ref="E1EDPA1.PAORG"/>
+                    <ORGTX tt:value-ref="E1EDPA1.ORGTX"/>
+                    <PAGRU tt:value-ref="E1EDPA1.PAGRU"/>
+                    <KNREF tt:value-ref="E1EDPA1.KNREF"/>
+                    <ILNNR tt:value-ref="E1EDPA1.ILNNR"/>
+                    <PFORT tt:value-ref="E1EDPA1.PFORT"/>
+                    <SPRAS_ISO tt:value-ref="E1EDPA1.SPRAS_ISO"/>
+                    <TITLE tt:value-ref="E1EDPA1.TITLE"/>
+                  </E1EDPA1>
+                  <E1EDPA3>
+                    <tt:loop ref="E1EDPA3">
+                      <E1EDPA3>
+                        <QUALP tt:value-ref="QUALP"/>
+                        <STDPN tt:value-ref="STDPN"/>
+                      </E1EDPA3>
+                    </tt:loop>
+                  </E1EDPA3>
+                </ZSTQTC_E1EDPA1>
+              </tt:loop>
+            </E1EDPA1>
+            <E1EDP19>
+              <tt:loop ref="E1EDP19">
+                <E1EDP19>
+                  <QUALF tt:value-ref="QUALF"/>
+                  <IDTNR tt:value-ref="IDTNR"/>
+                  <KTEXT tt:value-ref="KTEXT"/>
+                  <MFRPN tt:value-ref="MFRPN"/>
+                  <MFRNR tt:value-ref="MFRNR"/>
+                  <IDTNR_EXTERNAL tt:value-ref="IDTNR_EXTERNAL"/>
+                  <IDTNR_VERSION tt:value-ref="IDTNR_VERSION"/>
+                  <IDTNR_GUID tt:value-ref="IDTNR_GUID"/>
+                </E1EDP19>
+              </tt:loop>
+            </E1EDP19>
+            <E1EDPAD>
+              <E1EDPAD>
+                <QUALF tt:value-ref="E1EDPAD.E1EDPAD.QUALF"/>
+                <ICC tt:value-ref="E1EDPAD.E1EDPAD.ICC"/>
+                <MOI tt:value-ref="E1EDPAD.E1EDPAD.MOI"/>
+                <PRI tt:value-ref="E1EDPAD.E1EDPAD.PRI"/>
+                <ACN tt:value-ref="E1EDPAD.E1EDPAD.ACN"/>
+                <ACN10 tt:value-ref="E1EDPAD.E1EDPAD.ACN10"/>
+                <DNS tt:value-ref="E1EDPAD.E1EDPAD.DNS"/>
+              </E1EDPAD>
+              <E1TXTH1>
+                <E1TXTH1>
+                  <FUNCTION tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.FUNCTION"/>
+                  <TDOBJECT tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.TDOBJECT"/>
+                  <TDOBNAME tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.TDOBNAME"/>
+                  <TDID tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.TDID"/>
+                  <TDSPRAS tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.TDSPRAS"/>
+                  <TDTEXTTYPE tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.TDTEXTTYPE"/>
+                  <LANGUA_ISO tt:value-ref="E1EDPAD.E1TXTH1.E1TXTH1.LANGUA_ISO"/>
+                </E1TXTH1>
+                <E1TXTP1>
+                  <tt:loop ref="E1EDPAD.E1TXTH1.E1TXTP1">
+                    <E1TXTP1>
+                      <TDFORMAT tt:value-ref="TDFORMAT"/>
+                      <TDLINE tt:value-ref="TDLINE"/>
+                    </E1TXTP1>
+                  </tt:loop>
+                </E1TXTP1>
+              </E1TXTH1>
+            </E1EDPAD>
+            <E1EDP17>
+              <tt:loop ref="E1EDP17">
+                <E1EDP17>
+                  <QUALF tt:value-ref="QUALF"/>
+                  <LKOND tt:value-ref="LKOND"/>
+                  <LKTEXT tt:value-ref="LKTEXT"/>
+                  <LPRIO tt:value-ref="LPRIO"/>
+                </E1EDP17>
+              </tt:loop>
+            </E1EDP17>
+            <E1EDP18>
+              <tt:loop ref="E1EDP18">
+                <E1EDP18>
+                  <QUALF tt:value-ref="QUALF"/>
+                  <TAGE tt:value-ref="TAGE"/>
+                  <PRZNT tt:value-ref="PRZNT"/>
+                  <ZTERM_TXT tt:value-ref="ZTERM_TXT"/>
+                </E1EDP18>
+              </tt:loop>
+            </E1EDP18>
+            <E1EDP35>
+              <tt:loop ref="E1EDP35">
+                <E1EDP35>
+                  <QUALZ tt:value-ref="QUALZ"/>
+                  <CUSADD tt:value-ref="CUSADD"/>
+                  <CUSADD_BEZ tt:value-ref="CUSADD_BEZ"/>
+                </E1EDP35>
+              </tt:loop>
+            </E1EDP35>
+            <E1EDPT1>
+              <tt:loop ref="E1EDPT1">
+                <ZSTQTC_E1EDPT1>
+                  <E1EDPT1>
+                    <TDID tt:value-ref="E1EDPT1.TDID"/>
+                    <TSSPRAS tt:value-ref="E1EDPT1.TSSPRAS"/>
+                    <TSSPRAS_ISO tt:value-ref="E1EDPT1.TSSPRAS_ISO"/>
+                  </E1EDPT1>
+                  <E1EDPT2>
+                    <tt:loop ref="E1EDPT2">
+                      <E1EDPT2>
+                        <TDLINE tt:value-ref="TDLINE"/>
+                        <TDFORMAT tt:value-ref="TDFORMAT"/>
+                      </E1EDPT2>
+                    </tt:loop>
+                  </E1EDPT2>
+                </ZSTQTC_E1EDPT1>
+              </tt:loop>
+            </E1EDPT1>
+            <E1EDC01>
+              <tt:loop ref="E1EDC01">
+                <ZSTQTC_E1EDC01>
+                  <E1EDC01>
+                    <SGTYP tt:value-ref="E1EDC01.SGTYP"/>
+                    <ZLTYP tt:value-ref="E1EDC01.ZLTYP"/>
+                    <LVALT tt:value-ref="E1EDC01.LVALT"/>
+                    <ALTNO tt:value-ref="E1EDC01.ALTNO"/>
+                    <ALREF tt:value-ref="E1EDC01.ALREF"/>
+                    <ZLART tt:value-ref="E1EDC01.ZLART"/>
+                    <POSEX tt:value-ref="E1EDC01.POSEX"/>
+                    <RANG tt:value-ref="E1EDC01.RANG"/>
+                    <EXGRP tt:value-ref="E1EDC01.EXGRP"/>
+                    <UEPOS tt:value-ref="E1EDC01.UEPOS"/>
+                    <MATKL tt:value-ref="E1EDC01.MATKL"/>
+                    <MENGE tt:value-ref="E1EDC01.MENGE"/>
+                    <MENEE tt:value-ref="E1EDC01.MENEE"/>
+                    <BMNG2 tt:value-ref="E1EDC01.BMNG2"/>
+                    <PMENE tt:value-ref="E1EDC01.PMENE"/>
+                    <BPUMN tt:value-ref="E1EDC01.BPUMN"/>
+                    <BPUMZ tt:value-ref="E1EDC01.BPUMZ"/>
+                    <VPREI tt:value-ref="E1EDC01.VPREI"/>
+                    <PEINH tt:value-ref="E1EDC01.PEINH"/>
+                    <NETWR tt:value-ref="E1EDC01.NETWR"/>
+                    <ANETW tt:value-ref="E1EDC01.ANETW"/>
+                    <SKFBP tt:value-ref="E1EDC01.SKFBP"/>
+                    <CURCY tt:value-ref="E1EDC01.CURCY"/>
+                    <PREIS tt:value-ref="E1EDC01.PREIS"/>
+                    <ACTION tt:value-ref="E1EDC01.ACTION"/>
+                    <KZABS tt:value-ref="E1EDC01.KZABS"/>
+                    <UEBTO tt:value-ref="E1EDC01.UEBTO"/>
+                    <UEBTK tt:value-ref="E1EDC01.UEBTK"/>
+                    <LBNUM tt:value-ref="E1EDC01.LBNUM"/>
+                    <AUSGB tt:value-ref="E1EDC01.AUSGB"/>
+                    <FRPOS tt:value-ref="E1EDC01.FRPOS"/>
+                    <TOPOS tt:value-ref="E1EDC01.TOPOS"/>
+                    <KTXT1 tt:value-ref="E1EDC01.KTXT1"/>
+                    <KTXT2 tt:value-ref="E1EDC01.KTXT2"/>
+                    <PERNR tt:value-ref="E1EDC01.PERNR"/>
+                    <LGART tt:value-ref="E1EDC01.LGART"/>
+                    <STELL tt:value-ref="E1EDC01.STELL"/>
+                    <ZWERT tt:value-ref="E1EDC01.ZWERT"/>
+                  </E1EDC01>
+                  <E1EDC02>
+                    <tt:loop ref="E1EDC02">
+                      <E1EDC02>
+                        <QUALF tt:value-ref="QUALF"/>
+                        <BELNR tt:value-ref="BELNR"/>
+                        <XLINE tt:value-ref="XLINE"/>
+                        <DATUM tt:value-ref="DATUM"/>
+                        <UZEIT tt:value-ref="UZEIT"/>
+                      </E1EDC02>
+                    </tt:loop>
+                  </E1EDC02>
+                  <E1EDC03>
+                    <tt:loop ref="E1EDC03">
+                      <E1EDC03>
+                        <IDDAT tt:value-ref="IDDAT"/>
+                        <DATUM tt:value-ref="DATUM"/>
+                        <UZEIT tt:value-ref="UZEIT"/>
+                      </E1EDC03>
+                    </tt:loop>
+                  </E1EDC03>
+                  <E1EDC04>
+                    <tt:loop ref="E1EDC04">
+                      <E1EDC04>
+                        <MWSKZ tt:value-ref="MWSKZ"/>
+                        <MSATZ tt:value-ref="MSATZ"/>
+                        <MWSBT tt:value-ref="MWSBT"/>
+                        <TXJCD tt:value-ref="TXJCD"/>
+                      </E1EDC04>
+                    </tt:loop>
+                  </E1EDC04>
+                  <E1EDC05>
+                    <tt:loop ref="E1EDC05">
+                      <E1EDC05>
+                        <ALCKZ tt:value-ref="ALCKZ"/>
+                        <KSCHL tt:value-ref="KSCHL"/>
+                        <KOTXT tt:value-ref="KOTXT"/>
+                        <BETRG tt:value-ref="BETRG"/>
+                        <KPERC tt:value-ref="KPERC"/>
+                        <KRATE tt:value-ref="KRATE"/>
+                        <UPRBS tt:value-ref="UPRBS"/>
+                        <MEAUN tt:value-ref="MEAUN"/>
+                        <KOBTR tt:value-ref="KOBTR"/>
+                        <MENGE tt:value-ref="MENGE"/>
+                        <PREIS tt:value-ref="PREIS"/>
+                        <MWSKZ tt:value-ref="MWSKZ"/>
+                        <MSATZ tt:value-ref="MSATZ"/>
+                      </E1EDC05>
+                    </tt:loop>
+                  </E1EDC05>
+                  <E1EDC06>
+                    <FORMELNR tt:value-ref="E1EDC06.FORMELNR"/>
+                    <FRMVAL1 tt:value-ref="E1EDC06.FRMVAL1"/>
+                    <FRMVAL2 tt:value-ref="E1EDC06.FRMVAL2"/>
+                    <FRMVAL3 tt:value-ref="E1EDC06.FRMVAL3"/>
+                    <FRMVAL4 tt:value-ref="E1EDC06.FRMVAL4"/>
+                    <FRMVAL5 tt:value-ref="E1EDC06.FRMVAL5"/>
+                  </E1EDC06>
+                  <E1EDC07>
+                    <USERF1_NUM tt:value-ref="E1EDC07.USERF1_NUM"/>
+                    <USERF2_NUM tt:value-ref="E1EDC07.USERF2_NUM"/>
+                    <USERF1_TXT tt:value-ref="E1EDC07.USERF1_TXT"/>
+                    <USERF2_TXT tt:value-ref="E1EDC07.USERF2_TXT"/>
+                  </E1EDC07>
+                  <E1EDCA1>
+                    <tt:loop ref="E1EDCA1">
+                      <E1EDCA1>
+                        <PARVW tt:value-ref="PARVW"/>
+                        <PARTN tt:value-ref="PARTN"/>
+                        <LIFNR tt:value-ref="LIFNR"/>
+                        <NAME1 tt:value-ref="NAME1"/>
+                        <NAME2 tt:value-ref="NAME2"/>
+                        <NAME3 tt:value-ref="NAME3"/>
+                        <NAME4 tt:value-ref="NAME4"/>
+                        <STRAS tt:value-ref="STRAS"/>
+                        <STRS2 tt:value-ref="STRS2"/>
+                        <PFACH tt:value-ref="PFACH"/>
+                        <ORT01 tt:value-ref="ORT01"/>
+                        <COUNC tt:value-ref="COUNC"/>
+                        <PSTLZ tt:value-ref="PSTLZ"/>
+                        <PSTL2 tt:value-ref="PSTL2"/>
+                        <LAND1 tt:value-ref="LAND1"/>
+                        <ABLAD tt:value-ref="ABLAD"/>
+                        <PERNR tt:value-ref="PERNR"/>
+                        <PARNR tt:value-ref="PARNR"/>
+                        <TELF1 tt:value-ref="TELF1"/>
+                        <TELF2 tt:value-ref="TELF2"/>
+                        <TELBX tt:value-ref="TELBX"/>
+                        <TELFX tt:value-ref="TELFX"/>
+                        <TELTX tt:value-ref="TELTX"/>
+                        <TELX1 tt:value-ref="TELX1"/>
+                        <SPRAS tt:value-ref="SPRAS"/>
+                        <ANRED tt:value-ref="ANRED"/>
+                        <ORT02 tt:value-ref="ORT02"/>
+                        <HAUSN tt:value-ref="HAUSN"/>
+                        <STOCK tt:value-ref="STOCK"/>
+                        <REGIO tt:value-ref="REGIO"/>
+                        <PARGE tt:value-ref="PARGE"/>
+                        <ISOAL tt:value-ref="ISOAL"/>
+                        <ISONU tt:value-ref="ISONU"/>
+                        <FCODE tt:value-ref="FCODE"/>
+                        <IHREZ tt:value-ref="IHREZ"/>
+                        <BNAME tt:value-ref="BNAME"/>
+                        <PAORG tt:value-ref="PAORG"/>
+                        <ORGTX tt:value-ref="ORGTX"/>
+                        <PAGRU tt:value-ref="PAGRU"/>
+                      </E1EDCA1>
+                    </tt:loop>
+                  </E1EDCA1>
+                  <E1EDC19>
+                    <tt:loop ref="E1EDC19">
+                      <E1EDC19>
+                        <QUALF tt:value-ref="QUALF"/>
+                        <IDTNR tt:value-ref="IDTNR"/>
+                        <KTEXT tt:value-ref="KTEXT"/>
+                      </E1EDC19>
+                    </tt:loop>
+                  </E1EDC19>
+                  <E1EDC17>
+                    <tt:loop ref="E1EDC17">
+                      <E1EDC17>
+                        <QUALF tt:value-ref="QUALF"/>
+                        <LKOND tt:value-ref="LKOND"/>
+                        <LKTEXT tt:value-ref="LKTEXT"/>
+                      </E1EDC17>
+                    </tt:loop>
+                  </E1EDC17>
+                  <E1EDC18>
+                    <tt:loop ref="E1EDC18">
+                      <E1EDC18>
+                        <QUALF tt:value-ref="QUALF"/>
+                        <TAGE tt:value-ref="TAGE"/>
+                        <PRZNT tt:value-ref="PRZNT"/>
+                      </E1EDC18>
+                    </tt:loop>
+                  </E1EDC18>
+                  <E1EDCT1>
+                    <tt:loop ref="E1EDCT1">
+                      <ZSTQTC_E1EDCT1>
+                        <E1EDCT1>
+                          <TDID tt:value-ref="E1EDCT1.TDID"/>
+                          <TSSPRAS tt:value-ref="E1EDCT1.TSSPRAS"/>
+                        </E1EDCT1>
+                        <E1EDCT2>
+                          <tt:loop ref="E1EDCT2">
+                            <E1EDCT2>
+                              <TDLINE tt:value-ref="TDLINE"/>
+                            </E1EDCT2>
+                          </tt:loop>
+                        </E1EDCT2>
+                      </ZSTQTC_E1EDCT1>
+                    </tt:loop>
+                  </E1EDCT1>
+                </ZSTQTC_E1EDC01>
+              </tt:loop>
+            </E1EDC01>
+          </ZSTQTC_E1EDP01>
+        </tt:loop>
+      </E1EDP01>
+      <E1CUCFG>
+        <tt:loop ref=".ROOT.E1CUCFG">
+          <ZSTQTC_E1CUCFG>
+            <E1CUCFG>
+              <POSEX tt:value-ref="E1CUCFG.POSEX"/>
+              <CONFIG_ID tt:value-ref="E1CUCFG.CONFIG_ID"/>
+              <ROOT_ID tt:value-ref="E1CUCFG.ROOT_ID"/>
+              <SCE tt:value-ref="E1CUCFG.SCE"/>
+              <KBNAME tt:value-ref="E1CUCFG.KBNAME"/>
+              <KBVERSION tt:value-ref="E1CUCFG.KBVERSION"/>
+              <COMPLETE tt:value-ref="E1CUCFG.COMPLETE"/>
+              <CONSISTENT tt:value-ref="E1CUCFG.CONSISTENT"/>
+              <CFGINFO tt:value-ref="E1CUCFG.CFGINFO"/>
+              <KBPROFILE tt:value-ref="E1CUCFG.KBPROFILE"/>
+              <KBLANGUAGE tt:value-ref="E1CUCFG.KBLANGUAGE"/>
+              <CBASE_ID tt:value-ref="E1CUCFG.CBASE_ID"/>
+              <CBASE_ID_TYPE tt:value-ref="E1CUCFG.CBASE_ID_TYPE"/>
+            </E1CUCFG>
+            <E1CUINS>
+              <tt:loop ref="E1CUINS">
+                <E1CUINS>
+                  <INST_ID tt:value-ref="INST_ID"/>
+                  <OBJ_TYPE tt:value-ref="OBJ_TYPE"/>
+                  <CLASS_TYPE tt:value-ref="CLASS_TYPE"/>
+                  <OBJ_KEY tt:value-ref="OBJ_KEY"/>
+                  <OBJ_TXT tt:value-ref="OBJ_TXT"/>
+                  <QUANTITY tt:value-ref="QUANTITY"/>
+                  <AUTHOR tt:value-ref="AUTHOR"/>
+                  <QUANTITY_UNIT tt:value-ref="QUANTITY_UNIT"/>
+                  <COMPLETE tt:value-ref="COMPLETE"/>
+                  <CONSISTENT tt:value-ref="CONSISTENT"/>
+                  <OBJECT_GUID tt:value-ref="OBJECT_GUID"/>
+                  <PERSIST_ID tt:value-ref="PERSIST_ID"/>
+                  <PERSIST_ID_TYPE tt:value-ref="PERSIST_ID_TYPE"/>
+                </E1CUINS>
+              </tt:loop>
+            </E1CUINS>
+            <E1CUPRT>
+              <tt:loop ref="E1CUPRT">
+                <E1CUPRT>
+                  <PARENT_ID tt:value-ref="PARENT_ID"/>
+                  <INST_ID tt:value-ref="INST_ID"/>
+                  <PART_OF_NO tt:value-ref="PART_OF_NO"/>
+                  <OBJ_TYPE tt:value-ref="OBJ_TYPE"/>
+                  <CLASS_TYPE tt:value-ref="CLASS_TYPE"/>
+                  <OBJ_KEY tt:value-ref="OBJ_KEY"/>
+                  <AUTHOR tt:value-ref="AUTHOR"/>
+                  <SALES_RELEVANT tt:value-ref="SALES_RELEVANT"/>
+                  <PART_OF_GUID tt:value-ref="PART_OF_GUID"/>
+                </E1CUPRT>
+              </tt:loop>
+            </E1CUPRT>
+            <E1CUVAL>
+              <tt:loop ref="E1CUVAL">
+                <E1CUVAL>
+                  <INST_ID tt:value-ref="INST_ID"/>
+                  <CHARC tt:value-ref="CHARC"/>
+                  <CHARC_TXT tt:value-ref="CHARC_TXT"/>
+                  <VALUE tt:value-ref="VALUE"/>
+                  <VALUE_TXT tt:value-ref="VALUE_TXT"/>
+                  <AUTHOR tt:value-ref="AUTHOR"/>
+                  <VALUE_TO tt:value-ref="VALUE_TO"/>
+                  <VALCODE tt:value-ref="VALCODE"/>
+                </E1CUVAL>
+              </tt:loop>
+            </E1CUVAL>
+            <E1CUBLB>
+              <tt:loop ref="E1CUBLB">
+                <E1CUBLB>
+                  <CONTENT tt:value-ref="CONTENT"/>
+                </E1CUBLB>
+              </tt:loop>
+            </E1CUBLB>
+          </ZSTQTC_E1CUCFG>
+        </tt:loop>
+      </E1CUCFG>
+      <E1EDL37>
+        <tt:loop ref=".ROOT.E1EDL37">
+          <ZSTQTC_E1EDL37>
+            <E1EDL37>
+              <EXIDV tt:value-ref="E1EDL37.EXIDV"/>
+              <TARAG tt:value-ref="E1EDL37.TARAG"/>
+              <GWEIT tt:value-ref="E1EDL37.GWEIT"/>
+              <BRGEW tt:value-ref="E1EDL37.BRGEW"/>
+              <NTGEW tt:value-ref="E1EDL37.NTGEW"/>
+              <MAGEW tt:value-ref="E1EDL37.MAGEW"/>
+              <GWEIM tt:value-ref="E1EDL37.GWEIM"/>
+              <BTVOL tt:value-ref="E1EDL37.BTVOL"/>
+              <NTVOL tt:value-ref="E1EDL37.NTVOL"/>
+              <MAVOL tt:value-ref="E1EDL37.MAVOL"/>
+              <VOLEM tt:value-ref="E1EDL37.VOLEM"/>
+              <TAVOL tt:value-ref="E1EDL37.TAVOL"/>
+              <VOLET tt:value-ref="E1EDL37.VOLET"/>
+              <VEGR2 tt:value-ref="E1EDL37.VEGR2"/>
+              <VEGR1 tt:value-ref="E1EDL37.VEGR1"/>
+              <VEGR3 tt:value-ref="E1EDL37.VEGR3"/>
+              <VHILM tt:value-ref="E1EDL37.VHILM"/>
+              <VEGR4 tt:value-ref="E1EDL37.VEGR4"/>
+              <LAENG tt:value-ref="E1EDL37.LAENG"/>
+              <VEGR5 tt:value-ref="E1EDL37.VEGR5"/>
+              <BREIT tt:value-ref="E1EDL37.BREIT"/>
+              <HOEHE tt:value-ref="E1EDL37.HOEHE"/>
+              <MEABM tt:value-ref="E1EDL37.MEABM"/>
+              <INHALT tt:value-ref="E1EDL37.INHALT"/>
+              <VHART tt:value-ref="E1EDL37.VHART"/>
+              <MAGRV tt:value-ref="E1EDL37.MAGRV"/>
+              <LADLG tt:value-ref="E1EDL37.LADLG"/>
+              <LADEH tt:value-ref="E1EDL37.LADEH"/>
+              <FARZT tt:value-ref="E1EDL37.FARZT"/>
+              <FAREH tt:value-ref="E1EDL37.FAREH"/>
+              <ENTFE tt:value-ref="E1EDL37.ENTFE"/>
+              <EHENT tt:value-ref="E1EDL37.EHENT"/>
+              <VELTP tt:value-ref="E1EDL37.VELTP"/>
+              <EXIDV2 tt:value-ref="E1EDL37.EXIDV2"/>
+              <LANDT tt:value-ref="E1EDL37.LANDT"/>
+              <LANDF tt:value-ref="E1EDL37.LANDF"/>
+              <NAMEF tt:value-ref="E1EDL37.NAMEF"/>
+              <NAMBE tt:value-ref="E1EDL37.NAMBE"/>
+              <VHILM_KU tt:value-ref="E1EDL37.VHILM_KU"/>
+              <VEBEZ tt:value-ref="E1EDL37.VEBEZ"/>
+              <SMGKN tt:value-ref="E1EDL37.SMGKN"/>
+              <KDMAT35 tt:value-ref="E1EDL37.KDMAT35"/>
+              <SORTL tt:value-ref="E1EDL37.SORTL"/>
+              <ERNAM tt:value-ref="E1EDL37.ERNAM"/>
+              <GEWFX tt:value-ref="E1EDL37.GEWFX"/>
+              <ERLKZ tt:value-ref="E1EDL37.ERLKZ"/>
+              <EXIDA tt:value-ref="E1EDL37.EXIDA"/>
+              <MOVE_STATUS tt:value-ref="E1EDL37.MOVE_STATUS"/>
+              <PACKVORSCHR tt:value-ref="E1EDL37.PACKVORSCHR"/>
+              <PACKVORSCHR_ST tt:value-ref="E1EDL37.PACKVORSCHR_ST"/>
+              <LABELTYP tt:value-ref="E1EDL37.LABELTYP"/>
+              <ZUL_AUFL tt:value-ref="E1EDL37.ZUL_AUFL"/>
+              <VHILM_EXTERNAL tt:value-ref="E1EDL37.VHILM_EXTERNAL"/>
+              <VHILM_VERSION tt:value-ref="E1EDL37.VHILM_VERSION"/>
+              <VHILM_GUID tt:value-ref="E1EDL37.VHILM_GUID"/>
+              <KDMAT35_EXTERNAL tt:value-ref="E1EDL37.KDMAT35_EXTERNAL"/>
+              <KDMAT35_VERSION tt:value-ref="E1EDL37.KDMAT35_VERSION"/>
+              <KDMAT35_GUID tt:value-ref="E1EDL37.KDMAT35_GUID"/>
+              <VHILM_KU_EXTERNAL tt:value-ref="E1EDL37.VHILM_KU_EXTERNAL"/>
+              <VHILM_KU_VERSION tt:value-ref="E1EDL37.VHILM_KU_VERSION"/>
+              <VHILM_KU_GUID tt:value-ref="E1EDL37.VHILM_KU_GUID"/>
+            </E1EDL37>
+            <E1EDL39>
+              <tt:loop ref="E1EDL39">
+                <E1EDL39>
+                  <QUALF tt:value-ref="QUALF"/>
+                  <PARAM tt:value-ref="PARAM"/>
+                </E1EDL39>
+              </tt:loop>
+            </E1EDL39>
+            <E1EDL38>
+              <tt:loop ref="E1EDL38">
+                <E1EDL38>
+                  <VEGR1_BEZ tt:value-ref="VEGR1_BEZ"/>
+                  <VEGR2_BEZ tt:value-ref="VEGR2_BEZ"/>
+                  <VEGR3_BEZ tt:value-ref="VEGR3_BEZ"/>
+                  <VEGR4_BEZ tt:value-ref="VEGR4_BEZ"/>
+                  <VEGR5_BEZ tt:value-ref="VEGR5_BEZ"/>
+                  <VHART_BEZ tt:value-ref="VHART_BEZ"/>
+                  <MAGRV_BEZ tt:value-ref="MAGRV_BEZ"/>
+                  <VEBEZ tt:value-ref="VEBEZ"/>
+                </E1EDL38>
+              </tt:loop>
+            </E1EDL38>
+            <E1EDL44>
+              <tt:loop ref="E1EDL44">
+                <E1EDL44>
+                  <VELIN tt:value-ref="VELIN"/>
+                  <VBELN tt:value-ref="VBELN"/>
+                  <POSNR tt:value-ref="POSNR"/>
+                  <EXIDV tt:value-ref="EXIDV"/>
+                  <VEMNG tt:value-ref="VEMNG"/>
+                  <VEMEH tt:value-ref="VEMEH"/>
+                  <MATNR tt:value-ref="MATNR"/>
+                  <KDMAT tt:value-ref="KDMAT"/>
+                  <CHARG tt:value-ref="CHARG"/>
+                  <WERKS tt:value-ref="WERKS"/>
+                  <LGORT tt:value-ref="LGORT"/>
+                  <CUOBJ tt:value-ref="CUOBJ"/>
+                  <BESTQ tt:value-ref="BESTQ"/>
+                  <SOBKZ tt:value-ref="SOBKZ"/>
+                  <SONUM tt:value-ref="SONUM"/>
+                  <ANZSN tt:value-ref="ANZSN"/>
+                  <WDATU tt:value-ref="WDATU"/>
+                  <PARID tt:value-ref="PARID"/>
+                  <MATNR_EXTERNAL tt:value-ref="MATNR_EXTERNAL"/>
+                  <MATNR_VERSION tt:value-ref="MATNR_VERSION"/>
+                  <MATNR_GUID tt:value-ref="MATNR_GUID"/>
+                  <KDMAT_EXTERNAL tt:value-ref="KDMAT_EXTERNAL"/>
+                  <KDMAT_VERSION tt:value-ref="KDMAT_VERSION"/>
+                  <KDMAT_GUID tt:value-ref="KDMAT_GUID"/>
+                </E1EDL44>
+              </tt:loop>
+            </E1EDL44>
+          </ZSTQTC_E1EDL37>
+        </tt:loop>
+      </E1EDL37>
+      <E1EDS01>
+        <tt:loop ref=".ROOT.E1EDS01">
+          <E1EDS01>
+            <SUMID tt:value-ref="SUMID"/>
+            <SUMME tt:value-ref="SUMME"/>
+            <SUNIT tt:value-ref="SUNIT"/>
+            <WAERQ tt:value-ref="WAERQ"/>
+          </E1EDS01>
+        </tt:loop>
+      </E1EDS01>
+    </ROOT>
+  </tt:template>
+</tt:transform>

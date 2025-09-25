@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Order type determination for license</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_LICGRPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_LICGRP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ORDER_TYPE_DETERMINE</FUNCNAME>
+     <SHORT_TEXT>FM for document type determination for E106</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_OBJECTID</PARAMETER>
+       <DEFAULT>&apos;E106&apos;</DEFAULT>
+       <TYP>ZDEVID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <TYP>AUART</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ACTIVE_FLAG</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_LICGRP</PARAMETER>
+       <TYP>BU_ID_TYPE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_OBJECTID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Development ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ACTIVE_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>FLAG</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_LICGRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Identification Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_ORDER_TYPE_DETERMINE>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_ORDER_TYPE_DETERMINE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_ORDER_TYPE_DETERMINE</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>FM ZQTC_ORDER_TYPE_DETERMINE gets document type maintain in constant</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>table with E106 object id.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_ORDER_TYPE_DETERMINE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

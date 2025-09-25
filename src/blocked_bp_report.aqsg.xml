@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQSG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGDBBS>
+    <AQGDBBS>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <NUM>ZWILEY</NUM>
+    </AQGDBBS>
+   </AQGDBBS>
+   <AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>CRDAT</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0001</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>CRTIM</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0002</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>CRUSR</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0003</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>NAME_FIRST</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0009</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>NAME_LAST</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0012</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>NAME_ORG1</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0010</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>NAME_ORG2</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0011</IOBJNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>PARTNER</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0004</IOBJNM>
+     <TXTFIELDNM>TEXT_BUT000_PARTNER</TXTFIELDNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>BUT000</TAB>
+     <FIELD>TYPE</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0013</IOBJNM>
+     <TXTFIELDNM>TEXT_BUT000_TYPE</TXTFIELDNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>KNVV</TAB>
+     <FIELD>AUFSD</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0005</IOBJNM>
+     <TXTFIELDNM>TEXT_KNVV_AUFSD</TXTFIELDNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>KNVV</TAB>
+     <FIELD>FAKSD</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0006</IOBJNM>
+     <TXTFIELDNM>TEXT_KNVV_FAKSD</TXTFIELDNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>KNVV</TAB>
+     <FIELD>LIFSD</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0007</IOBJNM>
+     <TXTFIELDNM>TEXT_KNVV_LIFSD</TXTFIELDNM>
+    </AQGSBWMAP>
+    <AQGSBWMAP>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TAB>KNVV</TAB>
+     <FIELD>VKORG</FIELD>
+     <IOBJNM>@1BLOCKED_BP_REPORT@@@@@@@0008</IOBJNM>
+     <TXTFIELDNM>TEXT_KNVV_VKORG</TXTFIELDNM>
+    </AQGSBWMAP>
+   </AQGSBWMAP>
+   <AQGSCAT>
+    <AQGSCAT>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <ART>J</ART>
+     <TSTRUC>BUT000</TSTRUC>
+    </AQGSCAT>
+   </AQGSCAT>
+   <AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>063</MAXL>
+     <TEXT>Blocked BP Report</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00004</TINDX>
+     <MAXL>080</MAXL>
+     <TEXT>BP: General data I</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00005</TINDX>
+     <MAXL>080</MAXL>
+     <TEXT>Customer Master Sales Data</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00006</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Time created</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00007</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Time created</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00008</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Date created</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00009</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Date created</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00010</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00011</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00012</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>BP Number</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00013</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>BPID</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00015</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>BPID</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00016</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Delivery Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00017</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Delivery Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00019</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Delivery Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00020</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Billing Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00021</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Billing Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00023</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Billing Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00024</TINDX>
+     <MODIF>0003</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Order Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00025</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Order Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00027</TINDX>
+     <MODIF>0003</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Order Block (Sales Area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00028</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Business Partner Number</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00029</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Customer order block (sales area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00030</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Customer delivery block (sales area)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00031</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Billing block for customer (sales and distribution)</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00033</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Sales Organisation</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00036</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Org Name 1</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00037</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Org Name 1</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00038</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Org Name 2</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00039</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Org Name 2</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00040</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>First Name</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00041</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>First Name</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00042</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>Last Name</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00043</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Last Name</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00044</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>BP Category</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00045</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>BP Category</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00047</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>BP Category</TEXT>
+    </AQGTS>
+    <AQGTS>
+     <SPRSL>E</SPRSL>
+     <CLAS>BLOCKED_BP_REPORT</CLAS>
+     <TINDX>00048</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>055</MAXL>
+     <TEXT>Business partner category</TEXT>
+    </AQGTS>
+   </AQGTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

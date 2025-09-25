@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Future Renewal APP Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_RENEWAL_APPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_RENEWAL_APP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_ODATA_DATA_E256</FUNCNAME>
+     <SHORT_TEXT>Get the Odata Line Item data</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>TB_ITEM_DATA</PARAMETER>
+       <DBSTRUCT>ZQTC_S_FUTURE_RENEWAL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>TB_ITEM_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Future Renewal</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_ODATA_DATA_E256</FUNCNAME>
+     <SHORT_TEXT>Set Odata line item data E256</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>TB_ITEM_DATA</PARAMETER>
+       <DBSTRUCT>ZQTC_S_FUTURE_RENEWAL</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>TB_ITEM_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Future Renewal</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

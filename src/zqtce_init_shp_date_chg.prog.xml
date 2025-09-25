@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCE_INIT_SHP_DATE_CHG</NAME>
+    <SUBC>1</SUBC>
+    <APPL>M</APPL>
+    <SECU>ZINITSHP</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>M01</KEY>
+     <ENTRY>Issue Template can not be determined</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M02</KEY>
+     <ENTRY>Shipping Schedule is not maintained for Issue Template</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M03</KEY>
+     <ENTRY>Material not found in MARC for issue template</ENTRY>
+     <LENGTH>88</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M04</KEY>
+     <ENTRY>Order creation from date &amp; Delivery Date successfully updated</ENTRY>
+     <LENGTH>122</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M05</KEY>
+     <ENTRY>Latest PO date sucessfully updated</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Media Issue</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY>Media Product</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T03</KEY>
+     <ENTRY>Order creation from date</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T04</KEY>
+     <ENTRY>Delivery Date</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T05</KEY>
+     <ENTRY>Latest PO Date</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T06</KEY>
+     <ENTRY>Message</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T07</KEY>
+     <ENTRY>Status</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>E147: Inital Shipping Date Change</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_TS_UPD</KEY>
+     <ENTRY>Update TimeStamp Even If Error</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MTYP_I</KEY>
+     <ENTRY>Material Type (Media Issue)</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_STAT_I</KEY>
+     <ENTRY>Media Issue Status</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCE_INIT_SHP_DATE_CHG</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCE_INIT_SHP_DATE_CHG</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Custom program to update the following field values: Order creation date</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>from, Delivery Date, Latest PO date on shipping plan (order creation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>from date and delivery date) and media issue (Latest PO Date) when an</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>initial shipping date (MARA-ISMINITSHIPDATE) is updated on media issue.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

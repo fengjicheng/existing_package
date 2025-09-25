@@ -1,0 +1,2617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.8.0.0.20140107.1.905771_SAP" APIVersion="3.4.11306.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-07-01T09:38:13Z" uuid="bd0bd6e3-84dc-46c1-b156-2114afc0e389">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="290mm" name="Content_area_not_required" w="183mm" x="11.125mm" y="3mm"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform layout="tb" w="183mm">
+         <bind match="none"/>
+         <subform h="289.998mm" name="Sub_full_page" w="183mm">
+            <bind match="none"/>
+            <subform h="17.174mm" name="Sub_Logo" w="175.056mm" x="0.089mm" y="0.042mm">
+               <bind match="none"/>
+               <field h="17mm" name="WILEY_LOGO" w="41mm" y="0.174mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <bind match="dataRef" ref="$.WILEY_LOGO"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field h="16.3mm" name="Society_Logo" w="59.001mm" x="115.999mm" y="0mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <bind match="dataRef" ref="$.SOCIETY_LOGO"/>
+                  <value>
+                     <image aspect="none"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <?templateDesigner expand 0?>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </subform>
+            <subform name="Sub_Cus_Service" y="17mm">
+               <bind match="none"/>
+               <field minH="4mm" minW="60mm" name="Val_Cus_Service_TBT" y="10.5mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CUST_SERV_TBT"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <field minH="4mm" minW="60mm" name="Val_Cus_Service_SCC" y="10.5mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CUST_SERV_SCC"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <field minH="4mm" minW="60mm" name="Val_Cus_Service_SCM" y="10.5mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CUST_SERV_SCM"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Subform_Bill_To" w="80.542mm" y="48.334mm">
+               <bind match="none"/>
+               <field h="4mm" name="Text_Bill_To" w="50mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_BILL_TO"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field minH="31.75mm" minW="80.542mm" name="Val_Bill_To">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.ADDRESS_NODE_FOLDER.BILL_TO_ADDRESS"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <keep intact="contentArea"/>
+               <?templateDesigner expand 0?></subform>
+            <field h="4mm" name="Text_Ship_To" w="50mm" y="87mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="bottom"/>
+               <bind match="dataRef" ref="$.TEXT_MODULES.TM_SHIP_TO"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <field minH="3mm" minW="50mm" name="Val_Ship_To" y="91mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$.ADDRESS_NODE_FOLDER.SHIP_TO_ADDRESS"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <traversal>
+                  <traverse ref="Subform_Credit[0]"/>
+               </traversal>
+            </field>
+            <subform name="Subform_reminder" w="72.875mm" x="93.875mm" y="50.75mm">
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform minH="17.602mm" name="Sub_Renewal_Detail_1" w="88.453mm" x="87.3mm" y="18.05mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <subform layout="lr-tb" x="6.575mm" y="14.2mm">
+                  <bind match="none"/>
+                  <field h="3.7mm" minW="42mm" name="Text_Renew_Date">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_RENEWAL_DATE"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field h="3.7mm" minW="30mm" name="Val_Renew_Date">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.RENEWAL_DATE"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="lr-tb" x="6.575mm" y="17.92mm">
+                  <bind match="none"/>
+                  <field h="3.7mm" minW="42mm" name="Text_PO_Num">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_PO_NUM"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field h="3.7mm" minW="30mm" name="Val_PO_Num">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.PO_NUM"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="lr-tb" x="6.575mm" y="21.6mm">
+                  <bind match="none"/>
+                  <field h="3.7mm" minW="42mm" name="Text_Acc_Num">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_ACCOUNT_NUM"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field h="3.7mm" name="Val_ACC_Num" w="30mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.IM_ADDRESS.KUNNR_BP"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="lr-tb" x="6.575mm" y="25.3mm">
+                  <bind match="none"/>
+                  <field h="3.7mm" minW="42mm" name="Text_Sub_Ref">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.SUB_REF_TXT"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field h="3.7mm" minW="30mm" name="Val_Sub_Ref">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.SUB_REFERENCE"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <field h="3.7mm" minW="70mm" name="Text_Not_A_Tax_invoice" x="6.575mm" y="3.4mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_NOT_TAX"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field h="3.7mm" minW="70mm" name="Text_Renewal_Proforma" x="6.575mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_RENEW_PROF"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" minH="4mm" name="Sub_Renewal" x="93.875mm" y="28.55mm">
+               <bind match="none"/>
+               <field h="3.7mm" minW="42mm" name="Text_Renwal">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_RENEWAL"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field h="3.7mm" minW="20mm" name="Val_Sub_Renwal">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_VBCO3.VBELN"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <?templateDesigner expand 0?></subform>
+            <field h="10mm" name="Std_Txt_Renewal" w="178mm" y="112.3mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para hAlign="center" vAlign="bottom"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_RENEWAL_TEXT"/>
+            </field>
+            <field minH="24.4mm" name="Std_Txt_Body_Subs" w="178mm" y="125.35mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_TEXT_BODY"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <subform h="18.275mm" name="Sub_footer_details" w="182.18mm" y="167.956mm">
+               <bind match="none"/>
+               <subform layout="tb" minH="16.125mm" name="Sub_Subtotal_Flow" w="68.305mm" x="113.875mm" y="0.019mm">
+                  <bind match="none"/>
+                  <subform minH="16mm" name="Sub_Calculation_details">
+                     <bind match="none"/>
+                     <field h="4mm" minW="43mm" name="Text_Sub_total" x="0.005mm" y="0mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.TEXT_MODULES.TM_SUB_TOTAL"/>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                     </field>
+                     <field h="4mm" hAlign="right" name="Val_Sub_Total" w="16mm" x="52.465mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <bind match="dataRef" ref="$.IM_FINAL.SUB_TOTAL"/>
+                        <caption reserve="0in">
+                           <para hAlign="right"/>
+                        </caption>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                     </field>
+                     <field h="4mm" minW="41mm" name="Text_Sub_Discount" x="0.005mm" y="4mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.TEXT_MODULES.TM_SUB_DISCOUNT"/>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                     </field>
+                     <field h="4mm" hAlign="right" name="Val_Sub_Discount" w="16mm" x="52.465mm" y="4mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <bind match="dataRef" ref="$.IM_FINAL.DISCOUNT"/>
+                        <caption reserve="0in">
+                           <para hAlign="right"/>
+                        </caption>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                        <event activity="ready" name="event__form_ready" ref="$form">
+                           <script contentType="application/x-javascript"/>
+                        </event>
+                     </field>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="tb" name="Sub_Tax_Total" w="68.3mm">
+                     <bind match="none"/>
+                     <subform columnWidths="10mm 59mm" layout="table" name="Tax_Table">
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <subform layout="row" name="Row1">
+                           <assist role="TR"/>
+                           <field h="4mm" name="Cell1">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <bind match="dataRef" ref="$.ZZDESC"/>
+                           </field>
+                           <field h="4mm" name="Cell2">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="right" vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <bind match="dataRef" ref="$.ZZTAX_DTLS"/>
+                           </field>
+                           <border>
+                              <edge presence="hidden"/>
+                           </border>
+                           <bind match="dataRef" ref="$.DATA[*]"/>
+                           <occur max="-1"/>
+                           <?templateDesigner expand 1?></subform>
+                        <keep intact="contentArea"/>
+                        <bind match="dataRef" ref="$.IM_TAX_TAB"/>
+                        <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                        <?templateDesigner expand 1?></subform>
+                     <subform minH="4mm" name="Sub_Total">
+                        <bind match="none"/>
+                        <keep intact="none"/>
+                        <subform layout="lr-tb" minH="4mm" name="Sub_Total_due">
+                           <bind match="none"/>
+                           <subform layout="lr-tb" name="Total_Due">
+                              <bind match="none"/>
+                              <field h="4mm" minW="10mm" name="Text_Total_Due">
+                                 <ui>
+                                    <textEdit multiLine="1">
+                                       <border presence="hidden"/>
+                                       <margin/>
+                                    </textEdit>
+                                 </ui>
+                                 <font typeface="Arial" weight="bold"/>
+                                 <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                                 <para vAlign="middle"/>
+                                 <bind match="dataRef" ref="$.TEXT_MODULES.TM_TOTAL"/>
+                                 <event activity="ready" name="event__form_ready" ref="$form">
+                                    <script contentType="application/x-javascript"/>
+                                 </event>
+                                 <event activity="ready" name="event__form_ready" ref="$form">
+                                    <script contentType="application/x-javascript"/>
+                                 </event>
+                              </field>
+                              <?templateDesigner expand 1?></subform>
+                           <subform layout="lr-tb" name="Sub_Currency">
+                              <bind match="none"/>
+                              <field h="4mm" minW="10mm" name="Text_Currency">
+                                 <ui>
+                                    <textEdit>
+                                       <border presence="hidden"/>
+                                       <margin/>
+                                    </textEdit>
+                                 </ui>
+                                 <font size="9pt" typeface="Arial" weight="bold"/>
+                                 <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                                 <para vAlign="middle"/>
+                                 <bind match="dataRef" ref="$.IM_FINAL.CURRENCY"/>
+                                 <event activity="ready" name="event__form_ready" ref="$form">
+                                    <script contentType="application/x-javascript"/>
+                                 </event>
+                                 <event activity="ready" name="event__form_ready" ref="$form">
+                                    <script contentType="application/x-javascript"/>
+                                 </event>
+                              </field>
+                              <?templateDesigner expand 1?></subform>
+                           <?templateDesigner expand 0?></subform>
+                        <field h="4mm" hAlign="right" name="Val_Total_Due" w="16mm" x="52.465mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <bind match="dataRef" ref="$.IM_FINAL.TOTAL_DUE"/>
+                           <caption reserve="0in">
+                              <para hAlign="right"/>
+                           </caption>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                        </field>
+                        <?templateDesigner expand 0?></subform>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <traversal>
+               <traverse operation="first" ref="Sub_Logo[0]"/>
+            </traversal>
+            <subform layout="tb" name="Barcode" x="0.085mm" y="277.446mm">
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <field minH="5mm" minW="60mm" name="Text_Footer" y="16.05mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_FOOTER"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <field h="3.7mm" minW="42mm" name="Text_Member_Type" presence="invisible" x="93.875mm" y="47.05mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.IM_FINAL.MEMBER_TXT"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <field h="3.7mm" minW="42mm" name="Val_Member_Type" x="135.875mm" y="47.05mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.IM_FINAL.MEMBER_VALUE"/>
+               <caption reserve="0in"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <field h="3.7mm" minW="42mm" name="Text_Subs_Type" x="93.875mm" y="47.05mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_MEDIA_TYPE"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="initialize" name="event__initialize">
+                  <script>var memtyp_val = data.#subform[0].Sub_full_page.Sub_footer_details.Text_Member_Type.rawValue
+if( memtyp_val == "" )then
+$.presence = "visible"
+else
+$.presence = "hidden"
+endif
+
+</script>
+               </event>
+            </field>
+            <field h="3.7mm" name="Val_Subs_Type" w="44.766mm" x="135.875mm" y="47.05mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.IM_FINAL.SUBS_VALUE"/>
+               <caption reserve="0in"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <subform name="Subform_Credit" y="185.44mm">
+               <bind match="none"/>
+               <field h="3mm" minW="60mm" name="Text_terms" x="0.085mm" y="0.282mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_TERM_CONDITIONS"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field minH="2mm" name="Text_Credit_Card_TBT" w="146.499mm" x="36.5mm" y="56.035mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CREDIT_TBT"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field minH="2mm" name="Text_Credit_Card_SCM" w="146.499mm" x="36.5mm" y="56.035mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CREDIT_SCM"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <field minH="2mm" name="Text_Credit_Card_SCC" w="146.499mm" x="36.5mm" y="56.035mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CREDIT_SCC"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <traversal>
+                     <traverse ref="Text_Member_Type[0]"/>
+                  </traversal>
+               </field>
+               <field h="3mm" minW="20.625mm" name="Wire_Transfer" x="0.085mm" y="36.985mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0.1mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_WIRE_TRANSFER"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+               </field>
+               <subform h="99.959mm" name="Subform_Banking" w="182.999mm" y="4.6mm">
+                  <bind match="none"/>
+                  <field minH="15mm" minW="24.223mm" name="Banking1_TBT" presence="inactive" y="0.809mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING1_TBT"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <subform layout="tb" w="146.499mm" x="36.5mm" y="32.385mm">
+                     <bind match="none"/>
+                     <traversal>
+                        <traverse ref="Credit_Card[0]"/>
+                        <traverse operation="first" ref="#subform[2]"/>
+                     </traversal>
+                     <subform w="146.499mm">
+                        <bind match="none"/>
+                        <traversal>
+                           <traverse operation="first" ref="Banking2_TBT[0]"/>
+                           <traverse ref="#subform[2]"/>
+                        </traversal>
+                        <field minH="5mm" name="Banking2_TBT" w="142.24mm" x="0mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING2_TBT"/>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <traversal>
+                              <traverse ref="Banking2_SCM[0]"/>
+                           </traversal>
+                        </field>
+                        <field minH="5mm" name="Banking2_SCM" w="142.24mm" x="0mm" y="0.175mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING2_SCM"/>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                        </field>
+                        <field minH="5mm" name="Banking2_SCC" w="142.24mm" x="0mm" y="0.175mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING2_SCC"/>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <subform layout="tb" w="146.499mm">
+                        <bind match="none"/>
+                        <traversal>
+                           <traverse operation="first" ref="blankline[0]"/>
+                        </traversal>
+                        <field h="1.27mm" name="blankline" w="62mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <caption reserve="25mm">
+                              <para vAlign="middle"/>
+                           </caption>
+                           <bind match="none"/>
+                        </field>
+                        <field minH="3.175mm" name="Text_Email" w="146.499mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_DETACH_EMAIL"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                              <corner/>
+                           </border>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <event activity="ready" name="event__form_ready" ref="$form">
+                              <script contentType="application/x-javascript"/>
+                           </event>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <traversal>
+                              <traverse ref="Credit_Card[0]"/>
+                           </traversal>
+                        </field>
+                        <?templateDesigner expand 0?></subform>
+                     <?templateDesigner expand 1?></subform>
+                  <field minH="15mm" minW="24.223mm" name="Banking1_SCM" presence="inactive" y="0.809mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING1_SCM"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field minH="15mm" minW="24.223mm" name="Banking1_SCC" presence="inactive" y="0.809mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANKING1_SCC"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field h="2mm" hAlign="center" minW="182.999mm" name="DETACH_TEXT" y="17.526mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_DETACH_TEXT_NEW"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                     </border>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </field>
+                  <field h="2mm" hAlign="center" minW="182.999mm" name="PAYMENT_SLIP" y="20.838mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_PAYMENT_SLIP"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                     </border>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </field>
+                  <draw h="3.175mm" minW="182.999mm" name="Dottedline" y="22.581mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="C00CA647-0B63-47DE-AADE-CFE309DF30E0">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</text>
+                     </value>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                     </border>
+                     <traversal>
+                        <traverse ref="#subform[0].#subform[1]"/>
+                     </traversal>
+                  </draw>
+                  <field h="3.175mm" minW="20.625mm" name="Remit_to_text" x="0.076mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0.1mm" rightInset="0mm" topInset="0mm"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.REMIT_TEXT"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                     </border>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                  </field>
+                  <field minH="11mm" minW="47mm" name="Bank_Account_TBT" x="36.5mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_REMIT_BANK_DETAILS_TBT"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field minH="11mm" minW="47mm" name="Bank_Account_SCM" x="36.5mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_REMIT_BANK_DETAILS_SCM"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field minH="11.001mm" minW="47mm" name="Bank_Account_SCC" x="36.5mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_REMIT_BANK_DETAILS_SCC"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <field minH="2mm" name="Text_Barcode" w="182.914mm" x="0.085mm" y="84.91mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="11pt" typeface="OCR A Std"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_V_BARCODE"/>
+                  </field>
+                  <field h="4mm" name="Val_amount" w="20.724mm" x="162.15mm" y="68.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_FINAL.TOTAL_DUE"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                     </border>
+                  </field>
+                  <field h="4mm" minW="33.223mm" name="AMount" x="128.925mm" y="68.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_AMOUNT_TEXT"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Val_Ren_Num" w="20.724mm" x="162.15mm" y="64.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_VBCO3.VBELN"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                     </border>
+                  </field>
+                  <field h="4mm" minW="33.225mm" name="empty_line_renewal" x="128.925mm" y="64.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_RENEWAL_NUM"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                     </border>
+                  </field>
+                  <field h="4mm" name="Val_Acc_Num_1" w="20.724mm" x="162.15mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADDRESS.KUNNR_BP"/>
+                     <caption reserve="0in"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                     </border>
+                  </field>
+                  <field h="4mm" minW="33.225mm" name="empty_line_acc" x="128.925mm" y="60.96mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TEXT_MODULES.TM_ACCOUNT_NUM"/>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <border>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                     </border>
+                  </field>
+                  <field h="3mm" minW="20.625mm" name="Credit_Card" x="0.076mm" y="51.435mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0.1mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.CREDIT_CARD"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <traversal>
+                     <traverse ref="Wire_Transfer[0]"/>
+                     <traverse operation="first" ref="#subform[0]"/>
+                  </traversal>
+                  <field h="3mm" minW="20.625mm" name="Payment" x="0.085mm" y="12.641mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0.1mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_PAYMENT"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                     <event activity="ready" name="event__form_ready" ref="$form">
+                        <script contentType="application/x-javascript"/>
+                     </event>
+                  </field>
+                  <draw name="Pages" x="160.325mm" y="96.431mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html" maxLength="0" xliff:rid="50C49333-AF44-41D2-AA16-0FCF27C9D33F">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                  </draw>
+                  <field access="readOnly" h="7.5mm" id="floatingField006334" name="CurrentPage" presence="hidden" w="55mm" x="689.157mm" y="1255.528mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="20mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="DDAD9EDC-72F5-48DC-9372-7AA7D246973A">Text Field</text>
+                        </value>
+                     </caption>
+                     <calculate override="error"/>
+                     <event activity="ready" name="event__layout_ready" ref="$layout">
+                        <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+                     </event>
+                     <?templateDesigner floatingFieldPlaceholder #?>
+                     <bind match="none"/>
+                  </field>
+                  <field access="readOnly" h="7.5mm" id="floatingField026500" name="PageCount" presence="hidden" w="55mm" x="689.157mm" y="1255.528mm">
+                     <ui>
+                        <numericEdit>
+                           <border>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="20mm">
+                        <para vAlign="middle"/>
+                        <value>
+                           <text xliff:rid="B9411263-B419-43C9-8C09-F4767B532998">Text Field</text>
+                        </value>
+                     </caption>
+                     <calculate override="error"/>
+                     <event activity="ready" name="event__layout_ready" ref="$layout">
+                        <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+                     </event>
+                     <?templateDesigner floatingFieldPlaceholder ##?>
+                     <bind match="none"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <traversal>
+                  <traverse ref="Sub_year_Vol[0].Subform1[0].Text_TAX_ID_TEXT[0]"/>
+                  <traverse operation="first" ref="Subform_Banking[0]"/>
+               </traversal>
+               <?templateDesigner expand 1?></subform>
+            <subform h="73.025mm" name="Sub_year_Vol" w="182.999mm" y="38.275mm">
+               <bind match="none"/>
+               <field h="3.7mm" minW="42mm" name="Text_Year" x="93.875mm" y="12.475mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_YEAR"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZQTC_YEAR_F024 
+ LANGUAGE-FIELD = IM_ADDRESS-SPRAS 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <field h="3.7mm" minW="42mm" name="Text_Volume" x="93.875mm" y="19.876mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_VOLUME"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Start Issues
+Smart Forms Text Module 
+ NAME = ZQTC_START_ISSUE_F037</exData>
+                  </desc>
+               </field>
+               <field h="3.7mm" minW="42mm" name="Text_Start_Issue" x="93.875mm" y="23.376mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.TEXT_MODULES.TM_START_ISSUE"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Start Issues
+Smart Forms Text Module 
+ NAME = ZQTC_START_ISSUE_F037</exData>
+                  </desc>
+               </field>
+               <field h="3.7mm" name="Val_Year" w="32mm" x="135.875mm" y="12.475mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                  <bind match="dataRef" ref="$.IM_YEAR"/>
+                  <caption reserve="0in"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <desc>
+                     <text name="Schema Annotation">String</text>
+                  </desc>
+               </field>
+               <field h="3.7mm" minW="32mm" name="Val_volume" x="135.875mm" y="19.876mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_ISSUE_DESC"/>
+                  <caption reserve="0in"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <desc>
+                     <text name="Schema Annotation">String</text>
+                  </desc>
+               </field>
+               <field h="3.7mm" name="Val_Start_issue" w="32mm" x="135.875mm" y="23.376mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_START_ISSUE"/>
+                  <caption reserve="0in"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <desc>
+                     <text name="Schema Annotation">String</text>
+                  </desc>
+               </field>
+               <field h="3.7mm" name="Val_end_Year" w="32mm" x="135.875mm" y="16.401mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                  <bind match="dataRef" ref="$.IM_CNTR_END"/>
+                  <caption reserve="0in"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <desc>
+                     <text name="Schema Annotation">String</text>
+                  </desc>
+               </field>
+               <field h="3.7mm" minW="42mm" name="Text_end_Year" x="93.874mm" y="16.401mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CNTR_END"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZQTC_YEAR_F024 
+ LANGUAGE-FIELD = IM_ADDRESS-SPRAS 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <subform layout="tb" name="Sub_JRNL_TAB" x="93.875mm" y="27.076mm">
+                  <bind match="none"/>
+                  <subform columnWidths="42mm 37.3mm" layout="table" name="JournalDesc_Table">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <subform layout="row" name="Row1">
+                        <assist role="TR"/>
+                        <field h="3.7mm" name="Journal_Desc" w="2.04725in">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <bind match="dataRef" ref="$.JOURNAL_TEXT"/>
+                        </field>
+                        <field minH="3.7mm" name="Journal_Value" w="1.901569in">
+                           <ui>
+                              <textEdit multiLine="1"/>
+                           </ui>
+                           <font size="9pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <bind match="dataRef" ref="$.JOURNAL_VALUE"/>
+                        </field>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.DATA[*]"/>
+                        <occur max="-1"/>
+                        <?templateDesigner expand 0?></subform>
+                     <keep intact="contentArea"/>
+                     <bind match="dataRef" ref="$.IM_ARKTX"/>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 0?></subform>
+                  <traversal>
+                     <traverse operation="first" ref="JournalDesc_Table[0]"/>
+                  </traversal>
+                  <subform layout="tb" name="Sub_Tax" w="89.124mm">
+                     <bind match="none"/>
+                     <subform layout="tb" name="Subform6" w="108.925mm">
+                        <bind match="none"/>
+                        <subform layout="lr-tb">
+                           <bind match="none"/>
+                           <field h="3.7mm" minW="42mm" name="Text_ISSN">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_FINAL.ISSN1_TEXT"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <value>
+                                 <exData contentType="text/html">
+                                    <body xmlns="http://www.w3.org/1999/xhtml"/>
+                                 </exData>
+                              </value>
+                              <desc>
+                                 <exData name="Schema Annotation">Start Issues
+Smart Forms Text Module 
+ NAME = ZQTC_START_ISSUE_F037</exData>
+                              </desc>
+                              <traversal>
+                                 <traverse ref="Val_ISSN[0]"/>
+                              </traversal>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Text_ISSN.rawValue == null)
+{
+  this.presence = "hidden";
+}
+</script>
+                              </event>
+                           </field>
+                           <field h="3.7mm" minW="32mm" name="Val_ISSN">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_FINAL.ISSN1_VALUE"/>
+                              <caption reserve="0in"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <desc>
+                                 <text name="Schema Annotation">String</text>
+                              </desc>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+
+if(Val_ISSN.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <traversal>
+                                 <traverse ref="Subform7[0]"/>
+                              </traversal>
+                           </field>
+                           <traversal>
+                              <traverse operation="first" ref="Text_ISSN[0]"/>
+                           </traversal>
+                           <?templateDesigner expand 1?></subform>
+                        <traversal>
+                           <traverse operation="first" ref="#subform[0]"/>
+                           <traverse ref="Subform7[0]"/>
+                        </traversal>
+                        <?templateDesigner expand 1?></subform>
+                     <traversal>
+                        <traverse operation="first" ref="Subform6[0]"/>
+                     </traversal>
+                     <subform layout="tb" name="Subform7" w="114.3mm">
+                        <bind match="none"/>
+                        <subform layout="lr-tb" name="Subform3" w="98.425mm">
+                           <bind match="none"/>
+                           <field h="3.7mm" minW="42mm" name="Text_ISSN1">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_FINAL.ISSN2_TEXT"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <value>
+                                 <exData contentType="text/html">
+                                    <body xmlns="http://www.w3.org/1999/xhtml"/>
+                                 </exData>
+                              </value>
+                              <desc>
+                                 <exData name="Schema Annotation">Start Issues
+Smart Forms Text Module 
+ NAME = ZQTC_START_ISSUE_F037</exData>
+                              </desc>
+                              <traversal>
+                                 <traverse ref="Val_ISSN1[0]"/>
+                              </traversal>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Text_ISSN1.rawValue == null)
+{
+  this.presence = "hidden";
+}
+
+</script>
+                              </event>
+                           </field>
+                           <traversal>
+                              <traverse operation="first" ref="Text_ISSN1[0]"/>
+                           </traversal>
+                           <field h="3.7mm" minW="32mm" name="Val_ISSN1">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_FINAL.ISSN2_VALUE"/>
+                              <caption reserve="0in"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <desc>
+                                 <text name="Schema Annotation">String</text>
+                              </desc>
+                              <traversal>
+                                 <traverse ref="Subform5[0]"/>
+                              </traversal>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Val_ISSN1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <traversal>
+                           <traverse operation="first" ref="Subform3[0]"/>
+                           <traverse ref="Subform5[0]"/>
+                        </traversal>
+                        <?templateDesigner expand 1?></subform>
+                     <subform layout="tb" name="Subform5" w="123.825mm">
+                        <bind match="none"/>
+                        <subform layout="lr-tb" name="Subform2" w="104.775mm">
+                           <bind match="none"/>
+                           <field h="3.7mm" minW="42mm" name="Text_BUYER_TAX_ID_TEXT">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BUYER_TAX_ID_TEXT"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script>
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript">
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                              </event>
+                              <traversal>
+                                 <traverse ref="Val_Buyer_reg1[0]"/>
+                              </traversal>
+                           </field>
+                           <traversal>
+                              <traverse operation="first" ref="Text_BUYER_TAX_ID_TEXT[0]"/>
+                           </traversal>
+                           <field h="3.701mm" minW="40.64mm" name="Val_Buyer_reg1">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_V_BUYER_REG"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                              </event>
+                              <caption reserve="0mm"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript">
+if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript">if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script>if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script>
+if(Val_Buyer_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+}
+</script>
+                              </event>
+                              <traversal>
+                                 <traverse ref="Subform4[0]"/>
+                              </traversal>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <traversal>
+                           <traverse operation="first" ref="Subform2[0]"/>
+                           <traverse ref="Subform4[0]"/>
+                        </traversal>
+                        <?templateDesigner expand 1?></subform>
+                     <subform layout="tb" name="Subform4" w="120.65mm">
+                        <bind match="none"/>
+                        <subform layout="lr-tb" name="Subform1" w="107.95mm">
+                           <bind match="none"/>
+                           <traversal>
+                              <traverse operation="first" ref="Val_Seller_reg1[0]"/>
+                           </traversal>
+                           <field h="3.7mm" minW="42mm" name="Text_TAX_ID_TEXT">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial" weight="bold"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_TAX_ID_TEXT"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script>
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript">
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                           </field>
+                           <field h="3.701mm" minW="40.64mm" name="Val_Seller_reg1">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden"/>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="9pt" typeface="Arial"/>
+                              <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                              <bind match="dataRef" ref="$.IM_V_SELLER_REG"/>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script contentType="application/x-javascript"/>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script contentType="application/x-javascript">
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                              </event>
+                              <caption reserve="0mm"/>
+                              <traversal>
+                                 <traverse ref="Text_Ship_To[0]"/>
+                              </traversal>
+                              <event activity="ready" name="event__form_ready" ref="$form">
+                                 <script>
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script>
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                              </event>
+                              <event activity="initialize" name="event__initialize">
+                                 <script>
+if(Val_Seller_reg1.rawValue == null)
+{
+  this.presence = "hidden";
+}
+</script>
+                              </event>
+                           </field>
+                           <?templateDesigner expand 1?></subform>
+                        <traversal>
+                           <traverse operation="first" ref="Subform1[0]"/>
+                        </traversal>
+                        <?templateDesigner expand 1?></subform>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <traversal>
+                  <traverse operation="first" ref="Text_Year[0]"/>
+                  <traverse ref="Text_Ship_To[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?>
+               <field minH="3mm" minW="50mm" name="MULTIPE_SHIPTO" y="52.726mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.MULTIPE_SHIPTO"/>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript"/>
+                  </event>
+                  <traversal>
+                     <traverse ref="Subform_Credit[0]"/>
+                  </traversal>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZQTC_F024_MULTIPLE_SHIP_TO 
+ LANGUAGE-FIELD = IM_ADDRESS-SPRAS 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+            </subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 96 24 0003000600280029002B002C002F00300032003300360037003800420044004700480049004A004C004F00520057005B #EFHILMOPSTU_adefgilotx?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 4 1 0010-?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?acrobat JavaScript strictScoping?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner Grid show:1, snap:1, units:3, color:ff8080, origin:(0,0), interval:(9000,9000), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 99?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="OCRAStd" typeface="OCR A Std" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_EARLY_BIRD">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <WILEY_LOGO/>
+         <TEXT_MODULES>
+            <TM_RENEWAL_DATE/>
+            <TM_JOURNAL_SUB_TYPE/>
+            <TM_START_ISSUE/>
+            <TM_CUS_SERVICE/>
+            <TM_BILL_TO/>
+            <TM_SHIP_TO/>
+            <TM_PO_NUM/>
+            <TM_ACCOUNT_NUM/>
+            <TM_SUB_REF/>
+            <TM_SUB_DISCOUNT/>
+            <TM_SUB_TOTAL/>
+            <TM_RENEWAL_NUM/>
+            <TM_TAXES/>
+            <TM_TOTAL/>
+            <TM_REMIT_TO/>
+            <TM_TERMS/>
+            <TM_ISSUES/>
+            <TM_RENEWAL/>
+            <TM_REMINDER dd:minOccur="0" dd:nullType="exclude"/>
+            <TM_ISSN/>
+            <TM_NOT_TAX/>
+            <TM_RENEW_PROF/>
+         </TEXT_MODULES>
+         <ADDRESS_NODE_FOLDER>
+            <BILL_TO_ADDRESS/>
+            <SHIP_TO_ADDRESS/>
+         </ADDRESS_NODE_FOLDER>
+         <IM_ADDRESS>
+            <VBELN/>
+            <POSNR/>
+            <PARVW/>
+            <KUNNR_BP/>
+            <KUNNR_WE/>
+            <ADRNR_BP/>
+            <ADRNR_WE/>
+            <LAND1_BP/>
+            <LAND1_WE/>
+            <COUNTRY/>
+            <SPRAS/>
+            <MULTIPLE_SHIPTO/>
+         </IM_ADDRESS>
+         <IM_FINAL>
+            <DISCOUNT/>
+            <SUB_TOTAL/>
+            <RENEWAL_DATE/>
+            <PO_NUM/>
+            <SUB_REFERENCE/>
+            <TERMS/>
+            <TOTAL_DUE/>
+            <ISSUES/>
+            <DISCOUNT_CHAR/>
+            <NOTICE/>
+            <CURRENCY/>
+            <ARKTX/>
+            <NOTIF/>
+            <LAND1_BUKRS/>
+            <DIGI_TAX_PRCNT/>
+            <DIGI_TAX_AMOUNT/>
+            <PRINT_TAX_PRCNT/>
+            <PRINT_TAX_AMOUNT/>
+            <DISC_PRCNT/>
+            <VOLUME_TEXT/>
+            <MEMBER/>
+            <MEMBER_TXT/>
+            <MEMBER_VALUE/>
+            <SUBS_TXT/>
+            <SUBS_VALUE/>
+            <SUB_REF_TXT/>
+            <JORNAL_SUB_TXT/>
+            <TEXT_BODY/>
+            <ISSN1_TEXT/>
+            <ISSN2_TEXT/>
+            <ISSN1_VALUE/>
+            <ISSN2_VALUE/>
+         </IM_FINAL>
+         <SOCIETY_LOGO/>
+         <STANDARD_TEXT_FOLDER>
+            <ST_REMIT_BANK_DETAILS_SCC/>
+            <ST_REMIT_BANK_DETAILS_SCM/>
+            <ST_CUST_SERV_TBT/>
+            <ST_CUST_SERV_SCC/>
+            <ST_CUST_SERV_SCM/>
+            <ST_REMIT_BANK_DETAILS_TBT/>
+            <ST_BANKING2_SCM/>
+            <ST_BANKING1_SCM/>
+            <ST_BANKING2_TBT/>
+            <ST_BANKING1_TBT/>
+            <ST_BANKING2_SCC/>
+            <ST_BANKING1_SCC/>
+            <ST_CREDIT_TBT/>
+            <ST_CREDIT_SCC/>
+            <ST_CREDIT_SCM/>
+            <ST_FOOTER/>
+            <ST_FOOTER_SCC/>
+            <ST_FOOTER_SCM/>
+            <ST_RENEWAL_TEXT/>
+            <ST_TEXT_BODY/>
+            <ST_TEXT_BODY_MEMB/>
+            <ST_BANK_DETAILS/>
+            <ST_BANK_VALUES/>
+            <ST_TERM_CONDITIONS/>
+            <ST_FEDERAL_ID/>
+            <ST_CREDIT_CARD/>
+            <ST_VOLUME/>
+            <ST_YEAR/>
+            <ST_CNTR_END/>
+            <ST_EMAIL/>
+            <ST_DETACH_EMAIL/>
+            <ST_TEXT_BODY1/>
+            <ST_COMPANY_NAME/>
+            <ST_MEDIA_TYPE/>
+            <ST_WIRE_TRANSFER/>
+            <ST_DETACH_TEXT_NEW/>
+            <ST_PAYMENT_SLIP/>
+            <REMIT_TEXT/>
+            <ST_US_TAX_ID_TEXT/>
+            <ST_TAX_ID_TEXT/>
+            <ST_BUYER_TAX_ID_TEXT/>
+            <ST_AMOUNT_TEXT/>
+            <ST_PAGE/>
+            <CREDIT_CARD/>
+            <ST_PAYMENT/>
+            <MULTIPE_SHIPTO dd:minOccur="0" dd:nullType="exclude"/>
+         </STANDARD_TEXT_FOLDER>
+         <IM_VBCO3>
+            <SPRAS/>
+            <VBELN/>
+            <KUNDE/>
+            <PARVW/>
+            <MANDT/>
+            <POSNR/>
+            <PACKD/>
+            <OBJECT/>
+            <VENUM/>
+            <TKNUM/>
+            <EXIDV/>
+         </IM_VBCO3>
+         <IM_RENEWAL_TEXT/>
+         <V_VALUE/>
+         <V_DESCRIPTION/>
+         <IM_ISSN/>
+         <IM_BODY dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ITEM/>
+            </DATA>
+         </IM_BODY>
+         <IM_BODY1/>
+         <IM_V_SELLER_REG/>
+         <IM_TAX_TAB dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ZZDESC/>
+               <ZZTAX_DTLS/>
+            </DATA>
+         </IM_TAX_TAB>
+         <IM_YEAR/>
+         <IM_CNTR_END/>
+         <IM_ARKTX dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <JOURNAL_TEXT/>
+               <JOURNAL_VALUE/>
+            </DATA>
+         </IM_ARKTX>
+         <IM_V_BARCODE/>
+         <IM_ISSUE_DESC/>
+         <IM_START_ISSUE/>
+         <IM_V_BUYER_REG/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2020-07-01T09:38:13Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.8</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.8</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:bd0bd6e3-84dc-46c1-b156-2114afc0e389</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

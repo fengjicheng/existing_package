@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for SO Get List</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_SDORDER_GETLISTF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_SDORDER_GETLISTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_SDORDER_GETLIST</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_SDORDER_GETDETAILEDLIST</FUNCNAME>
+     <SHORT_TEXT>Get Sales Order Information</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SO_VIEW</PARAMETER>
+       <DBFIELD>ZQTC_SO_VIEW</DBFIELD>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KEY_REF</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_SALES_DOCUMENTS</PARAMETER>
+       <DBSTRUCT>ZQTC_SO_RANGE</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_HEADERS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDHD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_ITEMS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDIT</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_PARTNERS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDPART</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_CONTRACTS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDCNTR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_BUSINESS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDBUSI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_TEXTHEADERS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDTEHD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_TEXTLINES_OUT</PARAMETER>
+       <DBSTRUCT>BAPITEXTLI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_ORDER_FLOWS_OUT</PARAMETER>
+       <DBSTRUCT>BAPISDFLOW</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_NAST</PARAMETER>
+       <DBSTRUCT>NAST</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SO_VIEW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>View for Mass Selection of Sales Orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KEY_REF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Key Reference to call BAPI or Custom logic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_SALES_DOCUMENTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Numbers to Be Selected</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_HEADERS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_ITEMS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_PARTNERS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_CONTRACTS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Contract Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_BUSINESS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Business Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_TEXTHEADERS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Structure of THEAD with English Field Names</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_TEXTLINES_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Structure for STX_LINES Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_ORDER_FLOWS_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Structure of VBFA with English Field Names</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_NAST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Status</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

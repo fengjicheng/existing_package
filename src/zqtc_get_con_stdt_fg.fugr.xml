@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Grooup to get cont start date</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_GET_CON_STDT_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_GET_CON_STDT_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_CON_STDT_FM</FUNCNAME>
+     <SHORT_TEXT>FM to get contract start date</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_STDT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR4</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_STDT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Not More Closely Defined Area, Possibly Used for Patchlevels</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_CON_STDT_FM</FUNCNAME>
+     <SHORT_TEXT>FM to set Parameter ID</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_STDT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR4</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_STDT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Not More Closely Defined Area, Possibly Used for Patchlevels</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

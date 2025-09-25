@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>MSG: LOISTD Function Grp</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_LOISTDF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_LOISTDTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_LOISTD</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_IDOC_OUTPUT_LOISTD</FUNCNAME>
+     <SHORT_TEXT>Outbound Process Code for Msg Typ: LOISTD (I0382)-Delta IDOCs</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>MESSAGE_TYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BDMSGTYP-MESTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RCVPRN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BDALEDC-RCVPRN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>IDOC_MUST_BE_SENT</PARAMETER>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>MESSAGE_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RCVPRN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Partner Number of Receiver</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_MUST_BE_SENT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <CLAS>ZAGD_A910</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>ZAGD/A910: Agent Disc % - Sold-to/OrdType/Material</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00011</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00012</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Date Created</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00013</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition table</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00014</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00015</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Order type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00016</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00017</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00018</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Valid From</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00019</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Valid To</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00065</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Text:Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00071</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>OrTy</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00072</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Customer Name</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00073</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>255</MAXL>
+     <TEXT>Title</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00083</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>255</MAXL>
+     <TEXT>Material</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZAGD_A910</QNUM>
+     <TINDX>00084</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>255</MAXL>
+     <TEXT>Valid To</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

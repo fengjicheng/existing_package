@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZQTCV_I0255_SPLT</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZQTCV_I0255_SPLT</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>View for Labels Split conditions</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZQTCV_I0255_SPLT</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>ZQTC_I0255_SPLIT</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZQTCV_I0255_SPLT</TABNAME>
+     <CCLASS>ZSPL</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZQTCV_I0255_SPLT</TABNAME>
+     <AREA>ZQTCV_I0255_SPLT</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0001</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZQTCV_I0255_SPLT</TABNAME>
+      <EVENT>05</EVENT>
+      <FORMNAME>F_UPD_SEQ_AND_VALDT_MDPRD</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

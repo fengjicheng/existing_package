@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Sales order conversion</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_SALES_ORDER_CONVF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_SALES_ORDER_CONVTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_SALES_ORDER_CONV</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_SALES_ORDER_CONV_002</FUNCNAME>
+     <SHORT_TEXT>SD EDI Incoming Orders:Schedule Additional Data for Screen</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <DBFIELD>EDIDC-MESCOD</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <DBSTRUCT>BDCDATA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <DBSTRUCT>VBPAVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Header (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communications Work Area for Cust.Master Accesses</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Last Sent Screen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logical Message Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch Input Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Items (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (1) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (2) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (1) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (2) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Incompletion Log</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Condition Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Packing Proposal</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Shipping Units</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SUBS_ORDER_CONV_001</FUNCNAME>
+     <SHORT_TEXT>SD EDI Incoming Orders:Schedule Additional Data for Screen</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <DBFIELD>EDIDC-MESCOD</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <DBSTRUCT>BDCDATA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <DBSTRUCT>VBPAVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Header (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communications Work Area for Cust.Master Accesses</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Last Sent Screen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logical Message Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch Input Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Items (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (1) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (2) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (1) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (2) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Incompletion Log</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Condition Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Packing Proposal</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Shipping Units</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_SUBS_ORDER_CONV_001>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_SUBS_ORDER_CONV_001</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00008</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_SUBS_ORDER_CONV_001</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This Function is for Subscription Order Conversion. We are modifying</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>BDCDATA table in this function module. We are inserting BSTDK, PRSDT,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ZLSCH at header level and VBEGDAT, VENDDAT, VBELKUE, ZZSUBTYP&lt;(&gt;,&lt;)&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>IHREZ at item level.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_SUBS_ORDER_CONV_001>
+  </asx:values>
+ </asx:abap>
+</abapGit>

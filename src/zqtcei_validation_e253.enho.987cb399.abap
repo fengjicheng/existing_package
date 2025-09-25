@@ -1,0 +1,6 @@
+"Name: \PR:SAPMV10A\FO:KNMT_SICHERN\SE:BEGIN\EI
+ENHANCEMENT 0 ZQTCEI_VALIDATION_E253.
+*** Begin of adding by Lahiru on 07/15/2020 for ERPM-20026 with ED2K918906 ***
+  INCLUDE zqtcn_validations_e253 IF FOUND.
+*** End of adding by Lahiru on 07/15/2020 for ERPM-20026 with ED2K918906 ***
+ENDENHANCEMENT.

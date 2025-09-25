@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Release Sales Order Blocks</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_REL_ORDERTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_REL_ORDER</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_RELEASE_BLOCK</FUNCNAME>
+     <SHORT_TEXT>Release Blocked Orders</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <TYP>POSNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_LIFSK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LIFSK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_FAKSK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FAKSK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CMGST</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CMGST</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>MSGTY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MSGTY</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>MESSAGE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MSGV1</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item number of the SD document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_LIFSK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Delivery block (document header)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_FAKSK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing block in SD document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CMGST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Overall status of credit checks</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MSGTY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message variable 01</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

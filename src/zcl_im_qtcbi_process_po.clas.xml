@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_IM_QTCBI_PROCESS_PO</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Imp. class for BAdI imp. ZQTCBI_PROCESS_PO</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SER_NUM_2_E143</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Serial Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_WRICEF_ID_E143</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>I_CONSTANTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constants Table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>I_EBAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EBAN table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>I_EBAN_NB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EBAN table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_MAT_DETL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>General Material Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_CONF_QUNT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Conferenace Quantity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_DROPSHIP_FG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Drop shipment flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_FIRST_PRINT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>General Flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_ITM_QTY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Item Quantity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_MAT_OLD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Material Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>V_NETPR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Net Price in Purchasing Document (in Document Currency)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

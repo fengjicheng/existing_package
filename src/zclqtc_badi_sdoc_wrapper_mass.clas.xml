@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCLQTC_BADI_SDOC_WRAPPER_MASS</CLSNAME>
+    <LANGU>E</LANGU>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Reference Document</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Promo Code</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>License Group</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Item Category</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Material group 1</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Material Group 2</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Material Group 3</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Material Group 4</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Material Group 5</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Purchase Order Type</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>Your Reference</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Billing Document</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>Billing Type</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>Terms of Payment</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Created By</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>Created On</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>Payer</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>Membership Category</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>Delivery Block</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>Billing Block</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Your Reference</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>Orderer Name</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>023</KEY>
+     <ENTRY>Language</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>024</KEY>
+     <ENTRY>Text Object</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>025</KEY>
+     <ENTRY>Text Id</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>026</KEY>
+     <ENTRY>Text Object Criteria</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>027</KEY>
+     <ENTRY>Text Message</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>028</KEY>
+     <ENTRY>Sold-To Street</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>029</KEY>
+     <ENTRY>Sold-To City</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>030</KEY>
+     <ENTRY>Sold-To State/Region</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>031</KEY>
+     <ENTRY>Sold-To Postal Code</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>032</KEY>
+     <ENTRY>Sold-To Country</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>033</KEY>
+     <ENTRY>Ship-To Party</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>034</KEY>
+     <ENTRY>Ship-To Street</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>035</KEY>
+     <ENTRY>Ship-To City</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>036</KEY>
+     <ENTRY>Ship-To State/Region</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>037</KEY>
+     <ENTRY>Ship-To Postal Code</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>038</KEY>
+     <ENTRY>Ship-To Country</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>039</KEY>
+     <ENTRY>Sold-To Street2</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>040</KEY>
+     <ENTRY>Ship-To Street2</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>041</KEY>
+     <ENTRY>Ship-To Party name</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>042</KEY>
+     <ENTRY>Ship-To Party Email</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>043</KEY>
+     <ENTRY>Media Type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>044</KEY>
+     <ENTRY>Layout</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>045</KEY>
+     <ENTRY>Condition Type Value</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>0B1</KEY>
+     <ENTRY>Additional Filter Criteria</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>0B2</KEY>
+     <ENTRY>Item Catg. and Material Groups</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>0B3</KEY>
+     <ENTRY>PO Type and your Reference</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>0B4</KEY>
+     <ENTRY>Billing Document Data</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>0B5</KEY>
+     <ENTRY>Block Type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>201</KEY>
+     <ENTRY>Reference Document</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>202</KEY>
+     <ENTRY>License Group</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>203</KEY>
+     <ENTRY>Item Category</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>204</KEY>
+     <ENTRY>Sub.Doc.Category</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>205</KEY>
+     <ENTRY>Follow on document</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>2B1</KEY>
+     <ENTRY>Additional Filter Criteria</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>401</KEY>
+     <ENTRY>Item Category</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>402</KEY>
+     <ENTRY>Reference Document</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>403</KEY>
+     <ENTRY>Terms of Payment</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>404</KEY>
+     <ENTRY>Your Reference</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>405</KEY>
+     <ENTRY>Subscription Type</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>406</KEY>
+     <ENTRY>Purchase Order Type</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>407</KEY>
+     <ENTRY>Billing Document</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>408</KEY>
+     <ENTRY>Billing Type</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>409</KEY>
+     <ENTRY>Created By</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>410</KEY>
+     <ENTRY>Created On</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>411</KEY>
+     <ENTRY>Payer</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>412</KEY>
+     <ENTRY>Terms of Payment</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>413</KEY>
+     <ENTRY>Material Group 1</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>414</KEY>
+     <ENTRY>Material Group 2</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>415</KEY>
+     <ENTRY>Material Group 3</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>416</KEY>
+     <ENTRY>Material Group 4</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>417</KEY>
+     <ENTRY>Material Group 5</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>418</KEY>
+     <ENTRY>Promo Code</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>419</KEY>
+     <ENTRY>License Group</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>420</KEY>
+     <ENTRY>Assignment</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>421</KEY>
+     <ENTRY>Membership Category</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>422</KEY>
+     <ENTRY>Delivery Block</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>423</KEY>
+     <ENTRY>Billing Block</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>424</KEY>
+     <ENTRY>Customer Material Number</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>425</KEY>
+     <ENTRY>Token Material</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>426</KEY>
+     <ENTRY>Ship-to party Your Reference</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>427</KEY>
+     <ENTRY>Sold-To Party Address#</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>428</KEY>
+     <ENTRY>Sold-To Party E-mail Address</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>429</KEY>
+     <ENTRY>Preceding Document Category</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>430</KEY>
+     <ENTRY>Forwarding Agent</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>431</KEY>
+     <ENTRY>Fwd Agent No</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>432</KEY>
+     <ENTRY>Fwd Agent Name</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>433</KEY>
+     <ENTRY>Fwd Agent Street</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>434</KEY>
+     <ENTRY>Fwd Agent City</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>435</KEY>
+     <ENTRY>Fwd Agent Postal Code</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>436</KEY>
+     <ENTRY>Fwd Agent Country</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>437</KEY>
+     <ENTRY>Forwarding Agent</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>438</KEY>
+     <ENTRY>Mainlabel Purchase Order Number</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>439</KEY>
+     <ENTRY>Mainlabel Purchase Order Document Date</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>440</KEY>
+     <ENTRY>Outbound Delivery Number</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>441</KEY>
+     <ENTRY>Outbound Delivery Document Date</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>442</KEY>
+     <ENTRY>Shipping Condition</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>443</KEY>
+     <ENTRY>Subscription Order Type</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>444</KEY>
+     <ENTRY>Overall Credit Status</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>445</KEY>
+     <ENTRY>Overall Credit Status Description</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>446</KEY>
+     <ENTRY>Partner Details</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>447</KEY>
+     <ENTRY>Ship-to Party</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>448</KEY>
+     <ENTRY>Price Group</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>449</KEY>
+     <ENTRY>Rejection Reason</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>450</KEY>
+     <ENTRY>Payment Method</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>451</KEY>
+     <ENTRY>Do not Display BOM Component</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>452</KEY>
+     <ENTRY>Other Additional Data</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>454</KEY>
+     <ENTRY>Paid Status</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>455</KEY>
+     <ENTRY>Not Paid</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>456</KEY>
+     <ENTRY>Paid</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>457</KEY>
+     <ENTRY>Credit Limit</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>458</KEY>
+     <ENTRY>Ship-To Party name2</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>459</KEY>
+     <ENTRY>Sold to Party Name2</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>460</KEY>
+     <ENTRY>Contract Payment method</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>461</KEY>
+     <ENTRY>Quotation Payment Method</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>462</KEY>
+     <ENTRY>Order Payment Method</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>463</KEY>
+     <ENTRY>Invoice Payment Method</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>464</KEY>
+     <ENTRY>Validity Period</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>465</KEY>
+     <ENTRY>Valid From Date</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>466</KEY>
+     <ENTRY>Valid To Date</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>467</KEY>
+     <ENTRY>Item Validity Period</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>468</KEY>
+     <ENTRY>Item Validity Dates</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>469</KEY>
+     <ENTRY>Header Validity Period</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>470</KEY>
+     <ENTRY>Header Validity Dates</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>471</KEY>
+     <ENTRY>Condition Group 2</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>472</KEY>
+     <ENTRY>Tax Line Item</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>473</KEY>
+     <ENTRY>Tax Header</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>474</KEY>
+     <ENTRY>Condition Type</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>4B1</KEY>
+     <ENTRY>Additional Filter Criteria (Contracts)</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>4B2</KEY>
+     <ENTRY>Billing Document Data</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>4B3</KEY>
+     <ENTRY>Block Type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SER_NUM_1_R050</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Serial Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SER_NUM_1_R052</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Serial Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SER_NUM_1_R054</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Serial Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_WRICEF_ID_R050</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_WRICEF_ID_R052</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_WRICEF_ID_R054</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>METH_GET_SEL_SCREEN_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Selection Screen Text</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>METH_GET_SEL_SCREEN_TEXT</CMPNAME>
+     <SCONAME>EX_FLD_TEXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text/template for a screen element</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>METH_GET_SEL_SCREEN_TEXT</CMPNAME>
+     <SCONAME>IM_APPLICATION_ID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>METH_GET_SEL_SCREEN_TEXT</CMPNAME>
+     <SCONAME>IM_FLD_NAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get table field or program field (generic)</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

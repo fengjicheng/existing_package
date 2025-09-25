@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Direct Debit Mandate</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_DIRE_DEBIT_MANDT_F044F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_DIRE_DEBIT_MANDT_F044TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_DIRE_DEBIT_MANDT_F044</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_DIR_DEBIT_MANDT_F044</FUNCNAME>
+     <SHORT_TEXT>Function Module for Direct Debit Mandate</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ZLSCH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SCHZW_BSEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_WAERK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WAERK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SCENARIO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR3</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>IHREZ</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ADRNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ADRNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_LANGU</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPRAS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_XSTRING</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XSTRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MEM_TEXT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_FORMOUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FPFORMOUTPUT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ZLSCH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payment Method</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_WAERK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SD Document Currency</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SCENARIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>3-Byte field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Your Reference</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ADRNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Address</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_LANGU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Language Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_XSTRING</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MEM_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Member Ship Text</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_FORMOUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Form Output (PDF, PDL)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

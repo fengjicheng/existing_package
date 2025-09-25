@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>To replace email id in SO10 text</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_EMAIL_ID_F035TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_EMAIL_ID_F035</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_EMAIL_ID_F035</FUNCNAME>
+     <SHORT_TEXT>To replace email id in SO10text</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_EMAIL_ID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDLINE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_EMAIL_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Line</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

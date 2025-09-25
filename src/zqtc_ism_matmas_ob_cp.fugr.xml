@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>I0204: ZQTC_ISM_MATMAS_OB Change Pointer</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ISM_MATMAS_OB_CPF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_ISM_MATMAS_OB_CPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ISM_MATMAS_OB_CP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ISM_MATMAS_OB_CP_GET</FUNCNAME>
+     <SHORT_TEXT>I0204: ZQTC_ISM_MATMAS_OB-Get Change Pointers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_V_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_TABNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TABNAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_T_CHGPTRS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDCP_TAB</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_V_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_TABNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_T_CHGPTRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for BDCP</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_ISM_MATMAS_OB_CP_SET</FUNCNAME>
+     <SHORT_TEXT>I0204: ZQTC_ISM_MATMAS_OB-Set Change Pointers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_T_CPIDENT_MAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_CPIDENT_MAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_CHGPTRS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BDCP_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_T_CPIDENT_MAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>I0204: Change Pointers against Material</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_CHGPTRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for BDCP</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

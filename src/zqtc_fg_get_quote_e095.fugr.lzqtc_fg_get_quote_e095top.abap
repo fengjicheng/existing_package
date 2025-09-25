@@ -1,0 +1,3 @@
+FUNCTION-POOL ZQTC_FG_GET_QUOTE_E095.       "MESSAGE-ID ..
+
+* INCLUDE LZQTC_FG_GET_QUOTE_E095D...        " Local class definition

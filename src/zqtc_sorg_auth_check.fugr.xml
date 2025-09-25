@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Authorization check on Sales Org</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_SORG_AUTH_CHECKTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_SORG_AUTH_CHECK</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_AUTH_SALESORG</FUNCNAME>
+     <SHORT_TEXT>Sales Org Auth check</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_UNAME</PARAMETER>
+       <TYP>SYUNAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_VKORG</PARAMETER>
+       <TYP>SD_VKORG_RANGES</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_UNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>User Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ranges Table for Sales Organization</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

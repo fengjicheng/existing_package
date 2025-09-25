@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for CMR Upload</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_CMR_UPLDTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_CMR_UPLD</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_CMR_UPLD_CONSORTIUM_JOB</FUNCNAME>
+     <SHORT_TEXT>FM for CMR Upload - Batch Job</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>JOB_NO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TBTCJOB-JOBCOUNT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>JOB_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TBTCJOB-JOBNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PROGRAM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYST_XPROG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SEL_1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SEL_2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRETURN1</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>JOB_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Job ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>JOB_NAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Background job name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PROGRAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Internal Use</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SEL_1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SEL_2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

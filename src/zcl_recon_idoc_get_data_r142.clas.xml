@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_RECON_IDOC_GET_DATA_R142</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Get Data For Reckon Idoc Dashboard</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get DevId Details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_A</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_E</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_S</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DEVID_STAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Devid level log details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IDOC_DETAILS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Idoc Details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_IDOC_STAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Idoc log Statistics</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GI_DEVID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintain Idoc DevID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GI_IDOC_STATUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for IDOC status maintain</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IM_DEVID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for Dev ID Recon dashboard</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DEVID_STAT</CMPNAME>
+     <SCONAME>EX_DEVID_STAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for stat at Devid level</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DEVID_STAT</CMPNAME>
+     <SCONAME>IM_FROM_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DEVID_STAT</CMPNAME>
+     <SCONAME>IM_TO_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_DETAILS</CMPNAME>
+     <SCONAME>EX_IDOC_DETAILS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type Reckon IDOC details</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_DETAILS</CMPNAME>
+     <SCONAME>IM_FROM_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_DETAILS</CMPNAME>
+     <SCONAME>IM_TO_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_STAT</CMPNAME>
+     <SCONAME>EX_IDOC_STAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Idoc Stat Table type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_STAT</CMPNAME>
+     <SCONAME>IM_FROM_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_IDOC_STAT</CMPNAME>
+     <SCONAME>IM_TO_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>IDoc Created On</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

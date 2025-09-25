@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Order Process</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ORDER_POCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ORDER_POC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ORDER_PROCESS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Order Processing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_HEADER</PARAMETER>
+       <TYP>ZQTCS_HEAD_APL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <TYP>ZQTCS_OUTPUT_APL</TYP>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_ITEM</PARAMETER>
+       <TYP>ZQTCT_ITEM_APL</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item Details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Process Output</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_ORDER_PROCESS_POC</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Order Processing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_HEADER</PARAMETER>
+       <TYP>ZQTCS_HEAD_POC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <TYP>ZQTCS_OUTPUT_POC</TYP>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>I_ITEM</PARAMETER>
+       <TYP>ZQTCT_ITEM_POC</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item Details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Process Output</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

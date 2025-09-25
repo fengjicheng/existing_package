@@ -1,0 +1,33 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZQTCN_EXISTING_CUST_UPD_SEL
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-s01.
+SELECT-OPTIONS:
+  s_land1 FOR  kna1-land1  OBLIGATORY.
+PARAMETERS:
+  p_waers TYPE knvv-waers  OBLIGATORY.
+SELECTION-SCREEN SKIP 1.
+PARAMETERS:
+  p_bukrs TYPE knb1-bukrs  OBLIGATORY.
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN COMMENT 1(60) text-c01.
+SELECTION-SCREEN END OF LINE.
+SELECTION-SCREEN END OF BLOCK b1.
+SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE text-s02.
+SELECT-OPTIONS:
+  s_erdat FOR  kna1-erdat  OBLIGATORY,
+  s_ktokd FOR  kna1-ktokd  OBLIGATORY,
+  s_kunnr FOR  kna1-kunnr.
+SELECTION-SCREEN END OF BLOCK b2.
+SELECTION-SCREEN BEGIN OF BLOCK b3 WITH FRAME TITLE text-s03.
+PARAMETERS:
+  p_akont TYPE knb1-akont  OBLIGATORY,
+  p_vtweg TYPE knvv-vtweg  OBLIGATORY,
+  p_spart TYPE knvv-spart  OBLIGATORY,
+  p_lifsd TYPE knvv-lifsd  OBLIGATORY,
+  p_faksd TYPE knvv-faksd  OBLIGATORY.
+SELECTION-SCREEN END OF BLOCK b3.
+SELECTION-SCREEN BEGIN OF BLOCK b4 WITH FRAME TITLE text-s04.
+SELECT-OPTIONS:
+  s_idtyp FOR  but0id-type OBLIGATORY.
+SELECTION-SCREEN END OF BLOCK b4.

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZFILUPLOAD</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Messege Class for Template file Upload</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Please Select the Program name First !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Couldn&apos;t find the Template Name</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Template File Successfully Uploaded</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Failed to Upload Template File</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Couldn&apos;t find the Program Name</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>New File creation terminated.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Please Select the Program name and Template Name</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>File Template Incative process is incompleted !!!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Unable to convert binary to xstring</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Unable to convert xstring to binary</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>File Downloaded Successfull.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Couldn&apos;t find the Template Name/Program Name</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Duplicate file upload teminated.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>No data for Current selection !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Program name is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Template name is mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Changes successfully Updated.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Data updation failed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Program name is required.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Template name is required.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Version is required.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>No data for Current selection.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Data Already Updated.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Same record couldn&apos;t update.Please check again.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Multiple active records cannot be maintain.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Error in File name separation</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZFILUPLOAD</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Error in File saving</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

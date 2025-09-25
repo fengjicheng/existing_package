@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <CLAS>ZQTC_REN_VAL</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>Renewals Validation Report R01</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00003</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Contract Created On</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00004</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition changed manually</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition is inactive</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition control</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition record number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00009</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00010</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material group 5</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00011</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Contract end date</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00012</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Contract start date</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00013</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Partner Function</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00049</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Contract Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00068</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Condition Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00089</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Organization</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00090</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Distribution Channel</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00091</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Division</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00092</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Price group (customer)</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00129</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Currency</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00130</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Society Identifier</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00131</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Condition Group 2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00132</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Condition Group2 Desc</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00133</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Price Group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00134</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Price Group Desc</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00135</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Sold-to-Party</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00136</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Sold-to party Desc</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00143</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Partner Function</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZRENEWAL_GRP</NUM>
+     <QNUM>ZQTC_REN_VAL</QNUM>
+     <TINDX>00144</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>255</MAXL>
+     <TEXT>Partner</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

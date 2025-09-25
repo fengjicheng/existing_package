@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_AUTOMATED_LOCKBOX_E097</NAME>
+    <SUBC>1</SUBC>
+    <SECU>ZAUT_LCK</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Company Code</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY>Fiscal Year</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T03</KEY>
+     <ENTRY>Accounting Document Number</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T04</KEY>
+     <ENTRY>Document Number of the Clearing Document</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T05</KEY>
+     <ENTRY>Clearing Date</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T06</KEY>
+     <ENTRY>Billing Document</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T07</KEY>
+     <ENTRY>Sales Document</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T08</KEY>
+     <ENTRY>Sales Document Item</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T09</KEY>
+     <ENTRY>Message</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Automated lockbox report</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUGDT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>21</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BLART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>21</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BUKRS</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>20</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_FKART</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>20</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_UMSKZ</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>24</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

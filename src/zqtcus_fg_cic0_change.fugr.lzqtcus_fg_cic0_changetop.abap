@@ -1,0 +1,3 @@
+FUNCTION-POOL ZQTCUS_FG_CIC0_CHANGE.        "MESSAGE-ID ..
+
+* INCLUDE LZQTCUS_FG_CIC0_CHANGED...         " Local class definition

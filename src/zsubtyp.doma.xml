@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZSUBTYP</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000002</LENG>
+    <OUTPUTLEN>000002</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Domain for Subscription Type</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Rolling Year</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+     <DDTEXT>Open Access</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+     <DDTEXT>Online Open</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Domain for Subscription Type</DDTEXT>
+    </item>
+   </DD01_TEXTS>
+   <DD07_TEXTS>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Rolling Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>01</DOMVALUE_L>
+     <DDTEXT>Calendar Year</DDTEXT>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>OA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+    <item>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DOMVALUE_L>FA</DOMVALUE_L>
+    </item>
+   </DD07_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

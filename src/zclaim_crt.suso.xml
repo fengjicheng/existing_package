@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZCLAIM_CRT</OBJCT>
+    <FIEL1>ZCLAIM_CRT</FIEL1>
+    <OCLSS>ZQTC</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZCLAIM_CRT</OBJECT>
+    <TTEXT>Authorization object for Claim Creation Tab on Claims App</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZCLAIM_CRT</OBJCT>
+   </TOBJVORFLG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

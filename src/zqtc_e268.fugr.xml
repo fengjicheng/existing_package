@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>E268 Logic</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_E268F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_E268TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_E268</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_TABLE_E268</FUNCNAME>
+     <SHORT_TEXT>Get table with additional data</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_USR_COM</PARAMETER>
+       <TYP>SYST_UCOMM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ITAB</PARAMETER>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IRCAT_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GRCAT_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IRTYP_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GRTYP_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANY TABLE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BASETAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_MEREP_OUTTAB_PURCHDOC</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_SCHETAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_MEREP_OUTTAB_SCHEDLINES</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ACCTAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_MEREP_OUTTAB_ACCOUNTING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_USR_COM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: PAI-Triggering Function Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ITAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IRCAT_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GRCAT_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IRTYP_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GRTYP_TAB</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BASETAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ZQTCMEREP_OUTTAB_PURCHDOC</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_SCHETAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ZQTCMEREP_OUTTAB_SCHEDLINES</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ACCTAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ZQTCMEREP_OUTTAB_ACCOUNTING</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

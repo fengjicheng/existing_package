@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(n){"use strict";return n.extend("journal_upload.JOURNAL_UPLOAD.controller.NotFound",{onLinkPressed:function(){this.getRouter().navTo("worklist")}})});                                                             

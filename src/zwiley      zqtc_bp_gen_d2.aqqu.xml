@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <CLAS>ZQTC_BP_GENERAL_DATA</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>GENERAL DATA2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Business Partner Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00003</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Street</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00004</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Street 2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Street 3</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Street 4</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Street 5</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>132</MAXL>
+     <TEXT>General Data2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00009</TINDX>
+     <MAXL>132</MAXL>
+     <TEXT>General Data2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00010</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Business partner category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00011</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_BP_GEN_D2</QNUM>
+     <TINDX>00012</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created Date</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

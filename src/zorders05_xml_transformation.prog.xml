@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZORDERS05_XML_TRANSFORMATION</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Transformation Utility for XML From TIBCO</ENTRY>
+     <LENGTH>41</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ARCKEY</KEY>
+     <ENTRY>EDI Archive Key:</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ASXBEG</KEY>
+     <ENTRY>As XML Open Tag(s):</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ASXEND</KEY>
+     <ENTRY>As XML Close Tag(s):</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_CIMTYP</KEY>
+     <ENTRY>Extension:</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DIRECT</KEY>
+     <ENTRY>Direction for IDoc:</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FILE</KEY>
+     <ENTRY>XML File Path:</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FORMAT</KEY>
+     <ENTRY>Format XML and Parse?</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_IDOCTP</KEY>
+     <ENTRY>Basic Type:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_IMMED</KEY>
+     <ENTRY>Immediate Flag:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MESCOD</KEY>
+     <ENTRY>Logical Message Variant:</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_MESTYP</KEY>
+     <ENTRY>Message Type:</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PARSE</KEY>
+     <ENTRY>Parse XML to table data?</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_RCVPOR</KEY>
+     <ENTRY>Receiver Port:</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_RCVPRN</KEY>
+     <ENTRY>Partner Number of Receiver:</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_RCVPRT</KEY>
+     <ENTRY>Partner Type of Receiver:</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ROOTCL</KEY>
+     <ENTRY>Root Close Tag:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ROOTOP</KEY>
+     <ENTRY>Root Open Tag:</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SNDPOR</KEY>
+     <ENTRY>Sender Port:</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SNDPRN</KEY>
+     <ENTRY>Partner Number of Sender:</ENTRY>
+     <LENGTH>33</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SNDPRT</KEY>
+     <ENTRY>Partner Type of Sender:</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_XMLV</KEY>
+     <ENTRY>XML Version:</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

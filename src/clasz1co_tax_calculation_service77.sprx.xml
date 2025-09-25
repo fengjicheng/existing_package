@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME_M>
+     <HASH_ID>8FFFA96BE1F3ADC34B63018D26535144C87E7984</HASH_ID>
+     <ID>&lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>TaxCalculationService77</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+     <SYNCHRON>D</SYNCHRON>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</X-ML_NSPCE>
+     <X-ML_NAME>TaxCalculationService77</X-ML_NAME>
+     <FURTHER_DATA>&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;SOAP_APPL&gt;urn:sap-com:soap:application:esr:client:710&lt;/SOAP_APPL&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHER_DATA>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME2>
+     <ID>&lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>TaxCalculationService77</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z1CO_TAX_CALCULATION_SERVICE77</R3_NAME>
+     <R3_TEXT>Proxy Class (generated)</R3_TEXT>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+     <SYNCHRON>D</SYNCHRON>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>CALCULATE_TAX</OBJ_NAME1>
+     <OBJECT2>EXCE</OBJECT2>
+     <OBJ_NAME2>Z1CX_TAX_CALCULATION_FAULT1</OBJ_NAME2>
+     <OBJECT_R>CLAS</OBJECT_R>
+     <OBJ_NAME_R>Z1CX_TAX_CALCULATION_FAULT1</OBJ_NAME_R>
+     <ID>&lt;fault&gt; taxCalculationFault &lt;operation&gt; CalculateTax &lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>fault</IFR_TYPE>
+     <IFR_NAME>taxCalculationFault</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>EXCE</R3_TYPE>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>CALCULATE_TAX</OBJ_NAME1>
+     <OBJECT2>METH</OBJECT2>
+     <OBJ_NAME2>CALCULATE_TAX</OBJ_NAME2>
+     <ID>&lt;operation&gt; CalculateTax &lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>operation</IFR_TYPE>
+     <IFR_NAME>CalculateTax</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>METH</R3_TYPE>
+     <R3_NAME>CALCULATE_TAX</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+     <DIRECTION>O</DIRECTION>
+     <SYNCHRON>X</SYNCHRON>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>CALCULATE_TAX</OBJ_NAME1>
+     <OBJECT2>PAEX</OBJECT2>
+     <OBJ_NAME2>TAX_CALCULATION_RESPONSE</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1TAX_CALCULATION_RESPONSE2</OBJ_NAME_R>
+     <ID>&lt;output&gt; taxCalculationResponse &lt;operation&gt; CalculateTax &lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>PartInput</IFR_TYPE>
+     <IFR_NAME>taxCalculationResponse</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAEX</R3_TYPE>
+     <R3_NAME>TAX_CALCULATION_RESPONSE</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z1CO_TAX_CALCULATION_SERVICE77</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>CALCULATE_TAX</OBJ_NAME1>
+     <OBJECT2>PAIM</OBJECT2>
+     <OBJ_NAME2>TAX_CALCULATION_REQUEST</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1TAX_CALCULATION_REQUEST2</OBJ_NAME_R>
+     <ID>&lt;input&gt; taxCalculationRequest &lt;operation&gt; CalculateTax &lt;portType&gt; TaxCalculationService77 http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>PartOutput</IFR_TYPE>
+     <IFR_NAME>taxCalculationRequest</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAIM</R3_TYPE>
+     <R3_NAME>TAX_CALCULATION_REQUEST</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

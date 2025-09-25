@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>For Std.Texts in Renewal Notif. F037</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_NOTIF_F037TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_NOTIF_F037</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_EMAIL_ID_F037</FUNCNAME>
+     <SHORT_TEXT>To replace email id in SO10 text</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_EMAIL_ID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDLINE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_EMAIL_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Line</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_MAT_DESC_F037</FUNCNAME>
+     <SHORT_TEXT>Material desc for std.text in F037</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MAT_DESC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MAT_DESC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Line</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_VOL_ISSUES_F037</FUNCNAME>
+     <SHORT_TEXT>Volume and Issues in F037</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VOLUME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_START_ISSUE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISMNRIMJAHR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TOT_ISSUE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ISMNRIMJAHR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VOLUME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Copy Number of Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_START_ISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Issue Number (in Year Number)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TOT_ISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Issue Number (in Year Number)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

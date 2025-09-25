@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <CLAS>ZSD1_A923</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>ZSD1/A923: Std. Discount % - Customer Group and JGC Specific</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00004</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00005</TINDX>
+     <MODIF>0003</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Created On</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition table</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Condition type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00009</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Relationship Category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00010</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Society Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00011</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Journal Group Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00012</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Valid To</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00013</TINDX>
+     <MODIF>0002</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Valid From</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00014</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Default Language</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00051</TINDX>
+     <MAXL>060</MAXL>
+     <TEXT>Amount</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00052</TINDX>
+     <MAXL>055</MAXL>
+     <TEXT>Amount</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00059</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>RelCat Descr</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00060</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Society No</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00061</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Society Name</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_ZSD1_A923</QNUM>
+     <TINDX>00062</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Journal Group Code</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <CLAS>ZQTC_IDCODE</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>255</MAXL>
+     <TEXT>IDCODES</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>255</MAXL>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00003</TINDX>
+     <MAXL>255</MAXL>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00004</TINDX>
+     <MAXL>255</MAXL>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Type of Identification Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Identification Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Indicator: Main ID Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_IDCODE</QNUM>
+     <TINDX>00009</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Type</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZAKOMKBV5</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>KOMKBZ5</SQLTAB>
+    <LANGDEP>X</LANGDEP>
+    <DDTEXT>Output determination header appl.V3: Customer modification</DDTEXT>
+    <EXCLASS>2</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>.INCLUDE</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <PRECFIELD>ZSTQTC_OP_DET_HDR_V3</PRECFIELD>
+     <MASK>      S</MASK>
+     <DDTEXT>Output determination header appl.V3: Customer modification</DDTEXT>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <DD08V_TABLE>
+    <DD08V>
+     <FIELDNAME>ZZBSARK</FIELDNAME>
+     <CHECKTABLE>*</CHECKTABLE>
+     <FRKART>REF</FRKART>
+     <CARD>CN</CARD>
+     <CARDLEFT>C</CARDLEFT>
+    </DD08V>
+    <DD08V>
+     <FIELDNAME>ZZKATR6</FIELDNAME>
+     <CHECKTABLE>*</CHECKTABLE>
+     <FRKART>REF</FRKART>
+     <CARD>CN</CARD>
+     <CARDLEFT>C</CARDLEFT>
+    </DD08V>
+    <DD08V>
+     <FIELDNAME>ZZKVGR1</FIELDNAME>
+     <CHECKTABLE>*</CHECKTABLE>
+     <FRKART>REF</FRKART>
+     <CARD>CN</CARD>
+     <CARDLEFT>C</CARDLEFT>
+    </DD08V>
+    <DD08V>
+     <FIELDNAME>ZZVKBUR</FIELDNAME>
+     <CHECKTABLE>*</CHECKTABLE>
+     <FRKART>REF</FRKART>
+     <CARD>CN</CARD>
+     <CARDLEFT>C</CARDLEFT>
+    </DD08V>
+   </DD08V_TABLE>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TB</ID>
+      <OBJECT>ZZAKOMKBV5</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00003</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZAKOMKBV5</TDNAME>
+      <TDID>TB</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Structure ZZAKOMKBV5 is used to identify output types for outbound</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>invoice. It is added as part of I0245 object and it is used in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>communication structure KOMKBV3.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MAINTENANCE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

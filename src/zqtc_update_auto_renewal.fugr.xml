@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Update auto renewal function module</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_UPDATE_AUTO_RENEWALTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_UPDATE_AUTO_RENEWAL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_UPDATE_AUTO_RENEWAL</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>Update function module for auto renwal table</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_RENWL_PLAN</PARAMETER>
+       <DBSTRUCT>ZQTC_RENWL_PLAN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>T_RENWL_PLAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>E095: Renewal Plan Table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_UPDATE_AUTO_RENEWAL>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_UPDATE_AUTO_RENEWAL</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_UPDATE_AUTO_RENEWAL</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Function Module for Update custom table ZQTC_RENWL_PLAN (E095: Renewal</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Plan Table )</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_UPDATE_AUTO_RENEWAL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

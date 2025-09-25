@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG to update BP credit value</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZRTRN_FG_CL_UPDATETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZRTRN_FG_CL_UPDATE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZRTRN_KILL_WORK_ITEM_FM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM to kill work item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_WI_ID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWW_WIID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_WI_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work item ID</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZRTRN_MODIF_CR_VALUE_UPDATE</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>FM to update the BP credit value and delete workitem</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_CASE_ID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SCMG_EXT_KEY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_BP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BU_PARTNER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_SEGMENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>UKM_CREDIT_SGMNT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_WORK_ITEM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWRTWIHDR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_CASE_ID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Case ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Credit Segment</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_WORK_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>WAPI: Table Type for Work Item Header</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

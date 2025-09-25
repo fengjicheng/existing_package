@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Manage QTC Address for Item</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ADDRESSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ADDRESS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ADDRESS_UPDATE</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>Address Update in Sales Item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>VBELN</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ADRNR</PARAMETER>
+       <TYP>ADRNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PARVW</PARAMETER>
+       <TYP>PARVW</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ADRNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Address</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PARVW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Partner Function</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

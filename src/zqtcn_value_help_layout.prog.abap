@@ -1,0 +1,43 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZQTCN_VALUE_HELP_LAYOUT
+*&---------------------------------------------------------------------*
+*----------------------------------------------------------------------*
+* PROGRAM NAME:ZQTCN_VALUE_HELP_LAYOUT(Include)
+* PROGRAM DESCRIPTION:Include for F4 Help on ZQTC_VA45 selection screen
+* DEVELOPER: Prabhu
+* CREATION DATE:   2019-05-15
+* OBJECT ID: DM1791
+* TRANSPORT NUMBER(S) ED2K915045
+*-------------------------------------------------------------------*
+* REVISION HISTORY-----------------------------------------------------*
+* REVISION NO: ED1K910257
+* REFERENCE NO: INC0245900
+* DEVELOPER: Prabhu
+* DATE:  5/31/2019
+* DESCRIPTION: Get User specific layouts in F4 help
+*----------------------------------------------------------------------*
+DATA : lst_variant     TYPE disvariant,
+       lst_variant_imp TYPE disvariant,
+       lv_exit         TYPE c,
+       lv_save         TYPE c VALUE 'A'.
+*--*Get F4 Help to listout available layouts
+lst_variant-report = sy-repid.
+CALL FUNCTION 'REUSE_ALV_VARIANT_F4'
+  EXPORTING
+    is_variant    = lst_variant
+    i_save        = lv_save
+  IMPORTING
+    e_exit        = lv_exit
+    es_variant    = lst_variant_imp
+  EXCEPTIONS
+    not_found     = 1
+    program_error = 2
+    OTHERS        = 3.
+IF sy-subrc <> 0.
+  MESSAGE 'No values found' TYPE 'I'.
+ELSE.
+*--*Populate selected Layout
+  IF lv_exit IS INITIAL.
+    p_layout = lst_variant_imp-variant.
+  ENDIF.
+ENDIF.

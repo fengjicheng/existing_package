@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for Advance Notification Letter Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>V_MIME_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NAST-SPRAS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_ADD_BILL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;1&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_EMAIL_ID</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES/>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBCO3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBCO3</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOCIETY_LOGO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBAP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBAP</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_FINAL_F032</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FINAL_AMT_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_AMT_TAX_F032</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_ADDR_F032</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DRCT_DBT_LOGO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOCIETY_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NAME1_GP</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FLAG_CUST</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_SERV_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_SERV_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_SERV_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BARCODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SELLER_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COMPNAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_TO_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_TO_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_TO_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING1_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING1_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING1_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING2_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING2_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BANKING2_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ARKTX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SUBS_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EMAIL_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EMAIL_SCC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EMAIL_SCM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOCIETY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZZSOCIETY_NAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BODY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ARKTX_DESC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_ARKTX</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>V_XSTRING</FPPARAMETER>
+      <FPPARAMETER>V_EMAIL_ID</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE/>
+      <FPCLINE>CONSTANTS:lc_st     TYPE tdid     VALUE &apos;ST&apos;,   &quot;Text ID of text to be read</FPCLINE>
+      <FPCLINE>          lc_object TYPE tdobject VALUE &apos;TEXT&apos;. &quot;Object of text to be read</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: lv_name   TYPE tdobname,                &quot; TDIC text name</FPCLINE>
+      <FPCLINE>      lst_lines TYPE tline,                   &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>      li_lines  TYPE STANDARD TABLE OF tline. &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SET COUNTRY im_address-land1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* BOC by PBANDLAPAL on 11-Sep-2017 for ERP-4320 ED2K908431</FPCLINE>
+      <FPCLINE>*v_langu = im_vbco3-spras.</FPCLINE>
+      <FPCLINE>v_langu   = im_address-spras.</FPCLINE>
+      <FPCLINE>* EOC by PBANDLAPAL on 11-Sep-2017 for ERP-4320 ED2K908431</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**BOC by MODUTTA on 10/01/2018 for CR# TBD</FPCLINE>
+      <FPCLINE>IF im_email_tbt IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  lv_name = im_email_tbt.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_st</FPCLINE>
+      <FPCLINE>      language                = v_langu &quot;lc_langu</FPCLINE>
+      <FPCLINE>      name                    = lv_name</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_lines</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  READ TABLE li_lines INTO lst_lines INDEX 1.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    v_email_id = lst_lines-tdline.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>ELSEIF im_email_scc IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  lv_name = im_email_scc.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_st</FPCLINE>
+      <FPCLINE>      language                = v_langu &quot;lc_langu</FPCLINE>
+      <FPCLINE>      name                    = lv_name</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_lines</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  READ TABLE li_lines INTO lst_lines INDEX 1.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    v_email_id = lst_lines-tdline.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>ELSEIF im_email_scm IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  lv_name = im_email_scm.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_st</FPCLINE>
+      <FPCLINE>      language                = v_langu &quot;lc_langu</FPCLINE>
+      <FPCLINE>      name                    = lv_name</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_lines</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  READ TABLE li_lines INTO lst_lines INDEX 1.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    v_email_id = lst_lines-tdline.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_email_tbt IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* To populate email id dynamically in the SO10 text</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;ZQTC_EMAIL_ID_F035&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    im_email_id = v_email_id.</FPCLINE>
+      <FPCLINE>**EOC by MODUTTA on 10/01/2018 for CR# TBD</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

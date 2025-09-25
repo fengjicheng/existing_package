@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_ERROR_TYPE</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1OUTDATA_ERROR_TYPE</OBJ_NAME_M>
+     <HASH_ID>C23A966022B5B2AF371435FF983B449A633FDB98</HASH_ID>
+     <ID>&lt;type&gt; OutdataErrorType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>OutdataErrorType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</X-ML_NSPCE>
+     <X-ML_NAME>OutdataErrorType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_ERROR_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CODE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CODE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}CODE &lt;type&gt; OutdataErrorType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CODE</IFR_NAME>
+     <IFR_TEXT>
+The severe error&apos;s code.						
+						</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CODE</R3_NAME>
+     <R3_TEXT>
+The severe error&apos;s code.						
+						</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_ERROR_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DESCRIPTION</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DESCRIPTION</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}DESCRIPTION &lt;type&gt; OutdataErrorType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DESCRIPTION</IFR_NAME>
+     <IFR_TEXT>
+The severe error&apos;s description.						
+						</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DESCRIPTION</R3_NAME>
+     <R3_TEXT>
+The severe error&apos;s description.						
+						</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_ERROR_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ERROR_LOCATION_PATH</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ERROR_LOCATION_PATH</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}ERROR_LOCATION_PATH &lt;type&gt; OutdataErrorType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ERROR_LOCATION_PATH</IFR_NAME>
+     <IFR_TEXT>
+An XML path to the element containing the severe error.						
+						</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ERROR_LOCATION_PATH</R3_NAME>
+     <R3_TEXT>
+An XML path to the element containing the severe error.				</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_ERROR_TYPE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1OUTDATA_ERROR_TYPE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1OUTDATA_ERROR_TYPE</OBJ_NAME2>
+     <ID>&lt;type&gt; OutdataErrorType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>OutdataErrorType</IFR_NAME>
+     <IFR_TEXT>
+A structure containing one or more severe errors associated with the request. If no severe errors a</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1OUTDATA_ERROR_TYPE</R3_NAME>
+     <R3_TEXT>
+A structure containing one or more severe errors associated</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

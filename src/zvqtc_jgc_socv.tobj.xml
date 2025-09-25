@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZVQTC_JGC_SOC</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZVQTC_JGC_SOC</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>I0222: Journal Group Code to Society Mapping</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZVQTC_JGC_SOC</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>ZQTC_JGC_SOCIETY</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZVQTC_JGC_SOC</TABNAME>
+     <CCLASS>ZJGC</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZVQTC_JGC_SOC</TABNAME>
+     <AREA>ZVQTC_JGC_SOC</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0001</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZVQTC_JGC_SOC</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>F_POPULATE_FIELDS_SAVE</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

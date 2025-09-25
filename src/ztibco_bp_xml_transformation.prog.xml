@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZTIBCO_BP_XML_TRANSFORMATION</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Transformation Utility for BP XML From TIBCO</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ASXBEG</KEY>
+     <ENTRY>As XML Open Tag(s):</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ASXEND</KEY>
+     <ENTRY>As XML Close Tag(s):</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FILE</KEY>
+     <ENTRY>XML File Path:</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FORMAT</KEY>
+     <ENTRY>Format XML and Parse?</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_GUID</KEY>
+     <ENTRY>GUID:</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PARSE</KEY>
+     <ENTRY>Parse XML to table data?</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ROOTCL</KEY>
+     <ENTRY>Root Close Tag:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ROOTOP</KEY>
+     <ENTRY>Root Open Tag:</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_SOURCE</KEY>
+     <ENTRY>Source:</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_XMLV</KEY>
+     <ENTRY>XML Version:</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

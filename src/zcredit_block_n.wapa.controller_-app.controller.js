@@ -1,0 +1,3 @@
+sap.ui.define(["./BaseController","sap/ui/model/json/JSONModel"],function(e,t){"use strict";window.addEventListener("beforeunload",function(e){e.preventDefault();e.returnValue=""});return e.extend("cob.v2.ZQTC_CREDIT_BLOCKED_ORDERS_SRV.controller.App",{o+
+nInit:function(){var e,n,o=this.getView().getBusyIndicatorDelay();e=new t({busy:true,delay:0});this.setModel(e,"appView");n=function(){e.setProperty("/busy",false);e.setProperty("/delay",o)};this.getOwnerComponent().getModel().metadataLoaded().then(n);th+
+is.getOwnerComponent().getModel().attachMetadataFailed(n);this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass())},onExit:function(){alert("HI")}})});                                                                                 

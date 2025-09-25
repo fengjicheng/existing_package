@@ -1,0 +1,1 @@
+QUnit.config.autostart=false;sap.ui.getCore().attachInit(function(){"use strict";sap.ui.require(["com/bso/Blocked_Sales_Orders/test/integration/AllJourneys"],function(){QUnit.start()})});                                                                    

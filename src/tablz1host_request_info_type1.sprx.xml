@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME_M>
+     <HASH_ID>3141FD9E68042B7B09B2CCA366164AD4BC7095B5</HASH_ID>
+     <ID>&lt;type&gt; HostRequestInfoType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>HostRequestInfoType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</X-ML_NSPCE>
+     <X-ML_NAME>HostRequestInfoType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>HOST_REQUEST_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>HOST_REQUEST_ID</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1HOST_REQUEST_ID_TYPE1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2020-03-01}HOST_REQUEST_ID &lt;type&gt; HostRequestInfoType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>HOST_REQUEST_ID</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>HOST_REQUEST_ID</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>HOST_REQUEST_LOG_ENTRY_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>HOST_REQUEST_LOG_ENTRY_ID</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1HOST_REQUEST_LOG_ENTRY_ID_T1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2020-03-01}HOST_REQUEST_LOG_ENTRY_ID &lt;type&gt; HostRequestInfoType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>HOST_REQUEST_LOG_ENTRY_ID</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>HOST_REQUEST_LOG_ENTRY_ID</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1HOST_REQUEST_INFO_TYPE1</OBJ_NAME2>
+     <ID>&lt;type&gt; HostRequestInfoType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>HostRequestInfoType</IFR_NAME>
+     <IFR_TEXT>
+Contains pass-through elements used to identify the originating request from the ERP source.
+		</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1HOST_REQUEST_INFO_TYPE1</R3_NAME>
+     <R3_TEXT>
+Contains pass-through elements used to identify the origina</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

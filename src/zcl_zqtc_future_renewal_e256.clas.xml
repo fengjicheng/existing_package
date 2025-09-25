@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_ZQTC_FUTURE_RENEWAL_E256</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Future Renewal Class E256</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get the Contracts dates</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>EX_VEDA_DATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dates</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>EX_VEDA_DATEX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Communication fields: SD Contract Data Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>IM_POSNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Item number of the SD document</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>IM_VBELN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sales and Distribution Document Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>IM_ZZSUBTYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Subscription Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VEDA_DATA</CMPNAME>
+     <SCONAME>IM_ZZVYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Volume Year Product</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

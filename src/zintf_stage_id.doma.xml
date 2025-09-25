@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZINTF_STAGE_ID</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000006</LENG>
+    <OUTPUTLEN>000006</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Interface Staging ID</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>E225 - BP Order Upload</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>1A</DOMVALUE_L>
+     <DDTEXT>E225 - TBT</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>1B</DOMVALUE_L>
+     <DDTEXT>E225 - FTP</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>1C</DOMVALUE_L>
+     <DDTEXT>E225 - Society</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2A</DOMVALUE_L>
+     <DDTEXT>E101 - Create New Subscription Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2B</DOMVALUE_L>
+     <DDTEXT>E101 - Create Ren Ord with SubrefID</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2C</DOMVALUE_L>
+     <DDTEXT>E101 - Modify Existing Subscription</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2D</DOMVALUE_L>
+     <DDTEXT>E101 - Create New Credit Memo</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2E</DOMVALUE_L>
+     <DDTEXT>E101 - Change Existing Credit Memo</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2F</DOMVALUE_L>
+     <DDTEXT>E101 - Create New Acquisition Debit Memo Request</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2G</DOMVALUE_L>
+     <DDTEXT>E101 - Create Regular Order</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>2H</DOMVALUE_L>
+     <DDTEXT>E101 - Modify Regular Order</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

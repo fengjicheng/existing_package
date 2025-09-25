@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <CLAS>ZQTC_PRODUCT</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>Product Master Report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>066</MAXL>
+     <TEXT>Product and Issue Master data report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Created On</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Name of Person who Created the Object</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00009</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>External Material Group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00010</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Cross-Plant Material Status</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00011</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Publication Date</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00012</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Initial Shipping Date</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00013</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Organization</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00014</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Language Key</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00015</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Actual Goods Arrival Date</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00026</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Plant</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00031</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Journal Grp Code</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00036</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Status</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00039</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Sales Status</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00042</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Level</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00045</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>MATNR Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00048</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Pub Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00049</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Media Type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00054</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Deli Plant</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00055</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Plant</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00060</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Bundle Cd</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00061</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Bundle Gr Cd</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00062</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Ent Pltfrm</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00065</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Tax Cat</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00066</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Bill Mdel</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00069</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Cal Yr chk</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00072</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Higher-Level Media Product</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00075</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Copy Number of Media Issue</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00082</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Issue No.</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00083</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Volume</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00086</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Vol Yr</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00087</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Iss Seq In</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_PRODUCT</QNUM>
+     <TINDX>00090</TINDX>
+     <MAXL>255</MAXL>
+     <TEXT>Rev Pub date</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

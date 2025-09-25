@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>E087: Single Issue Pricing</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_SINGLE_ISSUE_PRICINGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_SINGLE_ISSUE_PRICING</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_SINGLE_ISSUE_PRICING_DET</FUNCNAME>
+     <SHORT_TEXT>E087: Determine Single Issue Pricing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_ST_KOMK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ST_KOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_V_FLG_SIP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_ST_KOMK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Header for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ST_KOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Item for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_V_FLG_SIP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Single Issue Pricing</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

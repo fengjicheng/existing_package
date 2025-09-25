@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>E075: Manage Pricing Discounts</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_MANAGE_DISCOUNTSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_MANAGE_DISCOUNTS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ARITHMETIC_OPERATIONS</FUNCNAME>
+     <SHORT_TEXT>E075: Perform Arithmetic Operations</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_V_OPERAND1</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_OPERAND2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_V_OPERATION</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ICL_CMC_CALC_OP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_V_RESULT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_WRONG_OPERAND</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_V_OPERAND1</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_OPERAND2</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_V_OPERATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Arithmetic Operator (Basic Calculation Types)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_V_RESULT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_WRONG_OPERAND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Wrong Operand</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_MANAGE_DISC_CONSTANTS</FUNCNAME>
+     <SHORT_TEXT>E075: Fetches Constant Values</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DEVID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZDEVID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_CONSTANTS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCAT_CONSTANTS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DEVID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Development ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CONSTANTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Wiley Application Constant Table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_MANAGE_DISC_SOCEITY</FUNCNAME>
+     <SHORT_TEXT>E075: Manage Discounts - Soceity Details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_TKOMK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ZZPARTNER2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZZPARTNER2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ZZRELTYP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BU_RELTYP</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_NO_SOCEITY</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_TKOMK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Header for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Item for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZZPARTNER2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner 2 or Society number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZZRELTYP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner Relationship Category</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_NO_SOCEITY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Soceity can not be determined</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_MANAGE_DISC_SOCEITY_DET</FUNCNAME>
+     <SHORT_TEXT>E075: Manage Discounts - Soceity Details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_TKOMK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KSCHL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KSCHA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PRC_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ZZPARTNER2</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZZPARTNER2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ZZRELTYP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BU_RELTYP</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ZZRELTYP_O</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BU_RELTYP</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_NO_SOCEITY</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_INVALID_COND_TYPE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_TKOMK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Header for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Item for Pricing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KSCHL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Condition type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PRC_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Change in Pricing Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZZPARTNER2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner 2 or Society number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZZRELTYP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner Relationship Category</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZZRELTYP_O</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner Relationship Category</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_NO_SOCEITY</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Soceity can not be determined</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_INVALID_COND_TYPE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Condition Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_PRICING_COMPLETE_GET</FUNCNAME>
+     <SHORT_TEXT>E075: Retrieve Global Attributes during Complete Pricing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_REFRESH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VA_KOMP_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_REFRESH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag: Refresh Global Attributes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table via KOMP</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_PRICING_COMPLETE_SET</FUNCNAME>
+     <SHORT_TEXT>E075: Populate Global Attributes during Complete Pricing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VA_KOMP_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table via KOMP</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_STPO_SINGLE_READ</FUNCNAME>
+     <SHORT_TEXT>Read BOM item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_ST_STPO_KEY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RMXMS_STPO_TKEY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ST_STPO_DET</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STPO</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_LAST_BOM_COMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_INVALID_INPUT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_ST_STPO_KEY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RMXM-TRF: Technical Key Fields - BOM Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ST_STPO_DET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BOM item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_LAST_BOM_COMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Indicator: Last Component of the BOM</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_INVALID_INPUT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Input Field Values</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

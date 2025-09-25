@@ -1,0 +1,2947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V10.4.0.20160610.1.923074_SAP" APIVersion="3.6.16064.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2021-02-22T14:07:37Z" uuid="708d6171-c1fe-4c93-8526-ea570383f2d8">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="235.7mm" id="contentArea_ID" w="8in" x="6.35mm" y="27.35mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <field h="9mm" name="INV_NO" w="63.5mm" x="146.05mm" y="16.875mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="454D8D4A-2787-4BC9-B881-E6861D6C8460"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.INVOICE_TEXT"/>
+               <event activity="initialize" name="event__initialize">
+                  <script>//var document.getElementById() 
+//this.presence = "hidden";
+//if($record.PAGES.DATA.FIELD == "1" )
+//then
+//this.presence = "hidden"
+//else
+//this.presence = "visible"
+//endif
+
+var curp  = $layout.page ( ref ( $ ) )
+var totalp = $layout.pageCount()
+if ( curp ne 1 ) then
+INV_NO.presence = "visible"
+else
+INV_NO.presence = "hidden"
+endif  
+</script>
+               </event>
+               <value>
+                  <text maxChars="100"/>
+               </value>
+               <desc>
+                  <text name="Schema Annotation">Invoice Text - Invoice Number/Cancelled Invoice</text>
+               </desc>
+            </field>
+            <field h="18mm" name="Wileylogo" w="43mm" x="6.35mm" y="6.35mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="$.WIILEY_LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Graphic Node GRAPHIC
+URL-FIELD = IM_XSTRING</exData>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <draw anchorType="topRight" h="4mm" hAlign="center" minW="11.769mm" name="Pages" x="201mm" y="263.525mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="29C7C057-99D2-4957-8441-AD8CC1881485">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField023281" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField016827" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para hAlign="right" vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField023281" name="CurrentPage" presence="hidden" w="55mm" x="280.363mm" y="548.424mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="C67B8755-0E26-4B1D-9EFD-2FABE55C0376">Text Field</text>
+                  </value>
+               </caption>
+               <calculate>
+                  <script contentType="application/x-javascript">
+//var curpage  = $layout.page ( ref ( $ ) )
+//if ( curpage ne 1 ) then
+//$.presence = "hidden"
+//endif	
+</script>
+               </calculate>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+if( this.rawValue == '1')
+{
+ this.presence = "hidden";
+}
+else
+{
+this.presence = "visible";
+}
+this.presence = "hidden"
+</script>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript">//this.rawValue = xfa.layout.pageCount();
+//if( this.rawValue == '1'){
+//this.presence = "hidden";
+//}
+//else
+//{
+//this.presence = "visible";
+//}
+
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField016827" name="PageCount" presence="hidden" w="55mm" x="280.363mm" y="548.424mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="26E658EA-BA32-4B09-83F0-BCFDB3EF5000">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <draw h="4mm" hAlign="right" name="Text2" w="29.2864mm" x="163.5mm" y="263.525mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="17347BE9-2709-4D5B-AB81-AE4AA5C3D750">Page</text>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para hAlign="right"/>
+               <?renderCache.bounds 80183 8505 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 4 Page 0 62916 7733 0 0 0 "Arial" 0 0 8000 ISO-8859-1?></draw>
+            <field h="4mm" minW="53.975mm" name="TEST_REF_DOC" x="6.35mm" y="263.525mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TEST_REF_DOC"/>
+               <desc>
+                  <text name="Schema Annotation">Customer purchase order number</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript"/>
+               </event>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" w="203.2mm">
+         <subform minH="126.607mm" w="203.2mm">
+            <bind match="none"/>
+            <keep intact="none"/>
+            <traversal>
+               <traverse operation="first" ref="#subform[3]"/>
+               <traverse ref="#subform[22]"/>
+            </traversal>
+            <subform h="33.057mm" name="Header1" w="82.561mm" x="120.531mm" y="0.001mm">
+               <bind match="none"/>
+               <field h="6.35mm" name="INVOICE_TEXT" w="82.55mm" x="0.01mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="12pt" typeface="Calibri" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="C89FD293-B014-4C75-AEC5-39C3EE4AF348"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.INVOICE_TEXT"/>
+                  <value>
+                     <text maxChars="100"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Invoice Text - Invoice Number/Cancelled Invoice</text>
+                  </desc>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+               </field>
+               <border>
+                  <edge thickness="0.1mm"/>
+                  <corner thickness="0.1mm"/>
+               </border>
+               <traversal>
+                  <traverse operation="first" ref="INVOICE_TEXT[0]"/>
+               </traversal>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="tb" minH="10mm" w="101.6mm">
+               <bind match="none"/>
+               <traversal>
+                  <traverse operation="first" ref="BillTo_Address_val[0]"/>
+                  <traverse ref="terms[0]"/>
+               </traversal>
+               <field minH="10mm" minW="101.6mm" name="BillTo_Address_val">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SALES_ORG"/>
+                  <desc>
+                     <exData name="Schema Annotation">Address of Billto 
+ ADDRESS-NUMBER-FIELD = IM_HEADER-BILL_ADDR_NUMBER</exData>
+                  </desc>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <traversal>
+                     <traverse ref="Header1[0]"/>
+                  </traversal>
+               </field>
+               <subform h="1mm" w="100mm">
+                  <bind match="none"/>
+               </subform>
+               <subform layout="tb" minH="8mm" w="81.975mm">
+                  <bind match="none"/>
+                  <subform layout="lr-tb" name="texid">
+                     <bind match="none"/>
+                     <field h="4mm" name="client_number_txt" w="35.8mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$.TEXT.PONUMBER"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption reserve="23.2614mm">
+                           <value>
+                              <text xliff:rid="842E180B-9D1F-41A8-BF0A-1F3635341666">FEIN</text>
+                           </value>
+                           <para vAlign="middle"/>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="1mm" name="Extra_txt">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="none"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text xliff:rid="3F080ADB-07E9-49AD-ACF4-8EC61E825103">:</text>
+                           </value>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="30mm" name="TaxID">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TAX_ID"/>
+                        <desc>
+                           <text name="Schema Annotation">Customer purchase order number</text>
+                        </desc>
+                        <para vAlign="middle"/>
+                     </field>
+                     <traversal>
+                        <traverse operation="first" ref="client_number_txt[0]"/>
+                     </traversal>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="lr-tb" name="cust_serv_id">
+                     <bind match="none"/>
+                     <field h="4mm" name="cust_number_txt" w="35.8mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="none"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption reserve="31.4214mm">
+                           <value>
+                              <text xliff:rid="784CFC5E-16C7-46DB-ACFF-4A98E459256C">Customer Service</text>
+                           </value>
+                           <para vAlign="middle"/>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="1mm" name="Extra_txt">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="none"/>
+                        <value>
+                           <exData contentType="text/html">
+                              <body xmlns="http://www.w3.org/1999/xhtml"/>
+                           </exData>
+                        </value>
+                        <desc>
+                           <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <caption>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text xliff:rid="D409D1B0-1BFF-42EF-B387-96D031B4C31C">:</text>
+                           </value>
+                        </caption>
+                     </field>
+                     <field h="4mm" minW="30mm" name="cust_serv_id">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="9pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                        <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.CUST_SERVICE"/>
+                        <desc>
+                           <text name="Schema Annotation">Customer purchase order number</text>
+                        </desc>
+                        <para vAlign="middle"/>
+                        <traversal>
+                           <traverse ref="terms[0]"/>
+                        </traversal>
+                     </field>
+                     <?templateDesigner expand 0?></subform>
+                  <traversal>
+                     <traverse operation="first" ref="texid[0]"/>
+                  </traversal>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="tb" name="Billto" w="92.244mm" y="47.168mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.1mm"/>
+                  <corner thickness="0.1mm"/>
+               </border>
+               <draw h="5.269mm" name="billtotext" w="92.075mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="057EBC49-140D-4C69-9262-39D7D34D1BD5">Bill To: </text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="1mm" rightInset="0.5mm" topInset="0.8mm"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <?renderCache.bounds 256748 11251 0 0 2835 2268 0 0?>
+                  <?renderCache.textRun 9 Bill To:  0 2835 9374 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse operation="first" ref="billtotext[0]"/>
+               </traversal>
+               <subform layout="tb" minH="5.528mm" name="BillToAddress" w="80mm">
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.IT_BILL_TO_ADDR.DATA[*]"/>
+                  <occur max="-1"/>
+                  <field h="4mm" name="Address" w="80mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8.5pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ITEM"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+            </subform>
+            <draw w="2.125in" x="120.64mm" y="47.232mm">
+               <value>
+                  <text xliff:rid="E4827AA5-8F15-4852-B2B5-EE8FA4516C8E">Remit Payment To:</text>
+               </value>
+               <ui>
+                  <textEdit/>
+               </ui>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <font size="9pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <draw w="2.125in" x="119.64mm" y="82.247mm">
+               <value>
+                  <text xliff:rid="2BB85800-00ED-4107-AC53-662D257B2DA8">Bank Details:</text>
+               </value>
+               <ui>
+                  <textEdit/>
+               </ui>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <font size="9pt" typeface="Arial" underline="1" weight="bold"/>
+            </draw>
+            <field minH="4mm" minW="50.8mm" name="Remit_to" x="120.64mm" y="52.257mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="0.5002mm" leftInset="0.5002mm" rightInset="0.5002mm" topInset="0.5002mm"/>
+               <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.REMIT_TO"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript"/>
+               </event>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <subform layout="lr-tb" name="Sub_client_number" x="120.65mm" y="7.707mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="client_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.TEXT.PONUMBER"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="FC022107-FCBC-4692-B63C-4AAB6DB4114D">Client Number</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="0149DEAF-5D66-4E20-ABE0-DAEDE119245B">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="ClientNumber">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.CLIENT_NUMB"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+               </field>
+               <?templateDesigner expand 0?>
+               <field h="4mm" minW="19.55mm" name="Taxt_text_exempt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TAX_EXPT_TEXT"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+               </field>
+            </subform>
+            <subform layout="lr-tb" name="Sub_date" x="120.65mm" y="11.707mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="BF435FB2-A0E6-4AE2-89F9-C28FD85C1AE8">Date</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="CB9221ED-AB12-4675-B887-765075922292">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="terms">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.INVOICE_DATE"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <format>
+                     <picture>zero{}|date{MM/DD/YYYY}</picture>
+                  </format>
+                  <traversal>
+                     <traverse ref="#subform[3].#subform[5]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse ref="#subform[3].#subform[5]"/>
+               </traversal>
+            </subform>
+            <subform layout="lr-tb" name="terms" x="120.65mm" y="15.707mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="17640383-43A3-4683-A071-C8E295105AF4">Terms</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="CD8DA9AD-7EE7-4A33-8528-ADB9B0AED818">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="40mm" name="terms">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TERMS"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+               </field>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse operation="first" ref="Date_number_txt[0]"/>
+               </traversal>
+            </subform>
+            <subform layout="lr-tb" name="due_date" x="120.65mm" y="19.707mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="due_date_text">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html" maxLength="255">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="0B8889EE-82C7-47B8-9F5C-326C7A6B11CE">Due Date</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="F41233F6-B86B-4058-B9D2-7AC671AECCC8">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="due_date">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.DUE_DATE"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <format>
+                     <picture>null{}|date{MM/DD/YYYY}</picture>
+                  </format>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="PO_NO" x="120.65mm" y="23.757mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="PO_text">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html" maxLength="255">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="EA0508BA-4736-42B0-B1F6-570405287A43">PO Number</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="C6FC7C72-E710-4026-9A01-D32FFB400057">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" name="PO_Value" w="56mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.PO_NO"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <traversal>
+                     <traverse ref="Billto[0]"/>
+                  </traversal>
+               </field>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse operation="first" ref="PO_text[0]"/>
+                  <traverse ref="Billto[0]"/>
+               </traversal>
+            </subform>
+            <subform layout="lr-tb" name="banktext1" x="119.64mm" y="86.757mm">
+               <bind match="none"/>
+               <field h="4mm" minW="20mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="B6852521-F976-4B61-B584-EB79E729A802">Bank</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="A6810070-E91B-4915-9BFE-4AAF1388B1A7">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="bankofamerica">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.BANK_NAME"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="BF490566-DE90-4F32-9654-F310A6FC18CD"/>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <margin leftInset="0.5mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="banktext2" x="119.64mm" y="90.257mm">
+               <bind match="none"/>
+               <field h="4mm" minW="20mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="3735DD9A-7770-4D2A-BECB-55A41142C0B3">Account</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="8D0683BC-E85D-4BDB-AD5C-D0073A32F3D0">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="bankofamerica">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.BANK_NO"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="584DBF27-1E68-4CA9-B73D-F5ED494FA7A6"/>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <margin leftInset="0.5mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="banktext3" x="119.64mm" y="94.257mm">
+               <bind match="none"/>
+               <field h="4mm" minW="20mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="52C8F740-B1AB-4A4D-A5FB-B06E0533C910">ABA</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="761FC309-4940-423B-B257-0BF5B1D2D4FB">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="bankofamerica">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.BANK_ABA"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="D341AEC2-15DC-4D9F-B1C2-BA2D9D8766A0"/>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <margin leftInset="0.5mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="banktext4" x="119.64mm" y="98.257mm">
+               <bind match="none"/>
+               <field h="4mm" minW="20mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="0C3E33E8-B35C-499D-840E-33B5104697E7">ACH</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="79272FFE-B715-4238-A7DB-434EA24DCF32">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="bankofamerica">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.BANK_ACH"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <caption>
+                     <value>
+                        <text xliff:rid="EA35C68A-0550-4201-B3C4-0F8039BADC2E"/>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <margin leftInset="0.5mm"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="banktext5" x="119.64mm" y="102.257mm">
+               <bind match="none"/>
+               <field h="4mm" minW="20mm" name="Date_number_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <value>
+                        <text xliff:rid="5781A6FF-1A16-48F0-A078-D76A48B91521">SWIFT</text>
+                     </value>
+                     <para vAlign="middle"/>
+                  </caption>
+               </field>
+               <field h="4mm" minW="1mm" name="Extra_txt">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="none"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="3BB9EA19-2415-40E9-996E-1209BF57F867">:</text>
+                     </value>
+                  </caption>
+               </field>
+               <field h="4mm" minW="30mm" name="bankofamerica">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.BANK_SWIFT"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <caption>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <traversal>
+                     <traverse ref="Invoicenote[0]"/>
+                  </traversal>
+               </field>
+               <margin leftInset="0.5mm"/>
+               <?templateDesigner expand 0?>
+               <traversal>
+                  <traverse ref="Invoicenote[0]"/>
+               </traversal>
+            </subform>
+            <subform layout="tb" name="Invoicenote" w="203.2mm" y="117.082mm">
+               <bind match="none"/>
+               <draw h="4.875mm" name="shiptotext" w="203.2mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="906AEE42-3868-41FE-A096-A8E2FD512838">Invoice Notes:</text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.8mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <?renderCache.bounds 572315 10985 0 0 2268 1417 0 0?>
+                  <?renderCache.textRun 14 Invoice Notes: 0 2268 8523 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <border>
+                  <edge thickness="0.1mm"/>
+                  <corner thickness="0.1mm"/>
+               </border>
+               <field minH="4.65mm" name="subtotal" w="203.2mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="1.5mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.INVOICE_NOTE"/>
+                  <desc>
+                     <text name="Schema Annotation">Customer purchase order number</text>
+                  </desc>
+                  <border>
+                     <edge presence="hidden" thickness="0.2mm"/>
+                     <corner presence="hidden" thickness="0.2mm"/>
+                  </border>
+                  <traversal>
+                     <traverse ref="#subform[22]"/>
+                  </traversal>
+               </field>
+               <traversal>
+                  <traverse operation="first" ref="shiptotext[0]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="INV_REF_DOC" x="120.65mm" y="27.757mm">
+               <bind match="none"/>
+               <field h="4mm" minW="25mm" name="CANCEL_INV_TEXT">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.CANCEL_INV_TEXT"/>
+                  <value>
+                     <text maxChars="100"/>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption reserve="0mm">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript">
+if (this.rawValue == Null)  
+{ 
+this.presence = "hidden";  
+}
+</script>
+                  </event>
+                  <para vAlign="middle"/>
+               </field>
+               <field h="4mm" minW="1mm" name="CANCEL_COOLEN">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.CANCEL_COOLEN"/>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <caption>
+                     <para vAlign="middle"/>
+                  </caption>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript">
+if (CANCEL_INV_TEXT.rawValue == Null)  
+{ 
+this.presence = "hidden";  
+}
+</script>
+                  </event>
+                  <para vAlign="middle"/>
+               </field>
+               <field h="4mm" name="CANCEL_INV_NO" w="56mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.CANCEL_INV_NO"/>
+                  <desc>
+                     <text name="Schema Annotation">Cancelled billing document number</text>
+                  </desc>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Shipto" w="92.075mm" y="86.95mm">
+               <bind match="none"/>
+               <border>
+                  <edge thickness="0.1mm"/>
+                  <corner thickness="0.1mm"/>
+               </border>
+               <field access="readOnly" h="9mm" id="floatingField000041" name="shiptoname" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_NAME"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField018467" name="shiptoatten" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_ATTIN"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField006334" name="shiptostreet" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_STREET"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField026500" name="shiptocit1" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_CITY1"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField019169" name="shiptoregion" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_REGION"/>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField015724" name="ship_to_post" presence="hidden" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SHIP_TO_POST"/>
+               </field>
+               <draw h="15.875mm" name="Text1" presence="hidden" w="88.9mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="77583A00-6A81-43DF-BD05-24DCF0842357">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/></p><p style="letter-spacing:0in"><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/>,<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/>,<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.9mm" rightInset="0.5mm" topInset="0.5mm"/>
+               </draw>
+               <draw h="5.269mm" name="shiptotext" w="92.075mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="D37F57E7-AE89-4060-B0AB-C80D1718DB38">Ship To: </text>
+                  </value>
+                  <font size="9pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="1mm" rightInset="0.5mm" topInset="0.8mm"/>
+                  <para vAlign="bottom"/>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <fill>
+                        <color value="216,216,216"/>
+                     </fill>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <?renderCache.bounds 256748 11251 0 0 2835 2268 0 0?>
+                  <?renderCache.textRun 9 Ship To:  0 2835 9374 0 0 0 "Arial" 1 0 9000 ISO-8859-1?></draw>
+               <subform layout="tb" minH="4mm" name="ShipToAddress" w="80mm">
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.IT_SHIP_TO_ADDR.DATA[*]"/>
+                  <field h="4mm" name="Address" w="80mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8.5pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ITEM"/>
+                  </field>
+                  <occur max="-1"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <subform layout="tb" minH="47.62mm" w="202.946mm">
+            <bind match="none"/>
+            <traversal>
+               <traverse ref="subtotal[0]"/>
+               <traverse operation="first" ref="#subform[23]"/>
+            </traversal>
+            <subform layout="tb" w="202.946mm">
+               <bind match="none"/>
+               <field h="9mm" hAlign="right" name="blankline" w="202.946mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="none"/>
+               </field>
+               <subform columnWidths="48.26mm 48.26mm 17.78mm 22.86mm 22.86mm 20.066mm 22.86mm" hAlign="right" id="ITM_GEN_ID" layout="table" name="ITM_GEN">
+                  <subform id="overflowLeader_ID_copy1" layout="row" name="overflowLeader">
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="F62C8288-827D-4398-9B02-10CA10E18D7C">Item</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="FE484769-E649-4D88-8EDA-192A4581C20A">Description</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="E021145C-3943-4EB4-A17B-06A735FF974F">Students</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="7D2ED07E-D6A9-4D10-833F-C0B02A832994">Amount</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="5370F721-2510-4251-98B8-698B5AD21D93">Discount</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="FF60A191-91F5-4B74-9C6A-1EC8673C1C7D">Tax</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <draw minH="6.62mm">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <value>
+                           <text xliff:rid="C5A864B7-4CA6-4A3E-895D-A6072205C25C">Total</text>
+                        </value>
+                        <font typeface="Arial" weight="bold"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <fill>
+                              <color value="216,216,216"/>
+                           </fill>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </draw>
+                     <assist role="TH"/>
+                     <occur max="-1"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="row" name="DATA">
+                     <field minH="5mm" name="ITEM" w="62mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="70"/>
+                        </value>
+                        <bind match="dataRef" ref="$.ITEM"/>
+                        <desc>
+                           <text name="Schema Annotation">Item</text>
+                        </desc>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </field>
+                     <field minH="5mm" name="DESCRIPTION" w="62mm" x="2.440944in">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="1.0008mm" rightInset="1.0008mm" topInset="1.0008mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="80"/>
+                        </value>
+                        <bind match="dataRef" ref="$.DESCRIPTION"/>
+                        <desc>
+                           <text name="Schema Annotation">Description</text>
+                        </desc>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                     </field>
+                     <field locale="en_US" minH="5mm" name="STUDENTS" w="62mm" x="4.881889in">
+                        <ui>
+                           <textEdit>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1.0008mm" leftInset="0mm" rightInset="0mm" topInset="1.0008mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <bind match="dataRef" ref="$.STUDENTS"/>
+                        <desc>
+                           <text name="Schema Annotation">Students</text>
+                        </desc>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <validate>
+                           <picture>text{99-9999999}</picture>
+                        </validate>
+                     </field>
+                     <field locale="en_US" minH="5mm" name="AMOUNT" w="62mm" y="0.354333in">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                              <border presence="hidden"/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="11"/>
+                        </value>
+                        <bind match="dataRef" ref="$.AMOUNT"/>
+                        <desc>
+                           <text name="Schema Annotation">Subtotal 1 from pricing procedure for condition</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <format>
+                           <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                        </format>
+                     </field>
+                     <field locale="en_US" minH="5mm" name="DISCOUNTS" w="62mm" x="2.440944in" y="0.354333in">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="11"/>
+                        </value>
+                        <bind match="dataRef" ref="$.DISCOUNTS"/>
+                        <desc>
+                           <text name="Schema Annotation">Subtotal 5 from pricing procedure for condition</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <format>
+                           <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                        </format>
+                     </field>
+                     <field locale="en_US" minH="5mm" name="TAX" w="62mm" x="4.881889in" y="0.354333in">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="11"/>
+                        </value>
+                        <bind match="dataRef" ref="$.TAX"/>
+                        <desc>
+                           <text name="Schema Annotation">Subtotal 6 from pricing procedure for condition</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <format>
+                           <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                        </format>
+                     </field>
+                     <field locale="en_US" minH="5mm" name="TOTAL" w="62mm" y="0.708667in">
+                        <ui>
+                           <numericEdit>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="11"/>
+                        </value>
+                        <bind match="dataRef" ref="$.TOTAL"/>
+                        <desc>
+                           <text name="Schema Annotation">Subtotal 1 from pricing procedure for condition</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                        <border>
+                           <edge thickness="0.1mm"/>
+                           <corner thickness="0.1mm"/>
+                        </border>
+                        <format>
+                           <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                        </format>
+                     </field>
+                     <assist role="TR"/>
+                     <occur max="-1"/>
+                     <bind match="dataRef" ref="$.DATA[*]"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:ffffff, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 1?></subform>
+                  <occur max="10"/>
+                  <bind match="dataRef" ref="$.IM_HDR_ITM.ITM_GEN"/>
+                  <desc>
+                     <text name="Schema Annotation">Table type for LH/OPM Invoice Item Data</text>
+                  </desc>
+                  <overflow leader="overflowLeader" target="Page1"/>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:ffffff, nextcolor:ffffff, apply:0?>
+                  <border>
+                     <edge thickness="0.3mm"/>
+                     <corner thickness="0.3mm"/>
+                  </border>
+                  <keep previous="contentArea"/>
+                  <breakAfter/>
+                  <?templateDesigner expand 1?></subform>
+               <subform hAlign="right" w="202.946mm">
+                  <bind match="none"/>
+                  <field h="9mm" hAlign="right" name="blankline" w="202.946mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <caption reserve="0.01in">
+                        <para vAlign="middle"/>
+                     </caption>
+                     <bind match="none"/>
+                  </field>
+                  <subform columnWidths="10mm 35mm 35mm 1.377958in" layout="table" name="ITM_EXC_TAB" y="9mm">
+                     <subform layout="row" name="DATA" y="0mm">
+                        <field h="5mm" name="MEDIA_TYPE" w="62mm" y="0mm">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text maxChars="255"/>
+                           </value>
+                           <bind match="dataRef" ref="$.MEDIA_TYPE"/>
+                           <desc>
+                              <text name="Schema Annotation">Char255</text>
+                           </desc>
+                           <border>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <edge/>
+                              <edge/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                           </border>
+                        </field>
+                        <field h="6mm" name="TAXABL_AMT" w="62mm" x="62mm" y="0mm">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text maxChars="140"/>
+                           </value>
+                           <bind match="dataRef" ref="$.TAXABL_AMT"/>
+                           <desc>
+                              <text name="Schema Annotation">CHAR140</text>
+                           </desc>
+                           <border>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                           </border>
+                        </field>
+                        <field h="6mm" name="TAX_PERCENTAGE" w="62mm" x="124mm" y="0mm">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text maxChars="16"/>
+                           </value>
+                           <bind match="dataRef" ref="$.TAX_PERCENTAGE"/>
+                           <desc>
+                              <text name="Schema Annotation">Field of length 16</text>
+                           </desc>
+                           <border>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                           </border>
+                        </field>
+                        <field h="6mm" name="TAX_AMOUNT" w="62mm" y="9mm">
+                           <ui>
+                              <textEdit>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <value>
+                              <text maxChars="140"/>
+                           </value>
+                           <bind match="dataRef" ref="$.TAX_AMOUNT"/>
+                           <desc>
+                              <text name="Schema Annotation">CHAR140</text>
+                           </desc>
+                           <border>
+                              <edge/>
+                              <edge/>
+                              <edge/>
+                              <edge presence="hidden"/>
+                              <corner/>
+                              <corner/>
+                              <corner/>
+                              <corner presence="hidden"/>
+                           </border>
+                        </field>
+                        <assist role="TR"/>
+                        <occur max="-1"/>
+                        <bind match="dataRef" ref="$.DATA[*]"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="dataRef" ref="$.IM_HDR_ITM.ITM_EXC_TAB"/>
+                     <desc>
+                        <text name="Schema Annotation">Table type for Tax structure</text>
+                     </desc>
+                     <?templateDesigner expand 1?></subform>
+                  <subform hAlign="right" layout="tb" name="Subtotal" w="43mm" x="158.65mm" y="15mm">
+                     <bind match="none"/>
+                     <subform hAlign="right" name="Subtotalusd">
+                        <bind match="none"/>
+                        <field h="4mm" minW="17mm" name="Subtotaltext">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption>
+                              <value>
+                                 <text xliff:rid="76D8541A-7E53-4974-8FDB-5A4F000E668F">Sub-Total</text>
+                              </value>
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <field h="4mm" minW="10mm" name="currency" x="17mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SUB_TOT_CURR"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <para vAlign="middle"/>
+                        </field>
+                        <field h="4mm" minW="1mm" name="Extra_txt" x="27mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="0.7318mm">
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text xliff:rid="6739BBB4-6874-474F-B950-D1FDB0555AA8">:</text>
+                              </value>
+                           </caption>
+                        </field>
+                        <?templateDesigner expand 0?>
+                        <field h="4mm" hAlign="right" minW="15mm" name="subtotal" x="28mm">
+                           <ui>
+                              <numericEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <value>
+                              <decimal leadDigits="15"/>
+                           </value>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SUB_TOTAL"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <format>
+                              <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                           </format>
+                        </field>
+                     </subform>
+                     <subform hAlign="right" layout="lr-tb" name="TaxUSd">
+                        <bind match="none"/>
+                        <field h="4mm" minW="17mm" name="Tax">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="8.9775mm">
+                              <value>
+                                 <text xliff:rid="4767ED65-BAD9-436B-8B2B-3FAD8371707F">Tax</text>
+                              </value>
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <field h="4mm" minW="10mm" name="currency">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SUB_TOT_CURR"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <para vAlign="middle"/>
+                        </field>
+                        <field h="4mm" minW="1mm" name="Extra_txt">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="0.7318mm">
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text xliff:rid="81F61DEF-FA94-4DD8-A60E-1FBFC426BEC9">:</text>
+                              </value>
+                           </caption>
+                        </field>
+                        <field h="4mm" hAlign="right" minW="15mm" name="subtotal">
+                           <ui>
+                              <numericEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <value>
+                              <decimal leadDigits="15"/>
+                           </value>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TAX"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <format>
+                              <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                           </format>
+                        </field>
+                        <?templateDesigner expand 0?></subform>
+                     <border>
+                        <edge presence="hidden" thickness="0.3mm"/>
+                        <corner presence="hidden" thickness="0.3mm"/>
+                     </border>
+                     <?templateDesigner expand 0?>
+                     <subform layout="lr-tb" name="Amountpaid">
+                        <bind match="none"/>
+                        <field h="4mm" minW="20mm" name="Amountpaid">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="20mm">
+                              <value>
+                                 <text xliff:rid="1C6D417B-1CE1-47F2-8B61-7D9731F151CF">Amount Paid</text>
+                              </value>
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <field h="4mm" minW="7mm" name="currency">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SUB_TOT_CURR"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <para vAlign="middle"/>
+                        </field>
+                        <field h="4mm" minW="1mm" name="Extra_txt">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="0.7318mm">
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text xliff:rid="9851E122-BCD6-40A0-9AA4-DDBD1F916C50">:</text>
+                              </value>
+                           </caption>
+                        </field>
+                        <field h="4mm" hAlign="right" minW="15mm" name="total">
+                           <ui>
+                              <numericEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <value>
+                              <decimal leadDigits="15"/>
+                           </value>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.AMOUNT_PAID"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <format>
+                              <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                           </format>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <subform hAlign="right" layout="lr-tb" name="Total">
+                        <bind match="none"/>
+                        <field h="4mm" minW="17mm" name="TotalDue">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="16mm">
+                              <value>
+                                 <text xliff:rid="765FA16A-53A1-4D18-A0F4-F5EC731EF2C5">Total Due</text>
+                              </value>
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <field h="4mm" minW="10mm" name="currency">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.SUB_TOT_CURR"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <para vAlign="middle"/>
+                        </field>
+                        <field h="4mm" minW="1mm" name="Extra_txt">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                           <bind match="none"/>
+                           <value>
+                              <exData contentType="text/html">
+                                 <body xmlns="http://www.w3.org/1999/xhtml"/>
+                              </exData>
+                           </value>
+                           <desc>
+                              <exData name="Schema Annotation">Purchase Order Number
+SAPScript Include Text 
+ NAME = ZQTC_PURCHASE_ORD_NUMBER_F024 
+ LANGUAGE-FIELD = IM_HEADER-LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <caption reserve="0.7318mm">
+                              <para vAlign="middle"/>
+                              <value>
+                                 <text xliff:rid="0C123298-B596-4E89-9AF9-9434B9443E59">:</text>
+                              </value>
+                           </caption>
+                        </field>
+                        <field h="4mm" hAlign="right" minW="15mm" name="total">
+                           <ui>
+                              <numericEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </numericEdit>
+                           </ui>
+                           <font size="9pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="0mm" topInset="0mm"/>
+                           <para hAlign="right" vAlign="middle"/>
+                           <value>
+                              <decimal leadDigits="15"/>
+                           </value>
+                           <bind match="dataRef" ref="$.IM_HDR_ITM.HDR_GEN.TOTAL_DUE"/>
+                           <desc>
+                              <text name="Schema Annotation">Customer purchase order number</text>
+                           </desc>
+                           <format>
+                              <picture>zero{0.00}|num{z,zzz,zz9.99}</picture>
+                           </format>
+                        </field>
+                        <?templateDesigner expand 0?></subform>
+                  </subform>
+                  <traversal>
+                     <traverse operation="first" ref="blankline[1]"/>
+                  </traversal>
+                  <keep intact="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <traversal>
+                  <traverse operation="first" ref="blankline[0]"/>
+               </traversal>
+               <breakBefore target="Page1" targetType="pageArea"/>
+               <breakAfter/>
+               <overflow target="Page1"/>
+               <?templateDesigner expand 1?></subform>
+            <overflow target="Page1"/>
+            <?templateDesigner expand 1?></subform>
+         <traversal>
+            <traverse operation="first" ref="#subform[1]"/>
+         </traversal>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 60 15 000300060029003300370044004700480049004A004C004F00520057005B #FPTadefgilotx?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 152 38 00030010001D002400250026002700280029002B002C003100320033003500360037003A00440045004600470048004B004C004E004F005000510052005300550056005700580059005B005C -:ABCDEFHINOPRSTWabcdehiklmnoprstuvxy?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 47?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri-Bold" typeface="Calibri" weight="bold"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_LH_SG_AG_INVOICE_F046">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IM_HDR_ITM>
+            <HDR_GEN>
+               <SALES_ORG_NAME/>
+               <SALES_ORG_ADRNR/>
+               <SALES_ORG_HOUSE1/>
+               <SALES_ORG_STREET/>
+               <SALES_ORG_CITY1/>
+               <SALES_ORG_REG/>
+               <SALES_ORG_POST1/>
+               <TAX_ID/>
+               <CUST_SERVICE/>
+               <INVOICE_NUMB/>
+               <CLIENT_NUMB/>
+               <TAX_EXPT_TEXT/>
+               <INVOICE_DATE/>
+               <TERMS/>
+               <DUE_DATE/>
+               <REMIT_PAYMENT_TO/>
+               <BANK/>
+               <BILL_TO_NAME/>
+               <BILL_TO_ATTIN/>
+               <BILL_TO_ADDRESS/>
+               <SHIP_TO_NAME/>
+               <SHIP_TO_ATTIN/>
+               <SHIP_TO_ADDRESS/>
+               <INVOICE_TEXT_NAME/>
+               <INVOICE_TEXT_OBJECT/>
+               <INVOICE_TEXT_ID/>
+               <INVOICE_LANG/>
+               <SUB_TOTAL/>
+               <SUB_TOT_CURR/>
+               <TAX/>
+               <TOTAL_DUE/>
+               <BILL_TO_STREET/>
+               <BILL_TO_CITY1/>
+               <BILL_TO_REGION/>
+               <BILL_TO_POST/>
+               <SHIP_TO_STREET/>
+               <SHIP_TO_CITY1/>
+               <SHIP_TO_REGION/>
+               <SHIP_TO_POST/>
+               <TEST_REF_DOC/>
+               <INVOICE_DESC/>
+               <PO_NO/>
+               <INVOICE_TEXT/>
+               <CANCEL_INV_NO/>
+               <CANCEL_INV_TEXT/>
+               <CANCEL_COOLEN/>
+               <SALES_ORG/>
+               <BILL_TO_ADD/>
+               <SHIP_TO_ADD/>
+               <REMIT_TO/>
+               <INVOICE_NOTE/>
+               <BANK_NAME/>
+               <BANK_NO/>
+               <BANK_ABA/>
+               <BANK_ACH/>
+               <BANK_SWIFT/>
+               <AMOUNT_PAID/>
+            </HDR_GEN>
+            <ITM_GEN dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <ITEM/>
+                  <DESCRIPTION/>
+                  <STUDENTS/>
+                  <AMOUNT/>
+                  <DISCOUNTS/>
+                  <TAX/>
+                  <TOTAL/>
+                  <CURRENCY/>
+               </DATA>
+            </ITM_GEN>
+            <ITM_EXC_TAB dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <MEDIA_TYPE/>
+                  <TAXABL_AMT/>
+                  <TAX_PERCENTAGE/>
+                  <TAX_AMOUNT/>
+               </DATA>
+            </ITM_EXC_TAB>
+            <IT_BILL_TO_ADDR dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <ITEM/>
+               </DATA>
+            </IT_BILL_TO_ADDR>
+            <IT_SHIP_TO_ADDR dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <ITEM/>
+               </DATA>
+            </IT_SHIP_TO_ADDR>
+         </IM_HDR_ITM>
+         <IM_LOGO/>
+         <IM_BMP/>
+         <V_STRING/>
+         <WIILEY_LOGO/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2021-02-22T14:07:37Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 10.4</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 10.4</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:708d6171-c1fe-4c93-8526-ea570383f2d8</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TTYP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD40V>
+    <TYPENAME>ZTQTC_MEDIA_ISSUE_IDCD</TYPENAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <ROWTYPE>ZSTQTC_MEDIA_ISSUE_IDCD</ROWTYPE>
+    <ROWKIND>S</ROWKIND>
+    <DATATYPE>STRU</DATATYPE>
+    <ACCESSMODE>T</ACCESSMODE>
+    <KEYDEF>D</KEYDEF>
+    <KEYKIND>N</KEYKIND>
+    <DDTEXT>I0344: Media Issue - Assignment of ID Codes from JANIS</DDTEXT>
+   </DD40V>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TT</ID>
+      <OBJECT>ZTQTC_MEDIA_ISSUE_IDCD</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00001</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZTQTC_MEDIA_ISSUE_IDCD</TDNAME>
+      <TDID>TT</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>I0344: Media Issue - Assignment of ID Codes from JANIS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;RECOMMENDATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

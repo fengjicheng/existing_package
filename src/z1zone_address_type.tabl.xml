@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1ZONE_ADDRESS_TYPE</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <PROXYTYPE>X</PROXYTYPE>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>CONTROLLER</FIELDNAME>
+     <ROLLNAME>PRXCTRLTAB</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>BASE</FIELDNAME>
+     <ROLLNAME>Z1COMMON_ADDRESS_TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>STRU</DATATYPE>
+     <MASK>  STRUS</MASK>
+     <COMPTYPE>S</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>COMPANY_BRANCH_ID</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_COMPANY_BRANCH_IDTYP</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>IS_BONDED</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_IS_BONDED_TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>LOCATION_TAX_CATEGORY</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_LOCATION_TAX_CATEGOR</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADDRESS_1</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_ADDRESS1TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADDRESS_2</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_ADDRESS2TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADDRESS_3</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_ADDRESS3TYPE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ADDRESS_VALIDATION_MODE</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_ADDRESS_VALIDATION_M</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>DEFAULT_ADDRESS_VALIDATION_MOD</FIELDNAME>
+     <ROLLNAME>Z1ADDRESS_DEFAULT_ADDRESS_VALI</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+     <PROXYTYPE>X</PROXYTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>
+The following elements are contained in the Invoice and Lin</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

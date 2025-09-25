@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(e){"use strict";return e.extend("cob.v2.ZQTC_CREDIT_BLOCKED_ORDERS_SRV.controller.NotFound",{onLinkPressed:function(){this.getRouter().navTo("worklist")}})});                                                     

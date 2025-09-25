@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Automatic Reclass</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_RELORD_RECLASSF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_FG_RELORD_RECLASSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_RELORD_RECLASS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_RELEASEORDER_RECLASS_E267</FUNCNAME>
+     <SHORT_TEXT>Automatic Reclass</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_FISCALYEAR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>GJAHR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POSTING_PERIOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>POPER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POSTING_DATE</PARAMETER>
+       <DEFAULT>SY-DATUM</DEFAULT>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BUDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POBTYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_POBTYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SALESDOCUMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TDT_RG_VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ZERO_VALUES</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR01</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_FISCALYEAR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fiscal Year</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POSTING_PERIOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Posting period</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POSTING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Posting Date in the Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POBTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for Performance Obligation Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SALESDOCUMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Range Table for Data Element VBELN</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ZERO_VALUES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length 1</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

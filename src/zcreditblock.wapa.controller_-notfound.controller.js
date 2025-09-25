@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(e){"use strict";return e.extend("com.bso.Blocked_Sales_Orders.controller.NotFound",{onLinkPressed:function(){this.getRouter().navTo("worklist")}})});                                                              

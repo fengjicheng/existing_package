@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5","./arrangements/Startup","./WorklistJourney","./NavigationJourney","./NotFoundJourney","./ObjectJourney"],function(e,n){"use strict";e.extendConfig({arrangements:new n,viewNamespace:"journal_upload.JOURNAL_UPLOAD.view.",+
+autoWait:true})});                                                                                                                                                                                                                                             

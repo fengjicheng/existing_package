@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1QTC_E1BPADURI1</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>URI_PART4</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>URI_PART5</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>URI_PART6</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>URI_PART7</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000500</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000250</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>BAPI Structure for URI Addresses (Business Address Services)</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+   <SEGMENT_DEFINITION>
+    <item>
+     <SEGMENTHEADER>
+      <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+      <DESCRP>BAPI Structure for URI Addresses (Business Address Services)</DESCRP>
+     </SEGMENTHEADER>
+     <SEGMENTDEFINITION>
+      <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+      <SEGDEF>Z2QTC_E1BPADURI1000</SEGDEF>
+      <RELEASED>740</RELEASED>
+      <CLOSED>X</CLOSED>
+      <FIELDNUM>0004</FIELDNUM>
+      <EXPLENG>1000</EXPLENG>
+     </SEGMENTDEFINITION>
+     <SEGMENTSTRUCTURES>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+       <POS>0001</POS>
+       <FIELDNAME>URI_PART4</FIELDNAME>
+       <ROLLNAME>AD_URI_1</ROLLNAME>
+       <EXPLENG>0250</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+       <POS>0002</POS>
+       <FIELDNAME>URI_PART5</FIELDNAME>
+       <ROLLNAME>AD_URI_1</ROLLNAME>
+       <EXPLENG>0250</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+       <POS>0003</POS>
+       <FIELDNAME>URI_PART6</FIELDNAME>
+       <ROLLNAME>AD_URI_1</ROLLNAME>
+       <EXPLENG>0250</EXPLENG>
+      </EDISEGSTRU>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1BPADURI1</SEGTYP>
+       <POS>0004</POS>
+       <FIELDNAME>URI_PART7</FIELDNAME>
+       <ROLLNAME>AD_URI_1</ROLLNAME>
+       <EXPLENG>0250</EXPLENG>
+      </EDISEGSTRU>
+     </SEGMENTSTRUCTURES>
+    </item>
+   </SEGMENT_DEFINITION>
+  </asx:values>
+ </asx:abap>
+</abapGit>

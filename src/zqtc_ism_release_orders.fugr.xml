@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FuncGrp for release order enhancements</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ISM_RELEASE_ORDERSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ISM_RELEASE_ORDERS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ISM_CHANGE_ITEM_CAT_ZSRO</FUNCNAME>
+     <SHORT_TEXT>E142: change line item category for Release orders during gracing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CONTRACT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK-VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ITEM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAP-POSNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NIP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>REF TO CL_ISM_SE_NIP</TYP>
+       <REF_CLASS>X</REF_CLASS>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ISSUE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARA-MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PRODUCT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MARA-MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>QUANTITY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSEORDERGENADD-QUANTITY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>UNIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSEORDERGENADD-UNIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>NEXTISSUE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR01</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MSG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>REF TO CL_ISM_SD_MESSAGE</TYP>
+       <REF_CLASS>X</REF_CLASS>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>BUFFER_REFRESH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR01</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>CONDITION</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FUNCNAME</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>AUART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK-AUART</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>PSTYV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAP-PSTYV</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NOT_FOUND</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CONTRACT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NIP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Shipping Schedule Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PRODUCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>QUANTITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Target quantity in sales units</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>UNIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Unit for Order Quantity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NEXTISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Messages</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BUFFER_REFRESH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CONDITION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Function name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>AUART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PSTYV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales document item category</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No items found</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

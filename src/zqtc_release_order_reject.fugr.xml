@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Release Order Reject Function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_RELEASE_ORDER_REJECTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_RELEASE_ORDER_REJECT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_RELEASE_ORDER_UPDATE</FUNCNAME>
+     <SHORT_TEXT>FM to Update Release Order Reject Reason</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

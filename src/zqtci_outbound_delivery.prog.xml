@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCI_OUTBOUND_DELIVERY</NAME>
+    <SUBC>1</SUBC>
+    <SECU>ZOUT_DEL</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>JFDS File</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Email Sent</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>File name is either blank or no file extension,</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>ensure file is selected using F4</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>,ensure file is selected using F4</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Invalid Sales Document!</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>No data found for Variant split</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>F03</KEY>
+     <ENTRY>blank</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H01</KEY>
+     <ENTRY>Job ID</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H02</KEY>
+     <ENTRY>Product Type</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H03</KEY>
+     <ENTRY>End Use Customer</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H04</KEY>
+     <ENTRY>Subscription Reference</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H05</KEY>
+     <ENTRY>Free Issue Reference</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H06</KEY>
+     <ENTRY>Claim Reference</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H07</KEY>
+     <ENTRY>Sample Copy Reference</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H08</KEY>
+     <ENTRY>PO Reference</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H09</KEY>
+     <ENTRY>Shipping Reference</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H10</KEY>
+     <ENTRY>Canadian GST Number</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H11</KEY>
+     <ENTRY>Quantity</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H12</KEY>
+     <ENTRY>Issue Description</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H13</KEY>
+     <ENTRY>Acronym</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H14</KEY>
+     <ENTRY>Volume</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H15</KEY>
+     <ENTRY>Issue</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H16</KEY>
+     <ENTRY>Part</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H17</KEY>
+     <ENTRY>Supplement</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H18</KEY>
+     <ENTRY>Address Line 1</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H19</KEY>
+     <ENTRY>Address Line 2</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H20</KEY>
+     <ENTRY>Address Line 3</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H21</KEY>
+     <ENTRY>Address Line 4</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H22</KEY>
+     <ENTRY>Address Line 5</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H23</KEY>
+     <ENTRY>State</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H24</KEY>
+     <ENTRY>Country Name</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H25</KEY>
+     <ENTRY>Postcode</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H26</KEY>
+     <ENTRY>Country Code</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H27</KEY>
+     <ENTRY>Ship to Customer</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H28</KEY>
+     <ENTRY>Consolidation Type</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H29</KEY>
+     <ENTRY>Unique Issue Number</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H30</KEY>
+     <ENTRY>Type</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H31</KEY>
+     <ENTRY>Priority</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H32</KEY>
+     <ENTRY>Sent Date</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H33</KEY>
+     <ENTRY>Offline Society Name</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H34</KEY>
+     <ENTRY>Telephone Number</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H35</KEY>
+     <ENTRY>Journal Title</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H36</KEY>
+     <ENTRY>Pub Set</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H37</KEY>
+     <ENTRY>Material Number</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H38</KEY>
+     <ENTRY>Identification Code</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H40</KEY>
+     <ENTRY>Copy Number</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H41</KEY>
+     <ENTRY>Price List Type</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H42</KEY>
+     <ENTRY>File Name</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H43</KEY>
+     <ENTRY>Sales Organization</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H44</KEY>
+     <ENTRY>Subscription Number</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Display Options</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Organiz. Data</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>Database Selections</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S04</KEY>
+     <ENTRY>File Path</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S05</KEY>
+     <ENTRY>File Path Option</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S06</KEY>
+     <ENTRY>Main Label</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S07</KEY>
+     <ENTRY>LBL File Generation</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S08</KEY>
+     <ENTRY>Date Format (DD-MMM-YYYY)</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S09</KEY>
+     <ENTRY>Back Label</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S10</KEY>
+     <ENTRY>Country Code (If Country Code is not selected, Region Description is printed)</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S11</KEY>
+     <ENTRY>Download File</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S12</KEY>
+     <ENTRY>Delivery completed</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S13</KEY>
+     <ENTRY>Split Options</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S14</KEY>
+     <ENTRY>Split based on Material</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S15</KEY>
+     <ENTRY>Split based on Variant Name</ENTRY>
+     <LENGTH>54</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>Product type is blank - refer</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY> Freight Forwarder or Ship to Party is blank - refer</ENTRY>
+     <LENGTH>104</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T04</KEY>
+     <ENTRY>Reference Document is blank - refer</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T05</KEY>
+     <ENTRY>Volume number is blank - refer material in</ENTRY>
+     <LENGTH>126</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T06</KEY>
+     <ENTRY>Country Code is blank - refer ship to party in</ENTRY>
+     <LENGTH>92</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T07</KEY>
+     <ENTRY>Main Label Split</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T08</KEY>
+     <ENTRY>Back Label Split</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T09</KEY>
+     <ENTRY>Main Label</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T10</KEY>
+     <ENTRY>Back Label</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T11</KEY>
+     <ENTRY>Supplement or Issue number is blank - refer material in</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T12</KEY>
+     <ENTRY>Issue Number is blank - refer material in</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Outbound Delivery to JFDS</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_CHAR</KEY>
+     <ENTRY>Subscription ref. char in file</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DWNLD</KEY>
+     <ENTRY>Target Presentation Server</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FILE</KEY>
+     <ENTRY>Application Server</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB1</KEY>
+     <ENTRY>Main Label</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB2</KEY>
+     <ENTRY>Back Label</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB3</KEY>
+     <ENTRY>Download File</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_MAT</KEY>
+     <ENTRY>Split based on Material</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_VAR</KEY>
+     <ENTRY>Split based on Variant name</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ACCT</KEY>
+     <ENTRY>Account Assignment Category</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DATE</KEY>
+     <ENTRY>Document Date</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DOC1</KEY>
+     <ENTRY>Document Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DOC2</KEY>
+     <ENTRY>Document Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ITEM</KEY>
+     <ENTRY>Item Category</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_LAND1</KEY>
+     <ENTRY>Country Key</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MATNR</KEY>
+     <ENTRY>Material</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_PLANT</KEY>
+     <ENTRY>Plant</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SHIP</KEY>
+     <ENTRY>Shipping Point/Receiving Pt</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_TYPE</KEY>
+     <ENTRY>Material Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VBELN</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>22</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VEND</KEY>
+     <ENTRY>Vendor</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCI_OUTBOUND_DELIVERY</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00064</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCI_OUTBOUND_DELIVERY</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Once orders are released in SAP, the system will create purchase</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>requisitions for external procurement or delivery based on the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>availability. At Wiley, the first print of a journal will be supplied by</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the distributor directly to the Customer. Any reprints or stock</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deliveries will be supplied directly from the Warehouse. JFDS is the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system Wiley uses to dispatch all of their journals, the legacy</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pre-requisite for each delivery is to send “label data” which contains</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the details of customer order on before dispatch. If the order is for a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>first print journal it should trigger a main label file which will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dispatched from the distributor, if it is a previous print in the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>warehouse it should trigger a back label file which will be sent by JFDS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to the Warehouse.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The various interaction steps in the outbound message process.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,In SAP, Custom report will provide the custom requirement of JFDS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,A Batch job will be scheduled for Custom report which will trigger</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>once a day &amp; create a CSV file.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,The CSV file will be transferred to the Application Server name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>JFDS\Label\ folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO will pick the file from the Application Server Folder &amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Transfer to JFDS system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO to provide the transfer confirmation for success in name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>JFDS\Label\Success, in case of failure JFDS\Label\Error folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>In SAP, the prerequisites are triggered in following manner</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Main Label – From Purchasing Component in SAP</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Back Label – From Logistics Execution Component in SAP.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>In current scenario, all label information is sent by J-Core to JFDS via</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>“SOL” files – ASCII files. J-Core generates unique files for each</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>distributor by material. The information sent in the file is used by</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>distributors to print labels for the journal shipments.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>SAP Supply Chain Team will be responsible for the Data Transfer from ECC</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>to JFDS.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,For Back Label, SAP will generate the CSV file when delivery is</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>created into application folder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,For Main Label, SAP will generate the CSV file when Distributor 3rd</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Party Purchase Order is created into application folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Following is the process flow for the Main Label file</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Shipping plan runs and creates release orders and purchase</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>requisitions in SAP for journal issue.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Purchase Requisitions are converted into a drop shipment Purchase</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Order in SAP.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,At the end of the day, Batch job will pick for the entire day’s</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>purchase order for the specific material in to one file.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Name the file name with the naming convention mentioned in 4.3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Drop the file in to JFDS\Label folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO will pick the file from the Application Server Folder &amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Transfer to JFDS system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO to provide the transfer confirmation for success in name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>JFDS\Label\Success, in case of failure JFDS\Label\Error folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Following is the process flow for the Back Label file</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Sales Orders are created in SAP.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Sales Order are converted into deliveries for distribution from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Warehouse</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,At the end of the day, Batch job will pick for the entire day’s</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deliveries for the specific material in to one file.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Name the file name with the naming convention mentioned in 4.3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Drop the file in to JFDS\Label folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO will pick the file from the Application Server Folder &amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Transfer to JFDS system.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,TIBCO to provide the transfer confirmation for success in name</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>JFDS\Label\Success, in case of failure JFDS\Label\Error folder.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

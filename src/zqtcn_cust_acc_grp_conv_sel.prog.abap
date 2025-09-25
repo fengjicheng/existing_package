@@ -1,0 +1,36 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZQTCN_CUST_ACC_GRP_CONV_SEL
+*&---------------------------------------------------------------------*
+*----------------------------------------------------------------------*
+* PROGRAM NAME: ZQTCN_CUST_ACC_GRP_CONV_SEL (Include)
+* PROGRAM DESCRIPTION: Selection Screen
+* DEVELOPER: Writtick Roy (WROY)
+* CREATION DATE:   08/30/2016
+* OBJECT ID: C061
+* TRANSPORT NUMBER(S): ED2K902790
+*----------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-s01.
+SELECTION-SCREEN BEGIN OF BLOCK b5 WITH FRAME TITLE text-s05.
+PARAMETERS:
+  rb_ktokd TYPE char1 RADIOBUTTON GROUP rdb1 USER-COMMAND rdb1 DEFAULT 'X'.
+SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE text-s02.
+PARAMETERS:
+  p_ktokdf TYPE kna1-ktokd   OBLIGATORY DEFAULT '0003'   MODIF ID mi1,
+  p_ktokdt TYPE kna1-ktokd   OBLIGATORY DEFAULT '0001'   MODIF ID mi1.
+SELECTION-SCREEN END OF BLOCK b2.
+
+PARAMETERS:
+  rb_rltyp TYPE char1 RADIOBUTTON GROUP rdb1.
+SELECTION-SCREEN BEGIN OF BLOCK b3 WITH FRAME TITLE text-s03.
+PARAMETERS:
+  p_rltypf TYPE but100-rltyp OBLIGATORY DEFAULT 'FLCU00' MODIF ID mi2,
+  p_rltypt TYPE but100-rltyp OBLIGATORY DEFAULT 'ISM000' MODIF ID mi2.
+SELECTION-SCREEN END OF BLOCK b3.
+SELECTION-SCREEN END OF BLOCK b5.
+
+SELECTION-SCREEN SKIP 1.
+SELECTION-SCREEN BEGIN OF BLOCK b4 WITH FRAME TITLE text-s04.
+SELECT-OPTIONS:
+  s_kunnr  FOR  kna1-kunnr.
+SELECTION-SCREEN END OF BLOCK b4.
+SELECTION-SCREEN END OF BLOCK b1.

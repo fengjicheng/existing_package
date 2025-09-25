@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>E152: Determine Access Mechanism</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ACCESS_MECHTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ACCESS_MECH</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ACCESS_TRCKNG_SCTY</FUNCNAME>
+     <SHORT_TEXT>E152: Determine Access Mechanism</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MATNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BU_ID_NUMBER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ACCESS_MECH</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTQTC_ACCESS_MECH</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ACCESS_MECH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>E152: Access Mechanism</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZQTCE_ZWHS_HELP</SHLPNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>Consolidation/Packing list/Price Search Help</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMETHOD>ZQTCOM_CHCK_ZWHS</SELMETHOD>
+    <SELMTYPE>T</SELMTYPE>
+    <TEXTTAB>ZQTCOM_TXT_ZWHS</TEXTTAB>
+    <DIALOGTYPE>D</DIALOGTYPE>
+    <FUZZY_SIMILARITY>0.8</FUZZY_SIMILARITY>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZQTCE_ZWHS_HELP</SHLPNAME>
+     <FIELDNAME>ZWHS</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>ZZWHS</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPSELPOS>01</SHLPSELPOS>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <ROLLCHANGE>X</ROLLCHANGE>
+     <SCRLEN3>20</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

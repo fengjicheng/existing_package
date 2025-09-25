@@ -1,0 +1,1605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>3</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>M</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Interface of Purchase Order</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>CONDITIONS-KBETR</VALUE>
+       <UNIT>CONDITIONS-KOEI1</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>ITEM-MENGE</VALUE>
+       <UNIT>ITEM-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>SCHEDULE-MENGE</VALUE>
+       <UNIT>ITEM-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>COMPONENTSHDR-TLMNG</VALUE>
+       <UNIT>COMPONENTSHDR-LAGME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>COMPONENTSHDR-AVMNG</VALUE>
+       <UNIT>COMPONENTSHDR-LAGME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>COMPONENTSHDR-WAMNG</VALUE>
+       <UNIT>COMPONENTSHDR-LAGME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>COMPONENTSHDR-WEMNG</VALUE>
+       <UNIT>COMPONENTSHDR-LAGME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>COMPONENTS-BDMNG</VALUE>
+       <UNIT>COMPONENTS-LAGME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>ITEM-NETPR</VALUE>
+       <UNIT>HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>ITEM-NETWR</VALUE>
+       <UNIT>HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>KOMK-FKWRT</VALUE>
+       <UNIT>HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>KOMK-SUPOS</VALUE>
+       <UNIT>HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>KOMK-FKWRT_EURO</VALUE>
+       <UNIT>HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>EKKO-OTB_VALUE</VALUE>
+       <UNIT>EKKO-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>EKKO-OTB_RES_VALUE</VALUE>
+       <UNIT>EKKO-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>EKKO-OTB_SPEC_VALUE</VALUE>
+       <UNIT>EKKO-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>ITEM-WEMNG</VALUE>
+       <UNIT>ITEM-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>SRVLINES-MENGE</VALUE>
+       <UNIT>SRVLINES-MEINS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>SRVCONDITIONS-KBETR</VALUE>
+       <UNIT>SRVCONDITIONS-KOEI1</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>ITEM-BSMNG</VALUE>
+       <UNIT>ITEM-BPRME</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>SCHEDULE-OTB_VALUE</VALUE>
+       <UNIT>SCHEDULE-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>SCHEDULE-OTB_RES_VALUE</VALUE>
+       <UNIT>SCHEDULE-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>SCHEDULE-OTB_SPEC_VALUE</VALUE>
+       <UNIT>SCHEDULE-OTB_CURR</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>QUAN</DATATYPE>
+       <VALUE>ACCOUNT-MENGE</VALUE>
+       <UNIT>ITEM-MEINS</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>C_CHAR_S</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;S&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_DATUM_BEDAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LAND1_LFA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1_GP</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ST_LFA1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_LFA1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_ADD_COMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;1&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ST_T001</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T001</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LAND1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-LANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_MIME_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SWITCH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_DATUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOT_ADD_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ANZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>ST_TVZBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TVZBT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PAY_DES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DZTERM_BEZ</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*INTERFACE NAME:         ZQTC_INT_PO_FORM_F039</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Interface for Purchase Order form</FPCLINE>
+      <FPCLINE>* DEVELOPER:             Srabanti Bose (SRBOSE)</FPCLINE>
+      <FPCLINE>* CREATION DATE:         30/11/2016</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F023</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K903372</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO:  ED2K905936</FPCLINE>
+      <FPCLINE>* REFERENCE NO: JIRA 1977</FPCLINE>
+      <FPCLINE>* DEVELOPER:    SRBOSE (Srabanti Bose)</FPCLINE>
+      <FPCLINE>* DATE:         05/09/2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION:  Interface for Purchase Order form</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Type Declaration</FPCLINE>
+      <FPCLINE>*******Structure For Final Table</FPCLINE>
+      <FPCLINE>TYPES: BEGIN OF ty_final,</FPCLINE>
+      <FPCLINE>         eindt          TYPE  eindt,          &quot;Item Delivery Date</FPCLINE>
+      <FPCLINE>         eindt_char     TYPE  char15,         &quot;Item Delivery Date</FPCLINE>
+      <FPCLINE>         ebelp          TYPE  ebelp,          &quot;Item Number of Purchasing Document</FPCLINE>
+      <FPCLINE>         matnr          TYPE  matnr,          &quot;Material Number</FPCLINE>
+      <FPCLINE>         menge          TYPE  bstmg,          &quot;Purchase Order Quantity</FPCLINE>
+      <FPCLINE>         meins          TYPE  bstme,          &quot;Purchase Order Unit of Measure</FPCLINE>
+      <FPCLINE>         ismrefmdprod   TYPE  ismrefmdprod,   &quot;Higher-Level Media Product</FPCLINE>
+      <FPCLINE>         ismnrinyear    TYPE  ismnrimjahr,    &quot;Issue Number (in Year Number)</FPCLINE>
+      <FPCLINE>         ismcopynr      TYPE  ismheftnummer,  &quot;Copy Number of Media Issue</FPCLINE>
+      <FPCLINE>         maktx_issue    TYPE  maktx,          &quot;Material Description (Short Text)</FPCLINE>
+      <FPCLINE>         maktx_journal  TYPE  maktx,          &quot;Material Description (Short Text)</FPCLINE>
+      <FPCLINE>         identcode      TYPE  ismidentcode,   &quot;Identification Code</FPCLINE>
+      <FPCLINE>         atinn          TYPE  atinn,          &quot;Internal characteristic</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>         ismissuetypest TYPE char4,	          &quot;Issue Variant Type - Standard (Planned)</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>       END OF ty_final,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>**********Structure For TVZBT Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_tvzbt,</FPCLINE>
+      <FPCLINE>         spras TYPE spras,       &quot;Language Key</FPCLINE>
+      <FPCLINE>         zterm TYPE dzterm,      &quot;Terms of Payment Key</FPCLINE>
+      <FPCLINE>         vtext TYPE dzterm_bez,  &quot;Description of terms of payment</FPCLINE>
+      <FPCLINE>       END OF ty_tvzbt,</FPCLINE>
+      <FPCLINE>**********Structure For MARA Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_mara,</FPCLINE>
+      <FPCLINE>         matnr          TYPE matnr,           &quot;Material Number</FPCLINE>
+      <FPCLINE>         ismrefmdprod   TYPE  ismrefmdprod,   &quot;Higher-Level Media Product</FPCLINE>
+      <FPCLINE>         ismnrinyear    TYPE  ismnrimjahr,    &quot;Issue Number (in Year Number)</FPCLINE>
+      <FPCLINE>         ismcopynr      TYPE  ismheftnummer,  &quot;Copy Number of Media Issue</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>         ismissuetypest TYPE char4,	   &quot;Issue Variant Type - Standard (Planned)</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>       END OF ty_mara,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>************Structure For MAKT Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_makt,</FPCLINE>
+      <FPCLINE>         matnr TYPE  matnr,      &quot;Material Number</FPCLINE>
+      <FPCLINE>         spras TYPE  spras,      &quot;Language Key</FPCLINE>
+      <FPCLINE>         maktx TYPE maktx,       &quot;Material Description (Short Text)</FPCLINE>
+      <FPCLINE>       END OF ty_makt,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************Structure For JPTIDCDASSIGN Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_jptidcdassign,</FPCLINE>
+      <FPCLINE>         matnr      TYPE matnr,          &quot;Material Number</FPCLINE>
+      <FPCLINE>         idcodetype TYPE ismidcodetype,  &quot;Type of Identification Code</FPCLINE>
+      <FPCLINE>         identcode  TYPE  ismidentcode,  &quot;Identification Code</FPCLINE>
+      <FPCLINE>       END OF ty_jptidcdassign,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************Structure For AUSP Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_ausp,</FPCLINE>
+      <FPCLINE>         objek TYPE	objnum,	           &quot;Key of object to be classified</FPCLINE>
+      <FPCLINE>         atinn TYPE  atinn,      &quot;Internal characteristic</FPCLINE>
+      <FPCLINE>         atzhl TYPE  wzaehl,     &quot;Characteristic value counter</FPCLINE>
+      <FPCLINE>         mafid TYPE  klmaf,      &quot;Indicator: Object/Class</FPCLINE>
+      <FPCLINE>         klart TYPE klassenart,  &quot;Class Type</FPCLINE>
+      <FPCLINE>         adzhl TYPE adzhl,       &quot;Internal counter for archiving objects via engin. chg. mgmt</FPCLINE>
+      <FPCLINE>       END OF ty_ausp,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************Structure For T001 Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_t001,</FPCLINE>
+      <FPCLINE>         bukrs TYPE bukrs,   &quot;Company Code</FPCLINE>
+      <FPCLINE>         land1 TYPE land1,   &quot;Country Key</FPCLINE>
+      <FPCLINE>         adrnr TYPE adrnr,   &quot;Address</FPCLINE>
+      <FPCLINE>       END OF ty_t001,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*************Structure For LFA1 Table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_lfa1,</FPCLINE>
+      <FPCLINE>         lifnr TYPE  lifnr,     &quot;Account Number of Vendor or Creditor</FPCLINE>
+      <FPCLINE>         land1 TYPE  land1_gp,  &quot;Country Key</FPCLINE>
+      <FPCLINE>         adrnr TYPE adrnr,      &quot;Address</FPCLINE>
+      <FPCLINE>       END OF ty_lfa1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Table type declaration</FPCLINE>
+      <FPCLINE>TYPES: tt_final         TYPE STANDARD TABLE OF ty_final,</FPCLINE>
+      <FPCLINE>       tt_mara          TYPE STANDARD TABLE OF ty_mara WITH NON-UNIQUE SORTED KEY</FPCLINE>
+      <FPCLINE>                         matnr_key  COMPONENTS matnr,</FPCLINE>
+      <FPCLINE>       tt_makt          TYPE STANDARD TABLE OF ty_makt WITH NON-UNIQUE SORTED KEY</FPCLINE>
+      <FPCLINE>                        matnr COMPONENTS matnr,</FPCLINE>
+      <FPCLINE>       tt_jptidcdassign TYPE STANDARD TABLE OF ty_jptidcdassign WITH NON-UNIQUE SORTED KEY</FPCLINE>
+      <FPCLINE>                        matnr COMPONENTS matnr,</FPCLINE>
+      <FPCLINE>       tt_ausp          TYPE STANDARD TABLE OF ty_ausp WITH NON-UNIQUE SORTED KEY</FPCLINE>
+      <FPCLINE>                       objek COMPONENTS objek,</FPCLINE>
+      <FPCLINE>       tt_tvzbt         TYPE STANDARD TABLE OF ty_tvzbt INITIAL SIZE 0.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>SHIPINSTR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T027B</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>DOCUMENTS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_DRAD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>COMPONENTSHDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_COMPLIST_HDR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>COMPONENTS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_COMPLIST</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MANFDETAILS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_HTNMAT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SCHEDULE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKET</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SERVICES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_ML_ESLL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MMPUR_PRINT_EKKO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>APPENDIXTEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166A</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>HEADERINFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T166U</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>ADDRESSINFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T024E</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVTEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166P</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVVALUE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_ESUH</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MAINTHDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_MMPT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MAINTPOS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MPOS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>FORMULABODY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_VARIABLEN</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVLINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_SRVLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MMPUR_PRINT_ML_ESLL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MMPUR_PRINT_ML_ESLL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>EKKO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKKO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CHANGETEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166T</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>INVOICEPER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_FPLTDR_PER</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>INVOICEVAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_FPLTDR_VAL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DRUVO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>PAYMENTTERMS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TTEXT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>HEADERTEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166K</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONTACTINFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T024</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>VARIANTS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_PEKPOV</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>KOMK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MMPUR_PRINT_KOMK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVCONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_KOMVD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>QMTEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_QMTEXT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_KOMVD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>INVOICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_FPLTDR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>FORMULAHDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_FORMEL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>ACCOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_EKKN</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVTYP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_SRVTYP</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKPO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVHDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_SRVHDR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONFIGMAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ECONF_OUT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SRVTIME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_TIME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CHNGTXTSRV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166T</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>ITEMLINE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>EKPO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EKPO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>TEXTS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_T166P</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONTCONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKOMD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>QUANCONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKOMD_QUANT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>VALUECONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKOMD_VALUE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LINECONDITIONS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKOMD_COND</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>EKEK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_EKEK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SCHEDLINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_MMPUR_PRINT_SCHEDLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>ACCQTYFLG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR01</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>REASON_FOR_REJECTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>T165M</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>SERIALNUMBER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>PRINT_OBJK_SERIALNO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>XFZ</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR01</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONDITIONS_HDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_KOMVD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>ST_TVZBT</FPPARAMETER>
+      <FPPARAMETER>V_TOT_ADD_LINES</FPPARAMETER>
+      <FPPARAMETER>ST_T001</FPPARAMETER>
+      <FPPARAMETER>HEADER</FPPARAMETER>
+      <FPPARAMETER>I_FINAL</FPPARAMETER>
+      <FPPARAMETER>SCHEDULE</FPPARAMETER>
+      <FPPARAMETER>ITEM</FPPARAMETER>
+      <FPPARAMETER>V_LANGU</FPPARAMETER>
+      <FPPARAMETER>V_DATE</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>ST_TVZBT</FPPARAMETER>
+      <FPPARAMETER>V_TOT_ADD_LINES</FPPARAMETER>
+      <FPPARAMETER>ST_T001</FPPARAMETER>
+      <FPPARAMETER>I_FINAL</FPPARAMETER>
+      <FPPARAMETER>V_DATUM</FPPARAMETER>
+      <FPPARAMETER>V-LANGU</FPPARAMETER>
+      <FPPARAMETER>V_XSTRING</FPPARAMETER>
+      <FPPARAMETER>V_DATUM_BEDAT</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*INTERFACE NAME:         ZQTC_INT_PO_FORM_F039</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Purchase Order</FPCLINE>
+      <FPCLINE>* DEVELOPER:             Srabanti Bose (SRBOSE)</FPCLINE>
+      <FPCLINE>* CREATION DATE:         30/11/2016</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F039</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K903372</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO:  ED2K905936</FPCLINE>
+      <FPCLINE>* REFERENCE NO: JIRA 1977</FPCLINE>
+      <FPCLINE>* DEVELOPER:    SRBOSE (Srabanti Bose)</FPCLINE>
+      <FPCLINE>* DATE:         05/09/2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION:  Interface for Purchase Order form</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*******Local DATA declaration</FPCLINE>
+      <FPCLINE>DATA:li_mara          TYPE tt_mara,          &quot; Local Internal Table of Table type of TT_MARA</FPCLINE>
+      <FPCLINE>     li_makt          TYPE tt_makt,          &quot; Local Internal Table of Table type of TT_MAKT</FPCLINE>
+      <FPCLINE>     li_jptidcdassign TYPE tt_jptidcdassign, &quot; Local Internal Table of Table type of TT_JPTIDCDASSIGN</FPCLINE>
+      <FPCLINE>     li_ausp_temp     TYPE tt_ausp,          &quot; Local Internal Table of Table type of TT_AUSP</FPCLINE>
+      <FPCLINE>     li_ausp          TYPE tt_ausp.          &quot; Local Internal Table of Table type of TT_AUSP</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*****Local Constant declaration</FPCLINE>
+      <FPCLINE>CONSTANTS: lc_lineno TYPE anzei    VALUE &apos;10&apos;,</FPCLINE>
+      <FPCLINE>           lc_e      TYPE sy-langu VALUE &apos;E&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*****Set Company Code Country</FPCLINE>
+      <FPCLINE>SET COUNTRY st_t001-land1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Check the Segmentation switch</FPCLINE>
+      <FPCLINE>CALL METHOD cl_ops_switch_check=&gt;sfsw_segmentation</FPCLINE>
+      <FPCLINE>  RECEIVING</FPCLINE>
+      <FPCLINE>    rv_active = gv_switch.</FPCLINE>
+      <FPCLINE>IF gv_switch NE abap_true.</FPCLINE>
+      <FPCLINE>  CLEAR gv_switch.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Populate language</FPCLINE>
+      <FPCLINE>v_langu = lc_e.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**** Get Logo</FPCLINE>
+      <FPCLINE>PERFORM f_get_logo CHANGING v_xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Perform is used to get the Payment Terms Description</FPCLINE>
+      <FPCLINE>PERFORM f_get_pay_des USING    header</FPCLINE>
+      <FPCLINE>                      CHANGING st_tvzbt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Perform to populate the system date in the header part of the form</FPCLINE>
+      <FPCLINE>******in which a FM has been used to change the date format to DD-MMM-YYYY.</FPCLINE>
+      <FPCLINE>PERFORM f_get_date USING    sy-datum</FPCLINE>
+      <FPCLINE>                   CHANGING v_datum.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>******Perform to populate the PO date in the header part of the form</FPCLINE>
+      <FPCLINE>******in which a FM has been used to change the date format to DD-MMM-YYYY.</FPCLINE>
+      <FPCLINE>PERFORM f_get_date USING    header-bedat</FPCLINE>
+      <FPCLINE>                   CHANGING v_datum_bedat.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Get Company Address which has been used to populate the Company Address Node</FPCLINE>
+      <FPCLINE>IF header-bukrs IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  PERFORM f_get_add USING    header</FPCLINE>
+      <FPCLINE>                    CHANGING st_t001.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Get Vendor Address which has been used to populate the Vendor Address Node</FPCLINE>
+      <FPCLINE>IF header-lifnr IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  PERFORM f_get_vend_add USING    header</FPCLINE>
+      <FPCLINE>                         CHANGING st_lfa1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Populate Number of lines To be used in Adress Node</FPCLINE>
+      <FPCLINE>v_tot_add_lines = lc_lineno.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*****Get Data and Populate Data</FPCLINE>
+      <FPCLINE>PERFORM f_get_data USING    item</FPCLINE>
+      <FPCLINE>                            schedule</FPCLINE>
+      <FPCLINE>                   CHANGING li_mara</FPCLINE>
+      <FPCLINE>                            li_makt</FPCLINE>
+      <FPCLINE>                            li_jptidcdassign</FPCLINE>
+      <FPCLINE>                            li_ausp_temp</FPCLINE>
+      <FPCLINE>                            li_ausp</FPCLINE>
+      <FPCLINE>                            i_final.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*INTERFACE NAME:         ZQTC_INT_PO_FORM_F039</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Interface for Purchase Order form</FPCLINE>
+      <FPCLINE>* DEVELOPER:             Srabanti Bose (SRBOSE)</FPCLINE>
+      <FPCLINE>* CREATION DATE:         30/11/2016</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F039</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K903372</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO:  ED2K905936</FPCLINE>
+      <FPCLINE>* REFERENCE NO: JIRA 1977</FPCLINE>
+      <FPCLINE>* DEVELOPER:    SRBOSE (Srabanti Bose)</FPCLINE>
+      <FPCLINE>* DATE:         05/09/2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION:  Interface for Purchase Order form</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO:  ED2K908429</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ERP-4172</FPCLINE>
+      <FPCLINE>* DEVELOPER:    PBANDLAPAL (Pavan Bandlapalli)</FPCLINE>
+      <FPCLINE>* DATE:         06-Sep-2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION:  To change the logic for supplimetary based on matnr&apos;s 8th</FPCLINE>
+      <FPCLINE>*               character.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_LOGO</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Populate LOGO</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      &lt;--fp_v_xstring</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_logo CHANGING fp_v_xstring TYPE xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Local constant declaration</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_logo_name TYPE tdobname   VALUE &apos;ZJWILEY_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>              lc_object    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;,     &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>              lc_id        TYPE tdidgr     VALUE &apos;BMAP&apos;,         &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>              lc_btype     TYPE tdbtype    VALUE &apos;BMON&apos;.         &quot; Graphic type</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******To Get a BDS Graphic in BMP Format (Using a Cache)</FPCLINE>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_object    &quot; GRAPHICS</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_name &quot; Z_ENTERPRISE_LOGO</FPCLINE>
+      <FPCLINE>      p_id           = lc_id        &quot; BMAP</FPCLINE>
+      <FPCLINE>      p_btype        = lc_btype     &quot; BMON</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = fp_v_xstring &quot; Image Data</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* No need to raise the messages, Form will be printed</FPCLINE>
+      <FPCLINE>* without the logo</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_PAY_des</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Perfrom to get the payment term description</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;fp_v_langu</FPCLINE>
+      <FPCLINE>*      &lt;--fp_st_tvzbt</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_pay_des USING    fp_header   TYPE mmpur_print_ekko</FPCLINE>
+      <FPCLINE>                   CHANGING fp_st_tvzbt TYPE ty_tvzbt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******fetch data from TVZBT table</FPCLINE>
+      <FPCLINE>  SELECT SINGLE spras      &quot;Language Key</FPCLINE>
+      <FPCLINE>                zterm      &quot;Terms of Payment Key</FPCLINE>
+      <FPCLINE>                vtext      &quot;Description of terms of payment</FPCLINE>
+      <FPCLINE>  FROM tvzbt</FPCLINE>
+      <FPCLINE>    INTO fp_st_tvzbt</FPCLINE>
+      <FPCLINE>    WHERE spras = v_langu</FPCLINE>
+      <FPCLINE>    AND   zterm = fp_header-zterm.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>*****Populate the payment term description</FPCLINE>
+      <FPCLINE>    v_pay_des = fp_st_tvzbt-vtext.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_DATE</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Populate Date Using the FM HR_IN_GET_DATE_COMPONENTS to</FPCLINE>
+      <FPCLINE>*       change the date format to DD_MMM_YYYY</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;fp_date</FPCLINE>
+      <FPCLINE>*      &lt;--fp_v_datum</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_date USING    fp_date    TYPE sy-datum</FPCLINE>
+      <FPCLINE>                CHANGING fp_v_datum TYPE char15.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Local variable declaration</FPCLINE>
+      <FPCLINE>  DATA :lv_day      TYPE char2,            &quot; Date of type CHAR2</FPCLINE>
+      <FPCLINE>        lv_month_c2 TYPE char2,            &quot; Mnthc2 of type CHAR2</FPCLINE>
+      <FPCLINE>        lv_month_c3 TYPE char3,            &quot; Mnthc3 of type CHAR3</FPCLINE>
+      <FPCLINE>        lv_month    TYPE t247-ltx,         &quot; Month long text</FPCLINE>
+      <FPCLINE>        lv_year     TYPE char4.            &quot; Year of type CHAR4</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Local Constant Declaration</FPCLINE>
+      <FPCLINE>  CONSTANTS: lc_hyphen TYPE char01 VALUE &apos;-&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******FM to change the date format to DD_MMM_YYYY</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;HR_IN_GET_DATE_COMPONENTS&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      idate                         = fp_date</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      day                           = lv_day</FPCLINE>
+      <FPCLINE>      month                         = lv_month_c2</FPCLINE>
+      <FPCLINE>      year                          = lv_year</FPCLINE>
+      <FPCLINE>      ltext                         = lv_month</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      input_date_is_initial         = 1</FPCLINE>
+      <FPCLINE>      text_for_month_not_maintained = 2</FPCLINE>
+      <FPCLINE>      OTHERS                        = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    lv_month_c3 = lv_month(3).</FPCLINE>
+      <FPCLINE>    CONCATENATE lv_day</FPCLINE>
+      <FPCLINE>                lv_month_c3</FPCLINE>
+      <FPCLINE>                lv_year</FPCLINE>
+      <FPCLINE>                INTO fp_v_datum</FPCLINE>
+      <FPCLINE>                SEPARATED BY lc_hyphen.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_ADD</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      Populate Country key which has been used in Wiley Address Node</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;fp_header</FPCLINE>
+      <FPCLINE>*      &lt;--fp_st_t001</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_add USING    fp_header  TYPE mmpur_print_ekko</FPCLINE>
+      <FPCLINE>               CHANGING fp_st_t001 TYPE ty_t001.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*****Ftech DATA from T001 Table</FPCLINE>
+      <FPCLINE>  SELECT SINGLE bukrs       &quot;Company Code</FPCLINE>
+      <FPCLINE>                land1       &quot;Country Key</FPCLINE>
+      <FPCLINE>                adrnr       &quot;Address</FPCLINE>
+      <FPCLINE>    INTO fp_st_t001         &quot;Global workarea for structure ty_t001</FPCLINE>
+      <FPCLINE>    FROM t001               &quot;Table for Company Codes</FPCLINE>
+      <FPCLINE>    WHERE bukrs = fp_header-bukrs.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>*  Populating sending country key of organistion address</FPCLINE>
+      <FPCLINE>*  which has been used in the Adddress Node for Wiley Address.</FPCLINE>
+      <FPCLINE>    v_land1 = fp_st_t001-land1.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_VEND_ADD</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Populate Country key which has been used in Vendor Address Node</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;fp_header</FPCLINE>
+      <FPCLINE>*      &lt;--fp_st_lfa1</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_vend_add USING    fp_header  TYPE mmpur_print_ekko</FPCLINE>
+      <FPCLINE>                    CHANGING fp_st_lfa1 TYPE ty_lfa1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*****Fetch DATA from LFA1 Table</FPCLINE>
+      <FPCLINE>  SELECT SINGLE lifnr      &quot;Account Number of Vendor or Creditor</FPCLINE>
+      <FPCLINE>                land1      &quot;Country Key</FPCLINE>
+      <FPCLINE>                adrnr      &quot;Address</FPCLINE>
+      <FPCLINE>    INTO fp_st_lfa1        &quot;Gobalworkarea for structure ty_lfa1</FPCLINE>
+      <FPCLINE>    FROM lfa1              &quot;Table for Vendor Master (General Section)</FPCLINE>
+      <FPCLINE>    WHERE lifnr = fp_header-lifnr.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>*  Populating sending country key of vendor address</FPCLINE>
+      <FPCLINE>*  which has been used in the Adddress Node for Vendor Address.</FPCLINE>
+      <FPCLINE>    v_land1_lfa1 = fp_st_lfa1-lifnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_DATA</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Populate Date of line item</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;fp_item</FPCLINE>
+      <FPCLINE>*      --&gt;fp_schedule</FPCLINE>
+      <FPCLINE>*      &lt;--fp_li_mara</FPCLINE>
+      <FPCLINE>*      &lt;--fp_li_makt</FPCLINE>
+      <FPCLINE>*      &lt;--fp_li_jptidcdassign</FPCLINE>
+      <FPCLINE>*      &lt;--fp_li_ausp_temp</FPCLINE>
+      <FPCLINE>*      &lt;--fp_li_ausp</FPCLINE>
+      <FPCLINE>*      &lt;--fp_i_final</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_data USING    fp_item              TYPE ty_mmpur_print_ekpo</FPCLINE>
+      <FPCLINE>                         fp_schedule          TYPE ty_mmpur_print_eket</FPCLINE>
+      <FPCLINE>                CHANGING fp_li_mara           TYPE tt_mara</FPCLINE>
+      <FPCLINE>                         fp_li_makt           TYPE tt_makt</FPCLINE>
+      <FPCLINE>                         fp_li_jptidcdassign  TYPE tt_jptidcdassign</FPCLINE>
+      <FPCLINE>                         fp_li_ausp_temp      TYPE tt_ausp</FPCLINE>
+      <FPCLINE>                         fp_li_ausp           TYPE tt_ausp</FPCLINE>
+      <FPCLINE>                         fp_i_final           TYPE tt_final.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>*****Local Type declaration</FPCLINE>
+      <FPCLINE>  TYPES: BEGIN OF lty_constant,</FPCLINE>
+      <FPCLINE>           mandt       TYPE  mandt,  &quot;Client</FPCLINE>
+      <FPCLINE>           devid       TYPE  zdevid, &quot;Development ID</FPCLINE>
+      <FPCLINE>           param1      TYPE	rvari_vnam,	                                    &quot;ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>           param2      TYPE	rvari_vnam,	                                    &quot;ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>           srno        TYPE	tvarv_numb,	                                    &quot;ABAP: Current selection number</FPCLINE>
+      <FPCLINE>           sign        TYPE	tvarv_sign,	                                    &quot;ABAP: ID: I/E (include/exclude values)</FPCLINE>
+      <FPCLINE>           opti        TYPE	tvarv_opti,	                                    &quot;ABAP: Selection option (EQ/BT/CP/...)</FPCLINE>
+      <FPCLINE>           low         TYPE  salv_de_selopt_low, &quot;Lower Value of Selection Condition</FPCLINE>
+      <FPCLINE>           high        TYPE salv_de_selopt_high,  &quot;Upper Value of Selection Condition</FPCLINE>
+      <FPCLINE>           activate    TYPE	zconstactive,	                                    &quot;Activation indicator for constant</FPCLINE>
+      <FPCLINE>           description TYPE  zconstdesc, &quot;Description of constant</FPCLINE>
+      <FPCLINE>         END OF lty_constant,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Structure for local range table</FPCLINE>
+      <FPCLINE>         BEGIN OF lty_range,</FPCLINE>
+      <FPCLINE>           sign TYPE  tvarv_sign,                             &quot;ABAP: ID: I/E (include/exclude values)</FPCLINE>
+      <FPCLINE>           opti TYPE  tvarv_opti,                             &quot;ABAP: Selection option (EQ/BT/CP/...)</FPCLINE>
+      <FPCLINE>           low  TYPE  salv_de_selopt_low, &quot;Lower Value of Selection Condition</FPCLINE>
+      <FPCLINE>           high TYPE salv_de_selopt_high,  &quot;Upper Value of Selection Condition</FPCLINE>
+      <FPCLINE>         END OF lty_range.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>********Local constant declaration</FPCLINE>
+      <FPCLINE>  CONSTANTS: lc_zsbn       TYPE ismidcodetype VALUE &apos;ZSBN&apos;,</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>             lc_idcodetype TYPE char10  VALUE &apos;IDCODETYPE&apos;,</FPCLINE>
+      <FPCLINE>             lc_iss        TYPE char4   VALUE &apos;ISS&apos;,</FPCLINE>
+      <FPCLINE>             lc_supp       TYPE char4   VALUE &apos;SUPP&apos;,</FPCLINE>
+      <FPCLINE>             lc_devid      TYPE zdevid  VALUE &apos;F039&apos;.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Local Data Declaration</FPCLINE>
+      <FPCLINE>  DATA: lst_final         TYPE ty_final,          &quot; Local workarea for final internal table</FPCLINE>
+      <FPCLINE>        lst_mara          TYPE ty_mara,           &quot; Local workarea of ty_mara</FPCLINE>
+      <FPCLINE>        lst_makt          TYPE ty_makt,           &quot; Local workarea of ty_makt</FPCLINE>
+      <FPCLINE>        lst_jptidcdassign TYPE ty_jptidcdassign,  &quot; Local workarea of ty_jptidcdassign</FPCLINE>
+      <FPCLINE>        lst_ausp          TYPE ty_ausp,           &quot; Local workarea of ty_ausp</FPCLINE>
+      <FPCLINE>        lv_objek          TYPE ausp-objek,        &quot; local variable of type objek</FPCLINE>
+      <FPCLINE>        lr_ausp           TYPE REF TO ty_ausp,    &quot; Local reference of type ty_ausp</FPCLINE>
+      <FPCLINE>        lst_item          TYPE mmpur_print_ekpo,  &quot; Local workarea for table item</FPCLINE>
+      <FPCLINE>        lst_schedule      TYPE mmpur_print_eket,  &quot; Local workarea for schedule</FPCLINE>
+      <FPCLINE>        lv_datum_eindt    TYPE char15,            &quot; Local variable of char15</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>        li_constant       TYPE STANDARD TABLE OF lty_constant INITIAL SIZE 0,</FPCLINE>
+      <FPCLINE>        li_range          TYPE STANDARD TABLE OF lty_range INITIAL SIZE 0,</FPCLINE>
+      <FPCLINE>        lst_constant      TYPE lty_constant,</FPCLINE>
+      <FPCLINE>        lst_range         TYPE lty_range,</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>        li_item           TYPE ty_mmpur_print_ekpo.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******If item[] have the value then using this table</FPCLINE>
+      <FPCLINE>******fetch the data from MARA table using MATNR of item[]</FPCLINE>
+      <FPCLINE>  IF fp_item[] IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    li_item[] = fp_item[].</FPCLINE>
+      <FPCLINE>    SORT li_item BY matnr.</FPCLINE>
+      <FPCLINE>    DELETE ADJACENT DUPLICATES FROM li_item COMPARING matnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT matnr             &quot;Material Number</FPCLINE>
+      <FPCLINE>           ismrefmdprod      &quot;Higher-Level Media Product</FPCLINE>
+      <FPCLINE>           ismnrinyear       &quot;Issue Number (in Year Number)</FPCLINE>
+      <FPCLINE>           ismcopynr         &quot;Copy Number of Media Issue</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>           ismissuetypest</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>      FROM mara              &quot;General Material Data</FPCLINE>
+      <FPCLINE>      INTO TABLE fp_li_mara</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN li_item[]</FPCLINE>
+      <FPCLINE>      WHERE matnr = li_item-matnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF sy-subrc IS INITIAL .</FPCLINE>
+      <FPCLINE>******If li_mara[] have the value then using this table</FPCLINE>
+      <FPCLINE>******fetch the data from MAKT table using MATNR of li_mara or ISMREFMDPROD of li_mara</FPCLINE>
+      <FPCLINE>      SELECT matnr            &quot;Material Number</FPCLINE>
+      <FPCLINE>             spras            &quot;Language Key</FPCLINE>
+      <FPCLINE>             maktx            &quot;Material Description (Short Text)</FPCLINE>
+      <FPCLINE>        FROM makt             &quot;Material Descriptions</FPCLINE>
+      <FPCLINE>        INTO TABLE fp_li_makt</FPCLINE>
+      <FPCLINE>        FOR ALL ENTRIES IN fp_li_mara</FPCLINE>
+      <FPCLINE>        WHERE matnr = fp_li_mara-matnr OR</FPCLINE>
+      <FPCLINE>              matnr = fp_li_mara-ismrefmdprod</FPCLINE>
+      <FPCLINE>        AND   spras = v_langu.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>* Do Nothing</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>*** CREATE RANGE TABLE FOR IDCODETYPE.</FPCLINE>
+      <FPCLINE>*** Fetch data from ZCACONSTANT</FPCLINE>
+      <FPCLINE>    SELECT</FPCLINE>
+      <FPCLINE>      mandt      &quot; Client</FPCLINE>
+      <FPCLINE>      devid       &quot; Development ID</FPCLINE>
+      <FPCLINE>      param1      &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>      param2      &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>      srno        &quot; ABAP: Current selection number</FPCLINE>
+      <FPCLINE>      sign        &quot; ABAP: ID: I/E (include/exclude values)</FPCLINE>
+      <FPCLINE>      opti        &quot; ABAP: Selection option (EQ/BT/CP/...)</FPCLINE>
+      <FPCLINE>      low         &quot; Lower Value of Selection Condition</FPCLINE>
+      <FPCLINE>      high        &quot; Upper Value of Selection Condition</FPCLINE>
+      <FPCLINE>      activate    &quot; Activation indicator for constant</FPCLINE>
+      <FPCLINE>      description &quot; Description of constant</FPCLINE>
+      <FPCLINE>      FROM zcaconstant</FPCLINE>
+      <FPCLINE>      INTO TABLE li_constant</FPCLINE>
+      <FPCLINE>      WHERE  devid EQ lc_devid</FPCLINE>
+      <FPCLINE>      AND   param1 EQ lc_idcodetype.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      LOOP AT li_constant INTO lst_constant.</FPCLINE>
+      <FPCLINE>        lst_range-sign = lst_constant-sign.</FPCLINE>
+      <FPCLINE>        lst_range-opti = lst_constant-opti.</FPCLINE>
+      <FPCLINE>        lst_range-low  = lst_constant-low.</FPCLINE>
+      <FPCLINE>        APPEND lst_range TO li_range.</FPCLINE>
+      <FPCLINE>        CLEAR lst_range.</FPCLINE>
+      <FPCLINE>      ENDLOOP.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>********If li_item[] have the value then using this table</FPCLINE>
+      <FPCLINE>******fetch the data from JPTIDCDASSIGN table using MATNR of li_item[]</FPCLINE>
+      <FPCLINE>    SELECT matnr                &quot;Material Number</FPCLINE>
+      <FPCLINE>           idcodetype           &quot;Type of Identification Code</FPCLINE>
+      <FPCLINE>           identcode            &quot;Identification Code</FPCLINE>
+      <FPCLINE>      FROM jptidcdassign        &quot;IS-M: Assignment of ID Codes to Material</FPCLINE>
+      <FPCLINE>      INTO TABLE fp_li_jptidcdassign</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN li_item[]</FPCLINE>
+      <FPCLINE>      WHERE  matnr = li_item-matnr</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>*      AND    idcodetype = lc_zsbn.</FPCLINE>
+      <FPCLINE>      AND    idcodetype IN li_range.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>* Do Nothing</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Here, as per requirement by passing the value of MATNR of fp_item[] to</FPCLINE>
+      <FPCLINE>******OBJEK of AUSP is needed to fetch the value of ATINN(Print ISSN) but the length of</FPCLINE>
+      <FPCLINE>******both the field is not matching so the following logic is done.</FPCLINE>
+      <FPCLINE>  CLEAR lst_item.</FPCLINE>
+      <FPCLINE>  LOOP AT fp_item INTO lst_item.</FPCLINE>
+      <FPCLINE>    lst_ausp-objek = lst_item-matnr.</FPCLINE>
+      <FPCLINE>    APPEND lst_ausp TO fp_li_ausp_temp.</FPCLINE>
+      <FPCLINE>    CLEAR lst_ausp.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******If fp_li_ausp_temp[] have the value then using this table</FPCLINE>
+      <FPCLINE>******fetch the data from AUSP table using OBJEK of fp_li_ausp_temp[]</FPCLINE>
+      <FPCLINE>  IF fp_li_ausp_temp[] IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SORT fp_li_ausp_temp BY objek.</FPCLINE>
+      <FPCLINE>    DELETE ADJACENT DUPLICATES FROM fp_li_ausp_temp COMPARING objek.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT objek           &quot;Key of object to be classified</FPCLINE>
+      <FPCLINE>           atinn           &quot;Internal characteristic</FPCLINE>
+      <FPCLINE>           atzhl           &quot;Characteristic value counter</FPCLINE>
+      <FPCLINE>           mafid           &quot;Indicator: Object/Class</FPCLINE>
+      <FPCLINE>           klart           &quot;Class Type</FPCLINE>
+      <FPCLINE>           adzhl           &quot;Internal counter for archiving objects via engin. chg. mgmt</FPCLINE>
+      <FPCLINE>      FROM ausp            &quot;Characteristic Values</FPCLINE>
+      <FPCLINE>      INTO TABLE fp_li_ausp</FPCLINE>
+      <FPCLINE>      FOR ALL ENTRIES IN fp_li_ausp_temp</FPCLINE>
+      <FPCLINE>      WHERE objek = fp_li_ausp_temp-objek.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>* Do Nothing</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Sort SCHEDULE</FPCLINE>
+      <FPCLINE>  SORT fp_schedule BY ebeln ebelp.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Populate Data of fp_item Table.</FPCLINE>
+      <FPCLINE>******By looping the fp_item table populate line,issue number,print &amp; bind qty, UOM.</FPCLINE>
+      <FPCLINE>  LOOP AT fp_item INTO lst_item.</FPCLINE>
+      <FPCLINE>    lst_final-ebelp = lst_item-ebelp.</FPCLINE>
+      <FPCLINE>    lst_final-matnr = lst_item-matnr.</FPCLINE>
+      <FPCLINE>    lst_final-menge = lst_item-menge.</FPCLINE>
+      <FPCLINE>    lst_final-meins = lst_item-meins.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Populate Delivery date</FPCLINE>
+      <FPCLINE>    CLEAR:lst_schedule.</FPCLINE>
+      <FPCLINE>    READ TABLE fp_schedule INTO lst_schedule WITH KEY ebeln = lst_item-ebeln</FPCLINE>
+      <FPCLINE>                                                      ebelp = lst_item-ebelp</FPCLINE>
+      <FPCLINE>                                             BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      lst_final-eindt = lst_schedule-eindt.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Perform is used to change the format of the delivery date</FPCLINE>
+      <FPCLINE>    PERFORM f_get_date USING lst_final-eindt</FPCLINE>
+      <FPCLINE>                       CHANGING lv_datum_eindt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*******Populate the DD-MMM-YYYY formated delivery date in the line item</FPCLINE>
+      <FPCLINE>    lst_final-eindt_char = lv_datum_eindt.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Populate Journal Number, Journal Issue, Journal Volume</FPCLINE>
+      <FPCLINE>    IF lst_item-matnr IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CLEAR: lst_mara.</FPCLINE>
+      <FPCLINE>      READ TABLE fp_li_mara INTO lst_mara</FPCLINE>
+      <FPCLINE>      WITH KEY matnr  = lst_item-matnr.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>        lst_final-ismrefmdprod = lst_mara-ismrefmdprod.</FPCLINE>
+      <FPCLINE>        lst_final-ismnrinyear  = lst_mara-ismnrinyear.</FPCLINE>
+      <FPCLINE>        lst_final-ismcopynr    = lst_mara-ismcopynr.</FPCLINE>
+      <FPCLINE>* BOC by PBANDLAPAL on 06-Sep-2017 for ERP-4172 ED2K908429</FPCLINE>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>*        IF lst_mara-ismissuetypest = space.</FPCLINE>
+      <FPCLINE>*          lst_final-ismissuetypest = lc_iss.</FPCLINE>
+      <FPCLINE>*        ELSE.</FPCLINE>
+      <FPCLINE>*          lst_final-ismissuetypest = lc_supp.</FPCLINE>
+      <FPCLINE>*        ENDIF.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>        IF lst_mara+8(1) = c_char_s.</FPCLINE>
+      <FPCLINE>          lst_final-ismissuetypest = lc_supp.</FPCLINE>
+      <FPCLINE>        ELSE.</FPCLINE>
+      <FPCLINE>          lst_final-ismissuetypest = lc_iss.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>* EOC by PBANDLAPAL on 06-Sep-2017 for ERP-4172 ED2K908429</FPCLINE>
+      <FPCLINE>******Populate Journal Description</FPCLINE>
+      <FPCLINE>        CLEAR: lst_makt.</FPCLINE>
+      <FPCLINE>        READ TABLE fp_li_makt INTO lst_makt TRANSPORTING maktx</FPCLINE>
+      <FPCLINE>         WITH TABLE KEY matnr COMPONENTS matnr = lst_mara-ismrefmdprod      .</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>          lst_final-maktx_journal = lst_makt-maktx.</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Populate Issue Name</FPCLINE>
+      <FPCLINE>      CLEAR: lst_makt.</FPCLINE>
+      <FPCLINE>      READ TABLE fp_li_makt INTO lst_makt TRANSPORTING maktx</FPCLINE>
+      <FPCLINE>       WITH TABLE KEY matnr COMPONENTS matnr = lst_item-matnr      .</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>        lst_final-maktx_issue = lst_makt-maktx.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>******Populate Print ISSN</FPCLINE>
+      <FPCLINE>      CLEAR lst_jptidcdassign.</FPCLINE>
+      <FPCLINE>      READ TABLE fp_li_jptidcdassign INTO lst_jptidcdassign TRANSPORTING identcode</FPCLINE>
+      <FPCLINE>      WITH TABLE KEY matnr COMPONENTS matnr = lst_item-matnr.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>        lst_final-identcode = lst_jptidcdassign-identcode.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*BOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>******Populate ISSUETYPE</FPCLINE>
+      <FPCLINE>*      CLEAR lv_objek.</FPCLINE>
+      <FPCLINE>*      lv_objek = lst_item-matnr.</FPCLINE>
+      <FPCLINE>*      READ TABLE fp_li_ausp REFERENCE INTO lr_ausp WITH TABLE KEY objek COMPONENTS</FPCLINE>
+      <FPCLINE>*                                                      objek = lv_objek.</FPCLINE>
+      <FPCLINE>*      IF lr_ausp IS BOUND AND sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*        lst_final-atinn = lr_ausp-&gt;atinn.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>*EOC By SRBOSE on 9-May-2017 # ED2K905936</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    APPEND lst_final TO fp_i_final.</FPCLINE>
+      <FPCLINE>    CLEAR lst_final.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

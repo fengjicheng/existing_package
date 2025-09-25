@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for CIC0 change</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTCUS_FG_CIC0_CHANGETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTCUS_FG_CIC0_CHANGE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_E229_DISPLAY_PO_NUMBER</FUNCNAME>
+     <SHORT_TEXT>OPS- Presentation Determination</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_COMPONENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EW_OPSCOMPONENT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PROFILE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EW_OPSPROFILE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SLOT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EW_OPSSLOT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PRESFLD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EW_OPSPRESFLD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_USAGETYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EW_OPSUSAGETYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CLASS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CCM_OP_CLASSID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_OBJKEY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SWO_OBJID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_HIERARCHY_ACCESS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>REF TO IF_CCM_NAV_HIERARCHY_ACCESS</TYP>
+       <REF_CLASS>X</REF_CLASS>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_VALUE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TEXT100</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_COMPONENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OPS: Components</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PROFILE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OPS: Profile</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SLOT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OPS: Slot</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PRESFLD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OPS: Presentation Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_USAGETYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>OPS: Usage Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CLASS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object Provider: Class Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_OBJKEY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_HIERARCHY_ACCESS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Interface for Accessing Environment Hierarchy</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_VALUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text (100 characters)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

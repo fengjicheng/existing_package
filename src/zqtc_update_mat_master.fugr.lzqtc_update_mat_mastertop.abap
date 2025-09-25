@@ -1,0 +1,3 @@
+FUNCTION-POOL ZQTC_UPDATE_MAT_MASTER.       "MESSAGE-ID ..
+
+* INCLUDE LZQTC_UPDATE_MAT_MASTERD...        " Local class definition

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZQTC_SOCIETYLOGO</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>TRANSP</TABCLASS>
+    <CLIDEP>X</CLIDEP>
+    <DDTEXT>Get the society logo name</DDTEXT>
+    <MAINFLAG>X</MAINFLAG>
+    <CONTFLAG>C</CONTFLAG>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD09L>
+    <TABNAME>ZQTC_SOCIETYLOGO</TABNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <TABKAT>0</TABKAT>
+    <TABART>APPL0</TABART>
+    <BUFALLOW>N</BUFALLOW>
+   </DD09L>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>MANDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>MANDT</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>KUNNR</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>KUNNR</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <SHLPORIGIN>D</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>LOGO_NAME</FIELDNAME>
+     <ROLLNAME>ZLOGO_NAME</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Get the society logo name</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TB</ID>
+      <OBJECT>ZQTC_SOCIETYLOGO</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00002</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_SOCIETYLOGO</TDNAME>
+      <TDID>TB</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In this table, we maintain society related customer number and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>their corresponding logo name.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZQTC_SOCIETYLOGO</TABNAME>
+     <CCLASS>ZLGO</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

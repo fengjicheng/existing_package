@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG for zipping files on application serv</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZCA_ZIPPING_FILESTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZCA_ZIPPING_FILES</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZCA_ZIP_FILES</FUNCNAME>
+     <SHORT_TEXT>FM for zipping files on app server</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_FILENAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FILE_NAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PATH</PARAMETER>
+       <TYP>PATHEXTERN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PATTERN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR20</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ZIPFILENAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_RETURN</PARAMETER>
+       <TYP>SYST_SUBRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_FILENAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>File name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PATH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Physical path name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PATTERN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ZIPFILENAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Zipping File Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Return Code of ABAP Statements</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

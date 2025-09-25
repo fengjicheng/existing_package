@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>C075: Shipping Plan Conversion</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_SHIPPING_PLANF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_SHIPPING_PLANTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_SHIPPING_PLAN</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_EDIT_SHIPPING_PLAN</FUNCNAME>
+     <SHORT_TEXT>C075: Shipping Plan Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MED_ISSUE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-ISSUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MED_PRODUCT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-PRODUCT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SHIPPING_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SHIPPING_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_BILLING_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-BILLING_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_STATUS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-STATUS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_XSEPARATE_ORDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-XSEPARATE_ORDER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SUB_VALID_FROM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SUB_VALID_FROM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SUB_VALID_UNTIL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SUB_VALID_UNTIL</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_START_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_START_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_START_TIME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_START_TIME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_END_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_END_DATE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_MED_ISSUE_MISSING</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_SHP_SCH_MISSING</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_SHP_SCH_LOCKED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_MISCELLANEOUS</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MED_ISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MED_PRODUCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SHIPPING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Delivery Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_BILLING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Billing Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Status of Shipping Planning</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_XSEPARATE_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Mark Separate Order</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SUB_VALID_FROM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Subscription Valid From</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SUB_VALID_UNTIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Subscription Valid To</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_START_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Start Date for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_START_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Start Time for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_END_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: End Date for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_MED_ISSUE_MISSING</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Media Issue can not be determined</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_SHP_SCH_MISSING</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Shipping Schedule is missing for the Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_SHP_SCH_LOCKED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Shipping Schedule is already locked</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_MISCELLANEOUS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Other Errors</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SHIPPING_PLAN_UPDATE</FUNCNAME>
+     <SHORT_TEXT>C075: Shipping Plan Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MED_ISSUE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-ISSUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MED_PRODUCT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-PRODUCT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SHIPPING_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SHIPPING_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_BILLING_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-BILLING_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_STATUS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-STATUS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_XSEPARATE_ORDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-XSEPARATE_ORDER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SUB_VALID_FROM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SUB_VALID_FROM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SUB_VALID_UNTIL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-SUB_VALID_UNTIL</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_START_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_START_DATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_START_TIME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_START_TIME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GEN_END_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>JKSENIP-GEN_END_DATE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_MED_ISSUE_MISSING</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_SHP_SCH_MISSING</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>EXC_SHP_SCH_LOCKED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MED_ISSUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MED_PRODUCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Media Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SHIPPING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Delivery Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_BILLING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Billing Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Status of Shipping Planning</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_XSEPARATE_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Mark Separate Order</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SUB_VALID_FROM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Subscription Valid From</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SUB_VALID_UNTIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Subscription Valid To</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_START_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Start Date for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_START_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: Start Time for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GEN_END_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IS-M: End Date for Order Generation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_MED_ISSUE_MISSING</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Media Issue can not be determined</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_SHP_SCH_MISSING</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Shipping Schedule is missing for the Media Issue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_SHP_SCH_LOCKED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Shipping Schedule is already locked</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>WLS Picking and Packing Interface</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>V_BAR_CODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBELN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_OUTPUT_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SNA_KSCHL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-LANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_MIME_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>S_SALES_ORG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PICK_PACK_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TAX_ID</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>PAVAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_CUSTOMER_SERVICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ERNAM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>S_BILL_TO_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>S_SHIP_TO_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>REMIT_PAYMENT_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDOBNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>PAYMENT_PORTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDOBNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>BANK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDOBNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>S_VBBK_0008</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TEXT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_FINAL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_EMAIL_ADDRESSES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_EMAIL_ADDRS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>S_PLANT_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PAGE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR02</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_CLIENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KUNAG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>TEST_REF_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* INTERFACE NAME:        ZQTC_INT_WLS_PIK_PAK</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Interface for Picking and Packing Form</FPCLINE>
+      <FPCLINE>* DEVELOPER:             AMOHAMMED</FPCLINE>
+      <FPCLINE>* CREATION DATE:         06/17/2020</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F063, F064</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K918559</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Structures Declarations</FPCLINE>
+      <FPCLINE>&quot; Structure for Addresses</FPCLINE>
+      <FPCLINE>TYPES: BEGIN OF ty_address,</FPCLINE>
+      <FPCLINE>         name   TYPE  char40,     &quot; Name</FPCLINE>
+      <FPCLINE>         adrnr  TYPE  ad_addrnum, &quot; Address Number</FPCLINE>
+      <FPCLINE>         house1 TYPE  ad_hsnm1,   &quot; House Number</FPCLINE>
+      <FPCLINE>         street TYPE  ad_street,  &quot; Street</FPCLINE>
+      <FPCLINE>         city1  TYPE  ad_city1,   &quot; City</FPCLINE>
+      <FPCLINE>         reg    TYPE  regio,      &quot; Region (State, Province, County)</FPCLINE>
+      <FPCLINE>         post1  TYPE  ad_pstcd1,  &quot; City postal code</FPCLINE>
+      <FPCLINE>         ctry   TYPE  land1,      &quot; Country Key</FPCLINE>
+      <FPCLINE>       END OF ty_address,</FPCLINE>
+      <FPCLINE>       &quot; Structue for zcaconstant</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_const,</FPCLINE>
+      <FPCLINE>         devid    TYPE zdevid,</FPCLINE>
+      <FPCLINE>         param1   TYPE rvari_vnam,</FPCLINE>
+      <FPCLINE>         param2   TYPE rvari_vnam,</FPCLINE>
+      <FPCLINE>         srno     TYPE tvarv_numb,</FPCLINE>
+      <FPCLINE>         sign     TYPE tvarv_sign,</FPCLINE>
+      <FPCLINE>         opti     TYPE tvarv_opti,</FPCLINE>
+      <FPCLINE>         low      TYPE salv_de_selopt_low,</FPCLINE>
+      <FPCLINE>         high     TYPE salv_de_selopt_high,</FPCLINE>
+      <FPCLINE>         activate TYPE zconstactive,</FPCLINE>
+      <FPCLINE>       END OF ty_const,</FPCLINE>
+      <FPCLINE>       &quot; Structure for Note</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_text,</FPCLINE>
+      <FPCLINE>         text_name   TYPE	tdobname, &quot; Name</FPCLINE>
+      <FPCLINE>         text_object TYPE	tdobject, &quot; Texts: application object</FPCLINE>
+      <FPCLINE>         text_id     TYPE tdid, &quot; Text ID</FPCLINE>
+      <FPCLINE>         lang	       TYPE spras, &quot; Language Key</FPCLINE>
+      <FPCLINE>       END OF ty_text,</FPCLINE>
+      <FPCLINE>       &quot; Structure for Final internal table</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_final,</FPCLINE>
+      <FPCLINE>         old_mat TYPE bismt,  &quot; Old material number</FPCLINE>
+      <FPCLINE>         mat_des TYPE arktx,  &quot; Short text for sales order item</FPCLINE>
+      <FPCLINE>         ordered TYPE kwmeng, &quot;	Cumulative Order Quantity in Sales Units</FPCLINE>
+      <FPCLINE>         shipped TYPE lfimg,  &quot; Actual quantity delivered (in sales units)</FPCLINE>
+      <FPCLINE>         VRKME   TYPE char8,  &quot; Sales unit</FPCLINE>
+      <FPCLINE>       END OF ty_final,</FPCLINE>
+      <FPCLINE>       &quot; Structure for e-mail address</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_email_addrs,</FPCLINE>
+      <FPCLINE>         email_addr TYPE ad_smtpadr, &quot; E-Mail Address</FPCLINE>
+      <FPCLINE>       END OF ty_email_addrs,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Table types declarations</FPCLINE>
+      <FPCLINE>       &quot; Table type for zcaconstant table</FPCLINE>
+      <FPCLINE>       tt_const       TYPE STANDARD TABLE OF ty_const,</FPCLINE>
+      <FPCLINE>       &quot; Table type for final internal table</FPCLINE>
+      <FPCLINE>       tt_final       TYPE STANDARD TABLE OF ty_final,</FPCLINE>
+      <FPCLINE>       &quot; Table type for e-mail address</FPCLINE>
+      <FPCLINE>       tt_email_addrs TYPE STANDARD TABLE OF ty_email_addrs.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>VBDPL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBDPL_TT</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>DELIVERYHEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBDKL</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>CONF_OUT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_LESHP_PDF_CONF_OUT_PDF</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>RDGTXTPRT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EHS_RDGTXTPRT_T</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>KOMSER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_LESHP_PDF_KOMSER_PDF</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>INCLUDE_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TVKO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>DG_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>EHS_RDGTXTPRT_T</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>REPEAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>DELIVERYHEADER</FPPARAMETER>
+      <FPPARAMETER>VBDPL</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* INTERFACE NAME:        ZQTC_INT_WLS_PIK_PAK</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Interface for Picking and Packing Form</FPCLINE>
+      <FPCLINE>* DEVELOPER:             AMOHAMMED</FPCLINE>
+      <FPCLINE>* CREATION DATE:         06/17/2020</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F063, F064</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K918559</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Local constants declarations</FPCLINE>
+      <FPCLINE>CONSTANTS : lc_msg_typ_zwpp TYPE sna_kschl VALUE &apos;ZWPP&apos;,</FPCLINE>
+      <FPCLINE>            lc_msg_typ_zwpa TYPE sna_kschl VALUE &apos;ZWPA&apos;,</FPCLINE>
+      <FPCLINE>            lc_devid_f063   TYPE zdevid VALUE &apos;F063&apos;,</FPCLINE>
+      <FPCLINE>            lc_devid_f064   TYPE zdevid VALUE &apos;F064&apos;,</FPCLINE>
+      <FPCLINE>            lc_picking_text TYPE char14 VALUE &apos;Picking Ticket&apos;,</FPCLINE>
+      <FPCLINE>            lc_packing_text TYPE char14 VALUE &apos;Packing Slip&apos;,</FPCLINE>
+      <FPCLINE>            lc_prod         TYPE char4  VALUE &apos;EP1&apos;,            &quot; For Production system</FPCLINE>
+      <FPCLINE>            lc_under        TYPE char1  VALUE &apos;-&apos;.              &quot; Underscor. data declarations</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA : li_const TYPE tt_const.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fetch the NAST-KSCHL (Output type)</FPCLINE>
+      <FPCLINE>PERFORM f_get_kschl.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Sales Organisation</FPCLINE>
+      <FPCLINE>PERFORM f_get_sales_org USING deliveryheader-vkorg</FPCLINE>
+      <FPCLINE>                        CHANGING s_sales_org.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Bill to Address</FPCLINE>
+      <FPCLINE>PERFORM f_get_bill_to_addrs USING deliveryheader</FPCLINE>
+      <FPCLINE>                            CHANGING s_bill_to_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Ship to Address</FPCLINE>
+      <FPCLINE>PERFORM f_get_ship_to_addrs USING deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>                            CHANGING s_ship_to_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* When output type is for Picking form (ZWPP)</FPCLINE>
+      <FPCLINE>IF v_output_type EQ lc_msg_typ_zwpp.</FPCLINE>
+      <FPCLINE>* Barcode</FPCLINE>
+      <FPCLINE>  v_bar_code = deliveryheader-vbeln.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fetch ZCACONSTANT data</FPCLINE>
+      <FPCLINE>  PERFORM f_get_zcaconstant USING lc_devid_f063</FPCLINE>
+      <FPCLINE>                            CHANGING li_const.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Picking Ticket No</FPCLINE>
+      <FPCLINE>  PERFORM f_get_pick_pack_no USING deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>                                   lc_picking_text</FPCLINE>
+      <FPCLINE>                             CHANGING v_pick_pack_no.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Remit Payment to</FPCLINE>
+      <FPCLINE>  PERFORM f_get_remit_payment_to USING li_const</FPCLINE>
+      <FPCLINE>                                       deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                       deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                                 CHANGING remit_payment_to.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Payment Portal</FPCLINE>
+      <FPCLINE>  PERFORM f_get_payment_portal USING li_const</FPCLINE>
+      <FPCLINE>                                     deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                     deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                               CHANGING payment_portal.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Bank details</FPCLINE>
+      <FPCLINE>  PERFORM f_get_bank_details USING li_const</FPCLINE>
+      <FPCLINE>                                   deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                   deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                             CHANGING bank.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Email Addresses</FPCLINE>
+      <FPCLINE>  PERFORM f_get_email_addrs USING deliveryheader-adrnr_ag</FPCLINE>
+      <FPCLINE>                            CHANGING i_email_addresses.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* When output type is for Packing form (ZWPA)</FPCLINE>
+      <FPCLINE>ELSEIF v_output_type EQ lc_msg_typ_zwpa.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Logo</FPCLINE>
+      <FPCLINE>  PERFORM f_get_logo CHANGING v_xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fetch ZCACONSTANT data</FPCLINE>
+      <FPCLINE>  PERFORM f_get_zcaconstant USING lc_devid_f064</FPCLINE>
+      <FPCLINE>                            CHANGING li_const.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Picking Ticket No</FPCLINE>
+      <FPCLINE>  PERFORM f_get_pick_pack_no USING deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>                                   lc_packing_text</FPCLINE>
+      <FPCLINE>                             CHANGING v_pick_pack_no.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Remit Payment to</FPCLINE>
+      <FPCLINE>  PERFORM f_get_remit_payment_to USING li_const</FPCLINE>
+      <FPCLINE>                                       deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                       deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                                 CHANGING remit_payment_to.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Payment Portal</FPCLINE>
+      <FPCLINE>  PERFORM f_get_payment_portal USING li_const</FPCLINE>
+      <FPCLINE>                                     deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                     deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                               CHANGING payment_portal.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Bank details</FPCLINE>
+      <FPCLINE>  PERFORM f_get_bank_details USING li_const</FPCLINE>
+      <FPCLINE>                                   deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                                   deliveryheader-waerk</FPCLINE>
+      <FPCLINE>                             CHANGING bank.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Plant Address</FPCLINE>
+      <FPCLINE>  PERFORM f_get_plant_addrs USING deliveryheader-adrnr_vst</FPCLINE>
+      <FPCLINE>                            CHANGING s_plant_address.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Tax ID</FPCLINE>
+      <FPCLINE>PERFORM f_get_tax_id USING li_const</FPCLINE>
+      <FPCLINE>                           deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>                     CHANGING v_tax_id.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Customer Service</FPCLINE>
+      <FPCLINE>PERFORM f_get_cust_serv USING deliveryheader-vbeln_vauf</FPCLINE>
+      <FPCLINE>                        CHANGING v_customer_service.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fill VBBK_0008 details</FPCLINE>
+      <FPCLINE>PERFORM f_fill_vbbk_0008 USING deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>                               deliveryheader-spras_vko</FPCLINE>
+      <FPCLINE>                         CHANGING s_vbbk_0008.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Item Data</FPCLINE>
+      <FPCLINE>PERFORM f_get_item_data USING deliveryheader</FPCLINE>
+      <FPCLINE>                              vbdpl</FPCLINE>
+      <FPCLINE>                        CHANGING i_final.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>IF sy-sysid &lt;&gt; lc_prod. &quot;&apos;EP1&apos;.</FPCLINE>
+      <FPCLINE>  CONCATENATE &apos;TEST PRINT&apos; sy-sysid sy-mandt</FPCLINE>
+      <FPCLINE>         INTO test_ref_doc SEPARATED BY lc_under.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* INTERFACE NAME:        ZQTC_INT_WLS_PIK_PAK</FPCLINE>
+      <FPCLINE>* INTERFACE DESCRIPTION: Interface for Picking and Packing Form</FPCLINE>
+      <FPCLINE>* DEVELOPER:             AMOHAMMED</FPCLINE>
+      <FPCLINE>* CREATION DATE:         06/17/2020</FPCLINE>
+      <FPCLINE>* OBJECT ID:             F063, F064</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S):   ED2K918559</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Fetch the NAST-KSCHL (Output type)</FPCLINE>
+      <FPCLINE>FORM f_get_kschl.</FPCLINE>
+      <FPCLINE>* Local constant declaration</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_prg_str TYPE char40 VALUE &apos;(RVADDN01)NAST&apos;.</FPCLINE>
+      <FPCLINE>  FIELD-SYMBOLS: &lt;li_nast&gt; TYPE nast.</FPCLINE>
+      <FPCLINE>  ASSIGN (lc_prg_str) TO &lt;li_nast&gt;.</FPCLINE>
+      <FPCLINE>  v_output_type = &lt;li_nast&gt;-kschl.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Logo</FPCLINE>
+      <FPCLINE>FORM f_get_logo CHANGING fp_v_xstring TYPE xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Local constant declaration</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_logo_name TYPE tdobname   VALUE &apos;ZJWILEY_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>              lc_object    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;,     &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>              lc_id        TYPE tdidgr     VALUE &apos;BMAP&apos;,         &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>              lc_btype     TYPE tdbtype    VALUE &apos;BMON&apos;.         &quot; Graphic type</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* To Get a BDS Graphic in BMP Format (Using a Cache)</FPCLINE>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_object    &quot; GRAPHICS</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_name &quot; Z_ENTERPRISE_LOGO</FPCLINE>
+      <FPCLINE>      p_id           = lc_id        &quot; BMAP</FPCLINE>
+      <FPCLINE>      p_btype        = lc_btype     &quot; BMON</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = fp_v_xstring &quot; Image Data</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* No need to raise the messages, Form will be printed</FPCLINE>
+      <FPCLINE>* without the logo</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Sales Organisation</FPCLINE>
+      <FPCLINE>FORM f_get_sales_org USING fp_deliveryheader-vkorg TYPE vkorg</FPCLINE>
+      <FPCLINE>                           CHANGING fp_s_sales_org TYPE ty_address.</FPCLINE>
+      <FPCLINE>* Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_e TYPE char1 VALUE &apos;E&apos;. &quot; Langugae</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  &quot; Fetch sale organization description</FPCLINE>
+      <FPCLINE>  SELECT SINGLE vkorg, vtext</FPCLINE>
+      <FPCLINE>           FROM tvkot</FPCLINE>
+      <FPCLINE>           INTO @DATA(ls_tvkot)</FPCLINE>
+      <FPCLINE>           WHERE spras EQ @lc_e</FPCLINE>
+      <FPCLINE>             AND vkorg EQ @fp_deliveryheader-vkorg.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    fp_s_sales_org-name = ls_tvkot-vtext.</FPCLINE>
+      <FPCLINE>    &quot; Fetch sales organization address number</FPCLINE>
+      <FPCLINE>    SELECT SINGLE vkorg, adrnr</FPCLINE>
+      <FPCLINE>         FROM tvko</FPCLINE>
+      <FPCLINE>         INTO @DATA(ls_tvko)</FPCLINE>
+      <FPCLINE>         WHERE vkorg EQ @fp_deliveryheader-vkorg.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      &quot; Fetch sales organization address</FPCLINE>
+      <FPCLINE>      PERFORM f_get_address USING    ls_tvko-adrnr</FPCLINE>
+      <FPCLINE>                            CHANGING fp_s_sales_org.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get address</FPCLINE>
+      <FPCLINE>FORM f_get_address USING fp_adrnr   TYPE adrnr</FPCLINE>
+      <FPCLINE>                         fp_address TYPE ty_address.</FPCLINE>
+      <FPCLINE>  &quot; Fetch the actual address</FPCLINE>
+      <FPCLINE>  SELECT SINGLE addrnumber, name1, city1, post_code1,</FPCLINE>
+      <FPCLINE>             street, house_num1, region, country</FPCLINE>
+      <FPCLINE>        FROM adrc</FPCLINE>
+      <FPCLINE>        INTO @DATA(ls_adrc)</FPCLINE>
+      <FPCLINE>        WHERE addrnumber = @fp_adrnr.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    fp_address-adrnr  = ls_adrc-addrnumber.</FPCLINE>
+      <FPCLINE>    &quot; For Sales organization the name is picked from TVKOT table</FPCLINE>
+      <FPCLINE>    &quot; For Bill to and Ship to Addresses name is picked from ADRC table</FPCLINE>
+      <FPCLINE>    IF fp_address-name IS INITIAL.</FPCLINE>
+      <FPCLINE>      fp_address-name   = ls_adrc-name1.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    fp_address-house1 = ls_adrc-house_num1.</FPCLINE>
+      <FPCLINE>    fp_address-street = ls_adrc-street.</FPCLINE>
+      <FPCLINE>    fp_address-city1  = ls_adrc-city1.</FPCLINE>
+      <FPCLINE>    fp_address-reg    = ls_adrc-region.</FPCLINE>
+      <FPCLINE>    fp_address-post1  = ls_adrc-post_code1.</FPCLINE>
+      <FPCLINE>    fp_address-ctry   = ls_adrc-country.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fetch ZCACONSTANT data</FPCLINE>
+      <FPCLINE>FORM f_get_zcaconstant USING fp_lc_devid TYPE zdevid</FPCLINE>
+      <FPCLINE>                       CHANGING fp_li_const TYPE tt_const.</FPCLINE>
+      <FPCLINE>  SELECT devid,     &quot; Development ID</FPCLINE>
+      <FPCLINE>         param1,    &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>         param2,    &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>         srno,      &quot; ABAP: Current selection number</FPCLINE>
+      <FPCLINE>         sign,      &quot; ABAP: ID: I/E (include/exclude values)</FPCLINE>
+      <FPCLINE>         opti,      &quot; ABAP: Selection option (EQ/BT/CP/..)</FPCLINE>
+      <FPCLINE>         low,       &quot; Lower Value of Selection Condition</FPCLINE>
+      <FPCLINE>         high,      &quot; Upper Value of Selection Condition</FPCLINE>
+      <FPCLINE>         activate   &quot; Activation indicator for constant</FPCLINE>
+      <FPCLINE>    INTO TABLE @fp_li_const</FPCLINE>
+      <FPCLINE>    FROM zcaconstant &quot; Wiley Application Constant Table</FPCLINE>
+      <FPCLINE>    WHERE devid EQ @fp_lc_devid</FPCLINE>
+      <FPCLINE>      AND activate EQ @abap_true.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Tax ID</FPCLINE>
+      <FPCLINE>FORM f_get_tax_id USING fp_li_const TYPE tt_const</FPCLINE>
+      <FPCLINE>                        fp_deliveryheader-bukrs TYPE bukrs</FPCLINE>
+      <FPCLINE>                     CHANGING fp_v_tax_id TYPE paval.</FPCLINE>
+      <FPCLINE>* Local constants declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_tax_id  TYPE rvari_vnam VALUE &apos;TAX_ID&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE fp_li_const INTO DATA(lst_const)</FPCLINE>
+      <FPCLINE>    WITH KEY param1 = lc_tax_id</FPCLINE>
+      <FPCLINE>             param2 = fp_deliveryheader-bukrs.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    fp_v_tax_id = lst_const-low.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Customer Service</FPCLINE>
+      <FPCLINE>FORM f_get_cust_serv USING fp_deliveryheader-vbeln_vauf TYPE vbeln_vauf</FPCLINE>
+      <FPCLINE>                        CHANGING fp_v_customer_service TYPE ernam.</FPCLINE>
+      <FPCLINE>  &quot; Fetch the userid of the person who created the order</FPCLINE>
+      <FPCLINE>  SELECT SINGLE ernam</FPCLINE>
+      <FPCLINE>    FROM vbap</FPCLINE>
+      <FPCLINE>    INTO @fp_v_customer_service</FPCLINE>
+      <FPCLINE>    WHERE vbeln EQ @fp_deliveryheader-vbeln_vauf.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Bill to Address</FPCLINE>
+      <FPCLINE>FORM f_get_bill_to_addrs USING fp_deliveryheader TYPE vbdkl</FPCLINE>
+      <FPCLINE>                         CHANGING fp_s_bill_to_address TYPE ty_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_bp     TYPE parvw VALUE &apos;RE&apos;, &quot; Bill to party</FPCLINE>
+      <FPCLINE>              lc_zwgpid TYPE bu_id_type VALUE &apos;ZWGPID&apos;.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE kunn2</FPCLINE>
+      <FPCLINE>    FROM knvp</FPCLINE>
+      <FPCLINE>    INTO @DATA(lv_kunn2)</FPCLINE>
+      <FPCLINE>    WHERE kunnr EQ @fp_deliveryheader-kunag</FPCLINE>
+      <FPCLINE>      AND vkorg EQ @fp_deliveryheader-vkorg</FPCLINE>
+      <FPCLINE>      AND parvw EQ @lc_bp.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE adrnr</FPCLINE>
+      <FPCLINE>      FROM kna1</FPCLINE>
+      <FPCLINE>      INTO @DATA(lv_adrnr)</FPCLINE>
+      <FPCLINE>      WHERE kunnr EQ @lv_kunn2.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      &quot; Fetch Bill to Address</FPCLINE>
+      <FPCLINE>      PERFORM f_get_address USING    lv_adrnr</FPCLINE>
+      <FPCLINE>                            CHANGING fp_s_bill_to_address.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*****logic to read the client number</FPCLINE>
+      <FPCLINE>  SELECT SINGLE idnumber FROM but0id</FPCLINE>
+      <FPCLINE>    INTO @DATA(lv_idnumber)</FPCLINE>
+      <FPCLINE>    WHERE partner = @fp_deliveryheader-kunag AND</FPCLINE>
+      <FPCLINE>    type = @lc_zwgpid.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    v_client = lv_idnumber.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    v_client = fp_deliveryheader-kunag.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Ship to Address</FPCLINE>
+      <FPCLINE>FORM f_get_ship_to_addrs USING fp_deliveryheader-vbeln TYPE vbeln_vl</FPCLINE>
+      <FPCLINE>                            CHANGING fp_s_ship_to_address TYPE ty_address.</FPCLINE>
+      <FPCLINE>* Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_bp TYPE parvw VALUE &apos;WE&apos;. &quot; Ship to party</FPCLINE>
+      <FPCLINE>  SELECT SINGLE vbeln, parvw, adrnr</FPCLINE>
+      <FPCLINE>           FROM vbpa</FPCLINE>
+      <FPCLINE>           INTO @DATA(ls_vbpa)</FPCLINE>
+      <FPCLINE>           WHERE vbeln EQ @fp_deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>             AND parvw EQ @lc_bp.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    &quot; Fetch Ship to Address</FPCLINE>
+      <FPCLINE>    PERFORM f_get_address USING    ls_vbpa-adrnr</FPCLINE>
+      <FPCLINE>                          CHANGING fp_s_ship_to_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Picking Ticket No</FPCLINE>
+      <FPCLINE>FORM f_get_pick_pack_no USING fp_deliveryheader-vbeln TYPE vbeln_vl</FPCLINE>
+      <FPCLINE>                              fp_pick_pack_text TYPE char14</FPCLINE>
+      <FPCLINE>                        CHANGING fp_pick_pack_no TYPE char100.</FPCLINE>
+      <FPCLINE>* Local Constants declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_colon TYPE char1 VALUE &apos;:&apos;.</FPCLINE>
+      <FPCLINE>  &quot; Concatenrate the Picking and Packing text with delivery number</FPCLINE>
+      <FPCLINE>  CONCATENATE &apos; &apos; fp_pick_pack_text</FPCLINE>
+      <FPCLINE>         INTO fp_pick_pack_no</FPCLINE>
+      <FPCLINE>         SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_pick_pack_no lc_colon</FPCLINE>
+      <FPCLINE>        INTO fp_pick_pack_no.</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_pick_pack_no fp_deliveryheader-vbeln</FPCLINE>
+      <FPCLINE>        INTO fp_pick_pack_no SEPARATED BY space.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Remit Payment to</FPCLINE>
+      <FPCLINE>FORM f_get_remit_payment_to USING fp_li_const TYPE tt_const</FPCLINE>
+      <FPCLINE>                                  fp_deliveryheader-bukrs TYPE bukrs</FPCLINE>
+      <FPCLINE>                                  fp_deliveryheader-waerk TYPE waerk</FPCLINE>
+      <FPCLINE>                            CHANGING fp_remit_payment_to TYPE tdobname.</FPCLINE>
+      <FPCLINE>  &quot; Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_remit TYPE zcaconstant-param1 VALUE &apos;REMIT&apos;.</FPCLINE>
+      <FPCLINE>  READ TABLE fp_li_const ASSIGNING FIELD-SYMBOL(&lt;lfs_const&gt;)</FPCLINE>
+      <FPCLINE>    WITH KEY param1 = lc_remit</FPCLINE>
+      <FPCLINE>             param2 = fp_deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>             high   = fp_deliveryheader-waerk.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    fp_remit_payment_to = &lt;lfs_const&gt;-low.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Payment Portal</FPCLINE>
+      <FPCLINE>FORM f_get_payment_portal USING fp_li_const TYPE tt_const</FPCLINE>
+      <FPCLINE>                                fp_deliveryheader-bukrs TYPE bukrs</FPCLINE>
+      <FPCLINE>                                fp_deliveryheader-waerk TYPE waerk</FPCLINE>
+      <FPCLINE>                          CHANGING fp_payment_portal TYPE tdobname.</FPCLINE>
+      <FPCLINE>  &quot; Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_portal TYPE zcaconstant-param1 VALUE &apos;PORTAL&apos;.</FPCLINE>
+      <FPCLINE>  READ TABLE fp_li_const ASSIGNING FIELD-SYMBOL(&lt;lfs_const&gt;)</FPCLINE>
+      <FPCLINE>    WITH KEY param1 = lc_portal</FPCLINE>
+      <FPCLINE>             param2 = fp_deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>             high   = fp_deliveryheader-waerk.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    fp_payment_portal = &lt;lfs_const&gt;-low.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Bank details</FPCLINE>
+      <FPCLINE>FORM f_get_bank_details USING fp_li_const TYPE tt_const</FPCLINE>
+      <FPCLINE>                              fp_deliveryheader-bukrs TYPE bukrs</FPCLINE>
+      <FPCLINE>                              fp_deliveryheader-waerk TYPE waerk</FPCLINE>
+      <FPCLINE>                        CHANGING fp_bank TYPE tdobname.</FPCLINE>
+      <FPCLINE>  &quot; Local constant declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_bank TYPE zcaconstant-param1 VALUE &apos;BANK&apos;.</FPCLINE>
+      <FPCLINE>  READ TABLE fp_li_const ASSIGNING FIELD-SYMBOL(&lt;lfs_const&gt;)</FPCLINE>
+      <FPCLINE>    WITH KEY param1 = lc_bank</FPCLINE>
+      <FPCLINE>             param2 = fp_deliveryheader-bukrs</FPCLINE>
+      <FPCLINE>             high   = fp_deliveryheader-waerk.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    fp_bank = &lt;lfs_const&gt;-low.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fill VBBK_0008 details</FPCLINE>
+      <FPCLINE>FORM f_fill_vbbk_0008 USING fp_deliveryheader-vbeln TYPE vbeln_vl</FPCLINE>
+      <FPCLINE>                               fp_deliveryheader-spras_vko TYPE spras</FPCLINE>
+      <FPCLINE>                         CHANGING fp_s_vbbk_0008 TYPE ty_text.</FPCLINE>
+      <FPCLINE>* Local constants declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_vbbk TYPE tdobject VALUE &apos;VBBK&apos;, &quot; Text object</FPCLINE>
+      <FPCLINE>              lc_0008 TYPE tdid     VALUE &apos;0008&apos;. &quot; Text id</FPCLINE>
+      <FPCLINE>  fp_s_vbbk_0008-text_name   = fp_deliveryheader-vbeln.</FPCLINE>
+      <FPCLINE>  fp_s_vbbk_0008-text_object = lc_vbbk.</FPCLINE>
+      <FPCLINE>  fp_s_vbbk_0008-text_id     = lc_0008.</FPCLINE>
+      <FPCLINE>  fp_s_vbbk_0008-lang        = fp_deliveryheader-spras_vko.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Item Data</FPCLINE>
+      <FPCLINE>FORM f_get_item_data USING fp_deliveryheader  TYPE vbdkl</FPCLINE>
+      <FPCLINE>                           fp_vbdpl           TYPE vbdpl_tt</FPCLINE>
+      <FPCLINE>                     CHANGING fp_i_final TYPE tt_final.</FPCLINE>
+      <FPCLINE>* Local declarations</FPCLINE>
+      <FPCLINE>  DATA : ls_final TYPE ty_final.</FPCLINE>
+      <FPCLINE>  DATA:lv_umrez TYPE char10.</FPCLINE>
+      <FPCLINE>  &quot; Fetch Old Material Number</FPCLINE>
+      <FPCLINE>  SELECT matnr, bismt, meins</FPCLINE>
+      <FPCLINE>    FROM mara</FPCLINE>
+      <FPCLINE>    INTO TABLE @DATA(li_mara)</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN @fp_vbdpl</FPCLINE>
+      <FPCLINE>    WHERE matnr EQ @fp_vbdpl-matwa.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    SORT li_mara BY matnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*--Fethc the Units of Measure for Material</FPCLINE>
+      <FPCLINE>  SELECT matnr,meinh,umrez</FPCLINE>
+      <FPCLINE>    FROM marm</FPCLINE>
+      <FPCLINE>    INTO TABLE @DATA(li_marm)</FPCLINE>
+      <FPCLINE>     FOR ALL ENTRIES IN @fp_vbdpl</FPCLINE>
+      <FPCLINE>      WHERE matnr EQ @fp_vbdpl-matwa.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    SORT li_marm BY matnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  &quot; Fetch Ordered</FPCLINE>
+      <FPCLINE>  SELECT vbeln, posnr, vrkme,kwmeng</FPCLINE>
+      <FPCLINE>    FROM vbap</FPCLINE>
+      <FPCLINE>    INTO TABLE @DATA(li_vbap)</FPCLINE>
+      <FPCLINE>    FOR ALL ENTRIES IN @fp_vbdpl</FPCLINE>
+      <FPCLINE>    WHERE vbeln EQ @fp_vbdpl-vgbel</FPCLINE>
+      <FPCLINE>      AND posnr EQ @fp_vbdpl-vgpos.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    SORT li_vbap BY vbeln posnr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Prepare i_final internal table</FPCLINE>
+      <FPCLINE>  LOOP AT fp_vbdpl ASSIGNING FIELD-SYMBOL(&lt;lfs_vbdpl&gt;).</FPCLINE>
+      <FPCLINE>    &quot; Fill Old material number</FPCLINE>
+      <FPCLINE>    READ TABLE li_mara ASSIGNING FIELD-SYMBOL(&lt;lfs_mara&gt;)</FPCLINE>
+      <FPCLINE>      WITH KEY matnr = &lt;lfs_vbdpl&gt;-matwa BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      ls_final-old_mat = &lt;lfs_mara&gt;-bismt.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    &quot; Fill Material description</FPCLINE>
+      <FPCLINE>    ls_final-mat_des = &lt;lfs_vbdpl&gt;-arktx.</FPCLINE>
+      <FPCLINE>    &quot; Fill ordered quantity</FPCLINE>
+      <FPCLINE>    READ TABLE li_vbap ASSIGNING FIELD-SYMBOL(&lt;lfs_vbap&gt;)</FPCLINE>
+      <FPCLINE>      WITH KEY vbeln = &lt;lfs_vbdpl&gt;-vgbel</FPCLINE>
+      <FPCLINE>               posnr = &lt;lfs_vbdpl&gt;-vgpos BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      ls_final-ordered = &lt;lfs_vbap&gt;-kwmeng.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF &lt;lfs_vbap&gt;-vrkme NE &lt;lfs_mara&gt;-meins.</FPCLINE>
+      <FPCLINE>        READ TABLE li_marm INTO DATA(lst_marm)</FPCLINE>
+      <FPCLINE>        WITH KEY matnr = &lt;lfs_mara&gt;-matnr</FPCLINE>
+      <FPCLINE>            meinh = &lt;lfs_vbap&gt;-vrkme.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>          lv_umrez = lst_marm-umrez.</FPCLINE>
+      <FPCLINE>          CONDENSE lv_umrez NO-GAPS.</FPCLINE>
+      <FPCLINE>          CONCATENATE lst_marm-meinh lv_umrez INTO ls_final-vrkme.</FPCLINE>
+      <FPCLINE>          CONDENSE ls_final-vrkme NO-GAPS.</FPCLINE>
+      <FPCLINE>        ELSE.</FPCLINE>
+      <FPCLINE>          ls_final-vrkme = &lt;lfs_vbap&gt;-vrkme. &quot;sales unit</FPCLINE>
+      <FPCLINE>        ENDIF.</FPCLINE>
+      <FPCLINE>      ELSE.</FPCLINE>
+      <FPCLINE>        ls_final-vrkme = &lt;lfs_vbap&gt;-vrkme. &quot;sales unit</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    &quot; Fill shipped quantity</FPCLINE>
+      <FPCLINE>    ls_final-shipped = &lt;lfs_vbdpl&gt;-lfimg.</FPCLINE>
+      <FPCLINE>    APPEND ls_final TO i_final.</FPCLINE>
+      <FPCLINE>    CLEAR ls_final.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Plant Address</FPCLINE>
+      <FPCLINE>FORM f_get_plant_addrs USING fp_deliveryheader-adrnr_vst TYPE adrnr_vst</FPCLINE>
+      <FPCLINE>                            CHANGING fp_s_plant_address TYPE string.</FPCLINE>
+      <FPCLINE>* Local Constants Declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_comma TYPE char2 VALUE &apos;, &apos;.</FPCLINE>
+      <FPCLINE>* Local Declarations</FPCLINE>
+      <FPCLINE>  DATA : ls_plant_address TYPE ty_address.</FPCLINE>
+      <FPCLINE>  &quot; Fetch Ship to Address</FPCLINE>
+      <FPCLINE>  PERFORM f_get_address USING    fp_deliveryheader-adrnr_vst</FPCLINE>
+      <FPCLINE>                        CHANGING ls_plant_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF ls_plant_address IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE ls_plant_address-name lc_comma</FPCLINE>
+      <FPCLINE>           INTO fp_s_plant_address.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address space INTO fp_s_plant_address SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    IF ls_plant_address-house1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE fp_s_plant_address ls_plant_address-house1 lc_comma</FPCLINE>
+      <FPCLINE>             INTO fp_s_plant_address.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address</FPCLINE>
+      <FPCLINE>                ls_plant_address-street lc_comma INTO fp_s_plant_address.</FPCLINE>
+      <FPCLINE>    CONCATENATE  fp_s_plant_address  space INTO fp_s_plant_address SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address ls_plant_address-city1  lc_comma</FPCLINE>
+      <FPCLINE>    INTO fp_s_plant_address.</FPCLINE>
+      <FPCLINE>    CONCATENATE   fp_s_plant_address space INTO fp_s_plant_address SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address ls_plant_address-reg INTO fp_s_plant_address.&quot;lc_comma</FPCLINE>
+      <FPCLINE>     CONCATENATE fp_s_plant_address ls_plant_address-post1 INTO fp_s_plant_address</FPCLINE>
+      <FPCLINE>     SEPARATED BY space.</FPCLINE>
+      <FPCLINE>     CONCATENATE fp_s_plant_address lc_comma into fp_s_plant_address.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address space INTO fp_s_plant_address SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_s_plant_address ls_plant_address-ctry</FPCLINE>
+      <FPCLINE>         INTO fp_s_plant_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get Email Addresses</FPCLINE>
+      <FPCLINE>FORM f_get_email_addrs USING fp_deliveryheader-adrnr_ag TYPE adrnr_ag</FPCLINE>
+      <FPCLINE>                          CHANGING fp_i_email_addrs TYPE tt_email_addrs.</FPCLINE>
+      <FPCLINE>* Local Constants Declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS : lc_email_label TYPE char13 VALUE &apos;Email Address&apos;,</FPCLINE>
+      <FPCLINE>              lc_colon       TYPE char2  VALUE &apos;: &apos;.</FPCLINE>
+      <FPCLINE>* Local data declarations</FPCLINE>
+      <FPCLINE>  DATA : lv_tabix TYPE n.</FPCLINE>
+      <FPCLINE>  &quot; Fetch the E-mail address for the person number</FPCLINE>
+      <FPCLINE>  SELECT smtp_addr</FPCLINE>
+      <FPCLINE>    FROM adr6</FPCLINE>
+      <FPCLINE>    INTO TABLE fp_i_email_addrs</FPCLINE>
+      <FPCLINE>    WHERE addrnumber EQ fp_deliveryheader-adrnr_ag.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    &quot; Concatenate &apos;Email Address&apos; text with actual email address along</FPCLINE>
+      <FPCLINE>    &quot; with serial number</FPCLINE>
+      <FPCLINE>    CLEAR lv_tabix.</FPCLINE>
+      <FPCLINE>    LOOP AT fp_i_email_addrs ASSIGNING FIELD-SYMBOL(&lt;lfs_addrs&gt;).</FPCLINE>
+      <FPCLINE>      lv_tabix = sy-tabix.</FPCLINE>
+      <FPCLINE>      CONCATENATE lc_email_label lv_tabix</FPCLINE>
+      <FPCLINE>                  lc_colon &lt;lfs_addrs&gt;-email_addr</FPCLINE>
+      <FPCLINE>             INTO &lt;lfs_addrs&gt;-email_addr.</FPCLINE>
+      <FPCLINE>    ENDLOOP.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

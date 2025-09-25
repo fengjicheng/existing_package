@@ -1,0 +1,1099 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Interface for invoice form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>V_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SYST_LANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_CUST_VAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PAYMENT_TERM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_STRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_SUBTOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_VAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTALDUE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_SHIPPING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PREPAIDAMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LINES_BILL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRS-ANZZL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LINES_SHIP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRS-ANZZL</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTALDUE_TXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTALDUE_TXT_H</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_CURRENCY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE/>
+      <FPCLINE>* Type declaration fot BUT000</FPCLINE>
+      <FPCLINE>TYPES : BEGIN OF ty_but000,</FPCLINE>
+      <FPCLINE>          partner    TYPE bu_partner, &quot; Business Partner Number</FPCLINE>
+      <FPCLINE>          type       TYPE bu_type,    &quot; Business partner category</FPCLINE>
+      <FPCLINE>          persnumber TYPE ad_persnum, &quot; Person number</FPCLINE>
+      <FPCLINE>        END OF ty_but000,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Type Declaration for BUT020</FPCLINE>
+      <FPCLINE>        BEGIN OF ty_but020,</FPCLINE>
+      <FPCLINE>          partner    TYPE bu_partner, &quot; Business Partner Number</FPCLINE>
+      <FPCLINE>          addrnumber TYPE ad_addrnum, &quot; Address number</FPCLINE>
+      <FPCLINE>        END OF ty_but020.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_HEADER_DETAIL_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM_CSS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_ITEM_DETAIL_CSS_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_ACCMNGD_TITLE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_BANK_DETAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_CRDT_CARD_DET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_PAYMENT_DETAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_SERVICE_DET</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_TOTALDUE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SUBTOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_VAT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_PREPAIDAMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SHIPPING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR140</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SUBTOTAL_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SALES_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KZWI6</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_TOTALDUE_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>AUTWR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_PREPAID_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>AUTWR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SHIPPING_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KZWI6</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>VBRP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRP</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOCIETY_LOGO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM_TBT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_ITEM_DETAIL_TBT_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>MARA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>MARA</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SOCIETY_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM_SOCIETY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_ITEM_DETAIL_SOC_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_REPRINT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_TITLE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SELLER_REG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_CREDIT_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SUBTOTAL_TABLE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTQTC_SUBTOTAL_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COUNTRY_UK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_INVOICE_DESC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>/IDT/INVOICE_DESC</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_PAYMENT_DETAIL_INV</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TAX_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_TAX_ITEM_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TEXT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_TAX_ITEM_F042</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TERMS_COND</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_AUST_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_IND_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_TAX_EXPT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EXC_TAB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_EXCHANGE_TAB_INVOICE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_BARCODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_RECEIPT_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_CREDIT_MEMO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SELLER_REG_2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_V_SIGNATURE_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR100</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>/1BCDWB/DOCPARAMS</FPPARAMETER>
+      <FPPARAMETER>IM_V_TOTALDUE</FPPARAMETER>
+      <FPPARAMETER>IM_HEADER</FPPARAMETER>
+      <FPPARAMETER>IM_V_SUBTOTAL_VAL</FPPARAMETER>
+      <FPPARAMETER>IM_V_SALES_TAX</FPPARAMETER>
+      <FPPARAMETER>IM_V_TOTALDUE_VAL</FPPARAMETER>
+      <FPPARAMETER>IM_V_SHIPPING_VAL</FPPARAMETER>
+      <FPPARAMETER>IM_V_PREPAID_AMOUNT</FPPARAMETER>
+      <FPPARAMETER>IM_V_CREDIT_MEMO</FPPARAMETER>
+      <FPPARAMETER>IM_V_PREPAIDAMT</FPPARAMETER>
+      <FPPARAMETER>IM_V_RECEIPT_FLAG</FPPARAMETER>
+      <FPPARAMETER>IM_V_IND_TEXT</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>V_CUST_VAT</FPPARAMETER>
+      <FPPARAMETER>V_DATE</FPPARAMETER>
+      <FPPARAMETER>V_SUBTOTAL</FPPARAMETER>
+      <FPPARAMETER>V_VAT</FPPARAMETER>
+      <FPPARAMETER>V_TOTALDUE</FPPARAMETER>
+      <FPPARAMETER>V_SHIPPING</FPPARAMETER>
+      <FPPARAMETER>V_PREPAIDAMOUNT</FPPARAMETER>
+      <FPPARAMETER> V_PAYMENT_TERM</FPPARAMETER>
+      <FPPARAMETER>V_LANGU</FPPARAMETER>
+      <FPPARAMETER>V_TOTALDUE_TXT</FPPARAMETER>
+      <FPPARAMETER>V_TOTALDUE_TXT_H</FPPARAMETER>
+      <FPPARAMETER>V_CURRENCY</FPPARAMETER>
+      <FPPARAMETER>IM_V_PREPAIDAMT</FPPARAMETER>
+      <FPPARAMETER>V_TEXT</FPPARAMETER>
+      <FPPARAMETER>IM_V_IND_TEXT</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* PROGRAM NAME: ZQTC_INT_INVOICE_F024</FPCLINE>
+      <FPCLINE>* PROGRAM DESCRIPTION: This interface will generate invoice PDF form</FPCLINE>
+      <FPCLINE>* DEVELOPER: Paramita Bose (PBOSE)</FPCLINE>
+      <FPCLINE>* CREATION DATE: 03/04/2017</FPCLINE>
+      <FPCLINE>* OBJECT ID: F042</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S): ED2K904956</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO: DEFECT 2319</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ED2K906208</FPCLINE>
+      <FPCLINE>* DEVELOPER: Paramita Bose (PBOSE)</FPCLINE>
+      <FPCLINE>* DATE: 25-May-2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION: Incorporating the changes of defect #2319. If payment</FPCLINE>
+      <FPCLINE>*              method is credit card pay (ZLSCH=1), then payment term</FPCLINE>
+      <FPCLINE>*              will not populate.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO: Defect 3626</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ED2K907591</FPCLINE>
+      <FPCLINE>* DEVELOPER: Srabanti Bose (SRBOSE)</FPCLINE>
+      <FPCLINE>* DATE: 28-Jul-2017</FPCLINE>
+      <FPCLINE>* DESCRIPTION: Incorporating the changes of updating Customer Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO: DM-2056</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ED2K915967</FPCLINE>
+      <FPCLINE>* DEVELOPER: Kiran Kumar Ravuri</FPCLINE>
+      <FPCLINE>* DATE: 28-Aug-2019</FPCLINE>
+      <FPCLINE>* DESCRIPTION: In Remittance Coupon, replace text &apos;Amount&apos; with &apos;Total Due&apos;</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO: ERPM-1459</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ED2K916657</FPCLINE>
+      <FPCLINE>* DEVELOPER: Siva Guda</FPCLINE>
+      <FPCLINE>* DATE: 11-Nov-2019</FPCLINE>
+      <FPCLINE>* DESCRIPTION: Remove Prepaid amount for Credit Memp&apos;s</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO:  ED2K919951</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ERPM-16179/ERPM-20007</FPCLINE>
+      <FPCLINE>* DEVELOPER:    Siva Guda (SGUDA) / Lahiru Wathudura(LWATHUDURA)</FPCLINE>
+      <FPCLINE>* DATE:         10/16/2020</FPCLINE>
+      <FPCLINE>* DESCRIPTION: Multiple Po number display and new output for cancelled</FPCLINE>
+      <FPCLINE>*              invoice and cancelled credit memo</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------**----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO: OTCM-53026</FPCLINE>
+      <FPCLINE>* REFERENCE NO: ED2K926356</FPCLINE>
+      <FPCLINE>* DEVELOPER: MRAJKUMAR(Madavoina Rajkumar)</FPCLINE>
+      <FPCLINE>* DATE: 25-MARCH-2022</FPCLINE>
+      <FPCLINE>* DESCRIPTION: As part OTCM-53031, for Indian Customer where Billing Type</FPCLINE>
+      <FPCLINE>*  (vbrk-fkart) value equals to the billing type fetched from constant table</FPCLINE>
+      <FPCLINE>*  then Indian text (IM_V_IND_TEXT) should be cleared.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Data Declaration</FPCLINE>
+      <FPCLINE>DATA : lv_cust_number TYPE char10, &quot; Cust_number of type CHAR10</FPCLINE>
+      <FPCLINE>* Begin of change: SRBOSE: 28-July-2017: DEFECT 3626: ED2K907591</FPCLINE>
+      <FPCLINE>       lv_num_lines   TYPE adrs-anzzl. &quot; Number of lines in address</FPCLINE>
+      <FPCLINE>* End of change: SRBOSE: 28-July-2017: DEFECT 3626: ED2K907591</FPCLINE>
+      <FPCLINE>* Begin of ADD:CR#666:WROY:27-Oct-2017:ED2K909164</FPCLINE>
+      <FPCLINE>DATA : li_month_texts TYPE ftps_web_month_t.</FPCLINE>
+      <FPCLINE>* End   of ADD:CR#666:WROY:27-Oct-2017:ED2K909164</FPCLINE>
+      <FPCLINE>* Constant declaration</FPCLINE>
+      <FPCLINE>CONSTANTS : lc_first  TYPE char1 VALUE &apos;(&apos;, &quot; First of type CHAR1</FPCLINE>
+      <FPCLINE>            lc_second TYPE char1 VALUE &apos;)&apos;, &quot; Second of type CHAR1</FPCLINE>
+      <FPCLINE>            lc_minus  TYPE char1 VALUE &apos;-&apos;, &quot; Second of type CHAR1</FPCLINE>
+      <FPCLINE>            lc_collan TYPE char1 VALUE &apos;:&apos;. &quot; DM-2056  ED2K915967</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Set country key</FPCLINE>
+      <FPCLINE>SET COUNTRY im_header-bill_country.</FPCLINE>
+      <FPCLINE>* Change date and amount as per customer format</FPCLINE>
+      <FPCLINE>WRITE im_header-inv_date TO v_date.</FPCLINE>
+      <FPCLINE>* Begin of ADD:CR#666:WROY:27-Oct-2017:ED2K909164</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;MONTH_NAMES_GET&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    language              = im_header-language</FPCLINE>
+      <FPCLINE>  TABLES</FPCLINE>
+      <FPCLINE>    month_names           = li_month_texts</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    month_names_not_found = 1</FPCLINE>
+      <FPCLINE>    OTHERS                = 2.</FPCLINE>
+      <FPCLINE>IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>  READ TABLE li_month_texts ASSIGNING FIELD-SYMBOL(&lt;lst_month_text&gt;)</FPCLINE>
+      <FPCLINE>       WITH KEY mnr = im_header-inv_date+4(2).</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    CLEAR: v_date.</FPCLINE>
+      <FPCLINE>    CONCATENATE im_header-inv_date+6(2)</FPCLINE>
+      <FPCLINE>                &lt;lst_month_text&gt;-ltx+0(3)</FPCLINE>
+      <FPCLINE>                im_header-inv_date+0(4)</FPCLINE>
+      <FPCLINE>           INTO v_date</FPCLINE>
+      <FPCLINE>      SEPARATED BY lc_minus.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>* End   of ADD:CR#666:WROY:27-Oct-2017:ED2K909164</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Begin of change: PBOSE: 05-June-2017: DEFECT 2517: ED2K906208</FPCLINE>
+      <FPCLINE>IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  AND im_v_subtotal_val NE 0.</FPCLINE>
+      <FPCLINE>  WRITE im_v_subtotal_val TO v_subtotal CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_subtotal.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_subtotal lc_second INTO v_subtotal.</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_minus v_subtotal INTO v_subtotal.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSEIF im_v_subtotal_val LT 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  im_v_subtotal_val = im_v_subtotal_val * -1.</FPCLINE>
+      <FPCLINE>  WRITE im_v_subtotal_val  TO v_subtotal CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_subtotal.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos;</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = v_subtotal.</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_subtotal lc_second INTO v_subtotal.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  WRITE im_v_subtotal_val TO v_subtotal CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_subtotal.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  AND im_v_sales_tax NE 0.</FPCLINE>
+      <FPCLINE>  WRITE im_v_sales_tax TO v_vat CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_vat.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_vat lc_second INTO v_vat.</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_minus v_vat INTO v_vat.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSEIF im_v_sales_tax LT 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  im_v_sales_tax = im_v_sales_tax * -1.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  WRITE im_v_sales_tax TO v_vat CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_vat.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos;</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = v_vat.</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_vat lc_second INTO v_vat.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>*  WRITE im_v_sales_tax TO v_vat.</FPCLINE>
+      <FPCLINE>  WRITE im_v_sales_tax TO v_vat CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_vat.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE> AND im_v_totaldue_val NE 0.</FPCLINE>
+      <FPCLINE>  WRITE im_v_totaldue_val TO v_totaldue CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_totaldue.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_totaldue lc_second INTO v_totaldue.</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_minus v_totaldue INTO v_totaldue.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSEIF im_v_totaldue_val LT 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  im_v_totaldue_val = im_v_totaldue_val * -1.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  WRITE im_v_totaldue_val TO v_totaldue CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_totaldue.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos;</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = v_totaldue.</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_totaldue lc_second INTO v_totaldue.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  WRITE im_v_totaldue_val TO v_totaldue CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_totaldue.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>AND im_v_shipping_val NE 0.</FPCLINE>
+      <FPCLINE>  WRITE im_v_shipping_val TO v_shipping CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_shipping.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_shipping lc_second INTO v_shipping.</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_minus v_shipping INTO v_shipping.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSEIF im_v_shipping_val LT 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  im_v_shipping_val = im_v_shipping_val * -1.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  WRITE im_v_shipping_val TO v_shipping CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_shipping.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos;</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = v_shipping.</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_shipping lc_second INTO v_shipping.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  WRITE im_v_shipping_val TO v_shipping CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_shipping.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>AND im_v_prepaid_amount NE 0.</FPCLINE>
+      <FPCLINE>  WRITE im_v_prepaid_amount TO v_prepaidamount CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_prepaidamount.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>* Begin of DEL:ERP-4930:WROY:01-Nov-2017:ED2K909227</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_minus v_prepaidamount INTO v_prepaidamount.</FPCLINE>
+      <FPCLINE>* End   of DEL:ERP-4930:WROY:01-Nov-2017:ED2K909227</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>* Begin of DEL:ERP-4422:WROY:15-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_prepaidamount lc_second INTO v_prepaidamount.</FPCLINE>
+      <FPCLINE>* End   of DEL:ERP-4422:WROY:15-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>ELSEIF im_v_prepaid_amount LT 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*  im_v_prepaid_amount = im_v_prepaid_amount * -1.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  WRITE im_v_prepaid_amount TO v_prepaidamount CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_prepaidamount.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos;</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = v_prepaidamount.</FPCLINE>
+      <FPCLINE>*  CONCATENATE lc_first v_prepaidamount lc_second INTO v_prepaidamount.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>  WRITE im_v_prepaid_amount TO v_prepaidamount CURRENCY im_header-doc_currency.</FPCLINE>
+      <FPCLINE>  CONDENSE v_prepaidamount.</FPCLINE>
+      <FPCLINE>* Begin of ADD:ERP-4422:WROY:15-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>  IF im_v_prepaid_amount NE 0.</FPCLINE>
+      <FPCLINE>* BOC BY SRBOSE</FPCLINE>
+      <FPCLINE>*    CONCATENATE lc_first v_prepaidamount lc_second INTO v_prepaidamount.</FPCLINE>
+      <FPCLINE>    CONCATENATE lc_minus v_prepaidamount INTO v_prepaidamount.</FPCLINE>
+      <FPCLINE>* EOC BY SRBOSE</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_v_prepaid_amount NE 0</FPCLINE>
+      <FPCLINE>* End   of ADD:ERP-4422:WROY:15-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-credit_flag EQ abap_true</FPCLINE>
+      <FPCLINE>* End of change: PBOSE: 05-June-2017: DEFECT 2517: ED2K906208</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Begin of change: PBOSE: 01-June-2017: DEFECT 2084: ED2K906208</FPCLINE>
+      <FPCLINE>IF im_header-terms IS INITIAL.</FPCLINE>
+      <FPCLINE>  v_payment_term = 1.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-terms IS INITIAL</FPCLINE>
+      <FPCLINE>*IF im_header-cust_vat IS INITIAL.</FPCLINE>
+      <FPCLINE>IF im_header-buyer_reg IS INITIAL.</FPCLINE>
+      <FPCLINE>  v_cust_vat = 1.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-buyer_reg IS INITIAL</FPCLINE>
+      <FPCLINE>v_flag = im_header-credit_flag.</FPCLINE>
+      <FPCLINE>* End of change: PBOSE: 01-June-2017: DEFECT 2084: ED2K906208</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Begin of change: SRBOSE: 28-July-2017: DEFECT 3626: ED2K907591</FPCLINE>
+      <FPCLINE>* For Bill To</FPCLINE>
+      <FPCLINE>CLEAR: lv_num_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>***FM to call the number of lines for Bill To</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;ADDRESS_INTO_PRINTFORM&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    address_type                   = im_header-add_billto</FPCLINE>
+      <FPCLINE>    address_number                 = im_header-addr_number_billto</FPCLINE>
+      <FPCLINE>*   Begin of ADD:ERP-4515:WROY:14-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>    sender_country                 = im_header-bill_trust</FPCLINE>
+      <FPCLINE>*   sender_country                 = im_header-bill_country</FPCLINE>
+      <FPCLINE>*   End   of ADD:ERP-4515:WROY:14-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>  IMPORTING</FPCLINE>
+      <FPCLINE>    number_of_used_lines           = lv_num_lines</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    address_blocked                = 1</FPCLINE>
+      <FPCLINE>    person_blocked                 = 2</FPCLINE>
+      <FPCLINE>    contact_person_blocked         = 3</FPCLINE>
+      <FPCLINE>    addr_to_be_formated_is_blocked = 4</FPCLINE>
+      <FPCLINE>    OTHERS                         = 5.</FPCLINE>
+      <FPCLINE>IF sy-subrc IS INITIAL AND im_header-bill_country EQ im_country_uk.</FPCLINE>
+      <FPCLINE>  v_lines_bill = lv_num_lines - 1.</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF sy-subrc IS INITIAL AND im_header-bill_country EQ im_country_uk</FPCLINE>
+      <FPCLINE>  v_lines_bill = lv_num_lines.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF sy-subrc IS INITIAL AND im_header-bill_country EQ im_country_uk</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-multiple_shipto IS INITIAL. &quot;Added by SRBOSE on 16Mar-2018</FPCLINE>
+      <FPCLINE>*For Ship To</FPCLINE>
+      <FPCLINE>  CLEAR: lv_num_lines.</FPCLINE>
+      <FPCLINE>***FM to call the number of lines for Ship To</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ADDRESS_INTO_PRINTFORM&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      address_type                   = im_header-add_shipto</FPCLINE>
+      <FPCLINE>      address_number                 = im_header-addr_number_shipto</FPCLINE>
+      <FPCLINE>*   Begin of ADD:ERP-4515:WROY:14-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>      sender_country                 = im_header-bill_trust</FPCLINE>
+      <FPCLINE>*     sender_country                 = im_header-ship_country</FPCLINE>
+      <FPCLINE>*   End   of ADD:ERP-4515:WROY:14-SEP-2017:ED2K908529</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      number_of_used_lines           = lv_num_lines</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      address_blocked                = 1</FPCLINE>
+      <FPCLINE>      person_blocked                 = 2</FPCLINE>
+      <FPCLINE>      contact_person_blocked         = 3</FPCLINE>
+      <FPCLINE>      addr_to_be_formated_is_blocked = 4</FPCLINE>
+      <FPCLINE>      OTHERS                         = 5.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL AND im_header-ship_country EQ im_country_uk.</FPCLINE>
+      <FPCLINE>    v_lines_ship = lv_num_lines - 1.</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF sy-subrc IS INITIAL AND im_header-ship_country EQ im_country_uk</FPCLINE>
+      <FPCLINE>    v_lines_ship = lv_num_lines.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc IS INITIAL AND im_header-ship_country EQ im_country_uk</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>* End of change: SRBOSE: 28-July-2017: DEFECT 3626: ED2K907591</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Start of  delete by NRMODUGU -ERPM-2190</FPCLINE>
+      <FPCLINE>*** BOC: DM-2056 KKRAVURI20190828  ED2K915967</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_v_totaldue IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*  CONCATENATE im_v_totaldue lc_collan INTO v_totaldue_txt. commented by NRMODUGU &quot;ERPM-2190</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE im_v_totaldue im_header-doc_currency INTO v_totaldue_txt</FPCLINE>
+      <FPCLINE>   SEPARATED BY space. &quot;Added y NRMODUGU ERPM-2190</FPCLINE>
+      <FPCLINE>  CONCATENATE v_totaldue_txt lc_collan INTO v_totaldue_txt.&quot;Added y NRMODUGU ERPM-2190</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*** EOC: DM-2056 KKRAVURI20190828  ED2K915967</FPCLINE>
+      <FPCLINE>* END of  delete by NRMODUGU -ERPM-2190</FPCLINE>
+      <FPCLINE>v_langu = /1bcdwb/docparams-langu.  &quot; added ny nrmodugu -ERPM-2190</FPCLINE>
+      <FPCLINE>* Begin   of ADD:ERPM-1459:SGUDA:01-Nov-2019:ED2K916657</FPCLINE>
+      <FPCLINE>IF im_header-language = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>  v_totaldue_txt_h = &apos;Total Due&apos;.</FPCLINE>
+      <FPCLINE>ELSEIF im_header-language = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>  v_totaldue_txt_h = &apos;Gesamtbetrag&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>v_currency = im_header-doc_currency.</FPCLINE>
+      <FPCLINE>IF im_v_credit_memo = &apos;O&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR v_prepaidamount.</FPCLINE>
+      <FPCLINE>  v_prepaidamount = v_totaldue.</FPCLINE>
+      <FPCLINE>  im_v_prepaidamt = v_totaldue_txt_h.</FPCLINE>
+      <FPCLINE>  CLEAR: v_totaldue, v_totaldue_txt_h, v_currency.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>* End   of ADD:ERPM-1459:SGUDA:01-Nov-2019:ED2K916657</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* BOC by Lahiru on 10/16/2020 for OTCM-20007 with ED2K919951 *</FPCLINE>
+      <FPCLINE>IF im_v_credit_memo = &apos;N&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR v_prepaidamount.</FPCLINE>
+      <FPCLINE>  v_prepaidamount = v_totaldue.</FPCLINE>
+      <FPCLINE>  im_v_prepaidamt = v_totaldue_txt_h.</FPCLINE>
+      <FPCLINE>  CLEAR: v_totaldue, v_totaldue_txt_h, v_currency.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_v_credit_memo = &apos;S&apos;.</FPCLINE>
+      <FPCLINE>  CLEAR v_prepaidamount.</FPCLINE>
+      <FPCLINE>  v_prepaidamount = v_totaldue.</FPCLINE>
+      <FPCLINE>  im_v_prepaidamt = v_totaldue_txt_h.</FPCLINE>
+      <FPCLINE>  CLEAR: v_totaldue, v_totaldue_txt_h, v_currency.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>* EOC by Lahiru on 10/16/2020 for OTCM-20007 with ED2K919951 *</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_v_receipt_flag NE &apos;X&apos;.</FPCLINE>
+      <FPCLINE>  IF im_header-language = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>    v_text = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    CLEAR v_text.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*ELSE.</FPCLINE>
+      <FPCLINE>*  v_text = &apos;X&apos;.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*Begin of Change by MRAJKUMAR: 25-MAR-2022:OTCM-53026: ED2K926356</FPCLINE>
+      <FPCLINE>DATA: lr_fkart TYPE TABLE OF range_fkart.</FPCLINE>
+      <FPCLINE>&quot;Fetching Billing Type(fkart) entries from ZCACONSTANT table</FPCLINE>
+      <FPCLINE>PERFORM f_fetch_constant_table TABLES lr_fkart.</FPCLINE>
+      <FPCLINE>&quot;If Billing Type equals to the billing type fetched from constant table</FPCLINE>
+      <FPCLINE>&quot;Then Indian text will be removed</FPCLINE>
+      <FPCLINE>IF im_header-bill_type IN lr_fkart.</FPCLINE>
+      <FPCLINE>  CLEAR im_v_ind_text.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE>*End of Change by MRAJKUMAR: 25-MAR-2022:OTCM-53026: ED2K926356</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>FORM f_fetch_constant_table  TABLES lr_fkart.</FPCLINE>
+      <FPCLINE>  DATA: lc_devid_f042 TYPE zdevid VALUE &apos;F042&apos;,</FPCLINE>
+      <FPCLINE>        lt_const      TYPE zcat_constants,</FPCLINE>
+      <FPCLINE>        lr_fkart1      TYPE TABLE OF range_Fkart.</FPCLINE>
+      <FPCLINE>&quot;Fetching entries from ZCACONSTANT table</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZQTC_MANAGE_DISC_CONSTANTS&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      im_devid     = lc_devid_f042</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      ex_constants = lt_const.</FPCLINE>
+      <FPCLINE>&quot;Collecting Billing Type</FPCLINE>
+      <FPCLINE>  LOOP AT lt_const ASSIGNING FIELD-SYMBOL(&lt;lfs_const&gt;).</FPCLINE>
+      <FPCLINE>    CASE &lt;lfs_const&gt;-param1.</FPCLINE>
+      <FPCLINE>      WHEN &apos;IND_FKART&apos;.</FPCLINE>
+      <FPCLINE>        APPEND INITIAL LINE TO lr_fkart1 ASSIGNING FIELD-SYMBOL(&lt;lfs_fkart&gt;).</FPCLINE>
+      <FPCLINE>        &lt;lfs_fkart&gt;-sign = &lt;lfs_const&gt;-sign.</FPCLINE>
+      <FPCLINE>        &lt;lfs_fkart&gt;-option = &lt;lfs_const&gt;-opti.</FPCLINE>
+      <FPCLINE>        &lt;lfs_fkart&gt;-low = &lt;lfs_const&gt;-low.</FPCLINE>
+      <FPCLINE>        &lt;lfs_fkart&gt;-high = &lt;lfs_const&gt;-high.</FPCLINE>
+      <FPCLINE>       WHEN: OTHERS.</FPCLINE>
+      <FPCLINE>         &quot;Do Nothing</FPCLINE>
+      <FPCLINE>     ENDCASE.</FPCLINE>
+      <FPCLINE>   ENDLOOP.</FPCLINE>
+      <FPCLINE>   FREE lr_fkart.</FPCLINE>
+      <FPCLINE>   APPEND LINES OF lr_fkart1 TO lr_fkart.</FPCLINE>
+      <FPCLINE>   FREE lr_fkart1.</FPCLINE>
+      <FPCLINE>ENDFORM.</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

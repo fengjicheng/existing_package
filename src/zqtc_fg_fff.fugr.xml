@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Freight forward determination</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_FFFTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_FFF</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_FF_DETERMINE</FUNCNAME>
+     <SHORT_TEXT>Freight forward determination</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBRP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_FLAG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CH_VBPA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBPA_TAB</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CH_MULTIPLE_SHIP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_FF_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_FF_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CH_VBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>table type for vbpa</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CH_MULTIPLE_SHIP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

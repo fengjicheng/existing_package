@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Avoid decimal amount issue Consortia WATPD BOM</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPFV45K</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPFV45K</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPFV45K</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPFV45K</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\PR:SAPFV45K\FO:VBKD_BEARBEITEN_ZTERM\SE:END\EI</FULL_NAME>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <FILES>
+    <item>
+     <NAME>\PR:SAPFV45K\FO:VBKD_BEARBEITEN_ZTERM\SE:END\EI</NAME>
+     <FILE>5225aa63</FILE>
+    </item>
+   </FILES>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>00505689066D1EE994DC41847FC2C60E</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>00505689066D1EE994DC41847FC2C60E</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>069</LENGTH>
+       <TEXT>Avoid decimal amount issue Consortia WATPD BOM</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZQTCEI_BOM_DECIMALS_I0354</OBJ_NAME>
+     <CONCEPT>00505689066D1EE994DC41847FC2C60E</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

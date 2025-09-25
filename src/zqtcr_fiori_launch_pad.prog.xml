@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_FIORI_LAUNCH_PAD</NAME>
+    <SUBC>1</SUBC>
+    <APPL>S</APPL>
+    <RSTAT>T</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Adaptation Layer</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>100</KEY>
+     <ENTRY>Error in HTTP configuration</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>FLP</KEY>
+     <ENTRY>SAP Fiori Launchpad</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>FLPD</KEY>
+     <ENTRY>SAP Fiori Launchpad Designer</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>适应层</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>HTTP 配置中出错</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>配置（所有客户端）</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>定制（当前客户端）</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori 快速启动板</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori 快速启动板设计器</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>3</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>적용 계층</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>HTTP 구성에서 오류 발생</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>구성(모든 클라이언트)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>커스터마이징(현재 클라이언트)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori LaunchPad</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori LaunchPad Designer</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Anpassungsschicht</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Fehler in HTTP-Konfiguration</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>Konfiguration (alle Mandanten)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>Customization (aktu. Mandant)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori Launchpad</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori Launchpad Designer</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Couche d&apos;adaptation</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Erreur dans la configuration HTTP</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>Personnalisation (ts mandants)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>Personnalisation (mdt actuel)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>Barre de lancement SAP Fiori</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>Conc. barre de lanc. SAP Fiori</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>アダプテーションレイヤ</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>HTTP 設定のエラー</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>設定 (すべてのクライアント)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>Customization (現在の Client)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori ラウンチパッド</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori Launchpad デザイナ</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Tilpasningsniveau</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Fejl i HTTP-konfiguration</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>Konfiguration (alle klienter)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>Customizing (aktuel klient)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori-launchpad</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori Launchpad Designer</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>M</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>調整層</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>HTTP 組態發生錯誤</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>組態〈所有用戶端〉</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>自訂〈目前用戶端〉</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>SAP Fiori 啟動台</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>SAP Fiori 啟動台設計工具</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Nivel de adaptación</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>100</KEY>
+       <ENTRY>Error en la configuración HTTP</ENTRY>
+       <LENGTH>50</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CONF</KEY>
+       <ENTRY>Conf.(todos los mandantes)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>CUST</KEY>
+       <ENTRY>Peronalización (mand.actual)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLP</KEY>
+       <ENTRY>Rampa de lanzamiento SAP Fiori</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>FLPD</KEY>
+       <ENTRY>Diseñador rampa lanz.SAP Fiori</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

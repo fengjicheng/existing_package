@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZAVBRK</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>VBRK</SQLTAB>
+    <DDTEXT>Append Structure to add Custom Fields in invoice</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>ZZLICGRP</FIELDNAME>
+     <ROLLNAME>ZLICGRP</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TB</ID>
+      <OBJECT>ZZAVBRK</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00001</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZAVBRK</TDNAME>
+      <TDID>TB</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDLINE>Structure ZZAVBRK is appended in VBRK table.</TDLINE>
+      </TLINE>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

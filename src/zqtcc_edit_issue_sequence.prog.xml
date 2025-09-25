@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCC_EDIT_ISSUE_SEQUENCE</NAME>
+    <SUBC>1</SUBC>
+    <APPL>M</APPL>
+    <SECU>ZISS_SEQ</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>Media Product</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C02</KEY>
+     <ENTRY>Media Issue</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C03</KEY>
+     <ENTRY>Change Ind</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C04</KEY>
+     <ENTRY>Status Message</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_TS_UPD</KEY>
+     <ENTRY>Update TimeStamp Even If Error</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_IV_TYP</KEY>
+     <ENTRY>Std.Issue Var.Type (Exclusion)</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MTYP_I</KEY>
+     <ENTRY>Material Type (Media Issue)</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SHP_ST</KEY>
+     <ENTRY>Status of Ship.Sched.Record</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_ST_DEL</KEY>
+     <ENTRY>Media Issue Status (Active)</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>3</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>C01</KEY>
+       <ENTRY>Media Product</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>C02</KEY>
+       <ENTRY>Media Issue</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>C03</KEY>
+       <ENTRY>Change Ind</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>C04</KEY>
+       <ENTRY>Status Message</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MTYP_I</KEY>
+       <ENTRY>Material Type (Media Issue)</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ST_DEL</KEY>
+       <ENTRY>Status (Delete Issue Sequence)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>M</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MTYP_I</KEY>
+       <ENTRY>Material Type (Media Issue)</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ST_DEL</KEY>
+       <ENTRY>Status (Delete Issue Sequence)</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>C039: Issue Sequence Program for Journal</ENTRY>
+       <LENGTH>40</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCC_EDIT_ISSUE_SEQUENCE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00013</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCC_EDIT_ISSUE_SEQUENCE</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>We are creating the link between the Media Issue with the Media Product</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>associated with it. The Media Issues are added in sequence depending on</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the Publication Date (SORTed order).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If the Media Issue has an Active status then only that one will be added</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>as part of the sequence; otherwise that will be deleted / removed from</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the Issue Sequence.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This program looks for the Media Issues being created / changed for a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>certain timeframe (maintained in ZCAINTERFACE table) - if newly created</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>or relevant fields are changed, then only the Media Issue will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>considered for subsequent processing.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

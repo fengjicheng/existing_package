@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/model/Model"],function(e){"use strict";return e.extend("orders.ZSD_ORDERS.test.unit.helper.FakeI18nModel",{constructor:function(t){e.call(this);this.mTexts=t||{}},getResourceBundle:function(){return{getText:function(e){return this.+
+mTexts[e]}.bind(this)}}})});                                                                                                                                                                                                                                   

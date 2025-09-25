@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME_M>
+     <HASH_ID>375AA32E5A44396BAD136A21377E0DCD7A26F53E</HASH_ID>
+     <ID>&lt;type&gt; EstablishmentsType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>EstablishmentsType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2020-03-01</X-ML_NSPCE>
+     <X-ML_NAME>EstablishmentsType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BUYER_ROLE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BUYER_ROLE</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1ESTABLISHMENTS_LOCATION_TYP1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2020-03-01}BUYER_ROLE &lt;type&gt; EstablishmentsType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BUYER_ROLE</IFR_NAME>
+     <IFR_TEXT>
+List of buyer&apos;s established locations.
+				</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BUYER_ROLE</R3_NAME>
+     <R3_TEXT>
+List of buyer&apos;s established locations.
+				</R3_TEXT>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MIDDLEMAN_ROLE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MIDDLEMAN_ROLE</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1ESTABLISHMENTS_LOCATION_TYP1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2020-03-01}MIDDLEMAN_ROLE &lt;type&gt; EstablishmentsType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>MIDDLEMAN_ROLE</IFR_NAME>
+     <IFR_TEXT>
+List of middleman&apos;s established locations.
+				</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MIDDLEMAN_ROLE</R3_NAME>
+     <R3_TEXT>
+List of middleman&apos;s established locations.
+				</R3_TEXT>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SELLER_ROLE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SELLER_ROLE</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1ESTABLISHMENTS_LOCATION_TYP1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2020-03-01}SELLER_ROLE &lt;type&gt; EstablishmentsType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>SELLER_ROLE</IFR_NAME>
+     <IFR_TEXT>
+List of seller&apos;s established locations.
+				</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SELLER_ROLE</R3_NAME>
+     <R3_TEXT>
+List of seller&apos;s established locations.
+				</R3_TEXT>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1ESTABLISHMENTS_TYPE1</OBJ_NAME2>
+     <ID>&lt;type&gt; EstablishmentsType http://www.sabrix.com/services/taxcalculationservice/2020-03-01 http://www.sabrix.com/services/taxcalculationservice/2020-03-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>EstablishmentsType</IFR_NAME>
+     <IFR_TEXT>
+List of established locations.
+		</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1ESTABLISHMENTS_TYPE1</R3_NAME>
+     <R3_TEXT>
+List of established locations.
+		</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

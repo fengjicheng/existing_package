@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZQTCCL_CUSTOMER_ADD_DATA_BI</CLSNAME>
+    <LANGU>E</LANGU>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>M</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_NODATA</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Single-Character Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>M</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SEG_NAME_KNVVM</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Segment type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>M</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_STYPE_BI_2</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Batch Input Interface Record Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>3</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>M</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_TAB_NAME_BI</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Table name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>METH_TRANSFER_STRUCTURES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer Structures</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>METH_TRANSFER_STRUCTURES</CMPNAME>
+     <SCONAME>IM_NODATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>No Batch Input Exists for this Field</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>METH_TRANSFER_STRUCTURES</CMPNAME>
+     <SCONAME>IM_STRUCT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Runtime Type Services</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

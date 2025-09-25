@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>Z1QTC_E1EDK01_02</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>IDOC Segment for Status Field in Header Level</DDTEXT>
+    <MASTERLANG>E</MASTERLANG>
+    <EXCLASS>1</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>STATUS</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000040</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000020</LENG>
+     <MASK>  CHAR</MASK>
+    </DD03P>
+   </DD03P_TABLE>
+   <SEGMENT_DEFINITION>
+    <item>
+     <SEGMENTHEADER>
+      <SEGTYP>Z1QTC_E1EDK01_02</SEGTYP>
+      <DESCRP>IDOC Segment for Status Field in Header Level</DESCRP>
+     </SEGMENTHEADER>
+     <SEGMENTDEFINITION>
+      <SEGTYP>Z1QTC_E1EDK01_02</SEGTYP>
+      <SEGDEF>Z2QTC_E1EDK01_02000</SEGDEF>
+      <RELEASED>740</RELEASED>
+      <CLOSED>X</CLOSED>
+      <FIELDNUM>0001</FIELDNUM>
+      <EXPLENG>0020</EXPLENG>
+     </SEGMENTDEFINITION>
+     <SEGMENTSTRUCTURES>
+      <EDISEGSTRU>
+       <SEGTYP>Z1QTC_E1EDK01_02</SEGTYP>
+       <POS>0001</POS>
+       <FIELDNAME>STATUS</FIELDNAME>
+       <ROLLNAME>GBSTA_BEZ</ROLLNAME>
+       <EXPLENG>0020</EXPLENG>
+      </EDISEGSTRU>
+     </SEGMENTSTRUCTURES>
+    </item>
+   </SEGMENT_DEFINITION>
+  </asx:values>
+ </asx:abap>
+</abapGit>

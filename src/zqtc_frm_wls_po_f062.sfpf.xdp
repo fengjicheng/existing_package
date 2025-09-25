@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V10.4.0.20160610.1.923074_SAP" APIVersion="3.6.16064.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2020-07-06T12:07:05Z" uuid="12bca34e-3742-48e7-a8d9-26ce4c39b742">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.0/">
+   <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="117.475mm" name="Content_Area1" w="193.675mm" x="12.7mm" y="111.125mm"/>
+            <medium long="279.4mm" short="215.9mm" stock="letter"/>
+            <field h="18mm" name="Wiley_logo" w="45mm" x="12mm" y="9mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="$.WILEY_LOGO"/>
+            </field>
+            <subform layout="tb" minH="4mm" name="SUPPLIER_TEXT" x="12mm" y="29mm">
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <subform h="31.75mm" name="Sub_Date" w="206.363mm" y="79.375mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <subform columnWidths="14.859mm 60.4mm 30.062mm 16.544mm 18.573mm 21.239mm 32.019mm" layout="table" name="Table1" x="12.7mm" y="9.525mm">
+                  <border>
+                     <edge/>
+                  </border>
+                  <subform layout="row" name="Row1">
+                     <assist role="TH"/>
+                     <field colSpan="2" h="5.878mm" name="PaymentTerms" w="39.079mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <edge/>
+                           <edge presence="hidden"/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_PAYMENT_F062"/>
+                     </field>
+                     <field colSpan="2" h="5.878mm" name="ShipVia" w="52.5mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <edge/>
+                           <edge presence="hidden"/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_SHIPVIA_F062"/>
+                     </field>
+                     <field colSpan="3" h="5.878mm" name="SupplierContact" w="71.831mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <edge/>
+                           <edge presence="hidden"/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_SUPP_F062"/>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="row" name="Row2">
+                     <assist role="TH"/>
+                     <field colSpan="2" h="8.162mm" name="paymenttervalue" w="39.079mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <edge/>
+                           <edge/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.ST_HEADER.PAY_TEXT"/>
+                     </field>
+                     <field colSpan="2" h="8.162mm" name="ShipViavalue" w="52.5mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <edge/>
+                           <edge/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.SO10TEXTS.SHIPVIA"/>
+                     </field>
+                     <field colSpan="3" h="8.162mm" name="SupplierName" w="71.831mm">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden" thickness="0.1778mm"/>
+                           <edge/>
+                           <edge/>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.ST_HEADER.SUPP_NAME"/>
+                     </field>
+                     <field access="readOnly" h="9mm" id="floatingField000041" name="inco1" presence="hidden" w="62mm" x="0mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.HEADER.INCO1"/>
+                     </field>
+                     <field access="readOnly" h="9mm" id="floatingField018467" name="inco2" presence="hidden" w="62mm" x="0mm" y="0mm">
+                        <ui>
+                           <textEdit>
+                              <border>
+                                 <edge stroke="lowered"/>
+                              </border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.HEADER.INCO2"/>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <subform layout="row" name="Row3">
+                     <assist role="TH"/>
+                     <field h="5.878mm" name="Cell1">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_LINE_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell2">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="1mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_ITEM_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell3">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_DEL_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell4">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_QTY_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell5">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_UOM_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell6">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_UNIT_F062"/>
+                     </field>
+                     <field h="5.878mm" name="Cell7">
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font size="8pt" typeface="Arial" weight="bold"/>
+                        <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge/>
+                           <corner thickness="0.1778mm"/>
+                        </border>
+                        <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_EXIT_F062"/>
+                     </field>
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <?templateDesigner expand 0?></subform>
+                  <bind match="none"/>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 0?></subform>
+            <subform h="53.975mm" name="Footer" w="197.3mm" x="12.695mm" y="225.404mm">
+               <bind match="none"/>
+               <subform h="38.246mm" name="BOX1" w="79.246mm" x="0mm" y="15.729mm">
+                  <bind match="none"/>
+                  <field h="31.75mm" name="TextField2" w="76.2mm" y="0.146mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_FOT2_F062"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <event activity="initialize" name="event__initialize"/>
+                  </field>
+                  <event activity="initialize" name="event__initialize"/>
+                  <field h="6.35mm" hAlign="right" name="test_ref_doc" w="69.85mm" y="28.721mm">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <bind match="dataRef" ref="$.ST_HEADER.TEST_REF_DOC"/>
+                     <para hAlign="center" vAlign="bottom"/>
+                     <event activity="initialize" name="event__initialize"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="34.125mm" name="BOX2" w="123.934mm" x="73.366mm" y="15.875mm">
+                  <bind match="none"/>
+                  <field h="6.35mm" hAlign="right" name="TextField1" w="57.15mm" x="2.834mm" y="9.525mm">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_FOT4_F062"/>
+                     <para hAlign="right" vAlign="bottom"/>
+                     <event activity="initialize" name="event__initialize"/>
+                  </field>
+                  <draw h="0in" name="Line1" w="55.8mm" x="59.984mm" y="15.875mm">
+                     <value>
+                        <line slope="/"/>
+                     </value>
+                  </draw>
+                  <draw h="0in" name="Line1" w="55.8mm" x="59.984mm" y="28.575mm">
+                     <value>
+                        <line slope="/"/>
+                     </value>
+                  </draw>
+                  <?templateDesigner expand 0?>
+                  <field h="6.35mm" hAlign="right" name="TextField1" w="57.15mm" x="2.834mm" y="22.225mm">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_FOT3_F062"/>
+                     <para hAlign="right" vAlign="bottom"/>
+                     <event activity="initialize" name="event__initialize"/>
+                  </field>
+                  <field h="6.35mm" hAlign="right" name="ername" w="50.8mm" x="63.159mm" y="22.225mm">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <value>
+                        <exData contentType="text/html"/>
+                     </value>
+                     <bind match="dataRef" ref="$.ST_HEADER.ERNAME"/>
+                     <para hAlign="center" vAlign="bottom"/>
+                     <event activity="initialize" name="event__initialize"/>
+                  </field>
+                  <event activity="initialize" name="event__initialize"/>
+               </subform>
+               <draw h="0in" name="Line1" w="196.325mm" y="15.875mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <field h="9.504mm" name="TextField1" w="133.35mm" y="6.371mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_FOT1_F062"/>
+                  <event activity="initialize" name="event__initialize"/>
+               </field>
+               <field h="6.35mm" name="TextField1" w="15.875mm" x="133.355mm" y="9.525mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_TOTAL_F062"/>
+                  <event activity="initialize" name="event__initialize"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <corner/>
+                  </border>
+                  <para hAlign="center"/>
+               </field>
+               <field h="6.329mm" name="total" w="47.625mm" x="149.23mm" y="9.546mm">
+                  <ui>
+                     <numericEdit/>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <decimal leadDigits="20"/>
+                  </value>
+                  <event activity="initialize" name="event__initialize"/>
+                  <bind match="dataRef" ref="$.HEADER.NETWR"/>
+                  <format>
+                     <picture>zero{0.00}|num.currency{}</picture>
+                  </format>
+                  <para hAlign="center"/>
+                  <border>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </field>
+               <event activity="initialize" name="event__initialize">
+                  <script>var curp = $layout.page ( ref ( $ ) )
+
+        var totalp = $layout.pageCount()
+
+        if ( curp ne totalp ) then
+
+        $.presence = "hidden"
+
+        endif    
+
+</script>
+               </event>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="16.427mm" name="podescriptionform" w="92mm" x="99.425mm" y="22.225mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="12.7mm" hAlign="center" name="PO_DESC" w="92mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_DESC_F062"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </field>
+               <field h="3.727mm" name="shiptext" w="92mm" y="12.7mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="bottom"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_SHIP_F062"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="5.475mm" w="91.75mm" x="99.425mm" y="59.025mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="5.475mm" name="emailinvoicevalue" w="62mm" x="24.75mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="bottom"/>
+                  <bind match="dataRef" ref="$.ST_HEADER.EMAIL_INV"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <field h="5.475mm" name="mailtext" w="25mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="bottom"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_EMAIL_F062"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="28.575mm" name="mailinvoice" w="110.575mm" x="99.425mm" y="65mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="16.875mm" name="INV_MAIL" w="97.425mm" y="3.85mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.SO10TEXTS.MAIL_INVOICE"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+                  <caption reserve="24.4992mm">
+                     <para vAlign="middle"/>
+                     <font typeface="Arial"/>
+                  </caption>
+               </field>
+               <field h="3.175mm" name="emailaddr" w="92mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_MAIL_F062"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="9.698mm" name="podate" w="92.075mm" x="99.425mm" y="11.825mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="3.517mm" hAlign="center" name="Val_Purchase_ord_date" w="30mm" x="30.71mm" y="6.181mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$.ST_HEADER.BEDAT">
+                     <picture>date{DD-MMM-YY}</picture>
+                  </bind>
+                  <format>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </format>
+                  <validate>
+                     <picture>date{DD-MMM-YY}</picture>
+                  </validate>
+               </field>
+               <field h="6.211mm" w="31.75mm" x="60.325mm" y="3.133mm">
+                  <font size="8pt" typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden"/>
+                  </border>
+               </field>
+               <field h="3.517mm" name="ebelnvalues" w="30mm" y="6.181mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+                  <bind match="dataRef" ref="$.HEADER.EBELN"/>
+               </field>
+               <field h="6.211mm" hAlign="center" name="PAGE_TEXT" w="30.75mm" x="61.325mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_PAGE_F062"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </field>
+               <field h="0.244528in" hAlign="center" name="Text_Purchase_ord_date" w="30mm" x="30.71mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_DATE_F062"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </field>
+               <field h="0.244528in" hAlign="center" name="Text_Purchase_order" w="30mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_F062"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform minH="5.475mm" name="poheader" w="92mm" x="99.425mm" y="6.35mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="0.215556in" hAlign="center" name="Text_PO_Heading" w="92mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.FOLDER.ZQTC_PUR_ORD_F062"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden" thickness="0.1778mm"/>
+                  </border>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <field access="readOnly" h="7.5mm" id="floatingField006334" name="CurrentPage" presence="hidden" w="55mm" x="132.58mm" y="50.974mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="F46E9793-7C58-449D-B650-679F0CFC2E41">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField026500" name="PageCount" presence="hidden" w="55mm" x="132.58mm" y="50.974mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="EE988412-8C8C-4170-BBE6-D74462111819">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw h="3.596mm" name="Pages" w="32mm" x="158.75mm" y="18.58mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="63774540-605C-4DEA-9567-172D8CBE0DCF">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner presence="hidden"/>
+                  <corner/>
+                  <corner/>
+               </border>
+            </draw>
+            <subform h="79.725mm" name="Lines" x="98.425mm" y="6mm">
+               <bind match="none"/>
+               <draw h="0in" name="Line2" w="107.95mm" y="51.15mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line2" w="107.95mm" y="28.925mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line2" w="107.95mm" y="16.225mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line2" w="107.95mm" y="11mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <draw h="0in" name="Line2" w="107.95mm" y="5.7mm">
+                  <value>
+                     <line/>
+                  </value>
+               </draw>
+               <border>
+                  <edge/>
+                  <corner thickness="0.176mm"/>
+               </border>
+               <field minH="6.35mm" name="SUPPLIER_TEXT" w="92mm" x="1mm" y="32.1mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="14mm" rightInset="0mm" topInset="0mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.SHIPADDRESS"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <field minH="6.35mm" name="SUPPLIER_TEXT" w="60mm" x="16.575mm" y="37.675mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="10mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.SUPPLIERADDRESS"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <field h="4mm" name="SUPPLIER_TEXT" w="30mm" x="12.7mm" y="31.75mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" weight="bold"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.FOLDER.ZQTC_PO_SUPPLER_F062"/>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <proto/>
+      <desc>
+         <text name="version">9.8.0.0.20140107.1.905771</text>
+      </desc>
+      <subform layout="tb" w="184.15mm">
+         <bind match="none"/>
+         <subform layout="tb" name="Table" w="184.15mm">
+            <bind match="dataRef" ref="$.I_FINAL"/>
+            <assist role="Table"/>
+            <subform layout="tb" name="Flowed" w="184.15mm" y="20mm">
+               <bind match="none"/>
+               <subform layout="lr-tb" name="Body_tab" w="192.325mm">
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <assist role="TR"/>
+                  <occur max="-1"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <corner presence="hidden"/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <subform layout="tb" name="ITEM" w="14mm">
+                     <bind match="none"/>
+                     <field minH="4mm" name="ITEM_Line" w="14mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.EBELP"/>
+                        <desc>
+                           <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                        </desc>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="MATERIAL" w="60.389mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="MATERIAL" w="60mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="0.5mm" topInset="0mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$.OLD_MAT"/>
+                        <desc>
+                           <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                        </desc>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <value>
+                           <exData contentType="text/html"/>
+                        </value>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="DELIVERYDATE" w="31.062mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="deliverydate" w="29.062mm">
+                        <ui>
+                           <dateTimeEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </dateTimeEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <date/>
+                        </value>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.EINDT"/>
+                        <desc>
+                           <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                        </desc>
+                        <format>
+                           <picture>date{MM/DD/YYYY}</picture>
+                        </format>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="QTY" w="17.875mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="QTY" w="17.875mm">
+                        <ui>
+                           <numericEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <value>
+                           <decimal fracDigits="-1"/>
+                        </value>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.MENGE"/>
+                        <desc>
+                           <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                        </desc>
+                        <format>
+                           <picture>zero{0}|num{z,zzz,zzz,zz9}</picture>
+                        </format>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="UOM" w="15.875mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="UOM" w="15.875mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.MEINS">
+                           <picture>date{YYYY-MM-DD}</picture>
+                        </bind>
+                        <desc>
+                           <text name="Schema Annotation">Item Delivery Date</text>
+                        </desc>
+                        <validate nullTest="error"/>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="UNITPRICE" w="22.178mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="unitprice" w="22.178mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden"/>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                        <para hAlign="center" vAlign="middle"/>
+                        <bind match="dataRef" ref="$.NETPR"/>
+                        <desc>
+                           <text name="Schema Annotation">Material Number</text>
+                        </desc>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="EXTPRICE" w="30mm">
+                     <bind match="none"/>
+                     <field minH="4.475mm" name="extprice" w="32.296mm">
+                        <ui>
+                           <numericEdit>
+                              <border presence="hidden"/>
+                              <margin/>
+                           </numericEdit>
+                        </ui>
+                        <font size="7pt" typeface="Arial"/>
+                        <margin bottomInset="0mm" leftInset="0mm" rightInset="1mm" topInset="0mm"/>
+                        <para hAlign="right" vAlign="middle"/>
+                        <value>
+                           <decimal leadDigits="20"/>
+                        </value>
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.NETWR"/>
+                        <desc>
+                           <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                        </desc>
+                        <format>
+                           <picture>zero{0.00}|num.currency{}</picture>
+                        </format>
+                     </field>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="ITEMDETAILS" w="74mm">
+                     <bind match="none"/>
+                     <subform layout="tb" name="MATDESCRIPTION" w="74mm">
+                        <bind match="none"/>
+                        <field minH="4.475mm" name="MATDESCR" w="60mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="7pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.MAT_DESC"/>
+                           <desc>
+                              <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                           </desc>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="initialize" name="event__initialize">
+                              <script contentType="application/x-javascript">if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}  
+
+</script>
+                           </event>
+                        </field>
+                        <keep intact="contentArea"/>
+                        <margin leftInset="14mm"/>
+                        <?templateDesigner expand 0?></subform>
+                     <subform layout="tb" name="ITEMTEXT" w="74mm">
+                        <bind match="none"/>
+                        <field minH="4.475mm" name="ITEMTEXT" w="60mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="7pt" typeface="Arial"/>
+                           <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.ITEM_TEXT"/>
+                           <desc>
+                              <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                           </desc>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="initialize" name="event__initialize">
+                              <script contentType="application/x-javascript">if(this.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+
+</script>
+                           </event>
+                        </field>
+                        <keep intact="contentArea"/>
+                        <margin leftInset="14mm"/>
+                        <?templateDesigner expand 0?></subform>
+                     <subform layout="tb" name="POTEXT" w="74mm">
+                        <bind match="none"/>
+                        <field minH="4.475mm" name="POTEXT" w="60mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden"/>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="7pt" typeface="Arial"/>
+                           <margin bottomInset="0.5mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.POTEXT"/>
+                           <desc>
+                              <text name="Schema Annotation">Item Number of Purchasing Document</text>
+                           </desc>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                           <event activity="initialize" name="event__initialize">
+                              <script contentType="application/x-javascript">
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+} 
+</script>
+                           </event>
+                        </field>
+                        <keep intact="contentArea"/>
+                        <margin leftInset="14mm"/>
+                        <?templateDesigner expand 0?></subform>
+                     <keep intact="contentArea"/>
+                     <subform layout="tb" name="emptyline" w="74mm">
+                        <bind match="none"/>
+                        <draw h="2.528mm" name="Text1" w="98.425mm">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <value>
+                              <text xliff:rid="8C6F7418-34E3-43F7-88C7-C2779860449A"/>
+                           </value>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                           <?renderCache.bounds 276166 4332 0 0 1417 1417 0 0?></draw>
+                        <?templateDesigner expand 1?></subform>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 48 12 0003000600290037004700480049004C004F00520057005B #FTdefilotx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 30?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 78?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>5</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_WLS_PO_F062">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <HEADER>
+            <MANDT/>
+            <EBELN/>
+            <BUKRS/>
+            <BSTYP/>
+            <BSART/>
+            <BSAKZ/>
+            <LOEKZ/>
+            <STATU/>
+            <AEDAT/>
+            <ERNAM/>
+            <PINCR/>
+            <LPONR/>
+            <LIFNR/>
+            <SPRAS/>
+            <ZTERM/>
+            <ZBD1T/>
+            <ZBD2T/>
+            <ZBD3T/>
+            <ZBD1P/>
+            <ZBD2P/>
+            <EKORG/>
+            <EKGRP/>
+            <WAERS/>
+            <WKURS/>
+            <KUFIX/>
+            <BEDAT/>
+            <KDATB/>
+            <KDATE/>
+            <BWBDT/>
+            <ANGDT/>
+            <BNDDT/>
+            <GWLDT/>
+            <AUSNR/>
+            <ANGNR/>
+            <IHRAN/>
+            <IHREZ/>
+            <VERKF/>
+            <TELF1/>
+            <LLIEF/>
+            <KUNNR/>
+            <KONNR/>
+            <ABGRU/>
+            <AUTLF/>
+            <WEAKT/>
+            <RESWK/>
+            <LBLIF/>
+            <INCO1/>
+            <INCO2/>
+            <KTWRT/>
+            <SUBMI/>
+            <KNUMV/>
+            <KALSM/>
+            <STAFO/>
+            <LIFRE/>
+            <EXNUM/>
+            <UNSEZ/>
+            <LOGSY/>
+            <UPINC/>
+            <STAKO/>
+            <FRGGR/>
+            <FRGSX/>
+            <FRGKE/>
+            <FRGZU/>
+            <FRGRL/>
+            <LANDS/>
+            <LPHIS/>
+            <ADRNR/>
+            <STCEG_L/>
+            <STCEG/>
+            <ABSGR/>
+            <ADDNR/>
+            <KORNR/>
+            <MEMORY/>
+            <PROCSTAT/>
+            <RLWRT/>
+            <REVNO/>
+            <SCMPROC/>
+            <REASON_CODE/>
+            <MEMORYTYPE/>
+            <RETTP/>
+            <RETPC/>
+            <DPTYP/>
+            <DPPCT/>
+            <DPAMT/>
+            <DPDAT/>
+            <MSR_ID/>
+            <HIERARCHY_EXISTS/>
+            <THRESHOLD_EXISTS/>
+            <LEGAL_CONTRACT/>
+            <DESCRIPTION/>
+            <RELEASE_DATE/>
+            <VSART/>
+            <HANDOVERLOC/>
+            <SHIPCOND/>
+            <INCOV/>
+            <INCO2_L/>
+            <INCO3_L/>
+            <FORCE_ID/>
+            <FORCE_CNT/>
+            <RELOC_ID/>
+            <RELOC_SEQ_ID/>
+            <POHF_TYPE/>
+            <EQ_EINDT/>
+            <EQ_WERKS/>
+            <FIXPO/>
+            <EKGRP_ALLOW/>
+            <WERKS_ALLOW/>
+            <CONTRACT_ALLOW/>
+            <PSTYP_ALLOW/>
+            <FIXPO_ALLOW/>
+            <KEY_ID_ALLOW/>
+            <AUREL_ALLOW/>
+            <DELPER_ALLOW/>
+            <EINDT_ALLOW/>
+            <OTB_LEVEL/>
+            <OTB_COND_TYPE/>
+            <KEY_ID/>
+            <SPR_RSN_PROFILE/>
+            <BUDG_TYPE/>
+            <OTB_STATUS/>
+            <OTB_REASON/>
+            <CHECK_TYPE/>
+            <CON_OTB_REQ/>
+            <CON_PREBOOK_LEV/>
+            <CON_DISTR_LEV/>
+            <PRCPR/>
+            <HEADERCOND/>
+            <LAND_FROM/>
+            <LAND_VEND/>
+            <USEWERKS/>
+            <USEADRNO/>
+            <LAND_DELADR/>
+            <USEEINDT/>
+            <UZEIT/>
+            <USEINCO/>
+            <USEWEMPF/>
+            <USEABLAD/>
+            <USEAUFB/>
+            <EMLIF/>
+            <LPEIN/>
+            <EINDT/>
+            <WERKS/>
+            <LFDAT/>
+            <LABNR/>
+            <PRITX/>
+            <ZBTXT/>
+            <NETWR/>
+            <KZABS/>
+            <ADRN2/>
+            <DRUNR/>
+            <DRDAT/>
+            <DRUHR/>
+            <HSAMM/>
+            <PRSDR/>
+            <WEMPF/>
+            <ABLAD/>
+            <ADRNO/>
+            <BEDATTXT/>
+         </HEADER>
+         <WILEY_LOGO/>
+         <V_LANGU/>
+         <SO10TEXTS>
+            <MAIL_INVOICE/>
+            <SHIPVIA/>
+         </SO10TEXTS>
+         <I_FINAL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EBELP/>
+               <OLD_MAT/>
+               <EINDT/>
+               <MATNR/>
+               <MENGE/>
+               <MEINS/>
+               <NETPR/>
+               <NETWR/>
+               <MAT_DESC/>
+               <IT_TEXT/>
+               <PO_TEXT/>
+               <ITEM_TEXT/>
+               <POTEXT/>
+            </DATA>
+         </I_FINAL>
+         <FOLDER>
+            <ZQTC_PUR_ORD_F062/>
+            <ZQTC_PO_F062/>
+            <ZQTC_PO_DATE_F062/>
+            <ZQTC_PO_PAGE_F062/>
+            <ZQTC_PO_DESC_F062/>
+            <ZQTC_PO_SHIP_F062/>
+            <ZQTC_PO_EMAIL_F062/>
+            <ZQTC_PO_MAIL_F062/>
+            <ZQTC_PO_SUPPLER_F062/>
+            <ZQTC_PO_PAYMENT_F062/>
+            <ZQTC_PO_INCO_F062/>
+            <ZQTC_PO_SUPP_F062/>
+            <ZQTC_PO_SHIPVIA_F062/>
+            <ZQTC_PO_LINE_F062/>
+            <ZQTC_PO_ITEM_F062/>
+            <ZQTC_PO_DEL_F062/>
+            <ZQTC_PO_QTY_F062/>
+            <ZQTC_PO_UOM_F062/>
+            <ZQTC_PO_UNIT_F062/>
+            <ZQTC_PO_EXIT_F062/>
+            <ZQTC_PO_TOTAL_F062/>
+            <ZQTC_PO_FOT1_F062/>
+            <ZQTC_PO_FOT2_F062/>
+            <ZQTC_PO_FOT3_F062/>
+            <ZQTC_PO_FOT4_F062/>
+         </FOLDER>
+         <V_TEXTID_ITEM/>
+         <V_TEXTID_PO/>
+         <V_LAND1/>
+         <V_ADD_COMP/>
+         <SUPPLIERADDRESS/>
+         <SHIPADDRESS/>
+         <ST_HEADER>
+            <SUPP_NAME/>
+            <PAY_TEXT/>
+            <EMAIL_INV/>
+            <ERNAME/>
+            <VEN_ADRNR/>
+            <BEDAT/>
+            <SHIP_ADRNR/>
+            <TEST_REF_DOC/>
+         </ST_HEADER>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2010/10/12-08:45:30        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2020-07-06T12:07:05Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 10.4</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 10.4</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:12bca34e-3742-48e7-a8d9-26ce4c39b742</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.8.0.0.20140107.1.905771</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

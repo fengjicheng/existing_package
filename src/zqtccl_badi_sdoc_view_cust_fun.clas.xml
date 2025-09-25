@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZQTCCL_BADI_SDOC_VIEW_CUST_FUN</CLSNAME>
+    <LANGU>E</LANGU>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Mass Change PO</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Mass Change POtext</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Mass Chan Partner func</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Mass change Mem Catg</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Mass Chan Condition</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Mass Chan for Promo</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Mass Cancel Order</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Mass chng DB</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Mass chng BB</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Mass chng Lic Catg</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>3</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>M</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Mass Change PO</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Mass Change POtext</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Mass Chan Partner func</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mass Chan Condition</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mass Chan for Promo</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Mass Cancel Order</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

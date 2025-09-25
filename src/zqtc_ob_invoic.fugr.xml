@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>I0245: Invoice - Outbound Interface</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_OB_INVOICTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_OB_INVOIC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_OB_INVOIC_GET_FLAGS</FUNCNAME>
+     <SHORT_TEXT>I0340: Invoice - Outbound Interface (Get Flags)</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_E1EDP05</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_E1EDP05</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: IDOC Segment - E1EDP05</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_OB_INVOIC_SET_FLAGS</FUNCNAME>
+     <SHORT_TEXT>I0340: Invoice - Outbound Interface (Set Flags)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_E1EDP05</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_E1EDP05</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: IDOC Segment - E1EDP05</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

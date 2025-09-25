@@ -1,0 +1,97 @@
+*----------------------------------------------------------------------*
+*   INCLUDE RJKSDDEMANDCHANGE_SELECT
+**----------------------------------------------------------------------
+*
+************************************************************************
+* Selektionsbild für Screen 0200
+************************************************************************
+DATA: LS_JPTMG0 TYPE JPTMG0,
+      LS_MARC   TYPE MARC,
+      LS_MVKE   TYPE MVKE,
+      LS_MARA   TYPE MARA.
+*ata: ls_JVTPHDATE type JVTPHDATE.                    "TK01022008
+
+SELECTION-SCREEN BEGIN OF SCREEN 0200 AS SUBSCREEN.
+SELECTION-SCREEN BEGIN OF BLOCK SELECTION WITH FRAME TITLE TEXT-200.
+
+* Selektionstext muß noch ergänzt werden              "SEL_ISSUE
+SELECT-OPTIONS: GR_issue FOR LS_jptmg0-Matnr.         "SEL_ISSUE
+
+SELECTION-SCREEN BEGIN OF BLOCK SELECTION_PRODUCT
+                          WITH FRAME TITLE TEXT-211.
+SELECT-OPTIONS:
+          GR_MPROD FOR LS_JPTMG0-MED_PROD matchcode object MJP_MEDPROD,
+          GR_PRULE FOR LS_MARA-ISMPERRULE,
+          GR_PTYPE FOR LS_MARA-ISMPUBLTYPE,
+          GR_MTYPE FOR LS_MARA-ISMMEDIATYPE.
+SELECTION-SCREEN END OF BLOCK SELECTION_PRODUCT.
+*ELECTION-SCREEN SKIP.
+*
+SELECTION-SCREEN BEGIN OF BLOCK ISSUE_STATUS
+                          WITH FRAME TITLE TEXT-212.
+SELECT-OPTIONS:
+          GR_MSTAV FOR LS_MARA-MSTAV,
+          GR_VMSTA FOR LS_MVKE-VMSTA,
+          GR_MSTAE FOR LS_MARA-MSTAE,
+          GR_MMSTA FOR LS_MARC-MMSTA.
+SELECTION-SCREEN END OF BLOCK ISSUE_STATUS.
+*ELECTION-SCREEN SKIP.
+*
+
+* -- Anfang-------------------------------------------"TK01042009
+SELECTION-SCREEN BEGIN OF BLOCK filter WITH FRAME TITLE TEXT-350.
+parameters:      gv_filt type ism_worklist_filter_f4_change.  "Filter im Change-Modus
+*                Selektion im Change-Modus mit SY_TCODE = TJKSD13A-WL_TCODE_CHANGE
+                        "like tjksd13filter-filter_id.       "Filter (alle)
+SELECTION-SCREEN END   OF BLOCK filter.
+* -- Ende---------------------------------------------"TK01042009
+
+
+* -- Anfang-------------------------------------------"TK01022008
+*SELECTION-SCREEN BEGIN OF BLOCK PHASE WITH FRAME TITLE TEXT-250.
+*
+*parameters:      gv_norm like RJKSDWORKLIST_CHANGEFIELDS-xwithout_phases
+*                 radiobutton group rad1.
+*
+*SELECTION-SCREEN BEGIN OF LINE.
+*parameters:      gv_incl like RJKSDWORKLIST_CHANGEFIELDS-xincl_phases
+*                 radiobutton group rad1.
+*SELECTION-SCREEN COMMENT 2(40) TEXT-260 FOR FIELD gv_incl.
+*SELECTION-SCREEN POSITION 43.
+*SELECT-OPTIONS:
+*          GR_phmod FOR ls_JVTPHDATE-PHASEMDL.
+*SELECTION-SCREEN end OF LINE.
+*
+*parameters:      gv_excl like RJKSDWORKLIST_CHANGEFIELDS-xexcl_phases
+*                 radiobutton group rad1.
+*
+*SELECTION-SCREEN END   OF BLOCK PHASE.
+* -- Ende---------------------------------------------"TK01022008
+
+SELECTION-SCREEN BEGIN OF BLOCK ORG WITH FRAME TITLE TEXT-201.
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN COMMENT 1(20) TEXT-204 FOR FIELD GV_VKORG.
+PARAMETERS: GV_VKORG TYPE VKORG. " do not(!): MEMORY ID VKO.
+SELECTION-SCREEN POSITION 28.
+PARAMETERS: GV_VTWEG TYPE VTWEG. " do not(!): MEMORY ID VTW.
+SELECTION-SCREEN POSITION 32.
+*PARAMETERS: GV_SPART TYPE SPART. " do not(!): MEMORY ID SPA.
+SELECTION-SCREEN COMMENT 40(20) TEXT-205 FOR FIELD GV_WERK.
+PARAMETERS: GV_WERK TYPE WERKS_D. " do not(!): MEMORY ID WRK.
+SELECTION-SCREEN POSITION 67.
+SELECTION-SCREEN END OF LINE.
+SELECTION-SCREEN END   OF BLOCK ORG.
+*ELECTION-SCREEN SKIP.
+*
+SELECTION-SCREEN BEGIN OF BLOCK VAR WITH FRAME TITLE GV_FRAME.
+SELECTION-SCREEN BEGIN OF LINE.
+SELECTION-SCREEN COMMENT 1(20) GV_FIELD FOR FIELD GV_VTXT.
+PARAMETERS: GV_VTXT TYPE RVART_VTXT.
+*SELECTION-SCREEN PUSHBUTTON 58(14) GB_SSAVE USER-COMMAND SELSAVE ."TK16012007
+SELECTION-SCREEN PUSHBUTTON 58(45) GB_SSAVE USER-COMMAND SELSAVE   "TK16012007
+                                     visible length 14 .           "TK16012007
+SELECTION-SCREEN END OF LINE.
+SELECTION-SCREEN END   OF BLOCK VAR.
+*
+SELECTION-SCREEN END OF BLOCK SELECTION.
+SELECTION-SCREEN END OF SCREEN 0200.

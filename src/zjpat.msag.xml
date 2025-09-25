@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZJPAT</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Publication Year is Mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Month is Mandatory</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Alpha Numeric characters are not allowed for the selection input.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Select the correct publication Year/Month data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Job could not be created</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Email will be sent to your Inbox</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJPAT</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>No Data for Current Selection</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

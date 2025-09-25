@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_EXTR_DATA_SAVE_R139</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <SECU>ZQTC_TXT</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Selection Screen To Get Extractor Value:</ENTRY>
+     <LENGTH>80</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Saving Layout:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>&apos;Data Does Not Exists!!&apos;</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Entries are updated in table ZQTC_TXT_EXT</ENTRY>
+     <LENGTH>82</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Kindly Maintain Proper Date Range!!</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Extractor data to save in custom table.</ENTRY>
+     <LENGTH>39</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_DL</KEY>
+     <ENTRY>Layout Check:</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_LAYOUT</KEY>
+     <ENTRY>Layout</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DATE</KEY>
+     <ENTRY>Delta Date:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

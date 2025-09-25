@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Bp interface for I0500</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_BP_INTERFACE_I0500F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_FG_BP_INTERFACE_I0500F02</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_FG_BP_INTERFACE_I0500TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_BP_INTERFACE_I0500</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_CUSTOMER_IB_VCH_I0500</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Bp interface for I0500</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DATA</PARAMETER>
+       <TYP>ZTQTC_CUSTOMER_DATE_INPUTS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TPM_SOURCE_NAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IDOCCARKEY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_RETURN</PARAMETER>
+       <TYP>ZTQTC_CUSTOMER_DATE_OUTPUTS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>I0500: Customer Data (Gen, Comp Code, Sales Area, Crdt/Coll)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Source System / Origin</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Unique ID from Middleware (Uppercase)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>I0500: Customer Data (Customer / BP Number, Messages)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

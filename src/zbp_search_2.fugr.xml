@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Search 2</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZBP_SEARCH_2TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZBP_SEARCH_2</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZBAPI_BUPA_SEARCH_2</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Search 2</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_EMAIL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BAPIBUS1006_COMM-E_MAIL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_ADDR</PARAMETER>
+       <DBSTRUCT>ZBP_ADDR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_RET</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_EMAIL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>E-Mail Address</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ADDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Structure with Business Partner/Address Numbers</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_RET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

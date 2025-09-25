@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCC_CUST_ACC_GRP_CONV</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <SECU>ZACGR_RL</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>No Customer found with account group</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>Customer Number</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C02</KEY>
+     <ENTRY>Status Message</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H01</KEY>
+     <ENTRY>Total Records:</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H02</KEY>
+     <ENTRY>Successful Records:</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>H03</KEY>
+     <ENTRY>Errored Records:</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>User Inputs</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Customer Account Groups</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>Business Partner Roles</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S04</KEY>
+     <ENTRY>Additional Filter Criteria</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S05</KEY>
+     <ENTRY>Conversion Options</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>C061: Customer Account Group / Business Partner Role Conversion</ENTRY>
+     <LENGTH>63</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_KTOKDF</KEY>
+     <ENTRY>Customer Account Group (From)</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_KTOKDT</KEY>
+     <ENTRY>Customer Account Group (To)</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_RLTYPF</KEY>
+     <ENTRY>Business Partner Role (From)</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_RLTYPT</KEY>
+     <ENTRY>Business Partner Role (To)</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_KTOKD</KEY>
+     <ENTRY>Customer Account Group</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_RLTYP</KEY>
+     <ENTRY>Business Partner Role</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KUNNR</KEY>
+     <ENTRY>Customer Number</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

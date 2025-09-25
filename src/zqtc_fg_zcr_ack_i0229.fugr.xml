@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>ZCR IDOCOrder acknowledgment validations</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_ZCR_ACK_I0229TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_ZCR_ACK_I0229</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ZCR_IDOC_ACK_VALID_I0229</FUNCNAME>
+     <SHORT_TEXT>Validations ZCR Idoc acknowledgement</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBAK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_SUBRC</PARAMETER>
+       <TYP>SY-SUBRC</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CR</PARAMETER>
+       <TYP>C</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CONST</PARAMETER>
+       <TYP>ZCAT_CONSTANTS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_SUBRC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Return Code of ABAP Statements</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CONST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Wiley Application Constant Table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

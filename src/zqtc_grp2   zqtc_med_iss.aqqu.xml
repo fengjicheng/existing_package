@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <CLAS>ZQTC_MEDIA_ISS_INFSET2</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>QTC_MEDIA_ISSUES</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00002</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>066</MAXL>
+     <TEXT>QTC_MEDIA_ISSUES-VOL YR ISSUE INFO</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Billing Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Billing item</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document Item</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00015</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_MED_ISS</QNUM>
+     <TINDX>00032</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Publication Date</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

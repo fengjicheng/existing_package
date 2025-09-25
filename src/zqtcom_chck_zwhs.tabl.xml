@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZQTCOM_CHCK_ZWHS</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>TRANSP</TABCLASS>
+    <CLIDEP>X</CLIDEP>
+    <DDTEXT>Check table fro field ZZWHS</DDTEXT>
+    <MAINFLAG>X</MAINFLAG>
+    <CONTFLAG>A</CONTFLAG>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD09L>
+    <TABNAME>ZQTCOM_CHCK_ZWHS</TABNAME>
+    <AS4LOCAL>A</AS4LOCAL>
+    <TABKAT>0</TABKAT>
+    <TABART>APPL0</TABART>
+    <BUFALLOW>N</BUFALLOW>
+   </DD09L>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>MANDT</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>MANDT</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>ZWHS</FIELDNAME>
+     <KEYFLAG>X</KEYFLAG>
+     <ROLLNAME>ZZWHS</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <NOTNULL>X</NOTNULL>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>TB</ID>
+      <OBJECT>ZQTCOM_CHCK_ZWHS</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00004</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCOM_CHCK_ZWHS</TDNAME>
+      <TDID>TB</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>This table is used as a value table for the custom field &apos;ZZWHS&apos; in the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>append structure &apos;ZAKNVV&apos; (to be added to the table KNVV). It stores the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>values SYY, SYN, SNY, SNN, PYY, PYN, PNY, PNN, NYY, NYN, NNY, NNN.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;MAINTENANCE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The enhancement category is &apos;can be enhanced (deep)&apos;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZQTCOM_CHCK_ZWHS</TABNAME>
+     <CCLASS>ZWHS</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

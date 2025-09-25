@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <CLAS>ZQTC_NEW_CUSTOMER_REPORT</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>New Customer Report</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>City</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>State</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Time created</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00008</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Created By</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00009</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Date created</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00010</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Org Name 2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00011</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Org Name 1</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00012</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Last Name</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00013</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>First Name</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00014</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>BPID</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00027</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Country Key</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00031</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>BP Category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00044</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Division</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00045</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Distribution Channel</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00046</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Organization</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00074</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Number of FTE’s</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00075</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>E-Mail Address</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00076</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Person number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZWILEY</NUM>
+     <QNUM>ZQTC_NEW_CUST</QNUM>
+     <TINDX>00086</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Person number</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_IM_QTC_DELIVERY_HEADER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Imp. class for BAdI imp. ZQTC_DELIVERY_HEADER</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>000</KEY>
+     <ENTRY>Additional Data</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+   </TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>This class is used to activate the Additional data Tab in 4th position</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>of Outbound Delivery Header details and to transfer data to and from</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>screen.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;RELATIONS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;HINTS&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+    </TLINE>
+   </LINES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

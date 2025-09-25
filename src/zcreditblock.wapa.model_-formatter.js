@@ -1,0 +1,3 @@
+sap.ui.define([],function(){"use strict";return{numberUnit:function(e){if(!e){return""}return parseFloat(e).toFixed(2)},oNumberFormat:function(e){var t=new sap.ui.core.Locale("en-US");var r={style:"short",shortLimit:1e4,showScale:true,shortDecimals:2};va+
+r n=sap.ui.core.format.NumberFormat.getFloatInstance(r,t);var a=n.format(e);return a},highlightTxt:function(e){if(e==="*"){return"Indication03"}else{return"None"}},riskCatMet:function(e){var t;switch(e){case"1":t="Indication05";break;case"2":t="Indicatio+
+n04";break;case"3":t="Indication03";break;case"4":t="Indication02";break;case"5":t="Indication01";break;default:t="None"}return t}}});                                                                                                                         

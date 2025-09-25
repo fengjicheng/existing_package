@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG to Get Future Renewal Quote</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_GET_QUOTE_E095TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_GET_QUOTE_E095</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_CONTRACT_FUTURE_E095</FUNCNAME>
+     <SHORT_TEXT>Get Reference Contract</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_RENEW</PARAMETER>
+       <DBSTRUCT>ZQTC_RENWL_PLAN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_VBFA</PARAMETER>
+       <DBSTRUCT>VBFA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>T_RENEW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>E095: Renewal Plan Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VBFA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Flow</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_GET_FUTURE_REN_QUOTE_E095</FUNCNAME>
+     <SHORT_TEXT>Get Future Renewal Quote</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>POSNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>EX_VBFA</PARAMETER>
+       <DBSTRUCT>VBFA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item number of the SD document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_VBFA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Flow</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

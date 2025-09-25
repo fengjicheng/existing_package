@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>E129: Sales Rep PIGS Table Entries</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_REPDET_VALUESTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_REPDET_VALUES</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_REPDET_VALUES_GET</FUNCNAME>
+     <SHORT_TEXT>E129: Sales Rep PIGS Table Entries (GET)</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_RB_PROD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_PRFT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_DPRD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_BPID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_P_BSARK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BSARK</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_SP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_CGRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_DIND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_PCDS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_PCDR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_REGN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_LAND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RB_DGEO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CB_ALLF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_P_DATUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYDATUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_RB_PROD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material / Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_PRFT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Profit Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_DPRD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Product)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_BPID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sold-to BPID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_P_BSARK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer purchase order type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_SP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ship-to BPID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_CGRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Group</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_DIND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Industry)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_PCDS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Postal Code (Individual)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_PCDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Postal Code (Range)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_REGN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Region</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_LAND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Country</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RB_DGEO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Geography)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CB_ALLF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Display All Fields</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_P_DATUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>As-on Date</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_REPDET_VALUES_SET</FUNCNAME>
+     <SHORT_TEXT>E129: Sales Rep PIGS Table Entries (SET)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_RB_PROD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_PRFT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_DPRD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_BPID</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_BSARK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BSARK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_SP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_CGRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_DIND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_PCDS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_PCDR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_REGN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_LAND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_RB_DGEO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CB_ALLF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_P_DATUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SYDATUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_RB_PROD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material / Product</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_PRFT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Profit Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_DPRD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Product)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_BPID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sold-to BPID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_BSARK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer purchase order type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_SP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ship-to BPID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_CGRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Group</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_DIND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Industry)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_PCDS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Postal Code (Individual)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_PCDR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Postal Code (Range)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_REGN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Region</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_LAND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Country</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_RB_DGEO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Default (Geography)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CB_ALLF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Display All Fields</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_P_DATUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>As-on Date</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

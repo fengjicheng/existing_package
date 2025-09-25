@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Archive Reminders</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTCR_REMINDER_ARCHIVETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTCR_REMINDER_ARCHIVE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTCR_REMINDER_ARCHIVE</FUNCNAME>
+     <SHORT_TEXT>Archive Reminders</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PARTNER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BU_PARTNER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DOCUMENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XSTRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR_ARCHIV</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ERROR_COMMUNICATIONTABLE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ERROR_CONNECTIONTABLE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ERROR_KERNEL</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ERROR_PARAMETER</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>ERROR_FORMAT</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>BLOCKED_BY_POLICY</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>BP_NOT_FOUND</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NOT_VALID_DOCUMENT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PARTNER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Business Partner Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DOCUMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PDF</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_ARCHIV</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error from Archive System</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_COMMUNICATIONTABLE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_CONNECTIONTABLE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_KERNEL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error from SAP Kernel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_PARAMETER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Error in Parameter Transfer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR_FORMAT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Format not supported</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BLOCKED_BY_POLICY</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BP_NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NOT_VALID_DOCUMENT</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

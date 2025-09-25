@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group to find Quote I0341</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_FIND_QUOTE_I0341TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_FIND_QUOTE_I0341</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_FIND_QUOTE_I0341</FUNCNAME>
+     <SHORT_TEXT>FM to find Quote number for ZREW order Idoc</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EDI3413LA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MATNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EDI_IDTNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CONTRL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EDIDC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_QUOTE</PARAMETER>
+       <TYP>IHREZ</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_MATNR</PARAMETER>
+       <TYP>EDI_IDTNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_KUNNR</PARAMETER>
+       <TYP>KUNNR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IHREZ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Your reference (Partner)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDOC material ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_QUOTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Your Reference</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

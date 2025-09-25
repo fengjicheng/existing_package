@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <CLAS>ZQTC_ORDERS_CHK</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MAXL>060</MAXL>
+     <TEXT>QTC ORDER REPORT</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00002</TINDX>
+     <MAXL>066</MAXL>
+     <TEXT>QTC ORDER REPORT</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document Item</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00029</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sold-to party</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00030</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Organization</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00031</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Distribution Channel</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00032</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Division</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00033</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Office</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00038</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Date on Which Record Was Creat</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00045</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer purchase order number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00046</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer purchase order type</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00047</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Name of Person who Created the</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00054</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>SD document category</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00081</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>SHIP-TO CUSTOMER</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_ORDERS1</QNUM>
+     <TINDX>00090</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Price group (customer)</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

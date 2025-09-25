@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group to calculate billing date</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_BILLINGDATE_E164TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_BILLINGDATE_E164</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_BILLING_DATE_E164</FUNCNAME>
+     <SHORT_TEXT>Calculate billing date for DD payment order ZREW</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DATE</PARAMETER>
+       <TYP>SY-DATUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DAYS</PARAMETER>
+       <DEFAULT>&apos;10&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR2</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BILL_DATE</PARAMETER>
+       <TYP>SY-DATUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DAYS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Count parameters</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BILL_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Current Date of Application Server</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

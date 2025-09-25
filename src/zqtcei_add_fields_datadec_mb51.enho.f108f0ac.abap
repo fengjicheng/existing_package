@@ -1,0 +1,6 @@
+"Name: \PR:RM07DOCS\DA:ITAB\SE:END\EI
+ENHANCEMENT 0 ZQTCEI_ADD_FIELDS_DATADEC_MB51.
+* Begin of Adding On 10/01/2019.
+  INCLUDE zqtcn_add_fields_mb51_datadec IF FOUND.
+* End of adding on 10/01/2019.
+ENDENHANCEMENT.

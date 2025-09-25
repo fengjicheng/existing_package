@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/test/Opa5","ren/ZQTC_FUTURE_REN/localService/mockserver","sap/ui/model/odata/v2/ODataModel"],function(t,e,a){"use strict";return t.extend("ren.ZQTC_FUTURE_REN.test.integration.arrangements.Startup",{iStartMyApp:function(t){var a=t|+
+|{};a.autoWait=typeof a.autoWait!=="undefined"?a.autoWait:true;a.delay=a.delay||1;this._clearSharedData();var i=e.init(a);this.iWaitForPromise(i);this.iStartMyUIComponent({componentConfig:{name:"ren.ZQTC_FUTURE_REN",async:true},hash:a.hash,autoWait:a.aut+
+oWait})},iRestartTheAppWithTheRememberedItem:function(t){this.waitFor({success:function(){var e=this.getContext().currentItem.id;t.hash="GETLISTSet/"+e;this.iStartMyApp(t)}})},_clearSharedData:function(){a.mSharedData={server:{},service:{},meta:{}}}})}); 

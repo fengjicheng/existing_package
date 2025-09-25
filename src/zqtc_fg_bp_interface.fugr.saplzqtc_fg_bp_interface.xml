@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>SAPLZQTC_FG_BP_INTERFACE</NAME>
+    <DBAPL>S</DBAPL>
+    <DBNA>D$</DBNA>
+    <SUBC>F</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>AGU record doesn’t have email id on the file.</ENTRY>
+     <LENGTH>90</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>AGU record doesn’t have member id on the file.</ENTRY>
+     <LENGTH>90</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>AGU record doesn’t have complete address on the file.</ENTRY>
+     <LENGTH>106</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>AGU record doesn’t have Member or relationship category on the file.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>AGU relationship category is not maintained in SAP</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Multiple BP id found on BP search Criteria . No new BP id created to this AGU New member record.</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Multiple BP id found against ZMEMID type.</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Credit &amp; Collection input data is blank hence no Update</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Existing BP found, New Member ID assigned!</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>No BP Rule Maintained for Input Source!</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>AGU Member Id is not valid/No BP associated with this Member Id</ENTRY>
+     <LENGTH>65</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>014</KEY>
+     <ENTRY>COA failed  because of Duplicate BP’s identified in SAP</ENTRY>
+     <LENGTH>110</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>Indicator for BP Creation / Update missing in the file</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>BP Not Found</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>, BP Found</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>, Sales area available for customer</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>available for customer</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>020</KEY>
+     <ENTRY>No sales area in SAP</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>021</KEY>
+     <ENTRY>Invalid email address</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>022</KEY>
+     <ENTRY>BP Number should be generated.</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B01</KEY>
+     <ENTRY>BP</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B02</KEY>
+     <ENTRY>exist in SAP with an order block/archive indicator.</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B03</KEY>
+     <ENTRY>Remove the block and use appropriate BP number.</ENTRY>
+     <LENGTH>92</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B04</KEY>
+     <ENTRY>in the upload file to create order</ENTRY>
+     <LENGTH>120</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B05</KEY>
+     <ENTRY>BP search has identified</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B06</KEY>
+     <ENTRY>as the BP,</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B07</KEY>
+     <ENTRY>Since BP is located in AU,Order can only</ENTRY>
+     <LENGTH>126</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B08</KEY>
+     <ENTRY>be created for 1001 or 8001.</ENTRY>
+     <LENGTH>86</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B09</KEY>
+     <ENTRY>Please correct the data</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B10</KEY>
+     <ENTRY>BP search has identified</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B11</KEY>
+     <ENTRY>Since BP is located in IN,Order can only</ENTRY>
+     <LENGTH>78</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B12</KEY>
+     <ENTRY>be created for 1001.</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B13</KEY>
+     <ENTRY>Please correct the data in excel file to create order.</ENTRY>
+     <LENGTH>108</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B14</KEY>
+     <ENTRY>Multiple BP’s</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B15</KEY>
+     <ENTRY>found with matching First Name, Last Name, Email</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B16</KEY>
+     <ENTRY>and street in SAP.</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B17</KEY>
+     <ENTRY>Please validate these and use appropriate BP</ENTRY>
+     <LENGTH>88</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B18</KEY>
+     <ENTRY>number to create order.</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B19</KEY>
+     <ENTRY>Country with IN from the file can only be created</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B20</KEY>
+     <ENTRY>CoCd/Sales Org 1001.</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B21</KEY>
+     <ENTRY>Country with AU from  the file can only be created</ENTRY>
+     <LENGTH>100</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B22</KEY>
+     <ENTRY>CoCd/Sales Org 1001/8001.</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B23</KEY>
+     <ENTRY>Record doesn’t have complete address on the file.</ENTRY>
+     <LENGTH>120</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B24</KEY>
+     <ENTRY>Multiple BP found against Member ID</ENTRY>
+     <LENGTH>45</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B25</KEY>
+     <ENTRY>File data containes</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B26</KEY>
+     <ENTRY>Society BP</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B27</KEY>
+     <ENTRY>mentioned in relationship data</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B28</KEY>
+     <ENTRY> is different from Sold To Party.Please correct</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B29</KEY>
+     <ENTRY> the data.</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B30</KEY>
+     <ENTRY>Please Verify the Data for Line item</ENTRY>
+     <LENGTH>72</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B31</KEY>
+     <ENTRY>The Product might not be owned by the Society or</ENTRY>
+     <LENGTH>96</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B32</KEY>
+     <ENTRY>Customer Material Info Record Missing.</ENTRY>
+     <LENGTH>76</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>B33</KEY>
+     <ENTRY>Please correct the data and retry.</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C01</KEY>
+     <ENTRY>Since BP is located in</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C02</KEY>
+     <ENTRY>Order can only be created for 1001.</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C03</KEY>
+     <ENTRY>Country with</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C04</KEY>
+     <ENTRY>from  the file can only be created</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>C05</KEY>
+     <ENTRY>CoCd/Sales Org 1001.</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>AGU_BP_001</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E02</KEY>
+     <ENTRY>AGU_BP_002</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>AGU_BP_003</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY>AGU_BP_004</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E05</KEY>
+     <ENTRY>AGU_BP_005</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E06</KEY>
+     <ENTRY>AGU_BP_006</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E07</KEY>
+     <ENTRY>AGU_BP_007</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E08</KEY>
+     <ENTRY>AGU_BP_008</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E09</KEY>
+     <ENTRY>AGU_BP_009</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E10</KEY>
+     <ENTRY>AGU_BP_010</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E11</KEY>
+     <ENTRY>AGU_BP_011</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E12</KEY>
+     <ENTRY>AGU_BP_012</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E13</KEY>
+     <ENTRY>AGU_BP_013</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E14</KEY>
+     <ENTRY>AGU_BP_014</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E15</KEY>
+     <ENTRY>AGU_BP_015</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E16</KEY>
+     <ENTRY>AGU_BP_016</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L01</KEY>
+     <ENTRY>Inprogress BP</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L02</KEY>
+     <ENTRY>Inprogress-BP Creation</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L03</KEY>
+     <ENTRY>Inprogress BP Changed/Updated</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L04</KEY>
+     <ENTRY>Inprogress BP Identified</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M01</KEY>
+     <ENTRY>001</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M02</KEY>
+     <ENTRY>002</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M03</KEY>
+     <ENTRY>003</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M04</KEY>
+     <ENTRY>004</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M05</KEY>
+     <ENTRY>000</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>M06</KEY>
+     <ENTRY>005</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

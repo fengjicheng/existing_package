@@ -1,0 +1,1 @@
+sap.ui.define(["./BaseController"],function(e){"use strict";return e.extend("ir.ZE144_IncompletionReport.controller.NotFound",{onLinkPressed:function(){this.getRouter().navTo("worklist")}})});                                                               

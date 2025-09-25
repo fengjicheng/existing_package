@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZBLK_E251</OBJCT>
+    <FIEL1>MATNR</FIEL1>
+    <FIEL2>KWMENG</FIEL2>
+    <FIEL3>ZMENG</FIEL3>
+    <FIEL4>VBEGDAT</FIEL4>
+    <FIEL5>VENDDAT</FIEL5>
+    <FIEL6>ACTVT</FIEL6>
+    <OCLSS>SD</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZBLK_E251</OBJECT>
+    <TTEXT>MATNR, KWMENG, ZMENG, VBEGDAT, VENDDAT blocks in change mode</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZBLK_E251</OBJCT>
+   </TOBJVORFLG>
+   <TACTZ>
+    <TACTZ>
+     <BROBJ>ZBLK_E251</BROBJ>
+     <ACTVT>02</ACTVT>
+    </TACTZ>
+    <TACTZ>
+     <BROBJ>ZBLK_E251</BROBJ>
+     <ACTVT>03</ACTVT>
+    </TACTZ>
+   </TACTZ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

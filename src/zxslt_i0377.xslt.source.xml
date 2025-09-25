@@ -1,0 +1,175 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="CSTMRDRCTDBTINITN" type="ddic:ZCSTMRDRCTDBTINITN_TT"/>
+  <tt:template>
+    <Document>
+      <tt:loop ref=".CSTMRDRCTDBTINITN">
+        <CstmrDrctDbtInitn>
+          <GrpHdr>
+            <MsgId tt:value-ref="GRPHDR.MSGID"/>
+            <CreDtTm tt:value-ref="GRPHDR.CREDTTM"/>
+            <NbOfTxs tt:value-ref="GRPHDR.NBOFTXS"/>
+            <CtrlSum tt:value-ref="GRPHDR.CTRLSUM"/>
+            <InitgPty>
+              <Nm tt:value-ref="GRPHDR.INITGPTY.NM"/>
+              <Id>
+                <OrgId>
+                  <Othr>
+                    <Id tt:value-ref="GRPHDR.INITGPTY.OTHR.ID"/>
+                    <SchmeNm>
+                      <Cd tt:value-ref="GRPHDR.INITGPTY.OTHR.SCHMENM.CD"/>
+                    </SchmeNm>
+                  </Othr>
+                </OrgId>
+              </Id>
+            </InitgPty>
+          </GrpHdr>
+          <PmtInf>
+            <PmtInfId tt:value-ref="PMTINF.PMTINFID"/>
+            <PmtMtd tt:value-ref="PMTINF.PMTMTD"/>
+            <NbOfTxs tt:value-ref="PMTINF.NBOFTXS"/>
+            <CtrlSum tt:value-ref="PMTINF.CTRLSUM"/>
+            <ReqdColltnDt tt:value-ref="PMTINF.REQDCOLLTNDT"/>
+            <Cdtr>
+              <Nm tt:value-ref="PMTINF.CDTR.NM"/>
+              <PstlAdr>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.STRTNM)">
+                  <StrtNm tt:value-ref="PMTINF.CDTR.PSTLADR.STRTNM"/>
+                </tt:cond>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.PSTCD)">
+                  <PstCd tt:value-ref="PMTINF.CDTR.PSTLADR.PSTCD"/>
+                </tt:cond>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.TWNNM)">
+                  <TwnNm tt:value-ref="PMTINF.CDTR.PSTLADR.TWNNM"/>
+                </tt:cond>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.CTRY)">
+                  <Ctry tt:value-ref="PMTINF.CDTR.PSTLADR.CTRY"/>
+                </tt:cond>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.ADRLINE1)">
+                  <AdrLine tt:value-ref="PMTINF.CDTR.PSTLADR.ADRLINE1"/>
+                </tt:cond>
+                <tt:cond s-check="not-initial(PMTINF.CDTR.PSTLADR.ADRLINE2)">
+                  <AdrLine tt:value-ref="PMTINF.CDTR.PSTLADR.ADRLINE2"/>
+                </tt:cond>
+              </PstlAdr>
+              <Id>
+                <OrgId>
+                  <Othr>
+                    <Id tt:value-ref="PMTINF.CDTR.OTHR.ID"/>
+                    <SchmeNm>
+                      <Prtry tt:value-ref="PMTINF.CDTR.OTHR.SCHMENM.PRTRY"/>
+                    </SchmeNm>
+                  </Othr>
+                </OrgId>
+              </Id>
+              <CtryOfRes tt:value-ref="PMTINF.CDTR.CTRYOFRES"/>
+              <CtctDtls>
+                <Nm tt:value-ref="PMTINF.CDTR.CTCTDTLS.NM"/>
+                <EmailAdr tt:value-ref="PMTINF.CDTR.CTCTDTLS.EMAILADR"/>
+              </CtctDtls>
+            </Cdtr>
+            <CdtrAcct>
+              <Id>
+                <IBAN tt:value-ref="PMTINF.CDTRACCT.ID.IBAN"/>
+              </Id>
+              <Tp>
+                <Prtry tt:value-ref="PMTINF.CDTRACCT.TP.PRTRY"/>
+              </Tp>
+              <Ccy tt:value-ref="PMTINF.CDTRACCT.CCY"/>
+            </CdtrAcct>
+            <CdtrAgt>
+              <FinInstnId>
+                <BIC tt:value-ref="PMTINF.CDTRAGT.FININSTNID.BIC"/>
+                <PstlAdr>
+                  <Ctry tt:value-ref="PMTINF.CDTRAGT.FININSTNID.PSTLADR.CTRY"/>
+                </PstlAdr>
+              </FinInstnId>
+              <tt:cond s-check="not-initial(PMTINF.CDTRAGT.BRNCHID.ID)">
+                <BrnchId>
+                  <Id tt:value-ref="PMTINF.CDTRAGT.BRNCHID.ID"/>
+                </BrnchId>
+              </tt:cond>
+            </CdtrAgt>
+            <tt:loop ref="$REF.PMTINF.DRCTDBTTXINF">
+              <DrctDbtTxInf>
+                <PmtId>
+                  <InstrId tt:value-ref="PMTID.INSTRID"/>
+                  <EndToEndId tt:value-ref="PMTID.ENDTOENDID"/>
+                </PmtId>
+                <PmtTpInf>
+                  <InstrPrty tt:value-ref="PMTTPINF.INSTRPRTY"/>
+                  <SvcLvl>
+                    <Cd tt:value-ref="PMTTPINF.SVCLVL.CD"/>
+                  </SvcLvl>
+                  <tt:cond s-check="not-initial(PMTTPINF.LCLINSTRM.CD)">
+                    <LclInstrm>
+                      <Cd tt:value-ref="PMTTPINF.LCLINSTRM.CD"/>
+                    </LclInstrm>
+                  </tt:cond>
+                </PmtTpInf>
+                <InstdAmt Ccy="GBP" tt:value-ref="INSTDAMT"/>
+                <ChrgBr tt:value-ref="CHRGBR"/>
+                <DrctDbtTx>
+                  <MndtRltdInf>
+                    <MndtId tt:value-ref="DRCTDBTTX.MNDTRLTDINF.MNDTID"/>
+                    <DtOfSgntr tt:value-ref="DRCTDBTTX.MNDTRLTDINF.DTOFSGNTR"/>
+                    <AmdmntInd tt:value-ref="DRCTDBTTX.MNDTRLTDINF.AMDMNTIND"/>
+                  </MndtRltdInf>
+                </DrctDbtTx>
+                <DbtrAgt>
+                  <FinInstnId>
+                    <BIC tt:value-ref="DBTRAGT.FININSTNID.BIC"/>
+                    <PstlAdr>
+                      <Ctry tt:value-ref="DBTRAGT.FININSTNID.PSTLADR.CTRY"/>
+                    </PstlAdr>
+                  </FinInstnId>
+                  <tt:cond s-check="not-initial(DBTRAGT.BRNCHID.ID)">
+                    <BrnchId>
+                      <Id tt:value-ref="DBTRAGT.BRNCHID.ID"/>
+                    </BrnchId>
+                  </tt:cond>
+                </DbtrAgt>
+                <Dbtr>
+                  <tt:cond s-check="not-initial(DBTR.NM)">
+                    <Nm tt:value-ref="DBTR.NM"/>
+                  </tt:cond>
+                  <PstlAdr>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.STRTNM)">
+                      <StrtNm tt:value-ref="DBTR.PSTLADR.STRTNM"/>
+                    </tt:cond>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.PSTCD)">
+                      <PstCd tt:value-ref="DBTR.PSTLADR.PSTCD"/>
+                    </tt:cond>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.TWNNM)">
+                      <TwnNm tt:value-ref="DBTR.PSTLADR.TWNNM"/>
+                    </tt:cond>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.CTRY)">
+                      <Ctry tt:value-ref="DBTR.PSTLADR.CTRY"/>
+                    </tt:cond>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.ADRLINE1)">
+                      <AdrLine tt:value-ref="DBTR.PSTLADR.ADRLINE1"/>
+                    </tt:cond>
+                    <tt:cond s-check="not-initial(DBTR.PSTLADR.ADRLINE2)">
+                      <AdrLine tt:value-ref="DBTR.PSTLADR.ADRLINE2"/>
+                    </tt:cond>
+                  </PstlAdr>
+                </Dbtr>
+                <DbtrAcct>
+                  <Id>
+                    <IBAN tt:value-ref="DBTRACCT.ID.IBAN"/>
+                  </Id>
+                  <tt:cond s-check="not-initial(DBTRACCT.NM)">
+                    <Nm tt:value-ref="DBTRACCT.NM"/>
+                  </tt:cond>
+                </DbtrAcct>
+                <RmtInf>
+                  <Ustrd tt:value-ref="RMTINF.USTRD"/>
+                </RmtInf>
+              </DrctDbtTxInf>
+            </tt:loop>
+          </PmtInf>
+        </CstmrDrctDbtInitn>
+      </tt:loop>
+    </Document>
+  </tt:template>
+</tt:transform>

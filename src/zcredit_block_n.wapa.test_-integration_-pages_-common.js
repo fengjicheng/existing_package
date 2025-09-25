@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("cob.v2.ZQTC_CREDIT_BLOCKED_ORDERS_SRV.test.integration.pages.Common",{createAWaitForAnEntitySet:function(t){return{success:function(){var e;var n=this.getMockServer().then(funct+
+ion(n){e=n.getEntitySetData(t.entitySet)});this.iWaitForPromise(n);return this.waitFor({success:function(){t.success.call(this,e)}})}}},getMockServer:function(){return new Promise(function(e){t.getWindow().sap.ui.require(["cob/v2/ZQTC_CREDIT_BLOCKED_ORDE+
+RS_SRV/localService/mockserver"],function(t){e(t.getMockServer())})})}})});                                                                                                                                                                                    

@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2022-03-07T13:52:00Z" uuid="32223f3f-0a12-4689-9ffe-5600600b5423">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_IN" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="1mm" w="206.375mm" x="1mm" y="269.875mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <subform minH="20mm" name="Sub_Logo" w="41mm" x="11.125mm" y="7.854mm">
+               <bind match="none"/>
+               <keep intact="none"/>
+               <field h="20mm" name="Wiley_Logo" w="41mm" x="0mm" y="0mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <bind match="dataRef" ref="$.WILEY_LOGO"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Sub_Body_Text" x="11.125mm" y="69.5mm">
+               <bind match="none"/>
+               <field minH="6.5mm" minW="195.25mm" name="ST_SEPA">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="12pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para marginLeft="1.417pt"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_SEPA"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">SEPA
+SAPScript Include Text 
+ NAME = ZQTC_F044_SEPA_5501 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="#subform[3]"/>
+                  </traversal>
+               </field>
+               <field minH="27.05mm" name="ST_HEAD" w="195.25mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para marginLeft="1.417pt" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_HEAD"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <desc>
+                     <exData name="Schema Annotation">HEAD TEXT
+SAPScript Include Text 
+ NAME = ZQTC_HEAD_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <traversal>
+                     <traverse ref="#subform[3]"/>
+                  </traversal>
+               </field>
+               <border>
+                  <edge/>
+                  <corner thickness="0.176mm"/>
+               </border>
+               <traversal>
+                  <traverse operation="first" ref="ST_HEAD[0]"/>
+                  <traverse ref="#subform[3]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" minH="28.575mm" name="Sub_Wiley_Address" w="61.9mm" x="11.125mm" y="35.5mm">
+               <bind match="none"/>
+               <field minH="22.575mm" name="Text_Wiley_Address" w="61.9mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_WILEY_ADDRESS"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <field h="6.35mm" minW="61.9mm" name="IM_CRD_NO" x="11.125mm" y="60.325mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.IM_CRD_NO"/>
+               <value>
+                  <text maxChars="100"/>
+               </value>
+               <desc>
+                  <text name="Schema Annotation">Character 100</text>
+               </desc>
+            </field>
+            <field h="6.35mm" minW="61.9mm" name="Text_COMP_NAME" x="11.125mm" y="28.575mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="bottom"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_COMP_NAME"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <subform h="70.4mm" w="195.25mm" x="11.125mm" y="119.95mm">
+               <bind match="none"/>
+               <subform h="70.4mm" w="177.375mm">
+                  <bind match="none"/>
+                  <field h="6.35mm" name="ST_BANK" w="61.9mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANK"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Bank
+SAPScript Include Text 
+ NAME = ZQTC_BANK_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_Street_Num" x="65.075mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.STREET"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_Zip_City" x="65.075mm" y="9.95mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.CITYPO"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_IBAN" w="61.9mm" y="9.95mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_IBAN"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">IBAN
+SAPScript Include Text 
+ NAME = ZQTC_IBAN_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_BIC" x="65.075mm" y="19.475mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_ACCOUNT" w="61.9mm" y="19.475mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_ACCOUNT"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Account
+SAPScript Include Text 
+ NAME = ZQTC_ACCOUNT_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_IBAN" x="65.075mm" y="29mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.KUNNR"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_BANK_ADDRESS" w="61.9mm" y="29mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_BANK_ADDRESS"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">House No
+SAPScript Include Text 
+ NAME = ZQTC_HOUSE_NO_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" name="ST_PAYMENT" w="36.5mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_PAYMENT"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Payment
+SAPScript Include Text 
+ NAME = ZQTC_PAYMENT_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" name="ST_REO" w="36.5mm" x="40.85mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_REO"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Reo
+SAPScript Include Text 
+ NAME = ZQTC_REO_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" name="Text_Blank1" w="9.525mm" x="78.95mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.176mm"/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_OR" w="28.575mm" x="91.65mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_OR"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Or
+SAPScript Include Text 
+ NAME = ZQTC_OR_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" name="ST_ON_TIME" w="34.925mm" x="123.4mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_ON_TIME"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">ON time
+SAPScript Include Text 
+ NAME = ZQTC_ONE_TIME_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" name="Text_Blank2" w="9.525mm" x="161.5mm" y="63.05mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="none"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.176mm"/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_STREET" x="65.075mm" y="37.625mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.KUNNR"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_STREET" w="61.9mm" y="37.625mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_STREET"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Postal Code
+SAPScript Include Text 
+ NAME = ZQTC_POSTCODE_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <traversal>
+                     <traverse operation="first" ref="ST_BANK[0]"/>
+                  </traversal>
+                  <field h="6.35mm" name="ST_CITY" w="61.9mm" y="45.975mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_CITY"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Postal Code
+SAPScript Include Text 
+ NAME = ZQTC_POSTCODE_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?>
+                  <field h="6.35mm" minW="61.9mm" name="Val_CITY" x="65.075mm" y="45.975mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.KUNNR"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+                  <field h="6.35mm" name="ST_POSTALCODE" w="61.9mm" y="54.325mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para marginLeft="1.417pt" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_POSTALCODE"/>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                     <desc>
+                        <exData name="Schema Annotation">Postal Code
+SAPScript Include Text 
+ NAME = ZQTC_POSTCODE_F044 
+ LANGUAGE-FIELD = IM_LANGU 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <field h="6.35mm" minW="61.9mm" name="Val_PostalCode" x="65.075mm" y="54.325mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.IM_ADRC.KUNNR"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <edge presence="hidden"/>
+                        <edge/>
+                        <edge presence="hidden"/>
+                        <corner/>
+                     </border>
+                  </field>
+               </subform>
+               <border>
+                  <edge/>
+                  <corner thickness="0.176mm"/>
+               </border>
+               <traversal>
+                  <traverse operation="first" ref="#subform[4]"/>
+               </traversal>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" minH="4mm" name="Sub_Text_Reference" w="51.575mm" x="11.125mm" y="200mm">
+               <bind match="none"/>
+               <field h="6.35mm" name="IM_REFERENCE_TEXT" w="50mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para marginLeft="1.417pt" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_REFERENCE_TEXT"/>
+                  <value>
+                     <text maxChars="50"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Comment</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" name="Sub_Reference" x="51mm" y="198mm">
+               <bind match="none"/>
+               <field h="11mm" name="FLD1" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD1"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD2" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD2"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD3" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD3"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD4" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD4"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD5" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD5"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD6" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD6"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD7" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD7"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD8" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD8"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD9" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD9"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD10" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD10"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD11" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD11"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <field h="11mm" name="FLD12" w="11mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <bind match="dataRef" ref="$.IM_IHREZ.FLD12"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.176mm"/>
+                  </border>
+                  <value>
+                     <text maxChars="1"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Single-Character Indicator</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <field minH="20mm" name="Text_Body_Text" w="195.25mm" x="11.125mm" y="194mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para marginLeft="1.417pt" vAlign="middle"/>
+               <bind match="none"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+               <border>
+                  <edge/>
+                  <corner/>
+               </border>
+            </field>
+            <subform h="21mm" name="SignatureSubForm" w="195.25mm" x="11.125mm" y="222mm">
+               <bind match="none"/>
+               <field access="readOnly" h="6.35mm" name="Signature" w="38mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_SIGNATURE"/>
+               </field>
+               <field access="readOnly" h="6.35mm" name="Name" w="38mm" y="7.075mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_NAME"/>
+               </field>
+               <field access="readOnly" h="6.35mm" name="Date" w="38mm" y="14mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT_FOLDER.ST_DD_DATE"/>
+               </field>
+               <field h="6.35mm" name="SignatureValue" w="62mm" x="39.25mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="none"/>
+                  <border break="open">
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="6.35mm" name="NameValue" w="62mm" x="39.25mm" y="7.075mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="none"/>
+                  <border break="open">
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </field>
+               <field h="6.35mm" name="DateValue" w="62mm" x="39.25mm" y="14mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0.01in">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="none"/>
+                  <border break="open">
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <corner/>
+                  </border>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="1mm" w="206.375mm"/>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:0?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/3.3/?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Zoom 107?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed2app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZQTC_FRM_DRCT_DEBT_SND_F044">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <WILEY_LOGO/>
+         <IM_IHREZ>
+            <FLD1/>
+            <FLD2/>
+            <FLD3/>
+            <FLD4/>
+            <FLD5/>
+            <FLD6/>
+            <FLD7/>
+            <FLD8/>
+            <FLD9/>
+            <FLD10/>
+            <FLD11/>
+            <FLD12/>
+         </IM_IHREZ>
+         <IM_STANDARD_TEXT>
+            <BIC/>
+         </IM_STANDARD_TEXT>
+         <IM_ADRC>
+            <STREET/>
+            <CITYPO/>
+            <KUNNR/>
+         </IM_ADRC>
+         <TEXT_MODULES>
+            <TM_STREET_NUM/>
+            <TM_ZIP_CITY/>
+            <TM_BIC/>
+            <TM_IBAN/>
+            <TM_DPS/>
+            <TM_PAYMENT/>
+            <TM_RECURRING/>
+            <TM_OR/>
+            <TM_UNIQUE/>
+         </TEXT_MODULES>
+         <STANDARD_TEXT_FOLDER>
+            <ST_BIC/>
+            <ST_WILEY_ADDRESS/>
+            <ST_SEPA/>
+            <ST_BODY_TEXT/>
+            <ST_COMP_NAME/>
+            <ST_REFERENCE_TEXT/>
+            <ST_CRD_NO/>
+            <ST_HEAD_H/>
+            <ST_HEAD/>
+            <ST_BANK/>
+            <ST_IBAN/>
+            <ST_ACCOUNT/>
+            <ST_HOUSE_NO/>
+            <ST_POSTALCODE/>
+            <ST_PAYMENT/>
+            <ST_REO/>
+            <ST_OR/>
+            <ST_ON_TIME/>
+            <ST_DATE/>
+            <ST_SIGNATURE/>
+            <ST_NAME/>
+            <ST_DD_DATE/>
+            <ST_STREET/>
+            <ST_CITY/>
+            <ST_BANK_ADDRESS/>
+         </STANDARD_TEXT_FOLDER>
+         <IM_REFERENCE_TEXT/>
+         <IM_CRD_NO/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (India)" name="en_IN">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D MMMM YYYY</datePattern>
+         <datePattern name="long">D MMMM YYYY</datePattern>
+         <datePattern name="med">DD-MMM-YY</datePattern>
+         <datePattern name="short">DD/MM/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz,zz9.99</numberPattern>
+         <numberPattern name="percent">z,zz,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">Rs.</currencySymbol>
+         <currencySymbol name="isoname">INR</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2022-03-07T13:52Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:32223f3f-0a12-4689-9ffe-5600600b5423</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

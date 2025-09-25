@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>D</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Advance Payment Reminder Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>V_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_DATUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_ITEM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_MIME_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* PROGRAM NAME:        ZQTC_INT_PROF_REMINDER_F045</FPCLINE>
+      <FPCLINE>* PROGRAM DESCRIPTION: Payment Remainder Form for Proformas</FPCLINE>
+      <FPCLINE>* DEVELOPER:           GKINTALI (Geeta Kintali)</FPCLINE>
+      <FPCLINE>* CREATION DATE:       01-Nov-2018</FPCLINE>
+      <FPCLINE>* OBJECT ID:           F045 (ERP-7668)</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S): ED2K913677</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO   :                                                      *</FPCLINE>
+      <FPCLINE>* REFERENCE NO  :                                                      *</FPCLINE>
+      <FPCLINE>* DEVELOPER     :                                                      *</FPCLINE>
+      <FPCLINE>* DATE          :                                                      *</FPCLINE>
+      <FPCLINE>* DESCRIPTION   :                                                      *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>** Fields from VBRK</FPCLINE>
+      <FPCLINE>  TYPES : BEGIN OF ty_item,          &quot;  Declaring the type of item</FPCLINE>
+      <FPCLINE>*            fkdat    TYPE  fkdat,    &quot;  Billing date for billing index and printout</FPCLINE>
+      <FPCLINE>            fkdat    TYPE  char15,    &quot;  Billing date for billing index and printout</FPCLINE>
+      <FPCLINE>            vbeln    TYPE  vbeln_vf, &quot;  Document number</FPCLINE>
+      <FPCLINE>            bstnk_vf TYPE  bstkd,    &quot; Customer purchase order number</FPCLINE>
+      <FPCLINE>            netwr    TYPE  char30,   &quot; NETWR of type CHAR30</FPCLINE>
+      <FPCLINE>*            netwr    TYPE  netwr,    &quot; Net Value in Document Currency</FPCLINE>
+      <FPCLINE>            waerk    TYPE  waerk,    &quot; Currency Key</FPCLINE>
+      <FPCLINE>          END OF ty_item,</FPCLINE>
+      <FPCLINE>          tt_item TYPE STANDARD TABLE OF ty_item INITIAL SIZE 0.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BODY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DATUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ACC_W</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KUNNR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>INTAD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PH_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TLFNR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SNAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SNAME_001S</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CORP_DUNS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TOT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPRAS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBRK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBRK_TTY</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>IM_TOT</FPPARAMETER>
+      <FPPARAMETER>IM_DATUM</FPPARAMETER>
+      <FPPARAMETER>V_XSTRING</FPPARAMETER>
+      <FPPARAMETER>IM_VBRK</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>V_DATUM</FPPARAMETER>
+      <FPPARAMETER>V_TOTAL</FPPARAMETER>
+      <FPPARAMETER>IT_ITEM</FPPARAMETER>
+      <FPPARAMETER>V_XSTRING</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* PROGRAM NAME:        ZQTC_INT_PROF_REMINDER_F045</FPCLINE>
+      <FPCLINE>* PROGRAM DESCRIPTION: Payment Remainder Form for Proformas</FPCLINE>
+      <FPCLINE>* DEVELOPER:           GKINTALI (Geeta Kintali)</FPCLINE>
+      <FPCLINE>* CREATION DATE:       01-Nov-2018</FPCLINE>
+      <FPCLINE>* OBJECT ID:           F045 (ERP-7668)</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S): ED2K913677</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO   :                                                      *</FPCLINE>
+      <FPCLINE>* REFERENCE NO  :                                                      *</FPCLINE>
+      <FPCLINE>* DEVELOPER     :                                                      *</FPCLINE>
+      <FPCLINE>* DATE          :                                                      *</FPCLINE>
+      <FPCLINE>* DESCRIPTION   :                                                      *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Local Variables Declarations</FPCLINE>
+      <FPCLINE>DATA: lst_vbrk        TYPE vbrk,</FPCLINE>
+      <FPCLINE>      lst_item        TYPE ty_item,</FPCLINE>
+      <FPCLINE>      lv_amount       TYPE char20,       &quot; Amount of type CHAR20</FPCLINE>
+      <FPCLINE>      lv_credit_debit TYPE netwr,        &quot; Net Value in Document Currency</FPCLINE>
+      <FPCLINE>      lv_curr         TYPE waerk,</FPCLINE>
+      <FPCLINE>      lv_total        TYPE netwr,</FPCLINE>
+      <FPCLINE>      lv_total_char   TYPE char20,       &quot; Total of type CHAR20</FPCLINE>
+      <FPCLINE>      lv_date         TYPE char2,        &quot; Date of type CHAR2</FPCLINE>
+      <FPCLINE>      lv_mnth_c2      TYPE char2,        &quot; Mnthc2 of type CHAR2</FPCLINE>
+      <FPCLINE>      lv_mnth_c3      TYPE char3,        &quot; Mnthc3 of type CHAR3</FPCLINE>
+      <FPCLINE>      lv_month        TYPE t247-ltx,     &quot; Month long text</FPCLINE>
+      <FPCLINE>      lv_year         TYPE char4,        &quot; Year of type CHAR4</FPCLINE>
+      <FPCLINE>      lv_datum        TYPE char15.       &quot; Char field for DD-MMM-YYYY date format</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Local Constants Declarations</FPCLINE>
+      <FPCLINE>CONSTANTS:  lc_open_brace     TYPE char1 VALUE &apos;(&apos;, &quot; Open_brace of type CHAR1</FPCLINE>
+      <FPCLINE>            lc_close_brace    TYPE char1 VALUE &apos;)&apos;. &quot; Close_brace of type CHAR1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>****  Get Logo</FPCLINE>
+      <FPCLINE>PERFORM f_get_logo CHANGING v_xstring.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Preparing the ITEM data</FPCLINE>
+      <FPCLINE>LOOP AT im_vbrk INTO lst_vbrk.</FPCLINE>
+      <FPCLINE>***********************</FPCLINE>
+      <FPCLINE>****  Change Date format to DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;HR_IN_GET_DATE_COMPONENTS&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      idate                         = lst_vbrk-fkdat</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      day                           = lv_date</FPCLINE>
+      <FPCLINE>      month                         = lv_mnth_c2</FPCLINE>
+      <FPCLINE>      year                          = lv_year</FPCLINE>
+      <FPCLINE>      ltext                         = lv_month</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      input_date_is_initial         = 1</FPCLINE>
+      <FPCLINE>      text_for_month_not_maintained = 2</FPCLINE>
+      <FPCLINE>      OTHERS                        = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    lv_mnth_c3 = lv_month(3).</FPCLINE>
+      <FPCLINE>    CONCATENATE lv_date</FPCLINE>
+      <FPCLINE>                lv_mnth_c3</FPCLINE>
+      <FPCLINE>                lv_year</FPCLINE>
+      <FPCLINE>           INTO lv_datum</FPCLINE>
+      <FPCLINE>    SEPARATED BY &apos;-&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>***********************</FPCLINE>
+      <FPCLINE>  lst_item-fkdat = lv_datum. &quot; lst_vbrk-fkdat.</FPCLINE>
+      <FPCLINE>  lst_item-vbeln = lst_vbrk-vbeln.</FPCLINE>
+      <FPCLINE>  lst_item-bstnk_vf = lst_vbrk-bstnk_vf.</FPCLINE>
+      <FPCLINE>  IF lst_vbrk-netwr LT 0.</FPCLINE>
+      <FPCLINE>    lv_credit_debit = lst_vbrk-netwr * ( -1 ).</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    lv_credit_debit = lst_vbrk-netwr.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Storing the currency in a local variable for further use.</FPCLINE>
+      <FPCLINE>  lv_curr = lst_vbrk-waerk.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  WRITE lv_credit_debit TO lv_amount CURRENCY lst_vbrk-waerk.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos; &quot; to get the value of amount with currency</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = lv_amount.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF lst_vbrk-netwr LT 0.</FPCLINE>
+      <FPCLINE>    CONCATENATE lc_open_brace</FPCLINE>
+      <FPCLINE>                lv_amount</FPCLINE>
+      <FPCLINE>                lc_close_brace</FPCLINE>
+      <FPCLINE>           INTO lst_item-netwr.</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    lst_item-netwr = lv_amount.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  APPEND lst_item to it_item.</FPCLINE>
+      <FPCLINE>  CLEAR lst_item.</FPCLINE>
+      <FPCLINE>ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Populating the Reminder / Notification Date in DD_MMM_YYYY format</FPCLINE>
+      <FPCLINE>v_datum = im_datum.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Formatting the pricing values wiht currency. Inserting braces if negative amount.</FPCLINE>
+      <FPCLINE>IF im_tot LT 0.</FPCLINE>
+      <FPCLINE>  lv_total = im_tot * ( -1 ).</FPCLINE>
+      <FPCLINE>  WRITE lv_total TO lv_total_char CURRENCY lv_curr.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos; &quot; To get the value of total with currency</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = lv_total_char.</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_open_brace</FPCLINE>
+      <FPCLINE>              lv_total_char</FPCLINE>
+      <FPCLINE>              lc_close_brace</FPCLINE>
+      <FPCLINE>         INTO v_total.</FPCLINE>
+      <FPCLINE>  CONCATENATE lv_curr &quot;currency</FPCLINE>
+      <FPCLINE>              v_total</FPCLINE>
+      <FPCLINE>          INTO v_total</FPCLINE>
+      <FPCLINE>          SEPARATED BY space.</FPCLINE>
+      <FPCLINE> ELSE. &quot; ELSE -&gt; IF lv_total LT 0</FPCLINE>
+      <FPCLINE>  lv_total = im_tot.</FPCLINE>
+      <FPCLINE>  WRITE lv_total TO lv_total_char CURRENCY lv_curr.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;CLOI_PUT_SIGN_IN_FRONT&apos; &quot; To get the value of total with currency</FPCLINE>
+      <FPCLINE>    CHANGING</FPCLINE>
+      <FPCLINE>      value = lv_total_char.</FPCLINE>
+      <FPCLINE>  CONCATENATE lv_curr &quot;currency</FPCLINE>
+      <FPCLINE>            lv_total_char</FPCLINE>
+      <FPCLINE>       INTO v_total</FPCLINE>
+      <FPCLINE>       SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF lv_total LT 0</FPCLINE>
+      <FPCLINE>  CLEAR: lv_total,</FPCLINE>
+      <FPCLINE>         lv_total_char.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* PROGRAM NAME:        ZQTC_INT_PROF_REMINDER_F045</FPCLINE>
+      <FPCLINE>* PROGRAM DESCRIPTION: Payment Remainder Form for Proformas</FPCLINE>
+      <FPCLINE>* DEVELOPER:           GKINTALI (Geeta Kintali)</FPCLINE>
+      <FPCLINE>* CREATION DATE:       01-Nov-2018</FPCLINE>
+      <FPCLINE>* OBJECT ID:           F045 (ERP-7668)</FPCLINE>
+      <FPCLINE>* TRANSPORT NUMBER(S): ED2K913677</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION HISTORY-----------------------------------------------------*</FPCLINE>
+      <FPCLINE>* REVISION NO   :                                                      *</FPCLINE>
+      <FPCLINE>* REFERENCE NO  :                                                      *</FPCLINE>
+      <FPCLINE>* DEVELOPER     :                                                      *</FPCLINE>
+      <FPCLINE>* DATE          :                                                      *</FPCLINE>
+      <FPCLINE>* DESCRIPTION   :                                                      *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_GET_LOGO</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Perform to get logo</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_logo CHANGING fp_v_xstring TYPE xstring.</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>    lc_logo_name TYPE tdobname   VALUE &apos;ZJWILEY_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>    lc_object    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;,     &quot; SAPscript</FPCLINE>
+      <FPCLINE>    lc_id        TYPE tdidgr     VALUE &apos;BMAP&apos;,         &quot; SAPscript</FPCLINE>
+      <FPCLINE>    lc_btype     TYPE tdbtype    VALUE &apos;BMON&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_object    &quot; GRAPHICS</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_name &quot; Z_ENTERPRISE_LOGO</FPCLINE>
+      <FPCLINE>      p_id           = lc_id        &quot; BMAP</FPCLINE>
+      <FPCLINE>      p_btype        = lc_btype     &quot; BMON</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = fp_v_xstring &quot; Image Data</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* No need to raise the messages, Form will be printed</FPCLINE>
+      <FPCLINE>* without the logo</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

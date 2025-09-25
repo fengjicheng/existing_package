@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Get the name of logo for Form</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_GET_FORM_LOGO_NAMEF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_GET_FORM_LOGO_NAMETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_GET_FORM_LOGO_NAME</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_FORM_LOGO_NAME</FUNCNAME>
+     <SHORT_TEXT>Get the name of LOGO for Form</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DOC_NO</PARAMETER>
+       <TYP>VBELN_VA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DOC_TYPE</PARAMETER>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_LOGO_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR100</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_SOLD_TO_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>NAME1_GP</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NON_SOCIETY_CUSTOMERS</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NON_SOCIETY_MATERIALS</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_DOCUMENT_NUMBER</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_DOCUMENT_TYPE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>MATERIAL_GROUP_NOT_MAINTAINED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DOC_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DOC_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_LOGO_NAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character 100</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_SOLD_TO_NAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Name 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NON_SOCIETY_CUSTOMERS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Customer numbers are not society customers</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NON_SOCIETY_MATERIALS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Non Society Materials</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_DOCUMENT_NUMBER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_DOCUMENT_TYPE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MATERIAL_GROUP_NOT_MAINTAINED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Material Group is not maintained in Constant table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_GET_FORM_LOGO_NAME>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_GET_FORM_LOGO_NAME</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00005</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_GET_FORM_LOGO_NAME</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Function Module will return logo name on the basis of customer number.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_GET_FORM_LOGO_NAME>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,5 @@
+"Name: \PR:SD_SALES_DOCUMENT_VA25\IC:SD_SALES_DOCUMENT_SELSCR_OUTP\SE:END\EI
+ENHANCEMENT 0 ZQTCEI_ADD_FIELDS_VA25.
+* Created Implicit Enhancement as per SAP's suggestion (OSS Message: 288171 / 2017)
+  INCLUDE zqtcn_add_fields_va25_sel_text IF FOUND.
+ENDENHANCEMENT.

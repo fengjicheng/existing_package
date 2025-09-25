@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>BP Validations</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_BP_VALIDATIONSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_BP_VALIDATIONS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_BUA_BUPA_PBO_BUA110_LH</FUNCNAME>
+     <SHORT_TEXT>Set INT as Default Value for Std. Comm. Method</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_BUP0ID_EVENT_DCHCK_E165</FUNCNAME>
+     <SHORT_TEXT>BP Validations</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_BUPA_PBO_CVIC70_LH</FUNCNAME>
+     <SHORT_TEXT>PBO zu Sicht CVIC70 (Partnerrollen)</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_BUP_BUPA_EVENT_DCHCK_E165</FUNCNAME>
+     <SHORT_TEXT>BP Validations</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_BUP_BUPA_EVENT_DTAKE</FUNCNAME>
+     <SHORT_TEXT>Time DTAKE: Update data to LM</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_BUR_BUPR_EVENT_DCHCK_E165</FUNCNAME>
+     <SHORT_TEXT>BP Validations</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_CVIC_BUPA_PBO_CVIC91</FUNCNAME>
+     <SHORT_TEXT>Adding default values in customer sales area tab</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_ISM_BUPA_EVENT_DSAVE</FUNCNAME>
+     <SHORT_TEXT>Default Credit and Collection Master Fields</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("recon.ZRECON_DASHBOARD.controller.middleware",{onInit:function(){var e=this.getOwnerComponent().getRouter();e.getRoute("middleware").attachMatched(this._onRouteMatched+
+,this)},onPageBack:function(){this.getOwnerComponent().getRouter().navTo("TargetAnalytical",true)},_onRouteMatched:function(e){var t=decodeURIComponent(e.getParameter("arguments").wricef);var n=this.getView();n.bindElement({path:t})}})});                 

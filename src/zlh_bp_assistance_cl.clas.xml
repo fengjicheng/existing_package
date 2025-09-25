@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZLH_BP_ASSISTANCE_CL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Assistance Class for ZBP_TEST</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADDR_DOCT_BATCH_VALIDATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Address Doctor - BATCH Validation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ADDR_DOCT_INTERACT_VALIDATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Address Doctor - Interactive Validation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_NO_XRF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business partner role definition instead of BP relationship</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_VALID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>R/2 table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ALL_REL_CAT_TYPES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Directed relationship types</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ADDR2_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer structure for person with private address</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ADDR_CHK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure for Address Check Validation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ADRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Include structure with ADRC attributes without name fields</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_COUNTERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for BURS_RELATIONSHIP_COUNT</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POPULATE_ADDR_FROM_CDM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Populate Address Information from CDM</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POPULATE_ADDR_FROM_SAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Populate Address Information from SAP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TY_REL_TYPE_TAB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relationship Categories: All Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>VALIDATE_ADDR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Validate Address against SAP, CDM</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADDR_DOCT_BATCH_VALIDATION</CMPNAME>
+     <SCONAME>ES_ADRC</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Include structure with ADRC attributes without name fields</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADDR_DOCT_BATCH_VALIDATION</CMPNAME>
+     <SCONAME>IS_ADDR_CHK</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure for Address Check Validation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADDR_DOCT_INTERACT_VALIDATION</CMPNAME>
+     <SCONAME>IS_ADDR_CHECK</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure for Address Check Validation</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ALL_REL_CAT_TYPES</CMPNAME>
+     <SCONAME>ET_DEL_RELATIONS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Relationship Categories: All Data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ALL_REL_CAT_TYPES</CMPNAME>
+     <SCONAME>ET_REL_TYPES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Private: Table Category for BURS_RELATIONSHIP_DTYPE</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ALL_REL_CAT_TYPES</CMPNAME>
+     <SCONAME>IV_PARTNER_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business partner category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_COUNTER</CMPNAME>
+     <SCONAME>IS_DIRECTED_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Private: Relationship Category including Direction</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_COUNTS</CMPNAME>
+     <SCONAME>ET_DIRECTED_TYPE_COUNTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type for BURS_RELATIONSHIP_COUNT</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_COUNTS</CMPNAME>
+     <SCONAME>IT_DIRECTED_TYPES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Private: Table Category for BURS_RELATIONSHIP_DTYPE</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_COUNTS</CMPNAME>
+     <SCONAME>IV_PARTNER_NUMBER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Partner Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_TITLE</CMPNAME>
+     <SCONAME>EV_TITLE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Description</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_TITLE</CMPNAME>
+     <SCONAME>IS_DIRECTED_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Private: Relationship Category including Direction</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_REL_CAT_TITLE</CMPNAME>
+     <SCONAME>IV_LANGUAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Language Key of Text Environment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POPULATE_ADDR_FROM_CDM</CMPNAME>
+     <SCONAME>IS_ADDR_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer structure for person with private address</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POPULATE_ADDR_FROM_SAP</CMPNAME>
+     <SCONAME>IS_ADDR_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer structure for person with private address</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VALIDATE_ADDR</CMPNAME>
+     <SCONAME>IS_ADDR_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transfer structure for person with private address</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>VALIDATE_ADDR</CMPNAME>
+     <SCONAME>IV_PARTNER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Partner Number</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

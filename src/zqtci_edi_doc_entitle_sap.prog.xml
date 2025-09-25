@@ -1,0 +1,1302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCI_EDI_DOC_ENTITLE_SAP</NAME>
+    <SUBC>1</SUBC>
+    <APPL>*</APPL>
+    <SECU>ZENTL</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Customer email</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Journal</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Subs Ref</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Order date</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>New record</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Subs type</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>007</KEY>
+     <ENTRY>Address 1</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>008</KEY>
+     <ENTRY>Address 2</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>009</KEY>
+     <ENTRY>Address3</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>010</KEY>
+     <ENTRY>Address 4</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>011</KEY>
+     <ENTRY>City</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>012</KEY>
+     <ENTRY>Country Text</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>013</KEY>
+     <ENTRY>Postcode</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>015</KEY>
+     <ENTRY>No data selected</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>016</KEY>
+     <ENTRY>No Data Found on</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>017</KEY>
+     <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>018</KEY>
+     <ENTRY>tom.hickey@astekweb.com</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>019</KEY>
+     <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Selection Criteria</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+     <LENGTH>66</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_FILE</KEY>
+     <ENTRY>File path</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUART</KEY>
+     <ENTRY>Sales Document type</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_JCODE</KEY>
+     <ENTRY>Journal Group Code</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>3</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>M</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Customer email</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Subs Ref</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Order date</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>New record</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Subs type</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>007</KEY>
+       <ENTRY>Address 1</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Address 2</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Address3</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Address 4</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>City</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Country Text</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Postcode</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Country Code</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>015</KEY>
+       <ENTRY>No data selected</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>016</KEY>
+       <ENTRY>No Data Found on</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>017</KEY>
+       <ENTRY>tmcavoy@thealliedgrp.com</ENTRY>
+       <LENGTH>48</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>018</KEY>
+       <ENTRY>tom.hickey@astekweb.com</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>019</KEY>
+       <ENTRY>I0296_Entitlement_Journal_SAP_</ENTRY>
+       <LENGTH>60</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>020</KEY>
+       <ENTRY>xxxxxxxxxxxxxxxxxxxxxxx</ENTRY>
+       <LENGTH>46</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>S01</KEY>
+       <ENTRY>Selection Criteria</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Program for I0296 - Generate EDI Document for Entitlement from SAP</ENTRY>
+       <LENGTH>66</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FILE</KEY>
+       <ENTRY>File path</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUART</KEY>
+       <ENTRY>Sales Document type</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_JCODE</KEY>
+       <ENTRY>Journal Group Code</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCI_EDI_DOC_ENTITLE_SAP</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00039</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCI_EDI_DOC_ENTITLE_SAP</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>For entitlements on subscription journals, an EDI document transmitted</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>via a csv file will be triggered in SAP to be sent to Allied or Aztec to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>update them on the current subscription status in SAP for all their</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>applicable journals. For entitlements on subscription journals, an EDI</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>document via a csv file from SAP will be sent to Allied or Aztec so they</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have the most current subscription data.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The Allied file contains the following.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Customer Email</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Journal Group Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Subscription Reference ID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Order Date</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,New Record</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Subscription Type</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Address 1</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Address 2</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Address 3</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>·,,Address 4</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,City</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,Country</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,Post Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,Country</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>The Aztec file will contain only a subset of the Allied file which will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>include the following. Customer Email</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,Journal Group Code</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>-,,Subscription Reference ID</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>Once csv files are transmitted from SAP, these files will be stored in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wiley’s internal FTP server. The customer emails, addresses, cities, and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>countries will derive from the sold-to and ship-to partner functions in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>SAP. In the case of the sold-to partner function, company and department</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information including their address information and email will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>stored. In the case of the ship-to partner function, the actual customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information including their address information and email will be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>stored. If the sold-to and ship-to partner functions are same, then the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>mapping will be derived from the ship-to to retrieve customer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>information in the csv file. This information will be mapped from SAP to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the csv file.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

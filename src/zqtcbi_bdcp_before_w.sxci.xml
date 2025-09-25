@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZQTCBI_BDCP_BEFORE_W</IMP_NAME>
+     <TEXT>Enhancement for Digital Media issue change pointers</TEXT>
+     <IMP_CLASS>ZCL_IM_QTCBI_BDCP_BEFORE_W</IMP_CLASS>
+     <EXIT_NAME>BDCP_BEFORE_WRITE</EXIT_NAME>
+     <INTER_NAME>IF_EX_BDCP_BEFORE_WRITE</INTER_NAME>
+     <ACTIVE>X</ACTIVE>
+    </IMPLEMENTATION_DATA>
+    <FILTERS>
+     <item>
+      <FLT_VAL>ZQTC_ISM_MATMAS_ARR_DAT</FLT_VAL>
+     </item>
+    </FILTERS>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

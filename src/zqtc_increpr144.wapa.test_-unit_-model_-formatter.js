@@ -1,0 +1,3 @@
+sap.ui.define(["ir/ZE144_IncompletionReport/model/formatter"],function(t){"use strict";QUnit.module("Number unit");function n(n,i,u){var o=t.numberUnit(i);n.strictEqual(o,u,"The rounding was correct")}QUnit.test("Should round down a 3 digit number",funct+
+ion(t){n.call(this,t,"3.123","3.12")});QUnit.test("Should round up a 3 digit number",function(t){n.call(this,t,"3.128","3.13")});QUnit.test("Should round a negative number",function(t){n.call(this,t,"-3","-3.00")});QUnit.test("Should round an empty strin+
+g",function(t){n.call(this,t,"","")});QUnit.test("Should round a zero",function(t){n.call(this,t,"0","0.00")})});                                                                                                                                              

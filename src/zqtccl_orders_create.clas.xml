@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZQTCCL_ORDERS_CREATE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Mass Orders Create</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Error</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Success</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>I_E506_STAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>To capture the file processing data for Status of Upload</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_CR_DR_MEMO</CMPNAME>
+     <SCONAME>CH_CR_DR_MEMO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for Credit/Debit Memo Upload</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_CR_DR_MEMO</CMPNAME>
+     <SCONAME>EX_CR_DR_MEMO_OUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for Credit/Debit Memo output</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_REGULAR_ORDERS</CMPNAME>
+     <SCONAME>CH_REG_ORDERS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Tabletype for Regular Order Upload</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_REGULAR_ORDERS</CMPNAME>
+     <SCONAME>EX_REG_ORD_OUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for regular order create output</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>CH_REG_ORDERS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type for regular order create output</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>IM_DWERK</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivering Plant</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>IM_INCPO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Increment of item number in the SD document</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>IM_INDEX</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Loop Index</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>IM_KWMENG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cumulative Order Quantity in Sales Units</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BOM</CMPNAME>
+     <SCONAME>IM_MATNR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Material Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPDATE_LOG_STAGING</CMPNAME>
+     <SCONAME>CH_LOGNO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application log: log number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPDATE_LOG_STAGING</CMPNAME>
+     <SCONAME>IM_LOG_HANDLE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Application Log: Log Handle</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPDATE_LOG_STAGING</CMPNAME>
+     <SCONAME>IM_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return parameter table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>UPDATE_LOG_STAGING</CMPNAME>
+     <SCONAME>IM_VBELN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sales and Distribution Document Number</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z1MIDDLEMAN_MARKUP_RATE_TYPE</OBJ_NAME>
+     <OBJECT_M>DTEL</OBJECT_M>
+     <OBJ_NAME_M>Z1MIDDLEMAN_MARKUP_RATE_TYPE</OBJ_NAME_M>
+     <HASH_ID>E58BCAEE1B029E0F66984CB81A6280873D20302F</HASH_ID>
+     <ID>&lt;type&gt; MiddlemanMarkupRateType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>MiddlemanMarkupRateType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</X-ML_NSPCE>
+     <X-ML_NAME>MiddlemanMarkupRateType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z1MIDDLEMAN_MARKUP_RATE_TYPE</OBJ_NAME>
+     <OBJECT1>DTEL</OBJECT1>
+     <OBJ_NAME1>Z1MIDDLEMAN_MARKUP_RATE_TYPE</OBJ_NAME1>
+     <OBJECT2>DTEL</OBJECT2>
+     <OBJ_NAME2>Z1MIDDLEMAN_MARKUP_RATE_TYPE</OBJ_NAME2>
+     <ID>&lt;type&gt; MiddlemanMarkupRateType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>MiddlemanMarkupRateType</IFR_NAME>
+     <IFR_TEXT>
+				This is the corresponding rate for the MiddlemanMarkupAmountType (See the explanation for that</IFR_TEXT>
+     <IFR_XSDTYP>decimal</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>DTEL</R3_TYPE>
+     <R3_NAME>Z1MIDDLEMAN_MARKUP_RATE_TYPE</R3_NAME>
+     <R3_TEXT>
+				This is the corresponding rate for the MiddlemanMarkupA</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5","./arrangements/Startup","./WorklistJourney","./NavigationJourney","./NotFoundJourney","./ObjectJourney"],function(e,t){"use strict";e.extendConfig({arrangements:new t,viewNamespace:"ir.ZE144_IncompletionReport.view.",au+
+toWait:true})});                                                                                                                                                                                                                                               

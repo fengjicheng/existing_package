@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZZPSTLZ_T</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>PSTLZ</DOMNAME>
+    <HEADLEN>10</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Postal Code (To)</DDTEXT>
+    <REPTEXT>PostCdTo</REPTEXT>
+    <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+    <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+    <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Postal Code (To)</DDTEXT>
+     <REPTEXT>PostCdTo</REPTEXT>
+     <SCRTEXT_S>PostCdTo</SCRTEXT_S>
+     <SCRTEXT_M>Postal Cd (To)</SCRTEXT_M>
+     <SCRTEXT_L>Postal Code (To)</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>DE</ID>
+      <OBJECT>ZZPSTLZ_T</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00002</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZZPSTLZ_T</TDNAME>
+      <TDID>DE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEFINITION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Postal Code (To)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;USE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Maintain Sales Rep PIGS Table Lookup</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;DEPENDENCIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

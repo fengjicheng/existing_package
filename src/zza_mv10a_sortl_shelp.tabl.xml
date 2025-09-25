@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZA_MV10A_SORTL_SHELP</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>MV10A</SQLTAB>
+    <DDTEXT>E253: Append structure to add Search hekp for SORTL</DDTEXT>
+   </DD02V>
+   <DD35V_TALE>
+    <DD35V>
+     <FIELDNAME>SORTL</FIELDNAME>
+     <SHLPNAME>ZQTCE_CMIR_SERACHTERM_SHELP</SHLPNAME>
+     <SHLPINHER>E</SHLPINHER>
+    </DD35V>
+   </DD35V_TALE>
+   <DD36M>
+    <DD36M>
+     <FIELDNAME>SORTL</FIELDNAME>
+     <SHLPNAME>ZQTCE_CMIR_SERACHTERM_SHELP</SHLPNAME>
+     <SHLPFIELD>SORTL</SHLPFIELD>
+     <FLPOSITION>0001</FLPOSITION>
+     <SHTABLE>MV10A</SHTABLE>
+     <SHFIELD>SORTL</SHFIELD>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <ROLLNAME>SORTL</ROLLNAME>
+     <DOMNAME>CHAR10</DOMNAME>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000010</LENG>
+    </DD36M>
+   </DD36M>
+  </asx:values>
+ </asx:abap>
+</abapGit>

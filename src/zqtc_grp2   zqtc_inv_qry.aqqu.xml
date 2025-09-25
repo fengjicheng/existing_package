@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_AQQU" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AQGQCAT>
+    <AQGQCAT>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <CLAS>ZQTC_RINV_INFSET1</CLAS>
+    </AQGQCAT>
+   </AQGQCAT>
+   <AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00001</TINDX>
+     <HEAD>X</HEAD>
+     <MODIF>0001</MODIF>
+     <MAXL>060</MAXL>
+     <TEXT>QTC INVOICE REPORT</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00002</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>066</MAXL>
+     <TEXT>QTC INVOICE  DATA REPORT</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00005</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00006</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material Number</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00007</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Material entered</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00008</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Sales organization of sales or</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00015</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Billing Document</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00016</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Division</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00017</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Office</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00018</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sales Group</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00041</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer group of sales order</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00048</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Customer condition group 2</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00053</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Billing item</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00054</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Distribution channel of sales</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00055</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Payer</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00056</TINDX>
+     <MAXL>030</MAXL>
+     <TEXT>Sold-to party</TEXT>
+    </AQGTQ>
+    <AQGTQ>
+     <SPRSL>E</SPRSL>
+     <NUM>ZQTC_GRP2</NUM>
+     <QNUM>ZQTC_INV_QRY</QNUM>
+     <TINDX>00061</TINDX>
+     <MODIF>0001</MODIF>
+     <MAXL>030</MAXL>
+     <TEXT>Billing date for billing index</TEXT>
+    </AQGTQ>
+   </AQGTQ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>OSS# 1277798 - Problem with client copy</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZUDM_CLIENT_COPYTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZUDM_CLIENT_COPY</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZUDM_FETCH_STRATEGY_VERSIONS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>OSS# 1277798: To fetch the strategy versions</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_STR_VERS</PARAMETER>
+       <DBSTRUCT>UDM_STRATEGY_V</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>T_STR_VERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Strategies</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

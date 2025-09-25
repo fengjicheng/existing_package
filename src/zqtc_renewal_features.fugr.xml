@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Modules for renewal features</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_RENEWAL_FEATURESF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_RENEWAL_FEATURESTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_RENEWAL_FEATURES</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_FUTURE_RENEWALS_E256</FUNCNAME>
+     <SHORT_TEXT>Contract with free position and subsequent normal position</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSDORDER2_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TRL_BORID</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer number 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table of BOR objects</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_Z1_CONTRACT_CREATE_CIC</FUNCNAME>
+     <SHORT_TEXT>Contract with free position and subsequent normal position</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSDORDER2_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TRL_BORID</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer number 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table of BOR objects</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_Z3_QUOTATION_CREATE_CIC</FUNCNAME>
+     <SHORT_TEXT>Contract with free position and subsequent normal position</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSDORDER2_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RJKSECONTRACTCIC_TAB</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TRL_BORID</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IN_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer number 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_CONTRACT_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for orders</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_LINE_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of rjksecontractcic</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUT_CHANGED_BOR_OBJECTS_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table of BOR objects</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

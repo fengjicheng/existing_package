@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME_M>
+     <HASH_ID>09B6E00914571C20806B82BFB1BB6D56D859BCEA</HASH_ID>
+     <ID>&lt;type&gt; InclusiveTaxIndicatorsType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>InclusiveTaxIndicatorsType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</X-ML_NSPCE>
+     <X-ML_NAME>InclusiveTaxIndicatorsType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>AUTHORITY_TYPE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>AUTHORITY_TYPE</OBJ_NAME2>
+     <OBJECT_R>TTYP</OBJECT_R>
+     <OBJ_NAME_R>Z1STRING_TAB</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}AUTHORITY_TYPE &lt;type&gt; InclusiveTaxIndicatorsType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>AUTHORITY_TYPE</IFR_NAME>
+     <IFR_TEXT>
+If the authority selected for a transaction matches the type indicated here, all taxes for that aut</IFR_TEXT>
+     <IFR_TAGTYP>L</IFR_TAGTYP>
+     <IFR_MAXOCC>65535</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>AUTHORITY_TYPE</R3_NAME>
+     <R3_TEXT>
+If the authority selected for a transaction matches the typ</R3_TEXT>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>FULLY_INCLUSIVE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>FULLY_INCLUSIVE</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1BOOLEAN_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}FULLY_INCLUSIVE &lt;type&gt; InclusiveTaxIndicatorsType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>FULLY_INCLUSIVE</IFR_NAME>
+     <IFR_TEXT>
+ If set to true, indicates that all authorities that Sabrix will select for taxing will be consider</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>FULLY_INCLUSIVE</R3_NAME>
+     <R3_TEXT>
+ If set to true, indicates that all authorities that Sabrix</R3_TEXT>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1INCLUSIVE_TAX_INDICATORS_TYP</OBJ_NAME2>
+     <ID>&lt;type&gt; InclusiveTaxIndicatorsType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>InclusiveTaxIndicatorsType</IFR_NAME>
+     <IFR_TEXT>
+Contains information on whether to treat some or all authority taxes for this invoice as inclusive,</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1INCLUSIVE_TAX_INDICATORS_TYP</R3_NAME>
+     <R3_TEXT>
+Contains information on whether to treat some or all author</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZQTC_SE16_MAKT</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZQTC_SE16_MAKT</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZQTC_SE16_MAKT</TCODE>
+    <TTEXT>SE16 display for MAKT table</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZQTC_SE16_MAKT</TCODE>
+    <PARAM>/*SE16 DATABROWSE-TABLENAME=MAKT;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>

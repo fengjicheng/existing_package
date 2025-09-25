@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/test/Opa5","../../../localService/mockserver"],function(e,t){"use strict";return e.extend("orders.ZSD_ORDERS.test.integration.pages.Common",{theUnitNumbersShouldHaveTwoDecimals:function(t,r,n,s){var i=/^-?(\d+,)?\d+\.\d{2}$/;return+
+ this.waitFor({controlType:t,viewName:r,success:function(t){e.assert.ok(t.every(function(e){return i.test(e.getNumber())}),n)},errorMessage:s})},getEntitySet:function(e){return t.getMockServer().getEntitySetData(e)}})});                                   

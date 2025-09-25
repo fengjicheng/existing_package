@@ -1,0 +1,3 @@
+FUNCTION-POOL ZQTC_CREATE_SMD_DEBMAS.       "MESSAGE-ID ..
+
+* INCLUDE LZQTC_CREATE_SMD_DEBMASD...        " Local class definition

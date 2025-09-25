@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Common Orders Operation- Function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ORDERS_COMN_OPRTNF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_ORDERS_COMN_OPRTNTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ORDERS_COMN_OPRTN</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_ORDER_COMMON_OPERATN</FUNCNAME>
+     <SHORT_TEXT>SD EDI Incoming Orders:Schedule Additional Data for Screen</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <DBFIELD>EDIDC-MESCOD</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <DBSTRUCT>BDCDATA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <DBSTRUCT>VBPAVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DXVBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Header (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DVTCOMAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communications Work Area for Cust.Master Accesses</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DLAST_DYNPRO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Last Sent Screen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DXMESCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logical Message Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXBDCDATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Batch Input Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Items (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (1) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBEP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Schedule Lines (2) (Enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (1) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVBADR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Addresses (2) (enhanced)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVBUV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Incompletion Log</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DIDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXKOMV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Condition Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DXVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Packing Proposal</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_DYVEKP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Shipping Units</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_ORDER_COMMON_OPERATN>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_ORDER_COMMON_OPERATN</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00010</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_ORDER_COMMON_OPERATN</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>*</TDFORMAT>
+       <TDLINE>As part of this development, we will be creating ZQT and ZSQT. We will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>be assigning external number range in order to capture the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>proforma/quote number and renewal quote numbers from JCORE and ECORE. We</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>need to assign the legacy numbers to the document generated in SAP. This</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>is required because if a subscription or renewal is created, it will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>have the reference numbers from ECORE and JCORE.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_ORDER_COMMON_OPERATN>
+  </asx:values>
+ </asx:abap>
+</abapGit>

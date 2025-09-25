@@ -1,0 +1,45 @@
+*---------------------------------------------------------------------*
+*    view related data declarations
+*---------------------------------------------------------------------*
+*...processing: ZQTCV_RENWL_PDET................................*
+TABLES: ZQTCV_RENWL_PDET, *ZQTCV_RENWL_PDET. "view work areas
+CONTROLS: TCTRL_ZQTCV_RENWL_PDET
+TYPE TABLEVIEW USING SCREEN '0001'.
+DATA: BEGIN OF STATUS_ZQTCV_RENWL_PDET. "state vector
+          INCLUDE STRUCTURE VIMSTATUS.
+DATA: END OF STATUS_ZQTCV_RENWL_PDET.
+* Table for entries selected to show on screen
+DATA: BEGIN OF ZQTCV_RENWL_PDET_EXTRACT OCCURS 0010.
+INCLUDE STRUCTURE ZQTCV_RENWL_PDET.
+          INCLUDE STRUCTURE VIMFLAGTAB.
+DATA: END OF ZQTCV_RENWL_PDET_EXTRACT.
+* Table for all entries loaded from database
+DATA: BEGIN OF ZQTCV_RENWL_PDET_TOTAL OCCURS 0010.
+INCLUDE STRUCTURE ZQTCV_RENWL_PDET.
+          INCLUDE STRUCTURE VIMFLAGTAB.
+DATA: END OF ZQTCV_RENWL_PDET_TOTAL.
+
+*...processing: ZQTCV_RENWL_PROF................................*
+TABLES: ZQTCV_RENWL_PROF, *ZQTCV_RENWL_PROF. "view work areas
+CONTROLS: TCTRL_ZQTCV_RENWL_PROF
+TYPE TABLEVIEW USING SCREEN '0002'.
+DATA: BEGIN OF STATUS_ZQTCV_RENWL_PROF. "state vector
+          INCLUDE STRUCTURE VIMSTATUS.
+DATA: END OF STATUS_ZQTCV_RENWL_PROF.
+* Table for entries selected to show on screen
+DATA: BEGIN OF ZQTCV_RENWL_PROF_EXTRACT OCCURS 0010.
+INCLUDE STRUCTURE ZQTCV_RENWL_PROF.
+          INCLUDE STRUCTURE VIMFLAGTAB.
+DATA: END OF ZQTCV_RENWL_PROF_EXTRACT.
+* Table for all entries loaded from database
+DATA: BEGIN OF ZQTCV_RENWL_PROF_TOTAL OCCURS 0010.
+INCLUDE STRUCTURE ZQTCV_RENWL_PROF.
+          INCLUDE STRUCTURE VIMFLAGTAB.
+DATA: END OF ZQTCV_RENWL_PROF_TOTAL.
+
+*.........table declarations:.................................*
+TABLES: ZQTCT_NOTIF_PROF               .
+TABLES: ZQTCT_RENWL_PROF               .
+TABLES: ZQTC_NOTIF_PROF                .
+TABLES: ZQTC_RENWL_PROF                .
+TABLES: ZQTC_RENWL_P_DET               .

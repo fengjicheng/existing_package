@@ -1,0 +1,6 @@
+"Name: \PR:RM07DOCS\FO:PROCESS_LIST\SE:BEGIN\EI
+ENHANCEMENT 0 ZQTCEI_DATAFETCH_MB51.
+* Begin of adding on 10/01/2019
+  INCLUDE zqtcn_add_flds_mb51_datafetch IF FOUND.
+* End of adding on 10/01/2019
+ENDENHANCEMENT.

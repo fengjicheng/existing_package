@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Inbound Orders I0219</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_INBOUND_SAP_ORDERS_FGF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_INBOUND_SAP_ORDERS_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_INBOUND_SAP_ORDERS_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_INBOUND_SAP_ORDERS_FM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>RFC Function Module for I0219 Inbound SAP</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_EDIDD</PARAMETER>
+       <TYP>ZSTQTC_IDOC_ORDERS05</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_EDIDC</PARAMETER>
+       <TYP>EDIDC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IMMEDIATE</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_VBELN</PARAMETER>
+       <TYP>VBELN_VA</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_MESSAGE</PARAMETER>
+       <TYP>BAPIRETCT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_EDIDD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure for ORDERS05 Entension/segments_Common</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_EDIDC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IMMEDIATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Immediate Processing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Text</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZQTC_INBOUND_SAP_ORDERS_FM>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZQTC_INBOUND_SAP_ORDERS_FM</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00009</TXTLINES>
+      <DOKSTATE>R</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTC_INBOUND_SAP_ORDERS_FM</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>Tibco will call this RFC enabled function module instead of creating</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>idoc in sap end. This function module receives data record and control</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>record from tibco and will create idoc internally. After that it will</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>process the idoc and pass the order number, for the case of success and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>message, for the case of failure to TIBCO.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZQTC_INBOUND_SAP_ORDERS_FM>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V10.4.0.20160610.1.923074_SAP" APIVersion="3.6.16064.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2019-10-31T10:32:58Z" uuid="4bd42c1a-246c-45d3-aaa5-62eb7e3bcb66">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.0/" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1">
+   <?formServer defaultPDFRenderFormat acrobat9.1dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="284.3mm" name="Main" w="197.3002mm" x="0.25in" y="0.25in"/>
+            <medium long="297mm" short="210mm" stock="a4"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="lr-tb" name="Main" w="197.3002mm">
+         <subform layout="lr-tb" name="Tableform" w="193.675mm">
+            <bind match="dataRef" ref="$.DATA[*]"/>
+            <subform h="24.759mm" name="Logo" w="193.675mm">
+               <bind match="none"/>
+               <field h="24.759mm" name="Logo" w="44.45mm" x="50.8mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <bind match="dataRef" ref="$record.WILEY_LOGO"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform h="12.7mm" name="CertificateNumber" w="193.675mm">
+               <bind match="none"/>
+               <field h="6.35mm" name="Certificateno" w="92.075mm" x="50.8mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="48.8453mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="388B6CAE-8BD3-4177-B78C-F757F83C78B8">Certificate No:/ Serial No:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.CERT_NUMBER"/>
+               </field>
+               <field h="6.35mm" name="withholding" w="92.075mm" x="50.8mm" y="6.35mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="48.8453mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="31FC4CB9-CC01-4039-A8A3-62346A6A4E1F">Withholding Agent TIN:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.WHT_TIN"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform h="12.7mm" name="Certificatetaxded" w="193.583mm">
+               <bind match="none"/>
+               <draw h="8.902mm" name="Text1" w="95.25mm" x="50.8mm" y="3.798mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="A7F7D9CF-4FB9-4557-8348-BCE32A894C8D">Certificate of Tax Deduction</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <?renderCache.bounds 267166 22400 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 28 Certificate of Tax Deduction 0 1417 9313 0 0 0 "Arial" 1 0 10000 ISO-8859-1?></draw>
+               <?templateDesigner expand 0?></subform>
+            <subform h="32.552mm" name="WHTADDRESS" w="196.758mm">
+               <bind match="none"/>
+               <draw h="5.2331mm" name="Text2" w="88.9mm" x="2.962mm" y="3.175mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="47670DBF-6EA9-4B92-85A2-7175678355E2">Name and address of the Withholding Agent:</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <?renderCache.bounds 249166 12000 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 42 Name and address of the Withholding Agent: 0 1417 9313 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+               <field h="6.35mm" name="addr1" w="107.95mm" x="82.55mm" y="3.175mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.OFFICE_ADR1"/>
+               </field>
+               <field minH="6.35mm" name="addr2" w="114.3mm" x="82.55mm" y="9.525mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.OFFICE_ADR2"/>
+                  <value>
+                     <exData contentType="text/html"/>
+                  </value>
+               </field>
+               <field h="6.35mm" name="addr3" w="104.839mm" x="82.55mm" y="15.875mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.OFFICE_ADR3"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform h="28.575mm" name="WHTADDRESS" w="187.325mm">
+               <bind match="none"/>
+               <draw h="5.2331mm" name="Text2" w="88.9mm" x="2.962mm" y="3.175mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="5D0DEBB2-4947-4636-BEFF-F6BFC51EB157">Name and address of the Withholding Agent:</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <?renderCache.bounds 249166 12000 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 42 Name and address of the Withholding Agent: 0 1417 9313 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+               <subform layout="lr-tb" w="92.026mm" x="82.55mm" y="3.175mm">
+                  <bind match="none"/>
+                  <field h="6.35mm" name="addr1" w="82.55mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.VENDI_ADR1"/>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript">
+if(this.rawValue == null){  this.presence = "hidden";}
+</script>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb" w="92.026mm" x="82.55mm" y="9.525mm">
+                  <bind match="none"/>
+                  <field h="6.35mm" name="addr2" w="88.836mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.VENDI_ADR2"/>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript">
+
+if(this.rawValue == null){  this.presence = "hidden";}
+</script>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <field h="6.35mm" name="addr3" w="92.026mm" x="82.55mm" y="15.875mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.VENDI_ADR3"/>
+               </field>
+               <field h="6.35mm" name="addr4" w="92.026mm" x="82.55mm" y="22.064mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.VENDI_ADR4"/>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform h="117.505mm" name="taxidenform" w="187.467mm">
+               <bind match="none"/>
+               <field h="6.35mm" name="taxidenno" w="180.975mm" x="3.175mm" y="6.38mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="78.2918mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="641F95D4-99E0-4355-97E5-BE2673B40B55">Tax Identification No of the Withholdee:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.WT_WTSTCD"/>
+               </field>
+               <field h="6.35mm" name="invoicenumber" w="180.975mm" x="3.175mm" y="19.08mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="0520B6D5-9178-4AF1-BF64-7734E8EBC52E">Invoice number:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.XBLNR"/>
+               </field>
+               <draw h="6.35mm" name="periodfrom" w="95.463mm" x="3.388mm" y="31.78mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="6712E50A-03DD-48DE-8C36-8DC8A4B46DDF">Period from:</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <?renderCache.bounds 264934 12330 0 0 2835 2835 0 0?>
+                  <?renderCache.textRun 12 Period from: 0 2835 11896 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+               <field h="6.35mm" name="nature" w="180.975mm" x="3.175mm" y="44.45mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="07859C61-8950-4681-BE6A-14361C25A0A4">(a) Nature of the payment:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.NAT_PAY"/>
+               </field>
+               <field h="6.35mm" name="gross" w="180.975mm" x="3.175mm" y="57.18mm">
+                  <ui>
+                     <numericEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="-1"/>
+                  </value>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="655A0BBB-184E-4979-9475-4EC96998BC21">(b) Gross amount of the payment (Rs,):</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.GROSS_AMT"/>
+               </field>
+               <field h="6.35mm" name="rateoftax" w="184.292mm" x="3.175mm" y="69.88mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="2C2E13E3-841A-423A-9904-39F986D1DCA7">(c) (i) Rate of tax:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.RATE_TAX"/>
+               </field>
+               <field h="6.35mm" name="amounoftax" w="184.15mm" x="3.175mm" y="79.405mm">
+                  <ui>
+                     <numericEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="-1"/>
+                  </value>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="560E3E55-0081-4E5D-9F66-054BCD9D3BE0">     (ii) Amount of tax deducted (Rs.):</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.TAX_DED"/>
+               </field>
+               <field h="6.35mm" name="dateoftax" w="184.15mm" x="3.246mm" y="92.105mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="1BF31401-213C-4E12-8D25-36B0B9A90FC2">(d) Date of tax deduction:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.DATE_TAX"/>
+                  <format>
+                     <picture>date{DD/MM/YYYY}</picture>
+                  </format>
+               </field>
+               <field h="6.35mm" name="dateofremittance" w="184.15mm" x="3.246mm" y="101.63mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption reserve="78.293mm">
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="AB186F8A-0A13-44B0-B1EF-93B14A088672">(e) Date of remittance:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.DATE_REM"/>
+                  <format>
+                     <picture>date{DD/MM/YYYY}</picture>
+                  </format>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField000041" name="DateField1" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.FROM_DATE"/>
+                  <format>
+                     <picture>date{DD/MM/YYYY}</picture>
+                  </format>
+               </field>
+               <field access="readOnly" h="9mm" id="floatingField018467" name="DateField2" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border>
+                           <edge stroke="lowered"/>
+                        </border>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.TO_DATE"/>
+                  <format>
+                     <picture>date{DD/MM/YYYY}</picture>
+                  </format>
+               </field>
+               <draw h="6.35mm" name="Text4" w="53.975mm" x="82.55mm" y="31.78mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html" xliff:rid="C0287C94-6684-4F62-96D1-E4AA94CB65CD">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> to<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               </draw>
+               <?templateDesigner expand 0?></subform>
+            <subform h="33.808mm" name="Authorized" w="187.325mm">
+               <bind match="none"/>
+               <draw h="6.35mm" name="Text3" w="161.925mm" x="6.35mm" y="22.195mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="9CB6FD77-D64F-4440-BE47-909FA677B50A">This is a computer-generated certificate. Therefore, no signature is required. </text>
+                  </value>
+                  <font baselineShift="0pt" posture="italic" size="9pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <?renderCache.bounds 456166 15166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 79 This is a computer-generated certificate. Therefore, no signature is required.  0 1417 8549 0 0 0 "Arial" 0 1 9000 ISO-8859-1?></draw>
+               <draw h="6.32mm" name="Text3" w="9.525mm" x="6.35mm" y="9.495mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="0530A46D-5A65-4A63-B447-C2BE6FE4DD30"> Date:</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <?renderCache.bounds 24166 15081 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 6  Date: 0 1417 7733 0 0 0 "Arial" 0 0 8000 ISO-8859-1?></draw>
+               <draw h="0in" name="Line1" w="69.85mm" x="15.875mm" y="12.64mm">
+                  <value>
+                     <line slope="/">
+                        <edge stroke="dotted"/>
+                     </line>
+                  </value>
+               </draw>
+               <field access="readOnly" h="9mm" id="floatingField006334" name="DateField3" presence="hidden" w="62mm" x="0mm" y="0mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.PRINT_DATE"/>
+                  <format>
+                     <picture>date{D MMMM, YYYY}</picture>
+                  </format>
+               </field>
+               <draw h="5.2331mm" name="Text5" w="29.2864mm" x="34.925mm" y="7.412mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                     </exData>
+                  </value>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <assist role="TR"/>
+            <occur max="-1"/>
+            <?templateDesigner expand 1?></subform>
+         <bind match="dataRef" ref="$.IM_ITEM"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">10.4.0.20160610.1.923074</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 180 45 0003000B000C000F00110012001400150016001D0024002600270029002A002C00310033003500360037003A004400450046004700480049004A004B004C004F005000510052005300550056005700580059005B005C005E0060 (),./123:ACDFGINPRSTWabcdefghilmnoprstuvxy{}?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 64 16 000300260027003700440046004700480049004C00510052005500570058005B CDTacdefinortux?>
+      <?renderCache.subset "Arial" 0 1 ISO-8859-1 4 88 22 0003000F00100011003700440046004700480049004A004B004C005000510052005300540055005600570058 ,-.Tacdefghimnopqrstu?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 30?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 82?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://ed1app01.wiley.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>5</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZFPTP_LK_WHT_FORM_F052">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <IM_XSTRING/>
+         <WILEY_LOGO/>
+         <IM_ITEM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <CERT_NUMBER/>
+               <WHT_TIN/>
+               <OFFICE_ADR1/>
+               <OFFICE_ADR2/>
+               <OFFICE_ADR3/>
+               <VENDI_ADR1/>
+               <VENDI_ADR2/>
+               <VENDI_ADR3/>
+               <VENDI_ADR4/>
+               <WT_WTSTCD/>
+               <XBLNR/>
+               <FROM_DATE/>
+               <TO_DATE/>
+               <NAT_PAY/>
+               <GROSS_AMT/>
+               <TAX_DED/>
+               <DATE_TAX/>
+               <DATE_REM/>
+               <RATE_TAX/>
+               <WAERK/>
+               <REC_EMAIL/>
+               <PRINT_DATE/>
+            </DATA>
+         </IM_ITEM>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.2-c001 63.139439, 2011/06/07-10:39:26        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2019-10-17T12:08:30Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 10.4</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 10.4</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:57682ec2-6b08-4ca6-8c26-098b62e262bb</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>10.4.0.20160610.1.923074</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

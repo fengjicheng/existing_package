@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Contract type setup for E164&amp;E017</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_CONTRACT_TYPETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_CONTRACT_TYPE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_CONTRACT_TYPE_DETERMINE</FUNCNAME>
+     <SHORT_TEXT>Contract type setup for E164&amp;E107</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_OBJECTID</PARAMETER>
+       <TYP>ZDEVID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PARAM1</PARAMETER>
+       <TYP>RVARI_VNAM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <TYP>AUART</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ACTIVE_FLAG</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_OBJECTID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Development ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PARAM1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP: Name of Variant Variable</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ACTIVE_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>FLAG</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZQTCV_MEMB_DUE</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>APPL</OBJCATEG>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZQTCV_MEMB_DUE</OBJECTNAME>
+    <OBJECTTYPE>V</OBJECTTYPE>
+    <DDTEXT>I0225: Memberships Dues</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZQTCV_MEMB_DUE</OBJECTNAME>
+     <OBJECTTYPE>V</OBJECTTYPE>
+     <TABNAME>ZQTC_MEMB_DUE</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZQTCV_MEMB_DUE</TABNAME>
+     <CCLASS>ZMBD</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZQTCV_MEMB_DUE</TABNAME>
+     <AREA>ZQTCV_MEMB_DUE</AREA>
+     <TYPE>1</TYPE>
+     <LISTE>0001</LISTE>
+     <FLAG>X</FLAG>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZQTCV_MEMB_DUE</TABNAME>
+      <EVENT>01</EVENT>
+      <FORMNAME>F_POPULATE_FIELDS_SAVE</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZQTCCL_TAX1_XTXIT_SET</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for BAdI Impl.: ZQTCBI_TAX1_XTXIT_SET</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_AWTYP_VBRK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reference Transaction</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PRM_BSTR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_PRM_NOII</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP: Name of Variant Variable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_SER_NUM_2_E123</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Serial Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_WRICEF_ID_E123</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Development ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>R_BUS_TRAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ISSR: Range Table GLVOR</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

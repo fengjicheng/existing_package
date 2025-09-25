@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Table Raed: Buffered Concept</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_TABLE_READTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_TABLE_READ</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_VBKD_SINGLE_READ</FUNCNAME>
+     <SHORT_TEXT>Read VBKD entry (Buffered)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>POSNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_REFRESH_BUFFER</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_VBKD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBKD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>EXC_RECORD_NOT_FOUND</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_POSNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item number of the SD document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_REFRESH_BUFFER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Refresh the Buffer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_VBKD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Business Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EXC_RECORD_NOT_FOUND</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No entry exists</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

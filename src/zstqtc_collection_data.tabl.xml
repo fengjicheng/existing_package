@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZSTQTC_COLLECTION_DATA</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>COLL_PROFILE</FIELDNAME>
+     <ROLLNAME>Z1RTR_BP_COLLECTIONS_DATA</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>STRU</DATATYPE>
+     <MASK>  STRUS</MASK>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>COLL_SEGMENT</FIELDNAME>
+     <ROLLNAME>ZTQTC_COLLECTION_SEG_DATA</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>3</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>K</LANGU>
+    <LANGU>M</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD02_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>3</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>K</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>M</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>I0200: BP Collection Management Data</DDTEXT>
+    </item>
+   </DD02_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

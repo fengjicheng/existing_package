@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group for SD copy controls</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_SD_COPY_CONTROLF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_FG_SD_COPY_CONTROLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_SD_COPY_CONTROL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_SD_COPY_CONTROL</FUNCNAME>
+     <SHORT_TEXT>FM for SD Document copy controls</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SALESDOCUMENT</PARAMETER>
+       <DBFIELD>BAPIVBELN-VBELN</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SALESDOCITEM</PARAMETER>
+       <DBFIELD>VBAP-POSNR</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DOCUMENTTYPE</PARAMETER>
+       <DBFIELD>BAPISDHD1-DOC_TYPE</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_VBAK</PARAMETER>
+       <DBSTRUCT>VBAK</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_VBAP</PARAMETER>
+       <DBSTRUCT>VBAP</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_VBKD</PARAMETER>
+       <DBSTRUCT>VBKD</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_VBPA</PARAMETER>
+       <DBSTRUCT>VBPA</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SALESDOCUMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SALESDOCITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item number of the SD document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DOCUMENTTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VBKD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Business Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_VBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Partner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

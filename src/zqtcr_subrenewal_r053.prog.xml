@@ -1,0 +1,1122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_SUBRENEWAL_R053</NAME>
+    <SUBC>1</SUBC>
+    <SECU>ZSUBRNEW</SECU>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <CUA>
+    <ADM>
+     <ACTCODE>000001</ACTCODE>
+     <PFKCODE>000001</PFKCODE>
+    </ADM>
+    <FUN>
+     <RSMPE_FUNT>
+      <CODE>BACK</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Back</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>CANCEL</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_CANCEL</TEXT_NAME>
+      <ICON_ID>@0W@</ICON_ID>
+      <FUN_TEXT>Cancel</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>EXIT</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <FUN_TEXT>Exit</FUN_TEXT>
+     </RSMPE_FUNT>
+     <RSMPE_FUNT>
+      <CODE>SAVE</CODE>
+      <TEXTNO>001</TEXTNO>
+      <TEXT_TYPE>S</TEXT_TYPE>
+      <TEXT_NAME>ICON_SYSTEM_SAVE</TEXT_NAME>
+      <ICON_ID>@2L@</ICON_ID>
+      <FUN_TEXT>Save</FUN_TEXT>
+     </RSMPE_FUNT>
+    </FUN>
+    <PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>03</PFNO>
+      <FUNCODE>BACK</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>11</PFNO>
+      <FUNCODE>SAVE</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>12</PFNO>
+      <FUNCODE>CANCEL</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+     <RSMPE_PFK>
+      <CODE>000001</CODE>
+      <PFNO>15</PFNO>
+      <FUNCODE>EXIT</FUNCODE>
+      <FUNNO>001</FUNNO>
+     </RSMPE_PFK>
+    </PFK>
+    <DOC>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>A</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Gui status</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>P</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Gui status</INT_NOTE>
+     </RSMPE_ATRT>
+     <RSMPE_ATRT>
+      <OBJ_TYPE>B</OBJ_TYPE>
+      <OBJ_CODE>000001</OBJ_CODE>
+      <SUB_CODE>0001</SUB_CODE>
+      <MODAL>D</MODAL>
+      <INT_NOTE>Gui status</INT_NOTE>
+     </RSMPE_ATRT>
+    </DOC>
+    <TIT>
+     <RSMPE_TITT>
+      <CODE>ZSUBRENEWAL</CODE>
+      <TEXT>Renewal Subscription</TEXT>
+     </RSMPE_TITT>
+    </TIT>
+   </CUA>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Displaying Results</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Invalid Order Reasons.</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Date:</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>005</KEY>
+     <ENTRY>Total No. of Records Selected:</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>006</KEY>
+     <ENTRY>Renewal Subscription</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D01</KEY>
+     <ENTRY>Sales Document</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D02</KEY>
+     <ENTRY>Sales Document Item</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D03</KEY>
+     <ENTRY>Sales Document Type</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D04</KEY>
+     <ENTRY>Sales Organisation</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D05</KEY>
+     <ENTRY>Sales Office</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D06</KEY>
+     <ENTRY>Subscription Type</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D07</KEY>
+     <ENTRY>Customer Purchase Order Number</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D08</KEY>
+     <ENTRY>Customer Purchase Order Type</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D09</KEY>
+     <ENTRY>Price Group</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D10</KEY>
+     <ENTRY>Your Reference</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D11</KEY>
+     <ENTRY>Material Number</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D12</KEY>
+     <ENTRY>Media Type</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D13</KEY>
+     <ENTRY>Title</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D14</KEY>
+     <ENTRY>External Material Group</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D15</KEY>
+     <ENTRY>Net Value</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D16</KEY>
+     <ENTRY>SD Document Currency</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D17</KEY>
+     <ENTRY>Activity</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D18</KEY>
+     <ENTRY>Activity Date</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D19</KEY>
+     <ENTRY>Ativity Status</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D20</KEY>
+     <ENTRY>Renewal Status</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D21</KEY>
+     <ENTRY>Description</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D22</KEY>
+     <ENTRY>Sold To Party</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D23</KEY>
+     <ENTRY>Sold To Party Name</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D24</KEY>
+     <ENTRY>Ship To Party</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D25</KEY>
+     <ENTRY>Ship To Party Name</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D26</KEY>
+     <ENTRY>Society Number</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D27</KEY>
+     <ENTRY>Partner Function</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D28</KEY>
+     <ENTRY>Society Name</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D29</KEY>
+     <ENTRY>Contract start Date</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D30</KEY>
+     <ENTRY>Contract End Date</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D31</KEY>
+     <ENTRY>Target quantity</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D32</KEY>
+     <ENTRY>UoM</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D33</KEY>
+     <ENTRY>Material group 1</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D34</KEY>
+     <ENTRY>Material group 2</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D35</KEY>
+     <ENTRY>Material group 3</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D36</KEY>
+     <ENTRY>Material group 4</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D37</KEY>
+     <ENTRY>Material group 5</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D38</KEY>
+     <ENTRY>Order item Description</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D39</KEY>
+     <ENTRY>Flag: New VS Renew</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D40</KEY>
+     <ENTRY>Soc Rel Category</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D41</KEY>
+     <ENTRY>Cust Cond Grp 3</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D42</KEY>
+     <ENTRY>FOC Reason</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D43</KEY>
+     <ENTRY>Subscription Type</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D44</KEY>
+     <ENTRY>Volume</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D45</KEY>
+     <ENTRY>Communication Method</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D46</KEY>
+     <ENTRY>Delivery Block</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D47</KEY>
+     <ENTRY>Billing block</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D48</KEY>
+     <ENTRY>Sold To Party Country</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D49</KEY>
+     <ENTRY>Bill To Party</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D50</KEY>
+     <ENTRY>Bill To Party Name</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D51</KEY>
+     <ENTRY>Bill To Party Address-1</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D52</KEY>
+     <ENTRY>Bill To Party Address-2</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D53</KEY>
+     <ENTRY>Bill To Party Address-3</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D54</KEY>
+     <ENTRY>Bill To Party Address-4</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D55</KEY>
+     <ENTRY>Bill To Party City</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D56</KEY>
+     <ENTRY>Bill To Party Postal Code</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D57</KEY>
+     <ENTRY>Bill To Party Cuntry</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D58</KEY>
+     <ENTRY>Bill To Party Email ID</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D59</KEY>
+     <ENTRY>Ship To Party Address-1</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D60</KEY>
+     <ENTRY>Ship To Party Address-2</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D61</KEY>
+     <ENTRY>Ship To Party Address-3</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D62</KEY>
+     <ENTRY>Ship To Party Address-4</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D63</KEY>
+     <ENTRY>Ship To Party City</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D64</KEY>
+     <ENTRY>Ship To Party Postal Code</ENTRY>
+     <LENGTH>50</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D65</KEY>
+     <ENTRY>Ship To Party Cuntry</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D66</KEY>
+     <ENTRY>Ship To Party Email ID</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D67</KEY>
+     <ENTRY>Material Volume Year</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D68</KEY>
+     <ENTRY>Society Acronym</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D69</KEY>
+     <ENTRY>Credit Card Type</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D70</KEY>
+     <ENTRY>Payment Amount (By CC)</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D71</KEY>
+     <ENTRY>Payment Date</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D72</KEY>
+     <ENTRY>Customer Group</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D73</KEY>
+     <ENTRY>Price list type</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D74</KEY>
+     <ENTRY>License Group</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D75</KEY>
+     <ENTRY>Tax Amount</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D76</KEY>
+     <ENTRY>No Of FTEs</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D77</KEY>
+     <ENTRY>Cancellation Reason</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D78</KEY>
+     <ENTRY>Issues Sent</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D79</KEY>
+     <ENTRY>Issues Due</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D80</KEY>
+     <ENTRY>Payment Status</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D81</KEY>
+     <ENTRY>Common Customer ID</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D82</KEY>
+     <ENTRY>Start Issue</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D83</KEY>
+     <ENTRY>Last Issue</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D84</KEY>
+     <ENTRY>Reporting Year</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D85</KEY>
+     <ENTRY>Higher-level Item</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D86</KEY>
+     <ENTRY>Billing Document</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D87</KEY>
+     <ENTRY>Forwarding Agent</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D88</KEY>
+     <ENTRY>Forwarding Agent Name</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D89</KEY>
+     <ENTRY>Frwd Agent Address-1</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D90</KEY>
+     <ENTRY>Frwd Agent Address-2</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D91</KEY>
+     <ENTRY>Frwd Agent Address-3</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D92</KEY>
+     <ENTRY>Frwd Agent Address-4</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D93</KEY>
+     <ENTRY>Frwd Agent City</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D94</KEY>
+     <ENTRY>Frwd Agent Postal Code</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D95</KEY>
+     <ENTRY>Frwd Agent Cuntry</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D96</KEY>
+     <ENTRY>Ship To Party Title</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D97</KEY>
+     <ENTRY>Ship To Party Name-1</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D98</KEY>
+     <ENTRY>Ship To Party Name-2</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>D99</KEY>
+     <ENTRY>Ship To Party Name-3</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E01</KEY>
+     <ENTRY>Ship To Party Name-4</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E02</KEY>
+     <ENTRY>Ship To Party Region</ENTRY>
+     <LENGTH>40</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E03</KEY>
+     <ENTRY>Created On</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E04</KEY>
+     <ENTRY>Ship To Party - Your Reference</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E05</KEY>
+     <ENTRY>Media Start Issue</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>E06</KEY>
+     <ENTRY>Media End Issue</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>F01</KEY>
+     <ENTRY>Order reason</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>F02</KEY>
+     <ENTRY>Order reason</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>v_</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I02</KEY>
+     <ENTRY>i_</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>P01</KEY>
+     <ENTRY>PAID</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>P02</KEY>
+     <ENTRY>UNPAID</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>P03</KEY>
+     <ENTRY>CANCELLED</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Selection Parameter</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Partner Details.</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>Renewal Activities</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S04</KEY>
+     <ENTRY>ALV Setting</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T01</KEY>
+     <ENTRY>I_FINAL</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T02</KEY>
+     <ENTRY>Contract start date from</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T03</KEY>
+     <ENTRY>to</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>T04</KEY>
+     <ENTRY>Contract end date from</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Renewal Subscription</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_NOCMP</KEY>
+     <ENTRY>Do not Display BOM Components</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_UNQOL</KEY>
+     <ENTRY>Unique Contract Lines</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_ALV_VR</KEY>
+     <ENTRY>ALV Variant / Layout</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_CSTAF</KEY>
+     <ENTRY>Contract start date from</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_CSTAT</KEY>
+     <ENTRY>Contract start date to</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PARVW</KEY>
+     <ENTRY>Partner Function</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_AUGRU</KEY>
+     <ENTRY>Order reason</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BETDT</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>20</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BSARK</KEY>
+     <ENTRY>PO Type</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_DOCTYP</KEY>
+     <ENTRY>Sales document type</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_FAKSK</KEY>
+     <ENTRY>Billing block</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_IHREZ</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>22</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KDKG2</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>25</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KONDA</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>19</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KUNNR</KEY>
+     <ENTRY>Sold to party</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_LAND1</KEY>
+     <ENTRY>Sold-To Party&apos;s Country</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_LIFSK</KEY>
+     <ENTRY>Delivery block</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MATNUM</KEY>
+     <ENTRY>Material number</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MVGR5</KEY>
+     <ENTRY>.</ENTRY>
+     <LENGTH>24</LENGTH>
+     <SPLIT>D</SPLIT>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_PARTNE</KEY>
+     <ENTRY>Partner</ENTRY>
+     <LENGTH>15</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_PONUM</KEY>
+     <ENTRY>Purchase order number</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SALDOC</KEY>
+     <ENTRY>Document number</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SHPTO</KEY>
+     <ENTRY>Ship to party</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_SUBS</KEY>
+     <ENTRY>Subscription type</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VKBUR</KEY>
+     <ENTRY>Sales office</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_VKORG</KEY>
+     <ENTRY>Sales organisation</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_WAERK</KEY>
+     <ENTRY>Payment Currency</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZQTCR_SUBRENEWAL_R053</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0001</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00005</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZQTCR_SUBRENEWAL_R053</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00001</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>To view all the  new subscriptions /Renewals order based on the specific</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>selection  criteria.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;INTEGRATION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;STANDARD_VARIANTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;OUTPUT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;ACTIVITIES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

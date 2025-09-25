@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZVA45_BLCK</OBJCT>
+    <FIEL1>ZVA45_BLCK</FIEL1>
+    <OCLSS>ZQTC</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZVA45_BLCK</OBJECT>
+    <TTEXT>Authorization Object for ZQTC_VA45 Tab in Blocked Rep applic</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZVA45_BLCK</OBJCT>
+   </TOBJVORFLG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

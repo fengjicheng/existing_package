@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>SAPLZQTC_FG_BP_INTERFACE_I0200</NAME>
+    <DBAPL>S</DBAPL>
+    <DBNA>D$</DBNA>
+    <SUBC>F</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Relationship Category:</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>is locked</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>is unlocked</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Partner1:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I02</KEY>
+     <ENTRY>Output-</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L01</KEY>
+     <ENTRY>Input-</ENTRY>
+     <LENGTH>6</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L02</KEY>
+     <ENTRY>Source System / Origin:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L03</KEY>
+     <ENTRY>Street:</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L04</KEY>
+     <ENTRY>City:</ENTRY>
+     <LENGTH>5</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L05</KEY>
+     <ENTRY>Region:</ENTRY>
+     <LENGTH>7</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L06</KEY>
+     <ENTRY>Postal Code:</ENTRY>
+     <LENGTH>12</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L07</KEY>
+     <ENTRY>Country:</ENTRY>
+     <LENGTH>8</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L08</KEY>
+     <ENTRY>General Data Message:</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L09</KEY>
+     <ENTRY>Company Code:</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L10</KEY>
+     <ENTRY>Sales Organization:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L11</KEY>
+     <ENTRY>Distribution Channel:</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L12</KEY>
+     <ENTRY>Division:</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L13</KEY>
+     <ENTRY>Company Code/Sales Area Message:</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L14</KEY>
+     <ENTRY>Credit Segment:</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L15</KEY>
+     <ENTRY>Collection Segment:</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L16</KEY>
+     <ENTRY>Credit Segment/Collective Segment:</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L17</KEY>
+     <ENTRY>Partner2:</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L18</KEY>
+     <ENTRY>Identification Category:</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L19</KEY>
+     <ENTRY>Indentification Number:</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L20</KEY>
+     <ENTRY>Relationship Category:</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L21</KEY>
+     <ENTRY>Object key:</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>L22</KEY>
+     <ENTRY>New ECID for existing CORE ID(s)</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG1</KEY>
+     <ENTRY>Input Data Pre Validation Log:</ENTRY>
+     <LENGTH>60</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG2</KEY>
+     <ENTRY>General Data Updation Log:</ENTRY>
+     <LENGTH>52</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG3</KEY>
+     <ENTRY>Company Codes/Sales Data Updation Log:</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG4</KEY>
+     <ENTRY>Relationships Data Updation Log:</ENTRY>
+     <LENGTH>64</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG5</KEY>
+     <ENTRY>Credit/Collection Segments Data Updation Log:</ENTRY>
+     <LENGTH>88</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>LG6</KEY>
+     <ENTRY>Found Invalid Relationships:</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

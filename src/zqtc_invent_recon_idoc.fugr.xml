@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Idoc generation</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_INVENT_RECON_IDOCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_INVENT_RECON_IDOC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_UPDATE_ZINVREC_FLIDOC_GR</FUNCNAME>
+     <SHORT_TEXT>To update the GR doc number for failed idocs in ZQTC_INVEN_RECON</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_T_MSEG</PARAMETER>
+       <TYP>TY_MSEG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_T_MSEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>MSEG</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

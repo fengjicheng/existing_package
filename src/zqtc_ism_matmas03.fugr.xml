@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>ISM Media Issues</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_ISM_MATMAS03TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_ISM_MATMAS03</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_IDOC_INPUT_ISM_MATMAS</FUNCNAME>
+     <SHORT_TEXT>Processing FM for ISM_MATMAS03 Idocs</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_INPUT_METHOD</PARAMETER>
+       <TYP>BDWFAP_PAR-INPUTMETHD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MASS_PROCESSING</PARAMETER>
+       <TYP>BDWFAP_PAR-MASS_PROC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_NO_APPLICATION_LOG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SY-DATAR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MASSSAVEINFOS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MASSSAVINF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KZ_TEST</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MDAT1-KZ_TEST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ONLY_MAPPING</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>MDAT1-KZ_TEST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KZ_MMCC</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SY-DATAR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_WORKFLOW_RESULT</PARAMETER>
+       <TYP>BDWF_PARAM-RESULT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_APPLICATION_VARIABLE</PARAMETER>
+       <TYP>BDWF_PARAM-APPL_VAR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_IN_UPDATE_TASK</PARAMETER>
+       <TYP>BDWFAP_PAR-UPDATETASK</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CALL_TRANSACTION_DONE</PARAMETER>
+       <TYP>BDWFAP_PAR-CALLTRANS</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <DBSTRUCT>BDWFRETVAR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <DBSTRUCT>BDI_SER</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_FUNCTION_CALLED</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_INPUT_METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inbound method for the IDoc inbound function module</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MASS_PROCESSING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Mass processing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_NO_APPLICATION_LOG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Highlighted Input in Dynpro Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MASSSAVEINFOS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Information for Saving Mass Changes</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KZ_TEST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Indicator: Make checks, but do not update data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ONLY_MAPPING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Indicator: Make checks, but do not update data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KZ_MMCC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Highlighted Input in Dynpro Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_WORKFLOW_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Final value of method</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_APPLICATION_VARIABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Variable to be used by application as required</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_IN_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has triggered update task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CALL_TRANSACTION_DONE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Application has actually performed call transaction</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ALE IDoc status (subset of all IDoc status fields)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Assignment of IDoc or document no. to method parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Serialization objects for one/several IDocs</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_FUNCTION_CALLED</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

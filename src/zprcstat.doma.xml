@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZPRCSTAT</DOMNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000030</LENG>
+    <OUTPUTLEN>000030</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+    <DDTEXT>Processing Status</DDTEXT>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Not Picked for Processing</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>A1</DOMVALUE_L>
+     <DDTEXT>Inprogress File Validation</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>A2</DOMVALUE_L>
+     <DDTEXT>Inprogress BP Submission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>A3</DOMVALUE_L>
+     <DDTEXT>Inprogress Order Submission</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0005</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>B1</DOMVALUE_L>
+     <DDTEXT>Inprogress BP</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0006</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>B2</DOMVALUE_L>
+     <DDTEXT>Inprogress-BP Creation/Created</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0007</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>B3</DOMVALUE_L>
+     <DDTEXT>Inprogress BP Changed/Updated</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0008</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>B4</DOMVALUE_L>
+     <DDTEXT>Inprogress BP Identified</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0009</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>C1</DOMVALUE_L>
+     <DDTEXT>Inprogress Order Creation</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0010</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>E1</DOMVALUE_L>
+     <DDTEXT>BP Error</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0011</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>E2</DOMVALUE_L>
+     <DDTEXT>Order Error</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0012</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>D1</DOMVALUE_L>
+     <DDTEXT>Completed</DDTEXT>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0013</VALPOS>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DOMVALUE_L>F1</DOMVALUE_L>
+     <DDTEXT>File Validation Error</DDTEXT>
+    </DD07V>
+   </DD07V_TAB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

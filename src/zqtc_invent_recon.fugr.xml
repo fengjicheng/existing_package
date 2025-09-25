@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Inventory Reconcilliation</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_INVENT_RECONTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_INVENT_RECON</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_INVENT_RECON_01</FUNCNAME>
+     <SHORT_TEXT>To Populate final table 01</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_INVENT_RECON_02</FUNCNAME>
+     <SHORT_TEXT>To populate final 02</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_INVENT_RECON_03</FUNCNAME>
+     <SHORT_TEXT>To populate Final 03</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_INVENT_RECON_04</FUNCNAME>
+     <SHORT_TEXT>To Populate Final 04</SHORT_TEXT>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_GLOBAL_VAR</FUNCNAME>
+     <SHORT_TEXT>To Set the global variables</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

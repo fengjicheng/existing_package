@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZGRPHDR_ST</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Group Header</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <FIELDNAME>MSGID</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000020</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>MsgId</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>CREDTTM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000040</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000020</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>CreDtTm</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>NBOFTXS</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000008</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000004</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>NbOfTxs</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>CTRLSUM</FIELDNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <INTTYPE>C</INTTYPE>
+     <INTLEN>000020</INTLEN>
+     <DATATYPE>CHAR</DATATYPE>
+     <LENG>000010</LENG>
+     <MASK>  CHAR</MASK>
+     <DDTEXT>CtrlSum</DDTEXT>
+    </DD03P>
+    <DD03P>
+     <FIELDNAME>INITGPTY</FIELDNAME>
+     <ROLLNAME>ZINITGPTY_ST</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>STRU</DATATYPE>
+     <MASK>  STRUS</MASK>
+     <COMPTYPE>S</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

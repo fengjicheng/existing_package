@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Add New fields for MB51 Report - Data Declaration</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>RM07DOCS</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>RM07DOCS</ORG_MAIN_NAME>
+    <PROGRAMNAME>RM07DOCS</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>RM07DOCS</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\PR:RM07DOCS\DA:ITAB\SE:END\EI</FULL_NAME>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <FILES>
+    <item>
+     <NAME>\PR:RM07DOCS\DA:ITAB\SE:END\EI</NAME>
+     <FILE>f108f0ac</FILE>
+    </item>
+   </FILES>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>00505689066D1EE9B980AA1A8C11A4EF</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>00505689066D1EE9B980AA1A8C11A4EF</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>074</LENGTH>
+       <TEXT>Add New fields for MB51 Report - Data Declaration</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZQTCEI_ADD_FIELDS_DATADEC_MB51</OBJ_NAME>
+     <CONCEPT>00505689066D1EE9B980AA1A8C11A4EF</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

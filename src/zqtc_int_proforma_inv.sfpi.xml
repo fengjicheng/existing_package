@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Quotation proforma invoice</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>V_FREIGHT_T</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_FREIGHT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TAXABLE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTAL_DUE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_SUBTOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_SHIP_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TAX_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOT_ADD_LINES</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ANZEI</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_ADD_SHIP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;1&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_ADD_BILL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;1&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_EMAIL_ID</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TDLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SYST_LANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_MIME_TYPE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;image/bmp&apos;</DEFAULTVAL>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTAL_DUE_L</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TOTAL_DUE_T</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_PROFORMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>V_SUB_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>**TYPES: BEGIN OF lty_printform_table_line,</FPCLINE>
+      <FPCLINE>****         line_type    TYPE ad_line_tp,</FPCLINE>
+      <FPCLINE>**         address_line LIKE adrs-line0,</FPCLINE>
+      <FPCLINE>**       END OF lty_printform_table_line.</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>**TYPES: ltt_printform_table TYPE TABLE OF lty_printform_table_line.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_HEADER_F501</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_XSTRING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COMP_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SY-LANGU</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBCO3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBCO3</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_ADD_F027</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FINAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_ITEM_F501</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CALC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZSTQTC_CALC_F501</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CREDIT_CRD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>THEAD-TDNAME</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_TO_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_ADDRESS_LINE_F501</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_TO_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZTTQTC_ADDRESS_LINE_F501</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>IM_ADDRESS</FPPARAMETER>
+      <FPPARAMETER>IM_CALC</FPPARAMETER>
+      <FPPARAMETER>IM_LANGU</FPPARAMETER>
+      <FPPARAMETER>IM_HEADER</FPPARAMETER>
+      <FPPARAMETER>IM_VBCO3</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>V_FREIGHT_T</FPPARAMETER>
+      <FPPARAMETER>V_FREIGHT</FPPARAMETER>
+      <FPPARAMETER>V_TOTAL_DUE</FPPARAMETER>
+      <FPPARAMETER>V_TAXABLE</FPPARAMETER>
+      <FPPARAMETER>V_SUBTOTAL</FPPARAMETER>
+      <FPPARAMETER>V_TOTAL_DUE_L</FPPARAMETER>
+      <FPPARAMETER>V_TOTAL_DUE_T</FPPARAMETER>
+      <FPPARAMETER>V_PROFORMA</FPPARAMETER>
+      <FPPARAMETER>V_TAX</FPPARAMETER>
+      <FPPARAMETER>V_SUB_TOTAL</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>*****Local Constant declaration</FPCLINE>
+      <FPCLINE>CONSTANTS: lc_lineno TYPE anzei    VALUE &apos;5&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SET COUNTRY im_address-land1_bp.</FPCLINE>
+      <FPCLINE>*******Populate Number of lines To be used in Adress Node</FPCLINE>
+      <FPCLINE>v_tot_add_lines = lc_lineno.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>v_langu = im_langu.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Sub Total</FPCLINE>
+      <FPCLINE>WRITE im_calc-sub_total TO v_subtotal CURRENCY im_calc-waerk.</FPCLINE>
+      <FPCLINE>CONDENSE v_subtotal.</FPCLINE>
+      <FPCLINE>*Tax</FPCLINE>
+      <FPCLINE>WRITE im_calc-taxable TO v_taxable CURRENCY im_calc-waerk.</FPCLINE>
+      <FPCLINE>CONDENSE v_taxable.</FPCLINE>
+      <FPCLINE>*Total Due</FPCLINE>
+      <FPCLINE>WRITE im_calc-total_due TO v_total_due CURRENCY im_calc-waerk.</FPCLINE>
+      <FPCLINE>CONDENSE v_total_due.</FPCLINE>
+      <FPCLINE>*Freight</FPCLINE>
+      <FPCLINE>WRITE im_calc-freight TO v_freight CURRENCY im_calc-waerk.</FPCLINE>
+      <FPCLINE>CONDENSE v_freight.</FPCLINE>
+      <FPCLINE>CLEAR: v_total_due_l,v_total_due_t,v_tax,v_sub_total.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_langu = &apos;E&apos;.</FPCLINE>
+      <FPCLINE>  v_total_due_t = &apos;Total Due&apos;.</FPCLINE>
+      <FPCLINE>  CONCATENATE v_total_due_t im_calc-waerk  INTO v_total_due_l SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  CONCATENATE v_total_due_l &apos;:&apos; INTO v_total_due_l.</FPCLINE>
+      <FPCLINE>  v_tax = &apos;Tax&apos;.</FPCLINE>
+      <FPCLINE>*  CONCATENATE im_tax im_calc-waerk INTO v_tax SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  v_sub_total = &apos;Sub-Total&apos;.</FPCLINE>
+      <FPCLINE>*  CONCATENATE &apos;Sub-Total&apos; im_calc-waerk INTO v_sub_total SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  v_freight_t = &apos;Freight&apos;.</FPCLINE>
+      <FPCLINE>  CONDENSE: v_total_due,v_tax,v_sub_total, v_freight_t.</FPCLINE>
+      <FPCLINE>ELSEIF im_langu = &apos;D&apos;.</FPCLINE>
+      <FPCLINE>  CONCATENATE &apos;Fälliger Gesamtbetrag&apos; im_calc-waerk  INTO v_total_due_l SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  v_total_due_t = &apos;Gesamtbetrag&apos;.</FPCLINE>
+      <FPCLINE>*   CONCATENATE &apos;Gesamtbetrag&apos; im_calc-waerk  INTO v_total_due_t SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  CONCATENATE v_total_due_l &apos;:&apos; INTO v_total_due_l.</FPCLINE>
+      <FPCLINE>*  v_tax = &apos;Steuer&apos;.</FPCLINE>
+      <FPCLINE>  v_tax = &apos;USt&apos;.</FPCLINE>
+      <FPCLINE>*  CONCATENATE im_calc-waerk INTO v_tax SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  v_sub_total = &apos;Zwischensumme&apos;.</FPCLINE>
+      <FPCLINE>*  CONCATENATE &apos;Zwischensumme&apos; im_calc-waerk INTO v_sub_total SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  v_freight_t = &apos;Fracht&apos;.</FPCLINE>
+      <FPCLINE>  CONDENSE: v_total_due,v_tax,v_sub_total, v_freight_t.</FPCLINE>
+      <FPCLINE>ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**IF im_header-company_code = &apos;8001&apos;.</FPCLINE>
+      <FPCLINE>**  CONCATENATE &apos;Not a Tax Invoice:&apos; im_vbco3-vbeln INTO v_proforma SEPARATED BY space.</FPCLINE>
+      <FPCLINE>**ELSE.</FPCLINE>
+      <FPCLINE>  CONCATENATE &apos;Proforma:&apos; im_vbco3-vbeln INTO v_proforma SEPARATED BY space.</FPCLINE>
+      <FPCLINE>**ENDIF.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS/>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

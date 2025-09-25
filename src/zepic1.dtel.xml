@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZEPIC1</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <HEADLEN>18</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>11</SCRLEN2>
+    <SCRLEN3>18</SCRLEN3>
+    <DDTEXT>EPIC Number</DDTEXT>
+    <REPTEXT>EPIC Number</REPTEXT>
+    <SCRTEXT_S>EPIC No</SCRTEXT_S>
+    <SCRTEXT_M>EPIC Number</SCRTEXT_M>
+    <SCRTEXT_L>EPIC Number</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000020</LENG>
+    <OUTPUTLEN>000020</OUTPUTLEN>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

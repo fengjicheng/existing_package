@@ -1,0 +1,3 @@
+sap.ui.define(["sap/ui/test/Opa5","sap/ui/test/actions/Press","sap/ui/test/matchers/PropertyStrictEquals"],function(t,e,n){"use strict";return{createActions:function(t){return{iPressOnTheShareButton:function(){return this.waitFor({controlType:"sap.m.Butt+
+on",viewName:t,matchers:new n({name:"icon",value:"sap-icon://action"}),actions:new e,errorMessage:"Did not find the share button"})}}},createAssertions:function(e){return{iShouldSeeTheShareEmailButton:function(){return this.waitFor({viewName:e,controlTyp+
+e:"sap.m.Button",matchers:new n({name:"icon",value:"sap-icon://email"}),success:function(){t.assert.ok(true,"The E-Mail button is visible")},errorMessage:"The E-Mail button was not found"})}}}}});                                                           

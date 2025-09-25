@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTC_TR_DEPENDENCY_TOOL</NAME>
+    <SUBC>1</SUBC>
+    <RSTAT>K</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>S00</KEY>
+     <ENTRY>Provide the list of Transport(s) to be Validated</ENTRY>
+     <LENGTH>96</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S01</KEY>
+     <ENTRY>Provide you SAP System Names</ENTRY>
+     <LENGTH>56</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S02</KEY>
+     <ENTRY>Select the Target System to Compare</ENTRY>
+     <LENGTH>70</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>S03</KEY>
+     <ENTRY>Select the Checks and Outputs</ENTRY>
+     <LENGTH>58</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Transport Dependency Tool</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_CVM</KEY>
+     <ENTRY>Check Version Management</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_DEB</KEY>
+     <ENTRY>Display Debug Messages</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_DISP</KEY>
+     <ENTRY>Display Version Management Det</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_TAB</KEY>
+     <ENTRY>Display Table/Index Warings</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_TASK</KEY>
+     <ENTRY>Check Missing Tasks</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>CB_UC</KEY>
+     <ENTRY>Check Unicode Indicator</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PRD</KEY>
+     <ENTRY>Production SAP System</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_QAL</KEY>
+     <ENTRY>Quality SAP System</ENTRY>
+     <LENGTH>26</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_STG</KEY>
+     <ENTRY>Staging (Pre_Prod) SAP System</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_PRD</KEY>
+     <ENTRY>Compare Wrt Production System</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_QAL</KEY>
+     <ENTRY>Compare Wrt Quality System</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RB_STG</KEY>
+     <ENTRY>Compare Wrt Staging System</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_TRKORR</KEY>
+     <ENTRY>Transport Request Number(s)</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

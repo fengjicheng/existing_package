@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function group for I0379 WLS Interface</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_IPS_INV_I0379F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_IPS_INV_I0379TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_IPS_INV_I0379</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_GET_BIN_CONTENT_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>FM to get attchement content- I0353 - IPS interface</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_BIN_CONTENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RE_T_TEXTLINE</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_FILENAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR100</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_BIN_CONTENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Lines (132 Characters)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_FILENAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>File Name PDF</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_GET_IDOC_DATA_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>FM to get IDOC data for procesing - I0353 Interface</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_DATA_IDOC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDD_TT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_DATA_IDOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for EDIDD (IDoc Data Records)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_GET_MESCOD_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>Read the MESCOD value for I0353 - IPS interface</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_MESCOD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDI_MESCOD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_MESCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logical Message Variant</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_GET_TAX_DATA_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>Get Tax code data for IPS interface</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_TAX_CODE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MWSKZ</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TXJCD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AD_TXJCD</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_VEND_COUNTRY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LAND1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_TAX_CODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tax on sales/purchases code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TXJCD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tax Jurisdiction</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_VEND_COUNTRY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Country Key</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_MODI_IDOC_DATA_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>Function module to modify IDOC details based on PO line</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CT_IDOC_DATA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDD_TT</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ERROR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR01</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_ERROR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CT_IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for EDIDD (IDoc Data Records)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_BIN_CONTENT_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>FM to Set Binany content - I0353 - IPS Interface</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_BIN_CONTENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>RE_T_TEXTLINE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_FILENAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR100</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_BIN_CONTENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Lines (132 Characters)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_FILENAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PDF File Name</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_IDOC_DATA_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>FM to Set the IDOC data for processing -I0353 Interface</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_DATA_IDOC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDD_TT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_DATA_IDOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for EDIDD (IDoc Data Records)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_MESCOD_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>Function module to set the MESCODE fir I0353</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_MESCOD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDI_MESCOD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_MESCOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Logical Message Variant</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZQTC_SET_TAX_DATA_IPS_I0379</FUNCNAME>
+     <SHORT_TEXT>Function module to set the Tax code data</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_TAX_CODE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MWSKZ</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TXJCD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AD_TXJCD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VEND_COUNTRY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LAND1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_TAX_CODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tax on sales/purchases code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TXJCD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tax Jurisdiction</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VEND_COUNTRY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Country Key</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

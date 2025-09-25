@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>GOBI e Books Interface Function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_FG_GOBI_SAP_I0233_5F01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_FG_GOBI_SAP_I0233_5TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_FG_GOBI_SAP_I0233_5</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_IB_GOBI_ORDER_I0233_5</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>GOBI Interface to SAP SD document creation validation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_BUYERID</PARAMETER>
+       <TYP>CHAR20</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ORDERTYPE</PARAMETER>
+       <DEFAULT>&apos;Purchase&apos;</DEFAULT>
+       <TYP>CHAR20</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CUSTOMERID</PARAMETER>
+       <TYP>CHAR35</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PURCHASEORDERNUMBER</PARAMETER>
+       <TYP>CHAR16</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ITEMDETAILS</PARAMETER>
+       <TYP>ZQTC_TT_GOBI_ITEMDETAILS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TPM_SOURCE_NAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <TYP>IDOCCARKEY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BUYERID</PARAMETER>
+       <TYP>CHAR20</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ORDERTYPE</PARAMETER>
+       <TYP>CHAR20</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CUSTOMERID</PARAMETER>
+       <TYP>CHAR35</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_PURCHASEORDERNUMBER</PARAMETER>
+       <TYP>CHAR16</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RESPONSE</PARAMETER>
+       <TYP>ZQTC_TT_GOBI_RESPONSE</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <TYP>CHAR10</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_BUYERID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ORDERTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CUSTOMERID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Element Type CHAR Length 35</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PURCHASEORDERNUMBER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field of length 16</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ITEMDETAILS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>GOBI Item details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SOURCE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Origin</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_GUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>EDI archive key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BUYERID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ORDERTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CUSTOMERID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Element Type CHAR Length 35</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_PURCHASEORDERNUMBER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field of length 16</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RESPONSE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>GOBI Response</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

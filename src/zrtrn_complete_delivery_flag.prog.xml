@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZRTRN_COMPLETE_DELIVERY_FLAG</NAME>
+    <SUBC>I</SUBC>
+    <APPL>S</APPL>
+    <RLOAD>E</RLOAD>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Include ZRTRN_COMPLETE_DELIVERY_FLAG</ENTRY>
+     <LENGTH>36</LENGTH>
+    </item>
+   </TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZRTRN_COMPLETE_DELIVERY_FLAG</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00016</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZRTRN_COMPLETE_DELIVERY_FLAG</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>There is a “Complete Delivery Required” flag in the customer master. If</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the flag is checked, it indicates that a sales order must be delivered</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>complete in a single delivery. This flag is passed on to the sales</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>order. However the standard functionality of the flag is to allow</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>complete delivery only from a single plant for all line items. For</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Wiley’s requirement, the sales orders may be shipped from multiple</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>plants with different shipping points. This enhancement is needed to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>allow a single sales order to ship complete from multiple plants and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>create a delivery documents in the background.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>SAP generates an error message VL049 if processed in background (VL10*)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>OSS Note 1895857 - Different behavior of message VL049 (The customer has</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>requested complete delivery) in transactions VL01N and VL10*</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If all the Sales Document Item Quantities are fully confirmed, remove</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>the &quot;Flag: Complete delivery defined for each sales order?</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(VBAK-AUTLF)&quot;, so that SAP allows the Delivery creation even though</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Items are delivered from different Plant / Shipping Point.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

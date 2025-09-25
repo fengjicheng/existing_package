@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>To replace variable in SO10 text</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_NOTICE_F035TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_NOTICE_F035</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_NOTICE_F035</FUNCNAME>
+     <SHORT_TEXT>To replace SO10 text</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DESCRIPTION</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/BCV/FND_STRING</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VALUE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR4</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_LINK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR90</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DESCRIPTION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Short text for sales order item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VALUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Not More Closely Defined Area, Possibly Used for Patchlevels</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_LINK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SAPconnect/phone: Character 90</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

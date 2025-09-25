@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOBJ>
+    <OBJCT>ZCREDIT_RE</OBJCT>
+    <FIEL1>ZCREDIT_RE</FIEL1>
+    <OCLSS>ZQTC</OCLSS>
+   </TOBJ>
+   <TOBJT>
+    <LANGU>E</LANGU>
+    <OBJECT>ZCREDIT_RE</OBJECT>
+    <TTEXT>Authorization Object for Credit Release UI5 App</TTEXT>
+   </TOBJT>
+   <TOBJVORFLG>
+    <OBJCT>ZCREDIT_RE</OBJCT>
+   </TOBJVORFLG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

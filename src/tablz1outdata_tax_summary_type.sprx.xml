@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME_M>
+     <HASH_ID>15EE07302613F5EA2056D0ADCBE65AE29C9F53DF</HASH_ID>
+     <ID>&lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>OutdataTaxSummaryType</IFR_NAME>
+     <IFR_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_NSPCE>
+     <IFR_GNSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z1</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>WEBSERVICES</GEN_APPL>
+     <X-ML_NSPCE>http://www.sabrix.com/services/taxcalculationservice/2011-09-01</X-ML_NSPCE>
+     <X-ML_NAME>OutdataTaxSummaryType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ADVISORIES</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ADVISORIES</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z1OUTDATA_ADVISORIES_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}ADVISORIES &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ADVISORIES</IFR_NAME>
+     <IFR_TEXT>
+Notify you of special summary conditions that may produce unexpected results. List of flagged condi</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ADVISORIES</R3_NAME>
+     <R3_TEXT>
+Notify you of special summary conditions that may produce u</R3_TEXT>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EFFECTIVE_TAX_RATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EFFECTIVE_TAX_RATE</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1NILLABLE_DECIMAL_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}EFFECTIVE_TAX_RATE &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EFFECTIVE_TAX_RATE</IFR_NAME>
+     <IFR_TEXT>
+Total taxes on the line divided by the maximum taxable basis.						
+						</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EFFECTIVE_TAX_RATE</R3_NAME>
+     <R3_TEXT>
+Total taxes on the line divided by the maximum taxable basi</R3_TEXT>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EXEMPT_AMOUNT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EXEMPT_AMOUNT</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1NILLABLE_DECIMAL_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}EXEMPT_AMOUNT &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EXEMPT_AMOUNT</IFR_NAME>
+     <IFR_TEXT>
+Contains the maximum exempt amount from the tax results. If no tax, the value is zero.						
+						</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EXEMPT_AMOUNT</R3_NAME>
+     <R3_TEXT>
+Contains the maximum exempt amount from the tax results. If</R3_TEXT>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>NON_TAXABLE_BASIS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>NON_TAXABLE_BASIS</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1NILLABLE_DECIMAL_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}NON_TAXABLE_BASIS &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>NON_TAXABLE_BASIS</IFR_NAME>
+     <IFR_TEXT>
+Contains the maximum non-taxable basis from the tax results. No special process occurs for tiered r</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>NON_TAXABLE_BASIS</R3_NAME>
+     <R3_TEXT>
+Contains the maximum non-taxable basis from the tax results</R3_TEXT>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>TAXABLE_BASIS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>TAXABLE_BASIS</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1NILLABLE_DECIMAL_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}TAXABLE_BASIS &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>TAXABLE_BASIS</IFR_NAME>
+     <IFR_TEXT>
+Contains the maximum taxable basis from the amount on the authority tax lines. If an authority tax</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>TAXABLE_BASIS</R3_NAME>
+     <R3_TEXT>
+Contains the maximum taxable basis from the amount on the a</R3_TEXT>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>TAX_RATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>TAX_RATE</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z1NILLABLE_DECIMAL_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://www.sabrix.com/services/taxcalculationservice/2011-09-01}TAX_RATE &lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>TAX_RATE</IFR_NAME>
+     <IFR_TEXT>
+Sum of all taxes. No distinction is made for rates from tiers. If all taxes are fees, the value is</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>TAX_RATE</R3_NAME>
+     <R3_TEXT>
+Sum of all taxes. No distinction is made for rates from tie</R3_TEXT>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z1OUTDATA_TAX_SUMMARY_TYPE</OBJ_NAME2>
+     <ID>&lt;type&gt; OutdataTaxSummaryType http://www.sabrix.com/services/taxcalculationservice/2011-09-01 http://www.sabrix.com/services/taxcalculationservice/2011-09-01</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>OutdataTaxSummaryType</IFR_NAME>
+     <IFR_TEXT>
+A summary of tax amounts and warnings.				
+				</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z1OUTDATA_TAX_SUMMARY_TYPE</R3_NAME>
+     <R3_TEXT>
+A summary of tax amounts and warnings.				
+				</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

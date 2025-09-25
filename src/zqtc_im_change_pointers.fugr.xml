@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG for ZQTC_ISM_MATMAS_OB</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZQTC_IM_CHANGE_POINTERSF01</SOBJ_NAME>
+    <SOBJ_NAME>LZQTC_IM_CHANGE_POINTERSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZQTC_IM_CHANGE_POINTERS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZQTC_IM_CHANGE_POINTERS_PROC</FUNCNAME>
+     <SHORT_TEXT>BDCP2 Change pointers Processing for Message Types</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>MESSAGE_TYPE</PARAMETER>
+       <DBFIELD>TBDME-MESTYP</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CREATION_DATE_HIGH</PARAMETER>
+       <DBFIELD>SY-DATUM</DBFIELD>
+       <DEFAULT>SY-DATUM</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>CREATION_TIME_HIGH</PARAMETER>
+       <DBFIELD>SY-UZEIT</DBFIELD>
+       <DEFAULT>SY-UZEIT</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NO_UNPROCESSED_POINTERS</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>WRONG_INPUT_IN_MESTYP</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>MESSAGE_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CREATION_DATE_HIGH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CREATION_TIME_HIGH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Current Time of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_UNPROCESSED_POINTERS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>No Unprocessed Pointers in BDCP2</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_INPUT_IN_MESTYP</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Message type Entered in not maintained</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZQTC_R2</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for Release 2 QTC objects</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp; &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Unable to check file</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>File does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>File uploaded Successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Please enter full file path</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Partner &amp; has been extended to Company Codes successfully!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Order being processed : &amp; .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Invalid Language,please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Invalid Billing Document number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Invalid Billing Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Invalid Customer Number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Invalid Payer Number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Invalid Sales Organization Number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Invalid Distribution Channel!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>No Sales Order Exist for Your Reference &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>No Data found to display!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Enter a valid Promo Code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Enter valid ISBN Language</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Enter Valid Year</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>The &apos;Start Date&apos; must preceed the &apos;End Date&apos;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Single Order could not be found based on your Data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Invalid Division!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Sales Rep-1 is a mandatory field!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Data has been successfully inserted/updated into table for key &amp; and &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Data couldnot be inserted/updated into the table for Key &amp; and &amp; !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Unable to perform any operation due to lock issues for key &amp; and &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>No operation performed due to wrong input for &apos;STATUS&apos; for key &amp; and &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Invalid Material Number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Invalid Profit Center!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Invalid Customer!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Invalid Country!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Invalid Sales Rep!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Unable to perform operation as IHREZ is not maintained for key &amp; and &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Invalid Region!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>File does not contain any data row(s)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Date format invalid for unique issue id &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>&amp; records updated successfully to the database table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>Older records deleted successfully from the database table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>Material &amp; does not exist in target system!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>Delivering plant is not found for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>No previous records older than 10 days before the receipt date to delete!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>Invalid Company Code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>You have entered one time promo code,Please use another!!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>Lock error/system error while insert/update/delete on database table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>Material &amp; is maintained in plant &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>045</MSGNR>
+     <TEXT>File cannot be opened.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>046</MSGNR>
+     <TEXT>Mail sent Successfully as no data has been selected</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>047</MSGNR>
+     <TEXT>Partner Function &amp; Not found in Order &amp; Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>048</MSGNR>
+     <TEXT>IDOC Creation Failed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>049</MSGNR>
+     <TEXT>Kindly select a date range for fetching the subscription orders</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>Kindly select the user-id responsible for subscription order creation</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>Please enter country.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>052</MSGNR>
+     <TEXT>Please save the changes before processing it.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>053</MSGNR>
+     <TEXT>Issue Sequence for Media Product &amp;1 successfully created / updated!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>054</MSGNR>
+     <TEXT>Percentage &amp; can not be greater than 100</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>055</MSGNR>
+     <TEXT>Save text sucessfull for Order &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>056</MSGNR>
+     <TEXT>Please enter new sales rep 1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>057</MSGNR>
+     <TEXT>Please populate Sales Rep 1 OR Sales Rep 2 or BOTH.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>058</MSGNR>
+     <TEXT>Please enter new sales rep 2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>059</MSGNR>
+     <TEXT>Invalid Sales Rep1!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>Data has been successfully updated for &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>Invalid Sales Rep2!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>062</MSGNR>
+     <TEXT>Invalid New Sales Rep1!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>063</MSGNR>
+     <TEXT>Invalid New Sales Rep2!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>064</MSGNR>
+     <TEXT>No operation performed due to wrong input values for subs &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>065</MSGNR>
+     <TEXT>Data has not been successfully inserted / updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>066</MSGNR>
+     <TEXT>ALV display of table failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>067</MSGNR>
+     <TEXT>Invalid Postal Code &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>068</MSGNR>
+     <TEXT>Background Job could not be scheduled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>069</MSGNR>
+     <TEXT>Job &amp; &amp; &amp; has been scheduled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>070</MSGNR>
+     <TEXT>Changes saved successfully.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>071</MSGNR>
+     <TEXT>Error in form display</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>072</MSGNR>
+     <TEXT>PO Number &amp; added sucesfully to Order: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>073</MSGNR>
+     <TEXT>Text save for Order:&amp; and Item :&amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>074</MSGNR>
+     <TEXT>File not Uploaded Successfully!!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>075</MSGNR>
+     <TEXT>Please enter a valid file name</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>076</MSGNR>
+     <TEXT>File cannot be opened</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>077</MSGNR>
+     <TEXT>File is blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>078</MSGNR>
+     <TEXT>Table is locked</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>079</MSGNR>
+     <TEXT>Folder name is invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>080</MSGNR>
+     <TEXT>Please enter a valid file name.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>081</MSGNR>
+     <TEXT>File has no records</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>082</MSGNR>
+     <TEXT>Data Provided in the file is not valid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>083</MSGNR>
+     <TEXT>Partner &amp; has been saved for Order &amp; and Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>084</MSGNR>
+     <TEXT>File cannot be moved to processed folder</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>085</MSGNR>
+     <TEXT>File cannot be moved to error folder</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>086</MSGNR>
+     <TEXT>An exception occurred &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>087</MSGNR>
+     <TEXT>Shipping schedule records could not be locked!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>088</MSGNR>
+     <TEXT>File not Uploaded Successfully!!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>089</MSGNR>
+     <TEXT>File cannot be opened</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>090</MSGNR>
+     <TEXT>Invalid Shipping Point!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>091</MSGNR>
+     <TEXT>Invalid Delivery Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>092</MSGNR>
+     <TEXT>Invalid Purchasing Document Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>093</MSGNR>
+     <TEXT>Invalid Item Category!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>094</MSGNR>
+     <TEXT>Invalid Account Assignment Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>095</MSGNR>
+     <TEXT>Invalid Vendor ID!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>096</MSGNR>
+     <TEXT>ALV cannot be displayed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>097</MSGNR>
+     <TEXT>Rejection Reason updated for Order &amp; Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>098</MSGNR>
+     <TEXT>No valid records found for File!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>099</MSGNR>
+     <TEXT>File processed to Application server successfully!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>100</MSGNR>
+     <TEXT>File does not transfer to Application server</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>Blank File generated in Application Server</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>Invalid Plant!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>Invalid Material Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>Please maintain table ZCAINTERFACE.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>105</MSGNR>
+     <TEXT>Invalid Application,please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>106</MSGNR>
+     <TEXT>Invalid Condition Type,please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>107</MSGNR>
+     <TEXT>Invalid Project Definition</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>108</MSGNR>
+     <TEXT>Invalid WBS</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>109</MSGNR>
+     <TEXT>Invalid Company Code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>110</MSGNR>
+     <TEXT>Invalid MPM Issue!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>111</MSGNR>
+     <TEXT>Error in display</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>112</MSGNR>
+     <TEXT>Invalid Type of Identification Code!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>113</MSGNR>
+     <TEXT>New Material not found!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>114</MSGNR>
+     <TEXT>Data has been successfully inserted/updated into table &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>115</MSGNR>
+     <TEXT>Please enter number of header lines.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>116</MSGNR>
+     <TEXT>Data couldnot be inserted/updated into the table &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>117</MSGNR>
+     <TEXT>Please go to main screen and execute once again</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>118</MSGNR>
+     <TEXT>Please enter value in selection screen</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>119</MSGNR>
+     <TEXT>Execution Date/Time is not updated in ZCAINTERFACE table!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>120</MSGNR>
+     <TEXT>Invalid Media Issue,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>121</MSGNR>
+     <TEXT>Invalid Media Product,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>122</MSGNR>
+     <TEXT>No Subscription Order found based on input &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>123</MSGNR>
+     <TEXT>No records found for the given input parameters</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>124</MSGNR>
+     <TEXT>No email id found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>125</MSGNR>
+     <TEXT>No country name found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>126</MSGNR>
+     <TEXT>No accounting document found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>127</MSGNR>
+     <TEXT>Cancellation Procedure updated for Order &amp; and Items: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>128</MSGNR>
+     <TEXT>Please maintain Company Code and Account Type in table “ZRTR_TF123”.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>129</MSGNR>
+     <TEXT>Please specify Currency Option.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>130</MSGNR>
+     <TEXT>Enter a valid Currency Option.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>131</MSGNR>
+     <TEXT>Enter either Customer ID or Material ID.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>132</MSGNR>
+     <TEXT>Execution Date/Time is updated in ZCAINTERFACE table!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>133</MSGNR>
+     <TEXT>Table Update Failed !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>134</MSGNR>
+     <TEXT>Please save the changes before processing it</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>135</MSGNR>
+     <TEXT>Invalid Publication Type &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>136</MSGNR>
+     <TEXT>Invalid Delivery Plant for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>137</MSGNR>
+     <TEXT>Material &amp; doesn&apos;t exist and hence can&apos;t be validated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>138</MSGNR>
+     <TEXT>Media issues given in file doesn&apos;t exist and hence can&apos;t be validated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>139</MSGNR>
+     <TEXT>Delivery Plant is initial for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>140</MSGNR>
+     <TEXT>Source File &amp; has already been uploaded previously.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>141</MSGNR>
+     <TEXT>Quantity is negative for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>142</MSGNR>
+     <TEXT>Material &amp; exists more than once in file.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>143</MSGNR>
+     <TEXT>Zero Quantity for material &amp; is not allowed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>144</MSGNR>
+     <TEXT>Offline and Main Label both can&apos;t be zero for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>145</MSGNR>
+     <TEXT>Mailing Date can&apos;t be blank for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>146</MSGNR>
+     <TEXT>Invalid Society BP Number..No Society exists!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>147</MSGNR>
+     <TEXT>File &amp; moved to error folder.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>148</MSGNR>
+     <TEXT>File &amp; moved to Processed Folder</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>149</MSGNR>
+     <TEXT>Delivery plant not found for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>150</MSGNR>
+     <TEXT>Purchase Requisition &amp; created successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>151</MSGNR>
+     <TEXT>Transaction is currently locked, Updating is not possible</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>152</MSGNR>
+     <TEXT>Updating sales order is not possible</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>153</MSGNR>
+     <TEXT>Delivering plant is blank for the material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>154</MSGNR>
+     <TEXT>Material &amp; not found in EORD table</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>155</MSGNR>
+     <TEXT>Transaction is locked, updating rejection reason not possible!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>156</MSGNR>
+     <TEXT>Updating rejection reason not possible now!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>157</MSGNR>
+     <TEXT>Only Integer values are allowed for the material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>158</MSGNR>
+     <TEXT>Material &amp; not assigned to plant &amp; in MARC</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>159</MSGNR>
+     <TEXT>Only Distributor Purchase order can be created for material type &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>160</MSGNR>
+     <TEXT>Material &amp; not found in MARA</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>161</MSGNR>
+     <TEXT>Quantity is blank in file for material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>162</MSGNR>
+     <TEXT>Please enter no. of Publication Days</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>163</MSGNR>
+     <TEXT>Shipping Plan Order creation Date is greater then system date.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>164</MSGNR>
+     <TEXT>Wiley Invoice notification has been emailed to customer</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>165</MSGNR>
+     <TEXT>Form can not be emailed, error occured!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>166</MSGNR>
+     <TEXT>An exception occurred!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>167</MSGNR>
+     <TEXT>Atleast one Fulfillment ID has to be passed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>168</MSGNR>
+     <TEXT>Only one type of material is allowed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>169</MSGNR>
+     <TEXT>Adjustment Type &amp; not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>170</MSGNR>
+     <TEXT>No update has been performed as values already exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>171</MSGNR>
+     <TEXT>ZCF PRs can not be converted individually when NB PRs exist.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>172</MSGNR>
+     <TEXT>Invalid Revenue Accounting Item Class</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>173</MSGNR>
+     <TEXT>Email ID is not maintained for this invoice.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>174</MSGNR>
+     <TEXT>No Data to Process.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>175</MSGNR>
+     <TEXT>Only one type of Acc Assignment Category is allowed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>176</MSGNR>
+     <TEXT>Invalid Material Number!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>177</MSGNR>
+     <TEXT>No Collective Number present for material &amp; and plant &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>178</MSGNR>
+     <TEXT>Invalid media issue office.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>179</MSGNR>
+     <TEXT>Invalid MRP controller.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>180</MSGNR>
+     <TEXT>Invalid Publication Year.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>181</MSGNR>
+     <TEXT>Please provide media issue or media product value.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>182</MSGNR>
+     <TEXT>Please provide publication year.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>183</MSGNR>
+     <TEXT>Goods Receipt/Issue Posting is not possible for closed posting date.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>184</MSGNR>
+     <TEXT>Table &amp; is locked.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>185</MSGNR>
+     <TEXT>Please provide plant.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>186</MSGNR>
+     <TEXT>Invalid plant, please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>187</MSGNR>
+     <TEXT>Conference PO already exists for the material &amp; and plant &amp; combination</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>188</MSGNR>
+     <TEXT>Invalid BP Relationship Category,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>189</MSGNR>
+     <TEXT>Invalid Subscription Type,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>190</MSGNR>
+     <TEXT>Invalid Purchase Order Type,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>191</MSGNR>
+     <TEXT>File not downloaded.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>192</MSGNR>
+     <TEXT>File successfully downloaded.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>193</MSGNR>
+     <TEXT>Please provide a file path.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>194</MSGNR>
+     <TEXT>Invalid Document Category,Please re-enter.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>195</MSGNR>
+     <TEXT>Idoc(s) are processed!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>196</MSGNR>
+     <TEXT>Error in opening file &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>197</MSGNR>
+     <TEXT>File Path doesn&apos;t exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>198</MSGNR>
+     <TEXT>File path does not exists in ZCACONSTANT</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>199</MSGNR>
+     <TEXT>Invalid Document Number.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>200</MSGNR>
+     <TEXT>Document type ZSUB and ZREW is allowed only.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>201</MSGNR>
+     <TEXT>Invalid partner function.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>202</MSGNR>
+     <TEXT>Invalid sales Office.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>203</MSGNR>
+     <TEXT>&amp; File processed to Application server successfully!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>204</MSGNR>
+     <TEXT>Data not found.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>205</MSGNR>
+     <TEXT>Please select checkbox society related information.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>206</MSGNR>
+     <TEXT>File Path cannot be blank.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>207</MSGNR>
+     <TEXT>Enter Mandatory Field: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>208</MSGNR>
+     <TEXT>Invalid Item Category. &amp; valid for &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>209</MSGNR>
+     <TEXT>Contract start date &apos;From&apos; can not be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>210</MSGNR>
+     <TEXT>Contract end date &apos;From&apos; can not be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>211</MSGNR>
+     <TEXT>Invalid Document Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>212</MSGNR>
+     <TEXT>Invalid Document Type</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>213</MSGNR>
+     <TEXT>Total of Percentage Allocations must be 100%</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>214</MSGNR>
+     <TEXT>Billing Block updated for Order &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>215</MSGNR>
+     <TEXT>Delivery Block updated for Order &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>216</MSGNR>
+     <TEXT>Invalid Activity.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>217</MSGNR>
+     <TEXT>Invalid Quotation Type!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>218</MSGNR>
+     <TEXT>Invalid Posting Key</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>219</MSGNR>
+     <TEXT>Invalid Reference Key</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>220</MSGNR>
+     <TEXT>Unable To Process</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>221</MSGNR>
+     <TEXT>Order being lapsed : &amp; .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>222</MSGNR>
+     <TEXT>No Quotation Number Exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>223</MSGNR>
+     <TEXT>Unable to lock table ZQTC_AUTO_RENEW</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>224</MSGNR>
+     <TEXT>Licence Group updated for Order &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>225</MSGNR>
+     <TEXT>Please maintain in table ZCACONSTANT</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>226</MSGNR>
+     <TEXT>Customer Number doesn&apos;t exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>227</MSGNR>
+     <TEXT>Customer Condition Group 2 updated for order &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>228</MSGNR>
+     <TEXT>Processing complete</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>229</MSGNR>
+     <TEXT>Invalid special G/L indicator</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>230</MSGNR>
+     <TEXT>Order Item Billing Plan Date updated successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>231</MSGNR>
+     <TEXT>Order Item Billing Plan Date not updated</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>232</MSGNR>
+     <TEXT>Renewal Subscription Order has been generated Successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>233</MSGNR>
+     <TEXT>Promotion not allowed for Non Member Price.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>234</MSGNR>
+     <TEXT>Promotion not allowed for Member Price.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>235</MSGNR>
+     <TEXT>Invalid Access Mechanism!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>236</MSGNR>
+     <TEXT>Adjustment Quantity is zero for</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>237</MSGNR>
+     <TEXT>No valid subscriptions found!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>238</MSGNR>
+     <TEXT>Future Dated Contracts cannot be cancelled as on &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>239</MSGNR>
+     <TEXT>Total Amount can&apos;t be negative</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>240</MSGNR>
+     <TEXT>Order can not be billed, since all the Split-Orders are not considered!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>241</MSGNR>
+     <TEXT>Invalid Material Group 1!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>242</MSGNR>
+     <TEXT>Ship to &amp; is not extended to Sales area &amp; 00 00</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>243</MSGNR>
+     <TEXT>Email ID is not maintained for Ship to Customer</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>244</MSGNR>
+     <TEXT>Email ID is not maintained in the user profile</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>245</MSGNR>
+     <TEXT>Media Issue &amp;1 is not yet published!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>246</MSGNR>
+     <TEXT>One or more converted order(s) entered</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>247</MSGNR>
+     <TEXT>This tab is not allowed for converted orders. Please use VA43 to view.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>248</MSGNR>
+     <TEXT>Email field is mandatory if the Preview Checkbox is checked</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>249</MSGNR>
+     <TEXT>License Year should be &gt;= &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>250</MSGNR>
+     <TEXT>Quotation being lapsed : &amp; .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>251</MSGNR>
+     <TEXT>Archiving the form is not successful.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>252</MSGNR>
+     <TEXT>Email ID is not maintained for Employee responsible</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>253</MSGNR>
+     <TEXT>Email ID is not maintained for Bill to Customer</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>254</MSGNR>
+     <TEXT>Invalid Date Format &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>255</MSGNR>
+     <TEXT>JOB &amp; has been scheduled,Please see the job log in SM37</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>256</MSGNR>
+     <TEXT>Error in opening file &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>257</MSGNR>
+     <TEXT>Please find the error log at file path &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>258</MSGNR>
+     <TEXT>Please find the success log at file path &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>259</MSGNR>
+     <TEXT>Please unselect the blank partner rows and process</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>260</MSGNR>
+     <TEXT>Partner &amp; is not extended to Sales area &amp; &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>261</MSGNR>
+     <TEXT>JOB &amp; has been scheduled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>262</MSGNR>
+     <TEXT>Atleast one Revoked Item has to be passed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>263</MSGNR>
+     <TEXT>File already processed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>264</MSGNR>
+     <TEXT>Publication type is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>265</MSGNR>
+     <TEXT>Price updated after subtracting the &amp; percent tax from E1KONP-KBETR</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>266</MSGNR>
+     <TEXT>Validity from date should be less than validity to date.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>267</MSGNR>
+     <TEXT>Entry already exists with same key.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>268</MSGNR>
+     <TEXT>Item &amp; Material &apos;&amp;&apos; will be sold out/transferred</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>300</MSGNR>
+     <TEXT>Contract &amp; already have a Proforma &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>301</MSGNR>
+     <TEXT>Contract &amp; already have an Invoice &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>302</MSGNR>
+     <TEXT>Please delete the invalid &apos;Relationship(s)&apos; and try to &apos;Save&apos; the BP</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>303</MSGNR>
+     <TEXT>Unique ID &quot;&amp;1&quot; is assigned for this file upload.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>304</MSGNR>
+     <TEXT>Please choose a valid Relationship</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>305</MSGNR>
+     <TEXT>Relationship &amp; doesn&apos;t exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>306</MSGNR>
+     <TEXT>Relationship for &amp; already exists, Please check</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>307</MSGNR>
+     <TEXT>Relationship for &amp; already exists, Please check</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>308</MSGNR>
+     <TEXT>Error Contract# &amp; with item# &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>309</MSGNR>
+     <TEXT>Please delete the invalid company code and try to Save the BP</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>310</MSGNR>
+     <TEXT>Company code cannot be extended to &amp; as customer country is &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>311</MSGNR>
+     <TEXT>BP &amp; With Relationship Category: &amp; is not valid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>312</MSGNR>
+     <TEXT>Sales Org. &amp; currency should be &amp;, but not &amp;. Please correct it.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>313</MSGNR>
+     <TEXT>ZF5 billing type not allowed for Material Publish type UB</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>314</MSGNR>
+     <TEXT>No Pricing Year is sent via Idoc segment</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>315</MSGNR>
+     <TEXT>Quantity is missing. Cannot create contract</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>316</MSGNR>
+     <TEXT>No reference quotation found to create a renewal contract</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>317</MSGNR>
+     <TEXT>&amp; media issue(s) selected for scrapping</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>318</MSGNR>
+     <TEXT>Material/Product code is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>319</MSGNR>
+     <TEXT>Identification Code type is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>320</MSGNR>
+     <TEXT>Customer Material number is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>321</MSGNR>
+     <TEXT>Order Number is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>322</MSGNR>
+     <TEXT>Order Currency key is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>324</MSGNR>
+     <TEXT>Sales Organization is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>325</MSGNR>
+     <TEXT>Sales Division is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>326</MSGNR>
+     <TEXT>Distribution Channel is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>327</MSGNR>
+     <TEXT>Order Type is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>328</MSGNR>
+     <TEXT>Purchase Order Type is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>329</MSGNR>
+     <TEXT>First Name is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>330</MSGNR>
+     <TEXT>Street/House number</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>331</MSGNR>
+     <TEXT>City name is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>332</MSGNR>
+     <TEXT>Country Code is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>333</MSGNR>
+     <TEXT>Postal Code is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>334</MSGNR>
+     <TEXT>Customer Last name is Missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>335</MSGNR>
+     <TEXT>Sold to Party (Customer number) missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>336</MSGNR>
+     <TEXT>Ship-to-party is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>337</MSGNR>
+     <TEXT>Partner Type missing with email id</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>338</MSGNR>
+     <TEXT>Email ID of Customer is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>339</MSGNR>
+     <TEXT>Purchase Order date is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>340</MSGNR>
+     <TEXT>Material Group4 is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>341</MSGNR>
+     <TEXT>Condition price for ZMPR is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>342</MSGNR>
+     <TEXT>License Start date is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>343</MSGNR>
+     <TEXT>License End date is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>344</MSGNR>
+     <TEXT>Payment cards: Authorization number missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>345</MSGNR>
+     <TEXT>Payment cards: Authorized amount is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>346</MSGNR>
+     <TEXT>Payment cards: Card number is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>347</MSGNR>
+     <TEXT>Payment cards: Card type is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>348</MSGNR>
+     <TEXT>Payment Cards: Valid To is missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>349</MSGNR>
+     <TEXT>Payment cards: Auth Order ID missing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>350</MSGNR>
+     <TEXT>Reference parent order should not be blank to create OA Relorder</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>351</MSGNR>
+     <TEXT>Reference parent order &amp; does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>352</MSGNR>
+     <TEXT>Reference Parent Line item contract end date is expired</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>353</MSGNR>
+     <TEXT>Sum total of all the release orders exceed the parent order by &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>354</MSGNR>
+     <TEXT>Incoterms missing for the Customer# &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>356</MSGNR>
+     <TEXT>Reference Parent contract doesn&apos;t have &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>357</MSGNR>
+     <TEXT>Reference contract Item number shouldn&apos;t be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>500</MSGNR>
+     <TEXT>No &quot;Exclusion Reason&quot; was entered!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>501</MSGNR>
+     <TEXT>Please enter a valid Material Group 5.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>502</MSGNR>
+     <TEXT>Please enter a valid Customer Condition Group 2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>503</MSGNR>
+     <TEXT>Quantity is more than Open PO quantity with tolarane.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>504</MSGNR>
+     <TEXT>Invoice Currency is not same as PO currency</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>505</MSGNR>
+     <TEXT>Quantity more than posted invoice qunaity.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>506</MSGNR>
+     <TEXT>Batch Job Started</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>507</MSGNR>
+     <TEXT>Reading the files from Application Server</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>508</MSGNR>
+     <TEXT>Total &amp; Subscription order are updating with new value</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>509</MSGNR>
+     <TEXT>Invalid Society Number &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>510</MSGNR>
+     <TEXT>Customer in selection screen does not match with the customer in file</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>511</MSGNR>
+     <TEXT>Active Billing Document &amp; exists, Proforma cannot be Complete</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>512</MSGNR>
+     <TEXT>Invoice already entered as logistics inv. doc. number &amp;1 &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>513</MSGNR>
+     <TEXT>No of selected lines is more than &amp;1; Background job &amp;2 is scheduled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>514</MSGNR>
+     <TEXT>Proforma &amp; Already created.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>515</MSGNR>
+     <TEXT>Reason for cancel field must be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>516</MSGNR>
+     <TEXT>Reason for cancel must not be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>517</MSGNR>
+     <TEXT>Receipt Of cancel field must be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>518</MSGNR>
+     <TEXT>Receipt Of cancel field must not be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>519</MSGNR>
+     <TEXT>Req.cancel.date field must be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>520</MSGNR>
+     <TEXT>Req.cancel.date field must not be blank Item &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>521</MSGNR>
+     <TEXT>Item &amp; :Contract Tab: Reason for cancel field must be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>522</MSGNR>
+     <TEXT>Item &amp; :Contract Tab: Reason for cancel field must not be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>523</MSGNR>
+     <TEXT>Deletion of items not allowed.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>524</MSGNR>
+     <TEXT>Enter Sales rep values and Process</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>525</MSGNR>
+     <TEXT>Rep Values are blank in invoice&amp; and item&amp;,so not processed further</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>526</MSGNR>
+     <TEXT>Rep Values are processed for invoice&amp; and item&amp;,see the job log</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>527</MSGNR>
+     <TEXT>Order type not valid. User Correct order type.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>528</MSGNR>
+     <TEXT>&amp; Lines or More selected, Job Details : &amp; Date : &amp;  Time :&amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>529</MSGNR>
+     <TEXT>Selected Item has no billing value &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>530</MSGNR>
+     <TEXT>Cancellation not possible at header level</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>531</MSGNR>
+     <TEXT>Header: Contract Tab: Reason for cancel field must be blank</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>532</MSGNR>
+     <TEXT>Cancellation not possible at header level,Remove Reason for cancel.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>533</MSGNR>
+     <TEXT>Cancellation not possible at header level,Remove Receipt of Canc.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>534</MSGNR>
+     <TEXT>Cancellation not possible at header level,Remove Req.Cancellat.date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>536</MSGNR>
+     <TEXT>Selected Item has been processed already &amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>537</MSGNR>
+     <TEXT>Adjust Invoice Instructions in right sequence</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>538</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>555</MSGNR>
+     <TEXT>Contracts : &amp;  Date : &amp;  Time :&amp; &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>556</MSGNR>
+     <TEXT>Email ID is not maintained for Bill to party</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>558</MSGNR>
+     <TEXT>Please check/extend the validity dates of the relationship &amp; in BP</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>559</MSGNR>
+     <TEXT>Please check/maintain the correct relationship type &amp; in BP</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>561</MSGNR>
+     <TEXT>Renewal order already Created</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>563</MSGNR>
+     <TEXT>No data for the Current Selection !!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>564</MSGNR>
+     <TEXT>Release Order Generation Stopped Due To Distribution Restriction in</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>566</MSGNR>
+     <TEXT>You are not authorized to change tax classification</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>567</MSGNR>
+     <TEXT>Please Enter the Society BP Number !!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>568</MSGNR>
+     <TEXT>Please Enter the Society Partner BP Number !!!</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>569</MSGNR>
+     <TEXT>Search Term is blank.If this is a Society CMIR, Please enter a value &amp; .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>570</MSGNR>
+     <TEXT>Search Term is incorrect. Please enter a correct society model &amp; .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>571</MSGNR>
+     <TEXT>Please maintain output type &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>572</MSGNR>
+     <TEXT>Please fill the contract number in the BNAME header field.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>573</MSGNR>
+     <TEXT>&amp; quote is already created using reference contract &amp;.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>574</MSGNR>
+     <TEXT>SubRefID is Mandatory when quotation is created without reference</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>575</MSGNR>
+     <TEXT>BNAME Reference contract cannot be changed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>576</MSGNR>
+     <TEXT>Please verify the given Customer material number is unique or not</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>577</MSGNR>
+     <TEXT>Release Order sold to not matching with contract Sold to: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>578</MSGNR>
+     <TEXT>Material: &amp; and KDMAT: &amp; Not matching with Contract</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>579</MSGNR>
+     <TEXT>Renewal status set as cancelled</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>580</MSGNR>
+     <TEXT>Renewal status set as renewal profile change</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>581</MSGNR>
+     <TEXT>Exclusion reason has been maintained</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>582</MSGNR>
+     <TEXT>Release order quantity is exceeding Contract: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>583</MSGNR>
+     <TEXT>No Valid Quote based on Reference ID and Email Id /Postal Code</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>584</MSGNR>
+     <TEXT>Renewal is already done for given input</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>585</MSGNR>
+     <TEXT>More than one valid relationship is found on BP &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>586</MSGNR>
+     <TEXT>Variant &quot;&amp;&quot; not found.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>587</MSGNR>
+     <TEXT>Licence serial number would be mandatory for Desktop products</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>588</MSGNR>
+     <TEXT>Document line item is a empty</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>589</MSGNR>
+     <TEXT>Background job scheduled and email will be sent to your inbox &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>590</MSGNR>
+     <TEXT>Email sent</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>591</MSGNR>
+     <TEXT>Requested cancellation date is higer than system date</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>592</MSGNR>
+     <TEXT>Please limit the line item selection by specifying additional &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>593</MSGNR>
+     <TEXT>Identifier is mandatory for the acquisition debit note creation</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>594</MSGNR>
+     <TEXT>Contract is not relevant for acquisition.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>595</MSGNR>
+     <TEXT>Contract has been rejected.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>596</MSGNR>
+     <TEXT>Contract has a different document currency.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>597</MSGNR>
+     <TEXT>Contract has been duplicated.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>598</MSGNR>
+     <TEXT>Contract has been referenced.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>599</MSGNR>
+     <TEXT>Sales areas deviate from each other.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>600</MSGNR>
+     <TEXT>Indetifier must be a numeric value</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>601</MSGNR>
+     <TEXT>Reference contract is a mandatory.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>602</MSGNR>
+     <TEXT>Contract &amp; is not in the database.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>603</MSGNR>
+     <TEXT>Customer is a mandatory.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>604</MSGNR>
+     <TEXT>Partner function is a mandatory.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>605</MSGNR>
+     <TEXT>FTP Sold To: &amp; BPID Does Not Match Renewal Quote Sold To: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>606</MSGNR>
+     <TEXT>Item &amp;1 in document &amp;2 cannot be cancelled, Credit/Debit memo exists.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>607</MSGNR>
+     <TEXT>Background job scheduled and email will be sent to your inbox &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>608</MSGNR>
+     <TEXT>Reference Quotation doesn&apos;t have material &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>609</MSGNR>
+     <TEXT>Invalid Your Reference Number &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>610</MSGNR>
+     <TEXT>Material &amp; lineitem &amp; added for Reason for rejection</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>611</MSGNR>
+     <TEXT>Material &amp; blocked status &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>612</MSGNR>
+     <TEXT>Sold To: &amp; BPID Does Not Match Renewal Quote Sold To: &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>613</MSGNR>
+     <TEXT>Duplicate Purchase request for Customer &amp; Material combination</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>614</MSGNR>
+     <TEXT>Mandatory token no is missing,Enter Ship-to Party&apos;s PO Number at header</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>615</MSGNR>
+     <TEXT>Status cannot be changed as Issue Variant Type is &quot;Excluded&quot;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>616</MSGNR>
+     <TEXT>No confirmed quantity available in the order. Output cannot be processed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZQTC_R2</ARBGB>
+     <MSGNR>617</MSGNR>
+     <TEXT>This is Just Charm Testing Lock Mechanism Test</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

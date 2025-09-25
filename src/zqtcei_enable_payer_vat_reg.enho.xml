@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Enable Payer VAT Reg num for ZPPV Orders</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V09C</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V09C</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV09C</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV09C</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\FU:SD_PARTNER_ADDR_DIALOG_INTERN\SE:BEGIN\EI</FULL_NAME>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <FILES>
+    <item>
+     <NAME>\FU:SD_PARTNER_ADDR_DIALOG_INTERN\SE:BEGIN\EI</NAME>
+     <FILE>17b9d7d9</FILE>
+    </item>
+   </FILES>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>00505689066D1EEBA6F2B85A43093C52</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>00505689066D1EEBA6F2B85A43093C52</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>060</LENGTH>
+       <TEXT>Enable Payer VAT Reg num for ZPPV Orders</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZQTCEI_ENABLE_PAYER_VAT_REG</OBJ_NAME>
+     <CONCEPT>00505689066D1EEBA6F2B85A43093C52</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

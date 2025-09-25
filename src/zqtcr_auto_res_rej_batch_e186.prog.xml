@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZQTCR_AUTO_RES_REJ_BATCH_E186</NAME>
+    <SUBC>1</SUBC>
+    <APPL>V</APPL>
+    <RSTAT>P</RSTAT>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Batch job Started</ENTRY>
+     <LENGTH>17</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Total</ENTRY>
+     <LENGTH>5</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Subscription order are updating with new value</ENTRY>
+     <LENGTH>46</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Batch Job for Apply Reason For Rejection To Cancelled Contract Lines</ENTRY>
+     <LENGTH>68</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_C_DAT</KEY>
+     <ENTRY>Requested Cancellation Date</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_DATE</KEY>
+     <ENTRY>Document Date</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_MAIL</KEY>
+     <ENTRY>E-Mail</ENTRY>
+     <LENGTH>14</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_MATNR</KEY>
+     <ENTRY>Material</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_PRO</KEY>
+     <ENTRY>Cancellation Procedure</ENTRY>
+     <LENGTH>30</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_TYPE</KEY>
+     <ENTRY>Contract Type</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S1_VBELN</KEY>
+     <ENTRY>Document</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+   </TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>
