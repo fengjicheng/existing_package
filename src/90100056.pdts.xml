@@ -21,70 +21,10 @@
       <OTYPE>TS</OTYPE>
       <OBJID>90100056</OBJID>
       <LANGU>E</LANGU>
-      <SUBTY>0121</SUBTY>
-      <TABSEQNR>000001</TABSEQNR>
-      <TLINE>User &amp;_Workitem.ExecutedByUser.Name&amp; made the user decision.</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0122</SUBTY>
-      <TABSEQNR>000001</TABSEQNR>
-      <TLINE>The latest end set in the workflow definition for the decision has</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0123</SUBTY>
-      <TABSEQNR>000001</TABSEQNR>
-      <TLINE>The deadline set in the workflow definition for the requested end for</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0124</SUBTY>
-      <TABSEQNR>000001</TABSEQNR>
-      <TLINE>The deadline set in the workflow definition for the latest start for the</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
       <SUBTY>0120</SUBTY>
       <TABSEQNR>000001</TABSEQNR>
       <TLINE>Dear Sir/Madam&lt;(&gt;,&lt;)&gt;</TLINE>
       <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0122</SUBTY>
-      <TABSEQNR>000002</TABSEQNR>
-      <TLINE>passed.</TLINE>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0123</SUBTY>
-      <TABSEQNR>000002</TABSEQNR>
-      <TLINE>the decision has been missed.</TLINE>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100056</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0124</SUBTY>
-      <TABSEQNR>000002</TABSEQNR>
-      <TLINE>decision has been missed.</TLINE>
      </HRS1002>
      <HRS1002>
       <OTYPE>TS</OTYPE>
@@ -128,6 +68,66 @@
       <TABSEQNR>000006</TABSEQNR>
       <TLINE>&amp;ZWC_REASON_TEXT##&amp;</TLINE>
       <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0121</SUBTY>
+      <TABSEQNR>000001</TABSEQNR>
+      <TLINE>User &amp;_Workitem.ExecutedByUser.Name&amp; made the user decision.</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0122</SUBTY>
+      <TABSEQNR>000001</TABSEQNR>
+      <TLINE>The latest end set in the workflow definition for the decision has</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0122</SUBTY>
+      <TABSEQNR>000002</TABSEQNR>
+      <TLINE>passed.</TLINE>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0123</SUBTY>
+      <TABSEQNR>000001</TABSEQNR>
+      <TLINE>The deadline set in the workflow definition for the requested end for</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0123</SUBTY>
+      <TABSEQNR>000002</TABSEQNR>
+      <TLINE>the decision has been missed.</TLINE>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0124</SUBTY>
+      <TABSEQNR>000001</TABSEQNR>
+      <TLINE>The deadline set in the workflow definition for the latest start for the</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100056</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0124</SUBTY>
+      <TABSEQNR>000002</TABSEQNR>
+      <TLINE>decision has been missed.</TLINE>
      </HRS1002>
     </DESCRIPTIONS>
    </PDTS>

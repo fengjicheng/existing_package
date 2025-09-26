@@ -47,6 +47,32 @@
       <OTYPE>TS</OTYPE>
       <OBJID>90200117</OBJID>
       <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000004</TABSEQNR>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90200117</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000005</TABSEQNR>
+      <TLINE>Reason Entered by Level 1 Approver:</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90200117</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000006</TABSEQNR>
+      <TLINE>&amp;ZWC_REASON_TEXT##&amp;</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90200117</OBJID>
+      <LANGU>E</LANGU>
       <SUBTY>0121</SUBTY>
       <TABSEQNR>000001</TABSEQNR>
       <TLINE>User &amp;_Workitem.ExecutedByUser.Name&amp; made the user decision.</TLINE>
@@ -102,32 +128,6 @@
       <SUBTY>0124</SUBTY>
       <TABSEQNR>000002</TABSEQNR>
       <TLINE>decision has been missed.</TLINE>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90200117</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000004</TABSEQNR>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90200117</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000005</TABSEQNR>
-      <TLINE>Reason Entered by Level 1 Approver:</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90200117</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000006</TABSEQNR>
-      <TLINE>&amp;ZWC_REASON_TEXT##&amp;</TLINE>
-      <TFORMAT>*</TFORMAT>
      </HRS1002>
     </DESCRIPTIONS>
    </PDTS>

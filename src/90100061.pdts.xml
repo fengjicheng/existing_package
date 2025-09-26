@@ -21,6 +21,32 @@
       <OTYPE>TS</OTYPE>
       <OBJID>90100061</OBJID>
       <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000001</TABSEQNR>
+      <TLINE>Dear Sir/Madam&lt;(&gt;,&lt;)&gt;</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100061</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000002</TABSEQNR>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100061</OBJID>
+      <LANGU>E</LANGU>
+      <SUBTY>0120</SUBTY>
+      <TABSEQNR>000003</TABSEQNR>
+      <TLINE>CMR &amp;ZWC_BO.SALESDOCUMENT&amp; on credit hold.</TLINE>
+      <TFORMAT>*</TFORMAT>
+     </HRS1002>
+     <HRS1002>
+      <OTYPE>TS</OTYPE>
+      <OBJID>90100061</OBJID>
+      <LANGU>E</LANGU>
       <SUBTY>0121</SUBTY>
       <TABSEQNR>000001</TABSEQNR>
       <TLINE>User &amp;_Workitem.ExecutedByUser.Name&amp; made the user decision.</TLINE>
@@ -76,32 +102,6 @@
       <SUBTY>0124</SUBTY>
       <TABSEQNR>000002</TABSEQNR>
       <TLINE>decision has been missed.</TLINE>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100061</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000001</TABSEQNR>
-      <TLINE>Dear Sir/Madam&lt;(&gt;,&lt;)&gt;</TLINE>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100061</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000002</TABSEQNR>
-      <TFORMAT>*</TFORMAT>
-     </HRS1002>
-     <HRS1002>
-      <OTYPE>TS</OTYPE>
-      <OBJID>90100061</OBJID>
-      <LANGU>E</LANGU>
-      <SUBTY>0120</SUBTY>
-      <TABSEQNR>000003</TABSEQNR>
-      <TLINE>CMR &amp;ZWC_BO.SALESDOCUMENT&amp; on credit hold.</TLINE>
-      <TFORMAT>*</TFORMAT>
      </HRS1002>
     </DESCRIPTIONS>
    </PDTS>
